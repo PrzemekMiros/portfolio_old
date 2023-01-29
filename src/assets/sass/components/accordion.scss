@@ -1,0 +1,96 @@
+.accordion {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  position: relative;
+  margin-bottom: .5em;
+  padding-left: 0;
+  list-style: none;
+  cursor: pointer;
+  transition: all 1.3s cubic-bezier(.79,0,.07,.88);
+  z-index: 9;
+}
+
+.accordion::after {
+  position: absolute;
+  content: "";
+  top: calc(50% - 0.6em);
+  left: -3.3em;
+  font-size: 3vw;
+  opacity: .5
+}
+
+.accordion-wrap div:nth-child(1) .accordion::after {
+  content: "I";
+}
+.accordion-wrap div:nth-child(2) .accordion::after {
+  content: "II";
+}
+.accordion-wrap div:nth-child(3) .accordion::after {
+  content: "III";
+}
+.accordion-wrap div:nth-child(4) .accordion::after {
+  content: "IV";
+}
+.accordion-wrap div:nth-child(5) .accordion::after {
+  content: "V";
+}
+.accordion-wrap div:nth-child(6) .accordion::after {
+  content: "VI";
+}
+.accordion-wrap div:nth-child(7) .accordion::after {
+  content: "VII";
+}
+
+.accordion .title {
+  padding-right: 3.2em;
+  transition: 1.3s cubic-bezier(.79,0,.07,.88);
+}
+
+.icon {
+  position: absolute;
+  top: 50%;
+  right: -0.4em;
+  width: 13px;
+  height: 2px;
+  background: #fff;
+  border-radius: 50%;
+  opacity: .5
+}
+
+.icon::before {
+  position: absolute;
+  content: "";
+  top: 0;
+  right: 0;
+  width: 13px;
+  height: 2px;
+  background: #fff;
+  border-radius: 50%;
+  transform: rotate(90deg);
+  animation-timing-function: cubic-bezier(.79,0,.07,.88);
+  transition: 1.3s
+}
+
+.accordion.open .icon::before {
+  transform: rotate(0);
+}
+
+.panel {
+  max-height: 0px;
+  overflow: hidden;
+  transition: all 1.3s cubic-bezier(.79,0,.07,.88)
+}
+.panel p {
+  margin: 1em 0;
+}
+
+@media(min-width:767px) {
+  .icon {
+    right: 2em
+  }
+  .accordion::after {
+    left: -5em;
+    font-size: 1vw
+  }
+}

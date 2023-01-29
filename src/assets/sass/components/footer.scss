@@ -1,0 +1,42 @@
+.site-footer {
+    background: #080d10;
+    background-size: cover;
+    background-position: center;
+}
+
+.site-footer p,
+.site-footer a {
+    color: #fff
+}
+
+.footer-top {
+    padding: 160px 0 20px
+}
+
+.footer-bottom {
+    padding: 0 0 100px;
+}
+
+.footer-arrow {
+    width: 18px
+}
+
+.footer-mail {
+    font-size: 24px
+}
+
+@media(min-width:767px) {
+    .footer-mail {
+        font-size: 46px
+    }
+    .footer-arrow {
+        width: 28px
+    }
+}
+
+@media(min-width:1200px) {
+    .footer-arrow {
+        width: 46px
+    }
+}
+

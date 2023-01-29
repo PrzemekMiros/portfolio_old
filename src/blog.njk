@@ -1,0 +1,53 @@
+---
+layout: layouts/blog.njk
+title: Ciekawostki
+description: Porady i ciekawostki dotyczące tworzenia stron, pozycjonowania i digital marketingu
+pagination: 
+    data: collections.posts
+    size: 6
+    alias: blog
+---
+
+<div class="row gx-0 pb-medium">
+    <div class="offset-md-1 col-md-11">
+        <h1 class="xxl" data-splitting>
+            {{ title }}<span class="dot">.</span>
+        </h1>
+        <div class="line-x lx-2"></div>
+    </div>
+  </div>
+
+<div class="row gx-0">
+    {% for post in blog %}
+    <div class="offset-md-1 col-md-5 fadeIn">
+        <a href="{{ post.url }}">
+            <div class="archive-post pb-small pb-md-medium">
+                <div class="parallax-wrap aspect_16-9">
+                    <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy"/>
+                  </div>
+                    <p class="archive-post-date mt-3 mb-1"> 
+                        <small>{{ post.data.date | dateDisplay}}</small>  <small>{{ post.data.tag }}</small>
+                    </p>
+                    <h2 class="archive-post-title h4 mt-0">
+                        {{ post.data.title }}
+                    </h2>
+            </div>
+        </a>
+    </div>
+    {% endfor %}
+</div>
+
+<div class="row gx-0 pb-large">
+<div class="offset-md-1 col-md-5">
+<nav>
+    <ul class="pagination d-flex fadeIn">
+        {%- for pageEntry in pagination.pages %}
+        <li class="pagination-item">
+            <a class="pagination-link" href="{{ pagination.hrefs[ loop.index0 ] }}"
+                {% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="active"
+                {% endif %}>{{ loop.index }}</a></li>
+        {%- endfor %}
+    </ul>
+</nav>
+</div>
+</div>

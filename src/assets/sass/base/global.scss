@@ -1,0 +1,184 @@
+:root {
+  --bs-gutter-x: 25px;
+  --bs-gutter-y: 25px;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    color: var(--color-text);
+    font-family: var(--font-primary);
+    font-weight: 200
+  }
+
+  .scrollContainer {
+    background-color: var(--color-light-1);
+  }
+
+  img {
+    display: block;
+    width: 100%;
+    height: auto;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit
+  }
+
+  .link {
+    position: relative;
+    display: inline-block
+  }
+
+  .link::before {
+    position: absolute;
+    content: "";
+    bottom: -1px;
+    left: 0;
+    width: 0;
+    height: 1px;
+    background-color: var(--color-text);
+    transition: .3s cubic-bezier(.79,0,.07,.88)
+  }
+
+  .link:hover::before {
+    width: 100%;
+  }
+
+  .link-white::before {
+    background-color: #fff
+  }
+
+  .post-navigation a {
+    display: inline-block
+  }
+
+  ul, li {
+    padding-left: 0;
+    list-style: none
+  }
+
+.w-100 {
+  width: 100%
+}
+.w-200 {
+  white-space: nowrap;
+}
+.w-200 span {
+  display: inline-block
+}
+
+.loop-text {
+    display: inline-block;
+    white-space: nowrap;
+  }
+.loop-text span {
+    display: inline-block
+  }
+  section {
+    max-width: 100%
+  }
+
+.dot {
+  color: var(--color-accent-1);
+  font-weight: 500
+}
+
+.breacrumbs {
+  font-size: 14px;
+  font-weight: 200
+}
+
+@media(min-width:767px) {
+  html {
+    overflow-y: hidden
+  }
+}
+
+
+.about-img-wrap {
+  position: relative;
+}
+
+.about-img-wrap div:nth-child(2) {
+  position: absolute;
+  bottom: 16%;
+  left: -20%;
+  width: 63%;
+  z-index: 1;
+}
+
+
+@media(min-width:767px) {
+  .works-grid .works-grid-item:nth-child(even) {
+    margin-top: -6em;
+    width: 33.3%
+  }
+}
+
+.link-arrow {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: 300
+}
+.link-arrow svg {
+  transition: .3s cubic-bezier(.79,0,.07,.88)
+}
+.link-arrow:hover svg {
+  transform: rotate(45deg)
+}
+
+/*  Line
+--------------------------------- */
+
+.line-x {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-border)
+}
+.lx-1 {
+  height: 1px
+}
+.lx-2 {
+  height: 2px
+}
+.lx-op {
+  opacity: .15
+}
+.lx-light {
+  background-color: #fff
+}
+
+
+.section-brief {
+  height: 100vh;
+  margin-bottom: 0
+}
+
+.brief {
+  width: 1px; 
+  min-width: 100%; 
+  min-height: 100vh; 
+  height: 100%; 
+  border: none;
+  opacity: 0;
+  animation-name: fadeIn;
+  animation-delay: 1s;
+  animation-duration: .8s;
+  animation-fill-mode: forwards
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0
+  }
+  100% {
+    opacity: 1
+  }
+}
+
+
+

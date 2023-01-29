@@ -1,0 +1,4 @@
+          <svg id="arrow" x="0px" y="0px" viewBox="0 0 190 125" style="enable-background:new 0 0 190 125;" xml:space="preserve"><g stroke-width="2" stroke-linecap="round">
+            <line stroke="#fff" x1="0" y1="62.5" x2="190" y2="62.5" style="translate: none; rotate: none; scale: none; transform-origin: 0px 0px 0px;" data-svg-origin="0 62.5" transform="matrix(1,0,0,1,0,0)"></line>
+            <line stroke="#fff" x1="127.5" y1="0" x2="190" y2="62.5" style="translate: none; rotate: none; scale: none; transform-origin: 0px 0px 0px; opacity: 1;" data-svg-origin="190 62.5" transform="matrix(1,0,0,1,0,0)"></line>
+            <line stroke="#fff" x1="127.5" y1="125" x2="190" y2="62.5" style="translate: none; rotate: none; scale: none; transform-origin: 0px 0px 0px; opacity: 1;" data-svg-origin="190 62.5" transform="matrix(1,0,0,1,0,0)"></line></g></svg>

@@ -1,0 +1,42 @@
+</div>
+</div>
+<!-- Scripts -->
+<script src="/assets/js/vendor.js"></script>
+<script src="/assets/js/script.js"></script>
+<script>
+  // Init locomotive
+  const locoScroll = new LocomotiveScroll({
+    el: document.querySelector(".scrollContainer"),
+    smooth: true,
+    reloadOnContextChange: !0,
+    multiplier: .75,
+    lerp: .1,
+    touchMultiplier: 2,
+    tablet: {
+      smooth: !0
+    },
+    smartphone: {
+      smooth: !0
+    }
+  });
+  // Swup init
+  const swup = new Swup({
+    animateHistoryBrowsing: true,
+    plugins: [
+      new SwupProgressPlugin(),
+      new SwupBodyClassPlugin()
+    ]
+  });
+  // Swup events re-init scripts
+  document.addEventListener("swup:animationInStart", () => {
+    locoScroll.destroy(), locoScroll.init(), scrollTo(top)
+  });
+  document.addEventListener("swup:animationInDone", () => {
+    animationMain()
+  }), console.clear();
+</script>
+<script>
+  animationMain();
+</script>
+</body>
+</html>

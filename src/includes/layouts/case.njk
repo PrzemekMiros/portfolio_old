@@ -1,0 +1,91 @@
+{% include "partials/header.njk" %}
+
+<section class="pt-xlarge pb-xlarge" data-scroll-section>
+    <div class="container">
+
+        <div class="row">
+            <div class="offset-md-3 col-md-6">
+                    <div class="single-post-title-wrap">
+                        <div class="breacrumbs fadeIn">
+                            <a href="/" title="Strona glówna">
+                                Główna
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <a href="/realizacje/" title="Realizacje">
+                                Realizacje
+                            </a>
+                            <span>
+                                |
+                            </span>
+                            <span>
+                                {{ title }}
+                            </span>
+                        </div>
+                        <h1 class="xl single-post-title mt-5 mb-5" data-splitting>
+                            {{ title }}
+                        </h1>
+                    </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="offset-md-1 col-md-10">
+                    <div class="parallax-wrap aspect_16-9 fadeIn mb-5">
+                        <img src="{{ imageMain | url }}" alt="{{ title }}" class="single-post-image img-fluid">
+                    </div>
+            </div>
+        </div>
+
+        <div class="row fadeIn">
+            <div class="offset-md-3 col-md-6">
+                {{ content | safe}}
+            </div>
+        </div>
+
+        <div class="row pt-medium fadeIn">
+            <div class="offset-md-1 col-md-10">
+                <div class="line-x"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="post-navigation pt-small">
+                    {%- if collections.works %}
+                        {%- set nextPost = collections.works | getNextCollectionItem(page) %}
+                        {%- set previousPost = collections.works | getPreviousCollectionItem(page) %}
+                        {%- if nextPost or previousPost %}
+                            <ul class="d-flex flex-wrap fadeIn">
+                                {%- if previousPost %}
+                                    <li class="offset-md-1 col-md-5 prev d-none d-md-block">
+                                        <p class="mb-4">
+                                            <small>
+                                                Poprzedni:
+                                            </small>
+                                        </p>
+                                        <a href="{{ previousPost.url | url }}" title="{{ previousPost.data.title }}" class="h4">{{ previousPost.data.title }}</a>
+                                    </li>
+                                {% endif %}
+                                {%- if nextPost %}
+                                    <li class="offset-md-1 col-md-5 next">
+                                        <p class="mb-4">
+                                            <small>
+                                                Kolejny:
+                                            </small>
+                                        </p>
+                                        <a href="{{ nextPost.url | url }}" title="{{ previousPost.data.title }}" class="h4">{{ nextPost.data.title }}</a>
+                                    </li>
+                                {% endif %}
+                            </ul> 
+                        {%- endif %}
+                    {%- endif %}
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{% include "partials/footer.njk" %}

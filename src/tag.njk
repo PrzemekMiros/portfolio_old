@@ -1,0 +1,40 @@
+---
+pagination: 
+    data: collections
+    size: 1
+    alias: tag
+    addAllPagesToCollections: true
+layout: layouts/blog.njk
+permalink: /blog/{{tag | slugify}}/
+eleventyComputed:
+    title: Wpisy oznaczone tagiem {{tag}}
+---
+
+<div class="row gx-0 pb-medium">
+    <div class="offset-md-1 col-md-9">
+        <h1 class="xl" data-splitting>
+            {{ tag }}
+        </h1>
+    </div>
+</div>
+
+    <div class="row gx-0">
+        {% for post in collections[tag] %}
+        <div class="offset-md-1 col-md-5 fadeIn">
+            <a href="{{ post.url }}">
+                <div class="archive-post pb-medium">
+                    <div class="parallax-wrap aspect_16-9">
+                        <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy"/>
+                    </div>
+                        <p class="archive-post-date mt-3 mb-1"> 
+                            <small>{{ post.data.date | dateDisplay}}</small>  <small>{{ post.data.tag }}</small>
+                        </p>
+                        <h2 class="archive-post-title h4 mt-0 mb-5">
+                            {{ post.data.title }}
+                        </h2>
+                </div>
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+    

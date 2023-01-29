@@ -1,0 +1,11 @@
+@media(min-width:767px) {
+.portfolio-item {
+    overflow: hidden
+}
+.portfolio-item div {
+    transition: 1.3s cubic-bezier(.79,0,.07,.88)
+}
+.portfolio-item:hover div {
+    transform: scale(1.08)
+}
+}

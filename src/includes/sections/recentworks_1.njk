@@ -1,0 +1,63 @@
+<section class="pt-medium pb-medium" data-scroll-section>
+    <div class="container">
+        <div class="row gx-0">
+            <div class="offset-md-1 col-md-10">
+                <h2 class="xl fadeIn">
+                    Wybrane prace<span class="dot">.</span>
+                </h2>
+                <div class="pt-small">
+                    <div class="line-x"></div>
+                </div>
+            </div>
+        </div>
+        <div class="pt-medium">
+            {% for post in collections.works.slice(0,3) %}
+                <div class="works-grid-item">             
+                    <div class="row gx-0 flex-row-reverse archive-post pb-xsmall pb-md-medium">
+                      <div class="col-md-1"></div>
+                      <div class="col-md-5 fadeIn mb-5 mb-md-0">
+                        <a href="{{ post.url }}" title="{{ post.data.title }}">
+                         <div class="portfolio-item">
+                          <div class="parallax-wrap aspect_16-12">
+                            <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy"/>
+                          </div>
+                         </div>
+                        </a>
+                      </div>
+                      <div class="offset-md-1 col-md-5 fadeIn d-flex align-items-center">
+                        <div class="pr-md-5">
+                            <a href="{{ post.url }}" title="{{ post.data.client }}">
+                                <p class="archive-post-client mb-3">
+                                    {{ post.data.client }}
+                                </p>
+                            </a>
+                            <a href="{{ post.url }}" title="{{ post.data.title }}">
+                                <h2 class="archive-post-title h3 mt-0 mb-1">
+                                    {{ post.data.title }}
+                                </h2>
+                            </a>
+                            <p class="archive-post-desc mt-4 mb-4 d-none d-lg-block"> 
+                                <small>
+                                    {{ post.data.description}}
+                                </small>
+                            </p>
+                            <a href="{{ post.data.link}}" title="Zobacz online" target="_blank" rel="nofollow noopener" class="link-arrow mt-4 mb-2"> 
+                                Zobacz online 
+                                <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M13 1L1 13" stroke="var(--color-dark-1)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                                    <path d="M3 1H13V11" stroke="var(--color-dark-1)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                            </a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row">
+                        <div class="offset-md-1 col-md-10 pb-medium">
+                            <div class="line-x lx-1 lx-op"></div>
+                        </div>
+                    </div>
+                </div>
+            {% endfor %}
+        </div>
+    </div>
+</section>

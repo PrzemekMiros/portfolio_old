@@ -1,0 +1,54 @@
+<section class="section-services pt-large pb-xlarge bg-dark" data-scroll-section>
+  <div class="big-text fadeIn">
+    <div class="xxxl color-heading loop-text">
+      <span>W</span>
+      <span>czym</span>
+      <span>mogę</span>
+      <span>Ci</span>
+      <span>pomóc</span><span class="dot">.</span>
+      <span>W</span>
+      <span>czym</span>
+      <span>mogę</span>
+      <span>Ci</span>
+      <span>pomóc</span><span class="dot">.</span>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row gx-0 pt-medium">
+      <div class="offset-md-1 col-md-10">
+        <div class="line-x lx-light"></div>
+      </div>
+    </div>
+
+    {% set counter = 1 %}
+    {% for post in collections.services %}
+    <a href="{{ post.url }}">
+      <div class="service-item">
+        <div class="row gx-0 pt-large pb-medium fadeIn">
+          <div class="offset-md-1 col-md-1">
+            <p class="service-number mt-1 color-text">0{{ counter }}</p>
+          </div>
+          <div class="col-md-3">
+            <h3 class="mt-0 color-heading">{{ post.data.title }}</h3>
+          </div>
+          <div class="offset-md-1 col-md-4">
+            <p class="mt-0 color-text">
+              {{ post.data.description }}
+            </p>
+          </div>
+          <div class="col-md-1 text-md-end">
+            <p class="service-arrow h2 my-0 color-text">+</p>
+          </div>
+        </div>
+        <div class="row gx-0">
+          <div class="offset-md-1 col-md-10">
+            <div class="line-x lx-op lx-light"></div>
+          </div>
+        </div>
+      </div>
+    </a>
+    {% set counter = counter + 1 %}
+    {% endfor %}
+
+  </div>
+</section>

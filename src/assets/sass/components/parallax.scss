@@ -1,0 +1,28 @@
+
+  .parallax-wrap {
+    position: relative;
+    overflow: hidden;
+    background-color: transparent;
+    padding-bottom: calc(100% / (var(--ratio))); 
+  }
+
+  .aspect_16-12 {
+    --ratio: 1380/1125;
+  }
+
+  .aspect_16-9 {
+    --ratio: 1380/868;
+  }
+
+  .aspect_16-5 {
+    --ratio: 1380/468;
+  }
+  
+  .parallax-wrap img {
+    position: absolute;
+    top: -5%;
+    left: -5%;
+    width: 110%;
+    height: 110%;
+    object-fit: cover
+  }

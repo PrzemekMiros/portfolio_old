@@ -1,0 +1,150 @@
+.h-100vh {
+    min-height: 100vh
+}
+
+.pt-xxlarge {
+    padding-top: 200px
+}
+.pt-xlarge {
+    padding-top: 150px
+}
+.pt-large {
+    padding-top: 120px
+}
+.pt-medium {
+    padding-top: 90px
+}
+.pt-small {
+    padding-top: 60px
+}
+.pt-xsmall {
+    padding-top: 30px
+}
+
+.pb-xlarge {
+    padding-bottom: 150px
+}
+.pb-large {
+    padding-bottom: 120px
+}
+.pb-medium {
+    padding-bottom: 90px
+}
+.pb-small {
+    padding-bottom: 60px
+}
+.pb-xsmall {
+    padding-bottom: 30px
+}
+
+.py-medium {
+    padding-top: 90px;
+    padding-bottom: 90px
+}
+
+.pl-2 {
+    padding-left: 2em
+}
+.pl-3 {
+    padding-left: 3em
+}
+.pl-5 {
+    padding-left: 5em
+}
+.pr-2 {
+    padding-right: 2em
+}
+.pr-3 {
+    padding-right: 3em
+}
+.pr-5 {
+    padding-right: 5em
+}
+
+.mt-minus-medium {
+    margin-top: -90px
+}
+.mt-minus-large {
+    margin-top: -120px
+}
+.mb-minus-xlarge {
+    margin-bottom: -180px
+}
+.mb-minus-large {
+    margin-bottom: -120px
+}
+
+@media(min-width:767px) {
+    .h-md-100vh {
+        min-height: 100vh
+    }
+    .p-md-0 {
+        padding: 0
+    }
+    .pt-md-xxlarge {
+        padding-top: 200px
+    }
+    .pt-md-large {
+        padding-top: 120px
+    }
+    .pt-md-medium {
+        padding-top: 90px
+    }
+    .pt-md-small {
+        padding-top: 60px
+    }
+    .pt-md-xsmall {
+        padding-top: 30px
+    }
+    .pb-md-xlarge {
+        padding-bottom: 150px
+    }
+    .pb-md-large {
+        padding-bottom: 120px
+    }
+    .pb-md-medium {
+        padding-bottom: 90px
+    }
+    .pb-md-small {
+        padding-bottom: 60px
+    }
+    .pb-md-xsmall {
+        padding-bottom: 30px
+    }
+    .pl-md-5 {
+        padding-left: 5em
+    }
+    .pr-md-5 {
+        padding-right: 5em
+    }
+    .pr-md-8 {
+        padding-right: 8em
+    }
+    .pr-md-10 {
+        padding-right: 10em
+    }
+    .w-md-75 {
+        width: 75%
+    }
+    .w-md-120 {
+        width: 120%
+    }
+    .w-md-200 {
+        width: 200%
+    }
+    .w-md-250 {
+        width: 250%
+    }
+}
+
+@media(min-width:1200px) {
+    .pl-xl-0 {
+        padding-left: 0
+    }
+    .pr-xl-5 {
+        padding-right: 5em
+    }
+    .pr-xl-10 {
+        padding-right: 10em
+    }
+}

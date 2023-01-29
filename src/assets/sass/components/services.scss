@@ -1,0 +1,33 @@
+.section-services {
+    overflow: hidden
+}
+
+@media(min-width:767px) {
+    .service-item {
+        position: relative
+    }
+    .section-services .service-item::before {
+        position: absolute;
+        content: "";
+        top: 0;
+        left: 8.32%;
+        right: 8.32%;
+        bottom: 100%;
+        background-color: rgb(15, 18, 21);
+        mix-blend-mode: difference;
+        transition: .6s cubic-bezier(.79,0,.07,.88);
+        z-index: 0
+    }
+    .section-services .service-item:hover::before {
+        top: 0;
+        bottom: 0
+    }
+    .section-services .service-number,
+    .section-services .service-arrow {
+        transition: .5s cubic-bezier(.79,0,.07,.88)
+    }
+    .section-services .service-item:hover .service-number,
+    .section-services .service-item:hover .service-arrow {
+        opacity: 0
+    }
+}

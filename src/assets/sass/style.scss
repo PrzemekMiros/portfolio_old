@@ -1,0 +1,20 @@
+
+@use 'base/grid.scss';
+@use 'base/colors.scss';
+@use 'base/global.scss';
+@use 'base/scroller.scss';
+@use 'base/transition.scss';
+@use 'base/spacings.scss';
+@use 'base/typography.scss';
+
+@use 'components/header.scss';
+@use 'components/hero.scss';
+@use 'components/parallax.scss';
+@use 'components/circle-text.scss';
+@use 'components/accordion.scss';
+@use 'components/services.scss';
+@use 'components/portfolio.scss';
+@use 'components/pagination.scss';
+@use 'components/footer.scss';
+
+@use 'syntax/prism-coldark-dark.scss';
