@@ -1,0 +1,20 @@
+backend:
+  name: git-gateway
+  branch: main
+media_folder: "src/assets/img"
+public_folder: "/assets/img"
+collections:
+  - name: "blog"
+    label: "Blog"
+    folder: "src/assets/blog"
+    create: true
+    slug: "---"
+    fields:
+      - { label: "title", name: "title", widget: "string" }
+      - { label: "date", name: "date", widget: "date", format: 'YYYY-MM-DD' }
+      - { label: "updated", name: "updated", widget: "date", format: 'YYYY-MM-DD', required: false}
+      - { label: "canonical", name: "canonical", widget: "string", required: false }
+      - { label: "publication", name: "publication", widget: "string", required: false }
+      - { label: "permalink", name: "permalink", widget: "string" }
+      - { label: "tags", name: "tags", widget: "list" }
+      - { label: "body", name: "body", widget: "markdown" }
