@@ -12,10 +12,7 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addWatchTarget("src/assets/sass");
 
     eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
-    eleventyConfig.addPlugin(syntaxHighlight, {
-      templateFormats: ["njk", "md"],
-      alwaysWrapLineHighlights: true
-      });
+    eleventyConfig.addPlugin(syntaxHighlight);
 
         // Date
         eleventyConfig.addFilter('dateDisplay', require('./src/filters/date-display.js'));
