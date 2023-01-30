@@ -5,6 +5,8 @@ backend:
 media_folder: "src/assets/img/"
 public_folder: "/assets/img/"
 
+publish_mode: editorial_workflow
+
 collections:
   - name: "posts"
     label: "Blog"
