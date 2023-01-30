@@ -1,8 +1,9 @@
 backend:
   name: git-gateway
   branch: main
-media_folder: "src/assets/img"
-public_folder: "/assets/img"
+  # Add the route to your images, so Netlify CMS knows where to save uploads to.
+media_folder: "src/assets/img/"
+public_folder: "/assets/img/"
 collections:
   - name: "posts"
     label: "Blog"
@@ -11,6 +12,18 @@ collections:
     slug: "---"
     fields:
       - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
+
+  - name: "works"
+    label: "Realizacje"
+    folder: "src/realizacje"
+    create: true
+    slug: "---"
+    fields:
+      - {label: "Layout", name: "layout", widget: "hidden", default: "case"}
       - {label: "Title", name: "title", widget: "string"}
       - {label: "Publish Date", name: "date", widget: "datetime"}
       - {label: "Featured Image", name: "thumbnail", widget: "image"}
