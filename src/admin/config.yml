@@ -6,7 +6,7 @@ public_folder: "/assets/img"
 collections:
   - name: "posts"
     label: "Blog"
-    folder: "src/assets/blog"
+    folder: "src/blog"
     create: true
     slug: "---"
     fields:
