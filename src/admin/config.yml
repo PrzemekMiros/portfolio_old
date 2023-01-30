@@ -4,17 +4,14 @@ backend:
 media_folder: "src/assets/img"
 public_folder: "/assets/img"
 collections:
-  - name: "blog"
+  - name: "posts"
     label: "Blog"
     folder: "src/assets/blog"
     create: true
     slug: "---"
     fields:
-      - { label: "title", name: "title", widget: "string" }
-      - { label: "date", name: "date", widget: "date", format: 'YYYY-MM-DD' }
-      - { label: "updated", name: "updated", widget: "date", format: 'YYYY-MM-DD', required: false}
-      - { label: "canonical", name: "canonical", widget: "string", required: false }
-      - { label: "publication", name: "publication", widget: "string", required: false }
-      - { label: "permalink", name: "permalink", widget: "string" }
-      - { label: "tags", name: "tags", widget: "list" }
-      - { label: "body", name: "body", widget: "markdown" }
+      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Title", name: "title", widget: "string"}
+      - {label: "Publish Date", name: "date", widget: "datetime"}
+      - {label: "Featured Image", name: "thumbnail", widget: "image"}
+      - {label: "Body", name: "body", widget: "markdown"}
