@@ -1,6 +1,6 @@
 const eleventyPluginFilesMinifier = require("@sherby/eleventy-plugin-files-minifier");
 const Image = require('@11ty/eleventy-img');
-const syntaxHighlight = require("@11ty/eleventy-plugin-syntaxhighlight");
+const codeStyleHooks = require("eleventy-plugin-code-style-hooks");
 
 module.exports = function(eleventyConfig) {
 
@@ -12,7 +12,6 @@ module.exports = function(eleventyConfig) {
     eleventyConfig.addWatchTarget("src/assets/sass");
 
     eleventyConfig.addPlugin(eleventyPluginFilesMinifier);
-    eleventyConfig.addPlugin(syntaxHighlight);
 
         // Date
         eleventyConfig.addFilter('dateDisplay', require('./src/filters/date-display.js'));
@@ -71,6 +70,23 @@ module.exports = function(eleventyConfig) {
     
         return `<div class="image-wrapper"><picture> ${source} ${img} </picture></div>`;
       });
+
+
+      // Code blocks
+      eleventyConfig.addPlugin(codeStyleHooks, {
+        colorPreviews: true,
+        defaultLanguage: 'js',
+        highlightSyntax: true,
+        languageLabels: true,
+        lineNumbers: true,
+        markdownTrimTrailingNewline: true,
+        prism: function(prism) {
+          prism.languages.example = {
+            tokenname: /\w+/i
+          }
+        },
+      });
+
 
     // Return your Object options:
     return {
