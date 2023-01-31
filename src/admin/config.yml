@@ -12,7 +12,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "post"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/post"}
       - {label: "Tytuł", name: "title", widget: "string"}
       - {label: "Data", name: "date", widget: "datetime"}
       - {label: "Obrazek", name: "thumbnail", widget: "image"}
@@ -24,7 +24,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - {label: "Layout", name: "layout", widget: "hidden", default: "case"}
+      - {label: "Layout", name: "layout", widget: "hidden", default: "layouts/case"}
       - {label: "Tytuł", name: "title", widget: "string"}
       - {label: "Data", name: "date", widget: "datetime"}
       - {label: "Mockup", name: "thumbnail", widget: "image"}
