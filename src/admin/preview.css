@@ -5,7 +5,7 @@ img {
 body {
     font-family: sans-serif;
 }
-.nc-code-block {
-    height: 500px; 
+.react-codemirror2 {
+    height: 400px; 
     overflow: scroll; 
   }
