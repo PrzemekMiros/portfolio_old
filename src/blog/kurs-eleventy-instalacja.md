@@ -17,6 +17,7 @@ Instalacja jest bardzo prosta, po pobraniu i uruchomieniu kreatora instalacji ws
 
 ```javascript
 node -v
+działaj ty kurwo!!!
 ```
 
 Lecimy dalej, teraz zainstaluj GIT'a. Skorzystaj z NPM (Menadżer pakietów node), wpisz komendę:
