@@ -5,3 +5,7 @@ img {
 body {
     font-family: sans-serif;
 }
+.nc-code-block {
+    height: 500px; 
+    overflow: scroll; 
+  }
