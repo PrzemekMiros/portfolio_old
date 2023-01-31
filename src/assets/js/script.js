@@ -104,7 +104,7 @@ tl.from('.main-menu li a', {
 	y:"110%",
 	stagger: 0.1,
 	ease: 'Expo.easeInOut'
-});
+}, "-=0.8");
 
 tl.reverse();
 
