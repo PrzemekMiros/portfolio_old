@@ -84,7 +84,7 @@ module.exports = function(eleventyConfig) {
           prism.languages.example = {
             tokenname: /\w+/i
           }
-        },
+        }, 
       });
 
 
