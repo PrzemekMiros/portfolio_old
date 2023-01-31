@@ -6,10 +6,7 @@ description: W miarę jak internet staje się coraz bardziej popularny w
 date: 2021-10-11T15:27:05.326Z
 author: Przemek Miros
 thumbnail: /assets/img/blog/blog-web-design.jpg
-color: violet
-tags:
-  - marketing
-  - design
+tags: ['strony www']
 ---
 
 W miarę jak internet staje się coraz bardziej popularny w dzisiejszym społeczeństwie, powszechne stało się korzystanie z niego w prawie każdym aspekcie naszego codziennego życia. Od zakupów, przez znajdowanie dobrej restauracji, wyszukiwanie produktów, a nawet szukanie odpowiedzi na codzienne pytania. Twoja obecność w sieci jest więc zdecydowanie priorytetem. Ale obecność to za mało - lepiej żeby dobrze wyglądała. Dlatego:

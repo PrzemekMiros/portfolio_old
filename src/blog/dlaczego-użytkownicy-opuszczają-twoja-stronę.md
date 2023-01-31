@@ -4,8 +4,7 @@ description: Design ma znaczenie. Jeśli więc Twoja witryna nadal wygląda na p
 date: 2022-02-09
 author: Przemek
 thumbnail: /assets/img/blog/blog-ugly-website.jpg
-tags: ['marketing', 'pozycjonowanie']
-color: blue
+tags: ['strony www']
 ---
 
 ## Twój design jest przestarzały

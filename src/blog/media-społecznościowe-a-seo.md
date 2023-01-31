@@ -4,8 +4,7 @@ description: Wobec coraz większej ilości danych i sposobów łączenia się, s
 date: 2022-11-19T22:33:50.159Z
 author: Przemek
 thumbnail: /assets/img/blog/blog-media-seo.jpg
-tags: ['marketing', 'pozycjonowanie', 'design']
-color: violet
+tags: ['pozycjonowanie']
 ---
 Fakty: Google obsługuje ponad 11 miliardów zapytań miesięcznie, a Facebook zbliża się do 700 milionów użytkowników. Na całym świecie jest ponad 5 miliardów abonentów telefonii komórkowej, a co dwa dni powstaje więcej informacji niż między początkiem cywilizacji a 2003 rokiem. Era komunikacji i cyfrowych relacji między markami, mediami i konsumentami zmieniła się szybciej i w sposób, w jaki niewiele osób mogło się zmienić.
 

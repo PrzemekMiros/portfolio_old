@@ -7,34 +7,73 @@ pagination:
 layout: layouts/blog.njk
 permalink: /blog/{{tag | slugify}}/
 eleventyComputed:
-    title: Wpisy oznaczone tagiem {{tag}}
+    title: Kategoria {{tag}}
 ---
-
+    
 <div class="row gx-0 pb-medium">
-    <div class="offset-md-1 col-md-9">
-        <h1 class="xl" data-splitting>
+    <div class="offset-md-1 col-md-10">
+        <h1 class="xxl" data-splitting>
             {{ tag }}
+            <span class="dot">.</span>
         </h1>
+        <div class="line-x lx-2"></div>
     </div>
 </div>
-
-    <div class="row gx-0">
-        {% for post in collections[tag] %}
-        <div class="offset-md-1 col-md-5 fadeIn">
-            <a href="{{ post.url }}">
-                <div class="archive-post pb-medium">
-                    <div class="parallax-wrap aspect_16-9">
-                        <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy"/>
-                    </div>
-                        <p class="archive-post-date mt-3 mb-1"> 
-                            <small>{{ post.data.date | dateDisplay}}</small>  <small>{{ post.data.tag }}</small>
+<div class="row gx-0">
+    <div class="offset-md-1 col-md-10">
+        <div class="row gx-4 pb-medium">
+            <div class="col-md-3">
+              <a href="/blog/wordpress/">
+              <div class="category-card fadeIn">
+                <h3 class="h4 my-1"> Wordpress </h3>
+                <small>Porady i ciekawostki na temat Wordpressa</small>
+              </div>
+            </a>
+            </div>
+            <div class="col-md-3">
+                <a href="/blog/strony-www/">
+              <div class="category-card fadeIn">
+                <h3 class="h4 my-1"> Strony www </h3>
+                <small>Porady i ciekawostki na temat Wordpressa</small>
+              </div>
+              </a>
+            </div>
+            <div class="col-md-3">
+                <a href="/blog/pozycjonowanie/">
+              <div class="category-card fadeIn">
+                <h3 class="h4 my-1"> Pozycjonowanie </h3>
+                <small>Porady i ciekawostki na temat Wordpressa</small>
+              </div>
+              </a>
+            </div>
+            <div class="col-md-3">
+                <a href="/blog/poradniki/">
+              <div class="category-card fadeIn">
+                <h3 class="h4 my-1"> Poradniki </h3>
+                <small>Porady i ciekawostki na temat Wordpressa</small>
+              </div>
+              </a>
+            </div>
+          </div>
+        <div class="row gx-4"> 
+            {% for post in collections[tag] %} 
+            <div class="col-md-6 fadeIn">
+                <a href="{{ post.url }}">
+                    <div class="archive-post pb-small">
+                        <div class="parallax-wrap aspect_16-9">
+                            <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy" />
+                        </div>
+                        <p class="archive-post-date mt-3 mb-1">
+                            <small>{{ post.data.date | dateDisplay}}</small>
+                            <small>{{ post.data.tag }}</small>
                         </p>
-                        <h2 class="archive-post-title h4 mt-0 mb-5">
+                        <h2 class="archive-post-title h4 mt-0">
                             {{ post.data.title }}
                         </h2>
-                </div>
-            </a>
+                    </div>
+                </a>
+            </div> 
+            {% endfor %} 
         </div>
-        {% endfor %}
     </div>
-    
+</div>
