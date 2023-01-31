@@ -4,7 +4,13 @@ backend:
 
 publish_mode: editorial_workflow
 
-site_url: https://przemekmiros.pl/
+locale: 'pl'
+
+show_preview_links: true
+
+site_url: https://przemekmiros.pl
+display_url: https://przemekmiros.pl
+logo_url: https://przemekmiros.pl/assets/img/logo/logo.svg
   
 media_folder: "src/assets/img/"
 public_folder: "/assets/img/"
