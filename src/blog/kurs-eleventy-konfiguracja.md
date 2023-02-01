@@ -3,7 +3,7 @@ title: Kurs Eleventy - Konfiguracja
 description: Mini kurs z generatora stron statycznych
 date: 2022-12-05T22:37:34.733Z
 author: Przemek Miros
-thumbnail: /assets/img/blog/blog-responsive.jpg
+thumbnail: /assets/img/blog/eleventy-kurs.jpg
 tags: ['poradniki']
 ---
 Zacznij od utworzenia pliku konfiguracyjnego, nazwij go .eleventy.js. W pliku będzie konfiguracja generatora oraz pluginów, zaczniemy od podania ścieżek - do katalogu z plikami źródłowymi i katalogu na pliki wyjściowe.
