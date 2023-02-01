@@ -25,7 +25,8 @@
 }
 
 .logo-wrap-inner {
-  position: absolute;
+  position: fixed;
+  top: 0;
   width: 100vw;
   height: 100vh;
   background-color: var(--color-light-1);
@@ -72,7 +73,7 @@
 }
 .menu-bg {
   display: flex;
-  position: absolute;
+  position: fixed;
   left: 0;
   top: 0;
   height: 100%;

@@ -1,10 +1,10 @@
 {% include "partials/header.njk" %}
 
-<section class="pt-xlarge pb-xlarge" data-scroll-section>
+<section class="pt-large pt-md-xlarge pb-xlarge" data-scroll-section>
     <div class="container">
 
         <div class="row">
-            <div class="offset-md-3 col-md-6">
+            <div class="offset-md-2 offset-lg-3 col-md-8 col-lg-6">
                     <div class="single-post-title-wrap">
                         <div class="breacrumbs fadeIn">
                             <a href="/" title="Strona glówna">
@@ -23,7 +23,7 @@
                                 {{ title }}
                             </span>
                         </div>
-                        <h1 class="xl single-post-title mt-5 mb-5" data-splitting>
+                        <h1 class="xl single-post-title mt-4 mb-4 mb-md-5" data-splitting>
                             {{ title }}
                         </h1>
                     </div>
@@ -31,7 +31,7 @@
         </div>
 
         <div class="row">
-            <div class="offset-md-1 col-md-10">
+            <div class="offset-lg-1 col-lg-10">
                     <div class="parallax-wrap aspect_16-9 fadeIn mb-5">
                         <img src="{{ imageMain | url }}" alt="{{ title }}" class="single-post-image img-fluid">
                     </div>
@@ -39,7 +39,7 @@
         </div>
 
         <div class="row fadeIn">
-            <div class="offset-md-3 col-md-6">
+            <div class="offset-md-2 offset-lg-3 col-md-8 col-lg-6">
                 {{ content | safe}}
             </div>
         </div>

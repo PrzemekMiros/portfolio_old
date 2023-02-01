@@ -113,8 +113,7 @@ body {
 
 @media(min-width:767px) {
   .works-grid .works-grid-item:nth-child(even) {
-    margin-top: -6em;
-    width: 33.3%
+    transform: translateY(6em)
   }
 }
 

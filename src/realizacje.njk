@@ -4,39 +4,99 @@ title: Realizacje
 description: Zobacz moje ostatnie realizacje stron, sklepów i serwisów internetowych
 ---
 
-<div class="row gx-0 pb-medium">
-  <div class="offset-md-1 col-md-10">
-      <h1 class="xxl" data-splitting>
-          {{ title }}<span class="dot">.</span>
-      </h1>
-      <div class="line-x lx-2"></div>
+<div class="row gx-4">
+  <div class="offset-md-1 col-md-8">
+    <h1 class="xxl" data-splitting>
+      {{ title }}
+      <span class="dot">.</span>
+    </h1>
+  </div>
+  <div class="col-md-2 d-none d-lg-flex align-items-end pb-small fadeIn">
+    <svg
+      width="107"
+      height="172"
+      viewBox="0 0 127 192"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M63.5 1L63.5 191"
+        stroke="var(--color-dark-1)"
+        stroke-width="2"
+        stroke-linecap="round"
+      />
+      <path
+        d="M126 128.5L63.5 191"
+        stroke="var(--color-dark-1)"
+        stroke-width="2"
+        stroke-linecap="round"
+      />
+      <path
+        d="M1 128.5L63.5 191"
+        stroke="var(--color-dark-1)"
+        stroke-width="2"
+        stroke-linecap="round"
+      />
+    </svg>
   </div>
 </div>
 
-<div class="row gx-0 works-grid pt-medium">
-    {% for post in collections.works %}
-    <div class="offset-md-1 col-md-5 works-grid-item fadeIn">
-        <a href="{{ post.url }}">
-            <div class="archive-post pb-medium">
-              <div class="parallax-wrap aspect_16-12">
-                <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy"/>
-              </div>
-              <p class="archive-post-date mt-5 mb-2"> 
-                <small>{{ post.data.category}}</small> 
-              </p>
-                <h2 class="archive-post-title h4 mt-0">
-                    {{ post.data.title }}
-                </h2>
-                <div class="line-x lx-1 lx-op"></div>
-                <a href="{{ post.data.link}}" class="link-arrow mt-4 mb-2"> 
-                    Zobacz online 
-                    <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
-                        <path d="M13 1L1 13" stroke="var(--color-dark-1)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
-                        <path d="M3 1H13V11" stroke="var(--color-dark-1)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>
-                    </svg>
-                </a>
+<div class="row gx-4 pb-medium">
+  <div class="offset-md-1 col-md-10">
+    <div class="line-x lx-2"></div>
+  </div>
+</div>
+
+<div class="row gx-0">
+  <div class="offset-md-1 col-md-10">
+    <div class="row gx-5 works-grid">
+      {% for post in collections.works %}
+      <div class="col-md-6 works-grid-item fadeIn">
+          <div class="archive-post pb-medium pb-md-large">
+            <a href="{{ post.url }}">
+            <div class="parallax-wrap aspect_16-12">
+              <img
+                src="{{ post.data.thumbnail }}"
+                alt="{{ post.data.title }}"
+                loading="lazy"
+              />
             </div>
-        </a>
+            <p class="archive-post-date mt-5 mb-2">
+              <small>{{ post.data.category }}</small>
+            </p>
+            <h2 class="archive-post-title h4 mt-0">
+              {{ post.data.title }}
+            </h2>
+            </a>
+            <div class="line-x lx-1 lx-op"></div>
+            <a href="{{ post.data.link }}" class="link-arrow mt-4 mb-2">
+              Zobacz online
+              <svg
+                width="14"
+                height="14"
+                viewBox="0 0 14 14"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M13 1L1 13"
+                  stroke="var(--color-dark-1)"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+                <path
+                  d="M3 1H13V11"
+                  stroke="var(--color-dark-1)"
+                  stroke-width="1"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                ></path>
+              </svg>
+            </a>
+          </div>
+      </div>
+      {% endfor %}
     </div>
-    {% endfor %}
+  </div>
 </div>

@@ -1,23 +1,36 @@
 ---
 layout: layouts/blog.njk
-title: Ciekawostki
+title: Artykuły
 description: Porady i ciekawostki dotyczące tworzenia stron, pozycjonowania i digital marketingu
 pagination: 
     data: collections.posts
-    size: 6
+    size: 8
     alias: blog
 ---
 
-  <div class="row gx-4 pb-medium">
-    <div class="offset-md-1 col-md-10">
+  <div class="row gx-4">
+    <div class="offset-md-1 col-md-8">
       <h1 class="xxl" data-splitting>
         {{ title }}
         <span class="dot">.</span>
       </h1>
+    </div>
+    <div class="col-md-2 d-none d-lg-flex align-items-end pb-small fadeIn">
+      <svg width="87" height="152" viewBox="0 0 127 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M63.5 1L63.5 191" stroke="var(--color-dark-1)" stroke-width="2" stroke-linecap="round"/>
+        <path d="M126 128.5L63.5 191" stroke="var(--color-dark-1)" stroke-width="2" stroke-linecap="round"/>
+        <path d="M1 128.5L63.5 191" stroke="var(--color-dark-1)" stroke-width="2" stroke-linecap="round"/>
+        </svg>            
+    </div>
+  </div>
+
+  <div class="row gx-4 pb-medium">
+    <div class="offset-md-1 col-md-10">
       <div class="line-x lx-2"></div>
     </div>
   </div>
-  <div class="row gx-4 pb-small">
+ 
+  <div class="row gx-4">
     <div class="offset-md-1 col-md-10">
       <div class="row gx-4 pb-medium">
         <div class="col-md-3">
@@ -32,7 +45,7 @@ pagination:
             <a href="/blog/strony-www/">
           <div class="category-card fadeIn">
             <h3 class="h4 my-1"> Strony www </h3>
-            <small>Porady i ciekawostki na temat Wordpressa</small>
+            <small>Informacje o budowie i funkcjonowaniu stron www</small>
           </div>
           </a>
         </div>
@@ -40,14 +53,14 @@ pagination:
             <a href="/blog/pozycjonowanie/">
           <div class="category-card fadeIn">
             <h3 class="h4 my-1"> Pozycjonowanie </h3>
-            <small>Porady i ciekawostki na temat Wordpressa</small>
+            <small>Sposoby na zwiększenie widoczności w wyszukiwarkach</small>
           </div>
           </a>
         </div>
         <div class="col-md-3">
             <a href="/blog/poradniki/">
           <div class="category-card fadeIn">
-            <h3 class="h4 my-1"> Poradniki </h3>
+            <h3 class="h4 my-1"> Marketing </h3>
             <small>Porady i ciekawostki na temat Wordpressa</small>
           </div>
           </a>
@@ -60,13 +73,38 @@ pagination:
               <div class="parallax-wrap aspect_16-9">
                 <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy" />
               </div>
-              <p class="archive-post-date mt-3 mb-1">
+              <p class="archive-post-date mt-4 mb-1">
                 <small>{{ post.data.date | dateDisplay}}</small>
-                <small>{{ post.data.tag }}</small>
               </p>
               <h2 class="archive-post-title h4 mt-0">
                 {{ post.data.title }}
               </h2>
+              <div class="line-x lx-1 lx-op"></div>
+              <a href="{{ post.data.link }}" class="link-arrow mt-4 mb-2">
+                Czytaj 
+                <svg
+                  width="14"
+                  height="14"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13 1L1 13"
+                    stroke="var(--color-dark-1)"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M3 1H13V11"
+                    stroke="var(--color-dark-1)"
+                    stroke-width="1"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </a>
             </div>
           </a>
       </div> 
