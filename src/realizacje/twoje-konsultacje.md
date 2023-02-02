@@ -1,5 +1,5 @@
 ---
-client: Konsultacje
+client: Twoje Konsultacje
 title: Platforma konsultingowa
 description: Platforma konsultingowa. Strona wykonana według projektu dostarczonego przez klienta, zakodowany dedykowany motyw pod Wordpressa. Rejestracja, komentowanie i sondy.
 date: 2022-02-20
@@ -9,7 +9,7 @@ imageMain: /assets/img/mockups/konsultacje-img.jpg
 imageMobile: /assets/img/mockups/konsultacje-mobile.jpg
 imageGridOne: /assets/img/mockups/konsultacje-1.jpg
 imageGridTwo: /assets/img/mockups/konsultacje-2.jpg
-category: ['pozycjonowanie']
+category: ['Strona internetowa']
 link: https://twojekonsultacje.pl/
 ---
 

@@ -65,7 +65,7 @@
                                                 Poprzedni:
                                             </small>
                                         </p>
-                                        <a href="{{ previousPost.url | url }}" title="{{ previousPost.data.client }}" class="h4">{{ previousPost.data.client }}</a>
+                                        <a href="{{ previousPost.url | url }}" title="{{ previousPost.data.client }}" class="h4">{{ previousPost.data.title }}</a>
                                     </li>
                                 {% endif %}
                                 {%- if nextPost %}
@@ -75,7 +75,7 @@
                                                 Kolejny:
                                             </small>
                                         </p>
-                                        <a href="{{ nextPost.url | url }}" title="{{ previousPost.data.client }}" class="h4">{{ nextPost.data.client }}</a>
+                                        <a href="{{ nextPost.url | url }}" title="{{ previousPost.data.client }}" class="h4">{{ nextPost.data.title }}</a>
                                     </li>
                                 {% endif %}
                             </ul> 
