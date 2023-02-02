@@ -1,24 +1,23 @@
 ---
 title: Zatrzymaj ludzi dłużej na stronie
-description: Jeśli Twoja witryna nadal jest pełna animowanych obrazów, nadmiarowych funkcji projektowych i innych nowoczesnych rozwiązań „nie, nie”, czas na przeprojektowanie.
+description: Jeśli Twoja witryna nadal jest pełna animowanych obrazów,
+  nadmiarowych funkcji projektowych i innych nowoczesnych rozwiązań „nie, nie”,
+  czas na przeprojektowanie.
 date: 2022-11-19T22:48:49.663Z
 author: Przemek
 thumbnail: /assets/img/blog/blog-site-long.jpg
-tags: ['pozycjonowanie']
+tags:
+  - pozycjonowanie
 ---
 Dowiedziałeś się, jakie problemy powodują, że klienci opuszczają witrynę Twojej firmy. Teraz skupiamy się na tym, jak utrzymać je dłużej w witrynie, aby zmaksymalizować prezentację i przekształcić ją w płacących i lojalnych klientów.
 
 ## Odśwież design
 
-Jeśli więc Twoja witryna nadal jest pełna animowanych obrazów, nadmiarowych funkcji projektowych i innych nowoczesnych rozwiązań „nie, nie”, czas na przeprojektowanie. Według Tony'ego Haile, dyrektora generalnego Chartbeat, masz tylko 15 sekund (lub mniej), aby przekonać nowych użytkowników, aby pozostali w mocy samego projektu witryny.
+Jeśli więc Twoja witryna nadal jest pełna animowanych obrazów, nadmiarowych funkcji projektowych i innych nowoczesnych rozwiązań „nie, nie”, czas na przeprojektowanie. Według badań masz tylko 15 sekund (lub mniej), aby przekonać nowych użytkowników, aby pozostali w mocy samego projektu witryny.
 
 ## Zmniejsz liczbę fontów
 
-Jedno wrażenie, które Twój gość zauważy w pierwszej minucie. Jeśli na swojej stronie głównej masz więcej niż dwa lub trzy, przytnij je, aby uzyskać bardziej nowoczesny wygląd.
-
-## Uaktualnij zdjęcia
-
-Zdjęcie uroczego kota niezaprzeczalnie jedno zdjęcie, któremu nikt nie może się oprzeć, ale nie zmieści się na każdej stronie Twojej witryny. Zrób zdjęcie powiązanego zdjęcia do swojej witryny za pomocą aparatu w telefonie lub aparatu cyfrowego, po prostu użyj narzędzi takich jak Canva, które ułatwiają dostosowywanie zdjęć, a wpływ może być znaczący.
+Jedno wrażenie, które Twój gość zauważy w pierwszej minucie. Jeśli na swojej stronie głównej masz więcej niż dwa lub trzy, zmniejsz ich liczbę do jednego - maksymalnie dwóch, aby uzyskać bardziej nowoczesny wygląd.
 
 ## Używaj pytań prowokujących do komentowania
 
