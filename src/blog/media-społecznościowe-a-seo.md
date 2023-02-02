@@ -1,18 +1,21 @@
 ---
 title: Media społecznościowe a SEO
-description: Wobec coraz większej ilości danych i sposobów łączenia się, specjaliści ds. PR i komunikacji mają nieodpartą pozycję do opanowania nowych zasad odkrywania, wykorzystywania i udostępniania informacji konsumentom
+description: Wobec coraz większej ilości danych i sposobów łączenia się,
+  specjaliści ds. PR i komunikacji mają nieodpartą pozycję do opanowania nowych
+  zasad odkrywania, wykorzystywania i udostępniania informacji konsumentom
 date: 2022-11-19T22:33:50.159Z
 author: Przemek
 thumbnail: /assets/img/blog/blog-media-seo.jpg
-tags: ['pozycjonowanie']
+tags:
+  - pozycjonowanie
 ---
-Fakty: Google obsługuje ponad 11 miliardów zapytań miesięcznie, a Facebook zbliża się do 700 milionów użytkowników. Na całym świecie jest ponad 5 miliardów abonentów telefonii komórkowej, a co dwa dni powstaje więcej informacji niż między początkiem cywilizacji a 2003 rokiem. Era komunikacji i cyfrowych relacji między markami, mediami i konsumentami zmieniła się szybciej i w sposób, w jaki niewiele osób mogło się zmienić.
+Fakty: Google obsługuje ponad 11 miliardów zapytań miesięcznie, a Facebook zbliża się do 800 milionów użytkowników. Na całym świecie jest ponad 5 miliardów abonentów telefonii komórkowej, a co dwa dni powstaje więcej informacji niż między początkiem cywilizacji a 2003 rokiem. Era komunikacji i cyfrowych relacji między markami, mediami i konsumentami zmieniła się szybciej i w sposób, w jaki niewiele osób mogło się zmienić.
 
 Wobec coraz większej ilości danych i sposobów łączenia się, specjaliści ds. PR i komunikacji mają nieodpartą pozycję do opanowania nowych zasad odkrywania, wykorzystywania i udostępniania informacji konsumentom. Ponieważ uczestnicy i twórcy treści znają się na wyszukiwarce i sieciach społecznościowych, specjaliści PR mogą bezpośrednio wpływać na widoczność marki w Internecie, zaangażowanie klientów i pozyskiwanie.
 
-Dużą częścią tego, w jaki sposób specjaliści ds. Public relations mogą wykazać większą wartość dla swoich wysiłków, jest zrozumienie, w jaki sposób skrzyżowanie wyszukiwania i mediów społecznościowych zapewnia potężne środki dotarcia do mediów i konsumentów oraz ich zaangażowania, które inspirują interakcje, udostępnianie i znaczące wyniki biznesowe.
+Dużą częścią tego, w jaki sposób specjaliści ds. Public relations mogą wykazać większą wartość dla swoich wysiłków, jest zrozumienie, w jaki sposób skrzyżowanie wyszukiwania i mediów społecznościowych zapewnia potężne środki dotarcia do konsumentów oraz ich zaangażowania, które inspirują interakcje, udostępnianie i znaczące wyniki biznesowe.
 
-Ale jak dokładnie wykorzystujesz te informacje? W jaki sposób upewnisz się, że Twoje wysiłki w mediach społecznościowych poprawią Twoją pozycję w wyszukiwarce? Oto kilka przydatnych strategii SEO, które możesz wykorzystać w mediach społecznościowych.
+Ale Ty jak wykorzystujesz te informacje? W jaki sposób upewniasz się, że Twoje wysiłki w mediach społecznościowych poprawią Twoją pozycję w wyszukiwarce? Oto kilka przydatnych strategii SEO, które możesz wykorzystać w mediach społecznościowych.
 
 ## Wykorzystaj w pełni metadane mediów społecznościowych
 
