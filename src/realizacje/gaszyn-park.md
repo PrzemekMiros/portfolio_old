@@ -13,7 +13,7 @@ category: ['Strona internetowa']
 link: https://gaszynpark.pl/
 ---
 
-## Centrum Rehabilitacji
+## Osiedle dla wymagających
 
 Strona internetowa dla kameralnego osiedla w zabudowie bliźniaczej i szeregowej. Html, css, js.
 

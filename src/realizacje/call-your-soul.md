@@ -1,7 +1,7 @@
 ---
 client: Call Your Soul
 title: Studio masażu i terapii
-description: profesjonalnym salonem oferującym bezinwazyjny Japoński, liftingujący masaż, sesje dźwiękowe przy użyciu mis, spotkania z coachami i psychologami. 
+description: Profesjonalny salonem oferujący bezinwazyjny Japoński, liftingujący masaż, sesje dźwiękowe przy użyciu mis, spotkania z coachami i psychologami. 
 date: 2022-02-20
 author: Przemek Miros
 thumbnail: /assets/img/mockups/soul-thumb.jpg
@@ -13,8 +13,8 @@ category: ['Strona internetowa']
 link: https://callyoursoul.pl/
 ---
 
-## Platforma konsultingowa
+## Studio masażu i terapii
 
-Platforma konsultingowa. Strona wykonana według projektu dostarczonego przez klienta, zakodowany dedykowany motyw pod Wordpressa. Rejestracja, komentowanie i sondy.
+Profesjonalny salonem oferujący bezinwazyjny Japoński, liftingujący masaż, sesje dźwiękowe przy użyciu mis, spotkania z coachami i psychologami. 
 
 <a href="https://callyoursoul.pl/" title="Zobacz online" target="_blank" class="button" rel="nofollow">Zobacz online</a>
