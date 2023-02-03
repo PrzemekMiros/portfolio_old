@@ -184,17 +184,17 @@ gsap.from(".logo", {
 });
 gsap.from(".logo-line-1", {
   height: 0,
-  duration: 1.5,
+  duration: 2.1,
   ease: Power3,
 });
 gsap.from(".logo-line-2", {
   height: 0,
-  duration: 1.3,
+  duration: 1.8,
   ease: Power3,
 });
 gsap.from(".logo-line-3", {
   height: 0,
-  duration: 1.8,
+  duration: 2.4,
   ease: Power3,
 });
 
