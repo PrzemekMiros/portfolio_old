@@ -64,7 +64,7 @@ color: var(--color-heading)
 
 h5, .h5 {
   margin-bottom: 1em;
-  font-size: 21px;
+  font-size: 19px;
   font-weight: 200;
   line-height: 1.4;
   color: var(--color-heading)
@@ -96,13 +96,18 @@ small {
   letter-spacing: 1px
 }
 
-strong {
-  font-weight: 700;
-  color: var(--color-dark-1);
+strong,
+blockquote p {
+  font-weight: 400;
+  color: var(--color-dark-2)
 }
 
 .capitalize {
   text-transform: capitalize
+}
+
+.uppercase {
+  text-transform: uppercase
 }
 
 .text-center {
@@ -182,11 +187,11 @@ strong {
 
   .splitting .word,
   .splitting .char {
-    display: inline-block;
+    display: inline-block
   }
   
   .splitting .char {
-    position: relative;
+    position: relative
   }
   /**
    * Populate the psuedo elements with the character to allow for expanded effects
@@ -201,19 +206,19 @@ strong {
     left: 0;
     visibility: hidden;
     transition: inherit;
-    user-select: none;
+    user-select: none
   }
   
   .splitting {
     --word-center: calc((var(--word-total) - 1) / 2);
     --char-center: calc((var(--char-total) - 1) / 2);
-    --line-center: calc((var(--line-total) - 1) / 2);
+    --line-center: calc((var(--line-total) - 1) / 2)
   }
   
   .splitting .word {
     --word-percent: calc(var(--word-index) / var(--word-total));
     --line-percent: calc(var(--line-index) / var(--line-total));
-    overflow: hidden;
+    overflow: hidden
   }
   
   .splitting .char {
@@ -221,8 +226,8 @@ strong {
     --char-offset: calc(var(--char-index) - var(--char-center));
     --distance: calc(
        (var(--char-offset) * var(--char-offset)) / var(--char-center)
-    );
+    )
     --distance-sine: calc(var(--char-offset) / var(--char-center));
-    --distance-percent: calc((var(--distance) / var(--char-center)));
+    --distance-percent: calc((var(--distance) / var(--char-center)))
   }
   

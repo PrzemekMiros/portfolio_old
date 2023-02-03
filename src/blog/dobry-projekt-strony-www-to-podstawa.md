@@ -3,7 +3,7 @@ title: Dobry projekt strony www to podstawa
 description: W miarę jak internet staje się coraz bardziej popularny w
   dzisiejszym społeczeństwie, powszechne stało się korzystanie z niego w prawie
   każdym aspekcie naszego codziennego życia.
-date: 2021-10-11T15:27:05.326Z
+date: 2023-01-11T15:27:05.326Z
 author: Przemek Miros
 thumbnail: /assets/img/blog/blog-web-design.jpg
 tags:

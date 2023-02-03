@@ -20,22 +20,29 @@
                                 <div class="parallax-wrap aspect_16-9">
                                     <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy" />
                                 </div>
-                                <p class="uppercase mb-2">
+                                <p class="capitalize mb-2">
                                      <small>
                                         {{ post.data.tags }}
                                      </small>
                                 </p>
                         </a>
                         <a href="{{ post.url }}" title="{{ post.data.title }}">
-                            <h2 class="archive-post-title h5 mt-0 mb-1">
+                            <h2 class="archive-post-title h5 mt-0 mb-3">
                                 {{ post.data.title }}
                             </h2>
                         </a>
-                        <p class="archive-post-desc mt-2 mb-0 d-none d-lg-block">
-                            <small>
-                                {{ post.data.description}}
-                            </small>
-                        </p>
+                        <div class="line-x lx-1 lx-op"></div>
+                        <a href="{{ post.data.link}}" title="Czytaj" target="_blank" rel="nofollow noopener"
+                            class="link-arrow mt-4 mb-2">
+                            Czytaj
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 1L1 13" stroke="var(--color-dark-1)" stroke-width="1"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M3 1H13V11" stroke="var(--color-dark-1)" stroke-width="1"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </a>
                     </div>
                 {% endfor %}
             </div>
