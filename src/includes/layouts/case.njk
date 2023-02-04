@@ -59,23 +59,29 @@
                         {%- if nextPost or previousPost %}
                             <ul class="d-flex flex-wrap fadeIn">
                                 {%- if previousPost %}
-                                    <li class="offset-md-1 col-md-5 prev d-none d-md-block">
+                                    <li class="hover-reveal-wrap offset-md-1 col-md-5 prev d-none d-md-block">
                                         <p class="mb-4">
                                             <small>
                                                 Poprzedni:
                                             </small>
                                         </p>
                                         <a href="{{ previousPost.url | url }}" title="{{ previousPost.data.client }}" class="h4">{{ previousPost.data.title }}</a>
+                                        <div class="hover-reveal">
+                                            <img src="{{ previousPost.data.thumbnail }}" class="hidden-img">                            
+                                        </div>
                                     </li>
                                 {% endif %}
                                 {%- if nextPost %}
-                                    <li class="offset-md-1 col-md-5 next">
+                                    <li class="hover-reveal-wrap offset-md-1 col-md-5 next">
                                         <p class="mb-4">
                                             <small>
                                                 Kolejny:
                                             </small>
                                         </p>
-                                        <a href="{{ nextPost.url | url }}" title="{{ previousPost.data.client }}" class="h4">{{ nextPost.data.title }}</a>
+                                        <a href="{{ nextPost.url | url }}" title="{{ nextPost.data.client }}" class="h4">{{ nextPost.data.title }}</a>
+                                        <div class="hover-reveal">
+                                            <img src="{{ nextPost.data.thumbnail }}" class="hidden-img">                            
+                                        </div>
                                     </li>
                                 {% endif %}
                             </ul> 

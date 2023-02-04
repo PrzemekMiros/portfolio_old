@@ -4,7 +4,7 @@
     <div class="container">
 
         <div class="row">
-            <div class="offset-md-3 col-md-6">
+            <div class="offset-md-2 offset-lg-3 col-md-8 col-lg-6">
                     <div class="single-post-title-wrap">
                         <div class="breacrumbs fadeIn">
                             <a href="/" title="Strona glówna">
@@ -13,7 +13,7 @@
                             <span>
                                 |
                             </span>
-                            <a href="/uslugi/" title="Usługi">
+                            <a href="/" title="Usługi">
                                 Usługi
                             </a>
                             <span>
@@ -23,7 +23,7 @@
                                 {{ title }}
                             </span>
                         </div>
-                        <h1 class="xl single-post-title mt-5 mb-5" data-splitting>
+                        <h1 class="xl single-post-title mt-4 mb-4 mb-md-5" data-splitting>
                             {{ title }}
                         </h1>
                     </div>
@@ -38,8 +38,15 @@
             </div>
         </div>
 
-        <div class="row fadeIn">
-            <div class="offset-md-3 col-md-6">
+        <div class="content row gx-5 fadeIn" id="pinShare">
+            <div class="offset-md-1 offset-lg-2 col-md-1 col-lg-1 d-none d-md-block">
+                <div class="pinned-progress" data-scroll data-scroll-sticky data-scroll-target="#pinShare">
+                    <div class="scrollprogress-wrap">             
+                        <div class="scrollprogress"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-8 col-lg-6">
                 {{ content | safe}}
             </div>
         </div>
@@ -54,32 +61,40 @@
             <div class="col-md-12">
                 <div class="post-navigation pt-small">
                     {%- if collections.services %}
-                        {%- set nextPost = collections.services | getNextCollectionItem(page) %}
-                        {%- set previousPost = collections.services | getPreviousCollectionItem(page) %}
-                        {%- if nextPost or previousPost %}
-                            <ul class="d-flex flex-wrap fadeIn">
-                                {%- if previousPost %}
-                                    <li class="offset-md-1 col-md-5 prev d-none d-md-block">
-                                        <p class="mb-4">
-                                            <small>
-                                                Poprzednia:
-                                            </small>
-                                        </p>
-                                        <a href="{{ previousPost.url | url }}" title="{{ previousPost.data.title }}" class="h4">{{ previousPost.data.title }}</a>
-                                    </li>
-                                {% endif %}
-                                {%- if nextPost %}
-                                    <li class="offset-md-1 col-md-5 next">
-                                        <p class="mb-4">
-                                            <small>
-                                                Kolejna:
-                                            </small>
-                                        </p>
-                                        <a href="{{ nextPost.url | url }}" title="{{ previousPost.data.title }}" class="h4">{{ nextPost.data.title }}</a>
-                                    </li>
-                                {% endif %}
-                            </ul>
-                        {%- endif %}
+                    {%- set nextPost = collections.services | getNextCollectionItem(page) %}
+                    {%- set previousPost = collections.services | getPreviousCollectionItem(page) %}
+                    {%- if nextPost or previousPost %}
+                    <ul class="d-flex flex-wrap fadeIn">
+                        {%- if previousPost %}
+                        <li class="hover-reveal-wrap offset-md-1 col-md-5 prev d-none d-md-block">
+                            <p class="mb-4">
+                                <small>
+                                    Kolejny:
+                                </small>
+                            </p>
+                            <a href="{{ previousPost.url | url }}" title="{{ previousPost.data.client }}"
+                                class="h3">{{ previousPost.data.title }}</a>
+                            <div class="hover-reveal">
+                                <img src="{{ previousPost.data.thumbnail }}" class="hidden-img">
+                            </div>
+                        </li>
+                        {% endif %}
+                        {%- if nextPost %}
+                        <li class="hover-reveal-wrap offset-md-1 col-md-5 next">
+                            <p class="mb-4">
+                                <small>
+                                    Kolejny:
+                                </small>
+                            </p>
+                            <a href="{{ nextPost.url | url }}" title="{{ nextPost.data.client }}"
+                                class="h3">{{ nextPost.data.title }}</a>
+                            <div class="hover-reveal">
+                                <img src="{{ nextPost.data.thumbnail }}" class="hidden-img">
+                            </div>
+                        </li>
+                        {% endif %}
+                    </ul>
+                    {%- endif %}
                     {%- endif %}
                 </div>
             </div>

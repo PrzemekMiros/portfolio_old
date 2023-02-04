@@ -119,7 +119,7 @@ body {
 
 .link-arrow {
   display: inline-block;
-  font-size: 20px;
+  font-size: 18px;
   font-weight: 300
 }
 .link-arrow svg {
@@ -180,4 +180,32 @@ body {
 }
 
 
+.scrollprogress-wrap {
+  height: 95vh;
+  width: 1px;
+  background: #9992
+}
 
+.scrollprogress {
+  position: fixed;
+  top: 0;
+  left: -1px;
+  -webkit-appearance: none;
+  appearance: none;
+  width: 2px;
+  height: 0;
+  border: none;
+  background: var(--color-dark-1);
+  opacity: .13
+}
+.scrollprogress::-webkit-progress-bar {
+  background: transparent;
+}
+.scrollprogress::-webkit-progress-value {
+  background: #222;
+  background-attachment: fixed;
+}
+.scrollprogress::-moz-progress-bar {
+  background: #222;
+  background-attachment: fixed;
+}

@@ -137,8 +137,9 @@ if (window.matchMedia("(min-width: 767px)").matches) {
   }
 
   // Loop text
+  if (document.querySelector(".loop-text")) {
   gsap.to(".loop-text", { xPercent: -50, ease: 'none', duration: 13, repeat: -1 })
-
+  }
   // Acordion
   let t = document.getElementsByClassName("accordion");
   for (let e = 0; e < t.length; e++) t[e].addEventListener("click", function () {
@@ -148,7 +149,47 @@ if (window.matchMedia("(min-width: 767px)").matches) {
       for (let a = 0; a < t.length; a++) t[a].classList.remove("open"), t[a].nextElementSibling.style.maxHeight = null;
       e.style.maxHeight = e.scrollHeight + "px", this.classList.toggle("open");
     }
-  })
+  });
+
+  if (document.querySelector(".hover-reveal-wrap")) {
+  // Cursor image
+  const link = document.querySelectorAll('.hover-reveal-wrap');
+  const linkHoverReveal = document.querySelectorAll('.hover-reveal');
+  const linkImages = document.querySelectorAll('.hidden-img');
+  
+  
+  for(let i = 0; i < link.length; i++) {
+    link[i].addEventListener('mousemove', (e) => {
+      linkHoverReveal[i].style.opacity = 1;
+      linkHoverReveal[i].style.transform = `translate(-95%, -45% )`;
+      
+      // linkHoverReveal[i].style.transform = `translate(-50%, -50% ) rotate(5deg)`;
+      
+      linkImages[i].style.transform = 'scale(1, 1)';
+      linkHoverReveal[i].style.left = e.clientX + "px";
+    })
+    
+    link[i].addEventListener('mouseleave', (e) => {
+      linkHoverReveal[i].style.opacity = 0;
+      linkHoverReveal[i].style.transform = `translate(-95%, -45%) rotate(-5deg)`;
+      linkImages[i].style.transform = 'scale(0.8, 0.8)';
+    })
+  }
+};
+
+
+gsap.to(".scrollprogress", {
+  height: "calc(100% - 40px)",
+  ease: 'none',
+  scrollTrigger: { 
+    scroller: ".scrollContainer",
+    trigger: ".content",
+    start: "top 40px",
+    end: "bottom 99%",
+    scrub: true,
+  }
+});
+
 
 }
 
