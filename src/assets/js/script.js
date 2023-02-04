@@ -141,6 +141,7 @@ if (window.matchMedia("(min-width: 767px)").matches) {
   gsap.to(".loop-text", { xPercent: -50, ease: 'none', duration: 13, repeat: -1 })
   }
   // Acordion
+  if (document.querySelector(".accordion")) {
   let t = document.getElementsByClassName("accordion");
   for (let e = 0; e < t.length; e++) t[e].addEventListener("click", function () {
     let e = this.nextElementSibling;
@@ -150,13 +151,13 @@ if (window.matchMedia("(min-width: 767px)").matches) {
       e.style.maxHeight = e.scrollHeight + "px", this.classList.toggle("open");
     }
   });
+  }
 
-  if (document.querySelector(".hover-reveal-wrap")) {
   // Cursor image
+  if (document.querySelector(".hover-reveal-wrap")) {
   const link = document.querySelectorAll('.hover-reveal-wrap');
   const linkHoverReveal = document.querySelectorAll('.hover-reveal');
   const linkImages = document.querySelectorAll('.hidden-img');
-  
   
   for(let i = 0; i < link.length; i++) {
     link[i].addEventListener('mousemove', (e) => {
@@ -177,18 +178,19 @@ if (window.matchMedia("(min-width: 767px)").matches) {
   }
 };
 
-
+if (document.querySelector(".scrollprogress")) {
 gsap.to(".scrollprogress", {
   height: "calc(100% - 40px)",
   ease: 'none',
   scrollTrigger: { 
     scroller: ".scrollContainer",
     trigger: ".content",
-    start: "top 40px",
+    start: "top 80px",
     end: "bottom 99%",
     scrub: true,
   }
 });
+}
 
 
 }

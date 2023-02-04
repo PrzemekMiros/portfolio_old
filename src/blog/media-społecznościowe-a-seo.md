@@ -9,13 +9,14 @@ thumbnail: /assets/img/blog/blog-media-seo.jpg
 tags:
   - pozycjonowanie
 ---
-Fakty: Google obsługuje ponad 11 miliardów zapytań miesięcznie, a Facebook zbliża się do 800 milionów użytkowników. Na całym świecie jest ponad 5 miliardów abonentów telefonii komórkowej, a co dwa dni powstaje więcej informacji niż między początkiem cywilizacji a 2003 rokiem. Era komunikacji i cyfrowych relacji między markami, mediami i konsumentami zmieniła się szybciej i w sposób, w jaki niewiele osób mogło się zmienić.
 
-Wobec coraz większej ilości danych i sposobów łączenia się, specjaliści ds. PR i komunikacji mają nieodpartą pozycję do opanowania nowych zasad odkrywania, wykorzystywania i udostępniania informacji konsumentom. Ponieważ uczestnicy i twórcy treści znają się na wyszukiwarce i sieciach społecznościowych, specjaliści PR mogą bezpośrednio wpływać na widoczność marki w Internecie, zaangażowanie klientów i pozyskiwanie.
+Google obsługuje ponad 11 miliardów zapytań miesięcznie, a Facebook zbliża się do 800 milionów użytkowników. Na całym świecie jest ponad 5 miliardów abonentów smartfonów, a co dwa dni powstaje więcej informacji niż między początkiem cywilizacji a 2003 rokiem. Era komunikacji i cyfrowych relacji między markami, mediami i konsumentami zmieniła się szybciej i w sposób, w jaki niewiele osób mogło się zmienić.
+
+**Wobec coraz większej ilości danych i sposobów łączenia się,** specjaliści ds. PR i komunikacji mają nieodpartą pozycję do opanowania nowych zasad odkrywania, wykorzystywania i udostępniania informacji konsumentom. Ponieważ uczestnicy i twórcy treści znają się na wyszukiwarce i sieciach społecznościowych, specjaliści PR mogą bezpośrednio wpływać na widoczność marki w Internecie, zaangażowanie klientów i pozyskiwanie.
 
 Dużą częścią tego, w jaki sposób specjaliści ds. Public relations mogą wykazać większą wartość dla swoich wysiłków, jest zrozumienie, w jaki sposób skrzyżowanie wyszukiwania i mediów społecznościowych zapewnia potężne środki dotarcia do konsumentów oraz ich zaangażowania, które inspirują interakcje, udostępnianie i znaczące wyniki biznesowe.
 
-Ale Ty jak wykorzystujesz te informacje? W jaki sposób upewniasz się, że Twoje wysiłki w mediach społecznościowych poprawią Twoją pozycję w wyszukiwarce? Oto kilka przydatnych strategii SEO, które możesz wykorzystać w mediach społecznościowych.
+**A Ty jak wykorzystujesz te informacje?** W jaki sposób upewniasz się, że Twoje wysiłki w mediach społecznościowych poprawią Twoją pozycję w wyszukiwarce? Oto kilka przydatnych strategii SEO, które możesz wykorzystać w mediach społecznościowych.
 
 ## Wykorzystaj w pełni metadane mediów społecznościowych
 
@@ -31,10 +32,12 @@ Z drugiej strony, powiedzmy, że masz 100 obserwujących, którzy są zaintereso
 
 ## Wykorzystaj w pełni słowa kluczowe
 
-Skuteczne używanie słów kluczowych w swoich postach pomaga zwiększyć widoczność tych postów. Może to skutkować większą liczbą kliknięć i wizyt na stronie. Jeśli zoptymalizujesz podpis i opis treści w mediach społecznościowych za pomocą popularnego słowa kluczowego, istnieje większe prawdopodobieństwo, że treść będzie się pojawiać, gdy użytkownicy przeprowadzają wyszukiwanie przy użyciu tego słowa kluczowego. Podobnie jak w przypadku treści strony, musisz dokładnie zbadać słowa kluczowe i znaleźć najtrafniejsze i najczęściej wyszukiwane słowa kluczowe, których możesz użyć w określonych postach.
+**Skuteczne używanie słów kluczowych w swoich postach pomaga zwiększyć widoczność tych postów.** Może to skutkować większą liczbą kliknięć i wizyt na stronie. Jeśli zoptymalizujesz podpis i opis treści w mediach społecznościowych za pomocą popularnego słowa kluczowego, istnieje większe prawdopodobieństwo, że treść będzie się pojawiać, gdy użytkownicy przeprowadzają wyszukiwanie przy użyciu tego słowa kluczowego. Podobnie jak w przypadku treści strony, musisz dokładnie zbadać słowa kluczowe i znaleźć najtrafniejsze i najczęściej wyszukiwane słowa kluczowe, których możesz użyć w określonych postach.
 
 ## Teraz coś dla sceptyków
 
-Sygnały społecznościowe - dane takie jak polubienia na Facebooku i obserwatorzy na Twitterze, które wskazują autorytet i wpływ profilu - nie wpływają na rankingi wyszukiwania. Ale nie należy tego postrzegać jako zaproszenie marketerów do odrzucenia wpływu mediów społecznościowych na SEO. Zamiast tego marketerzy powinni poszerzyć swoją koncepcję wyszukiwania i SEO, aby uwzględnić niezliczone sposoby, na jakie ludzie znajdują treści w Internecie. Muszą również pomyśleć o pozytywnych skutkach, jakie zwiększony ruch z serwisów społecznościowych może potencjalnie mieć dla ich rankingów wyszukiwania, a także o znaczeniu profili społecznościowych w wynikach wyszukiwania na pierwszej stronie.
+Sygnały społecznościowe - dane takie jak polubienia na Facebooku i obserwatorzy na Twitterze, które wskazują autorytet i wpływ profilu - nie wpływają na rankingi wyszukiwania. Ale nie należy tego postrzegać jako zaproszenie marketerów do odrzucenia wpływu mediów społecznościowych na SEO. 
 
-Ostatecznie w internecie chodzi o budowanie relacji, wspieranie odbiorców, wyrażanie tożsamości i dzielenie się pomysłami - jest z natury społecznościowy i nie ma powodu, aby najlepsze praktyki SEO były sprzeczne z zasadami, zwłaszcza że reguły rządzące SEO mają ostatecznie doprowadzić do powstania internet jest bardziej przyjemnym i użytecznym miejscem.
+Zamiast tego marketerzy powinni poszerzyć swoją koncepcję wyszukiwania i SEO, aby uwzględnić niezliczone sposoby, na jakie ludzie znajdują treści w Internecie. Muszą również pomyśleć o pozytywnych skutkach, jakie zwiększony ruch z serwisów społecznościowych może potencjalnie mieć dla ich rankingów wyszukiwania, a także o znaczeniu profili społecznościowych w wynikach wyszukiwania na pierwszej stronie.
+
+**Ostatecznie w internecie chodzi o budowanie relacji,** wspieranie odbiorców, wyrażanie tożsamości i dzielenie się pomysłami - jest z natury społecznościowy i nie ma powodu, aby najlepsze praktyki SEO były sprzeczne z zasadami, zwłaszcza że reguły rządzące SEO mają ostatecznie doprowadzić do powstania internet jest bardziej przyjemnym i użytecznym miejscem.
