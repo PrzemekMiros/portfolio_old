@@ -1,5 +1,9 @@
+.hover-reveal {
+    display: none
+}
 @media(min-width:768px) {
   .hover-reveal {
+    display: block;
       position: absolute;
       width: 400px;
       height: 280px;
@@ -20,6 +24,5 @@
       position: relative;
       transition: transform .4s ease-out
   }
-
   }
   
