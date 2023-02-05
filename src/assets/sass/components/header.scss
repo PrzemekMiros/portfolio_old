@@ -107,7 +107,7 @@
   opacity: .85;
 }
 .main-menu ul li a::before {
-  content: "0" counter(li) ".";
+  content: "0" counter(li);
   counter-increment: li;
   position: absolute;
   top: 0;

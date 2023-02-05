@@ -103,14 +103,14 @@ tl.from('.main-menu li a', {
 	y:"110%",
 	stagger: 0.1,
 	ease: 'Expo.easeInOut'
-}, "-=0.8");
+}, "-=0.6");
 
 tl.from('.nav-info', {
-	duration: 1.3,
+	duration: .8,
 	opacity: 0,
   y: 20,
-	ease: 'Expo.easeInOut'
-}, "-=1.2");
+  ease: Power3,
+}, "-=0.8");
 
 tl.from('.h-line-y', {
 	duration: 1,
