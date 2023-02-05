@@ -124,6 +124,17 @@ menuToggle.addEventListener('click', function(){
 	tl.reversed(!tl.reversed());
 });
 
+// Greeting
+if (document.querySelector("#greeting")) {
+  const greeting = document.getElementById("greeting");
+  const hour = new Date().getHours();
+  const welcomeTypes = ["Dzień dobry", "Dobry wieczór"];
+  let welcomeText = "";
+  if (hour < 18) welcomeText = welcomeTypes[0];
+  else welcomeText = welcomeTypes[1];
+  greeting.innerHTML = welcomeText;
+}
+
 // parallax 
 if (window.matchMedia("(min-width: 767px)").matches) {
     gsap.utils.toArray(".parallax-wrap").forEach(function(container) {
