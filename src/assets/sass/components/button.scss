@@ -1,0 +1,44 @@
+.button {
+    display: inline-block;
+    position: relative;
+    padding: .7em 0 .6em;
+}
+
+.button::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    bottom: 0;
+    right: -1em;
+    width: 2.65em;
+    border-radius: 21px;
+    background: var(--color-accent-1);
+    transition: 0.2s ease-in-out;
+    z-index: -1
+}
+
+.button span {
+    display: inline-block;
+    transition: .3s ease-in-out
+}
+
+.button svg {
+    margin-left: 25px;
+    stroke: #111;
+    transform: rotate(45deg);
+    transition: .3s ease-in-out
+}
+
+.button:hover::before {
+    width: calc(100% + 1em)
+}
+
+.button:hover span {
+    color: #111;
+    transform: translateX(20px)
+}
+
+.button:hover svg {
+    stroke: #111;
+    transform: rotate(360deg)
+}
