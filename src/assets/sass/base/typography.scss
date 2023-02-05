@@ -131,6 +131,13 @@ blockquote p {
   color: #ddd
 }
 
+.line-clamp-3 {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;  
+    overflow: hidden
+}
+
 @media(min-width:767px) {
   .xxl {
     font-size: 90px

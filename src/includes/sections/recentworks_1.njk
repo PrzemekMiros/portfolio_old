@@ -36,12 +36,12 @@
                                     {{ post.data.title }}
                                 </h2>
                             </a>
-                            <p class="archive-post-desc mt-4 mb-4 d-none d-lg-block"> 
-                                <small>
+                            <div class="d-none d-lg-block">
+                                <p class="line-clamp-3 mt-4 mb-4">
                                     {{ post.data.description}}
-                                </small>
-                            </p>
-                            <a href="{{ post.url }}" title="Zobacz więcej" class="link-arrow mt-4 mb-2"> 
+                                </p>
+                            </div>
+                            <a href="{{ post.url }}" title="Zobacz więcej" class="link-arrow mt-3 mb-2"> 
                                 Zobacz więcej
                                 <svg width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M13 1L1 13" stroke="var(--color-dark-1)" stroke-width="1" stroke-linecap="round" stroke-linejoin="round"></path>

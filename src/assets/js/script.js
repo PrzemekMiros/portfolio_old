@@ -106,7 +106,7 @@ tl.from('.main-menu li a', {
 }, "-=0.6");
 
 tl.from('.nav-info', {
-	duration: .8,
+	duration: .6,
 	opacity: 0,
   y: 20,
   ease: Power3,

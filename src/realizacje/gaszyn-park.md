@@ -1,5 +1,5 @@
 ---
-client: Gaszyn
+client: Gaszyn park
 title: Osiedle dla wymagających
 description: Strona internetowa dla kameralnego osiedla w zabudowie bliźniaczej i szeregowej. 
 date: 2020-11-20
