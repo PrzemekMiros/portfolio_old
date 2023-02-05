@@ -70,8 +70,10 @@ pagination:
         <div class="col-md-6 fadeIn">
           <a href="{{ post.url }}">
             <div class="archive-post pb-small">
+              <div class="portfolio-item">
               <div class="parallax-wrap aspect_16-9">
                 <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy" />
+              </div>
               </div>
               <p class="archive-post-date mt-4 mb-1">
                 <small>{{ post.data.date | dateDisplay}}</small>

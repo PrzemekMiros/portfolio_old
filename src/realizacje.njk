@@ -54,12 +54,14 @@ description: Zobacz moje ostatnie realizacje stron, sklepów i serwisów interne
       <div class="col-md-6 works-grid-item fadeIn">
           <div class="archive-post pb-medium pb-md-large">
             <a href="{{ post.url }}">
+            <div class="portfolio-item">
             <div class="parallax-wrap aspect_16-12">
               <img
                 src="{{ post.data.thumbnail }}"
                 alt="{{ post.data.title }}"
                 loading="lazy"
               />
+            </div>
             </div>
             <p class="archive-post-date mt-5 mb-2">
               <small>{{ post.data.category }}</small>

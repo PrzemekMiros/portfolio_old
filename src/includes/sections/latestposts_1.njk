@@ -11,15 +11,16 @@
             </div>
         </div>
         <div class="row pt-medium">
-        <div class="offset-md-1 col-md-10">
-            <div class="row gx-5">
-                {% for post in collections.posts.slice(0,3) %}
+            <div class="offset-md-1 col-md-10">
+                <div class="row gx-5">
+                    {% for post in collections.posts.slice(0,3) %}
                     <div class="col-md-4 fadeIn mb-5 mb-md-0">
                         <a href="{{ post.url }}" title="{{ post.data.title }}">
                             <div class="portfolio-item">
                                 <div class="parallax-wrap aspect_16-9">
                                     <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy" />
                                 </div>
+                            </div>
                         </a>
                         <p class="capitalize mb-2">
                             <small>
@@ -43,9 +44,9 @@
                             </svg>
                         </a>
                     </div>
-                {% endfor %}
+                    {% endfor %}
+                </div>
             </div>
-        </div>
         </div>
     </div>
 </section>

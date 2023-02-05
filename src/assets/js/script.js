@@ -92,10 +92,9 @@ tl.to('.fullpage-menu', {
 	ease: 'Expo.easeInOut',
 });
 
-tl.from('.menu-bg span', {
+tl.from('.menu-bg', {
 	duration: .8,
-	y: "100%",
-	stagger: 0.1,
+	opacity: 0,
 	ease: 'Expo.easeInOut'
 });
 
@@ -105,6 +104,18 @@ tl.from('.main-menu li a', {
 	stagger: 0.1,
 	ease: 'Expo.easeInOut'
 }, "-=0.8");
+
+tl.from('.nav-info', {
+	duration: 1.3,
+	opacity: 0,
+	ease: 'Expo.easeInOut'
+}, "-=1.2");
+
+tl.from('.h-line-y', {
+	duration: 1,
+	height: "0",
+	ease: 'Expo.easeInOut'
+}, "-=1.3");
 
 tl.reverse();
 
@@ -176,7 +187,7 @@ if (window.matchMedia("(min-width: 767px)").matches) {
       linkImages[i].style.transform = 'scale(0.8, 0.8)';
     })
   }
-};
+}; 
 
 if (document.querySelector(".scrollprogress")) {
 gsap.to(".scrollprogress", {

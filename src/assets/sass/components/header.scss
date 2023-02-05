@@ -1,9 +1,9 @@
 
 .site-header {
   position: fixed;
-  left: 0;
+  left: 0; 
   top: 0;
-  padding-top: 20px;
+  padding-top: 25px;
   width: 100vw;
   opacity: 0;
   animation: headerFade .1s forwards .2s;
@@ -66,11 +66,7 @@
   display: none;
   z-index: 99
 }
-.fullpage-menu-inner {
-  display: flex;
-  align-items: center;
-  height: 100%
-}
+
 .menu-bg {
   display: flex;
   position: fixed;
@@ -78,25 +74,8 @@
   top: 0;
   height: 100%;
   width: 100%;
+  background: #050505;
   z-index: 99
-}
-.menu-bg span {
-  position: relative;
-  width: 34%;
-  height: 100%;
-  background: #121417;
-  display: block;
-}
-
-.menu-bg span::before {
-  position: absolute;
-  content: "";
-  width: 10px;
-  height: 100%;
-  top: 0;
-  right: -5px;
-  background: #121417;
-  display: block;
 }
 
 .main-menu {
@@ -107,67 +86,66 @@
 .main-menu ul {
   padding-left: 0;
   list-style-type: none;
+  counter-reset: li
 }
+
 .main-menu li {
-  margin-bottom: 2em;
-  width: max-content;
+  margin-bottom: 2.8em;
+  width: 100%;
   overflow: hidden;
   transition: transform .3s ease-in-out 0s;
 }
 .main-menu li a {
-  font-size: 60px;
+  position: relative;
+  font-size: 48px;
   color: #fff;
   text-decoration: none;
   font-weight: 200;
   display: inline-block;
   line-height: 1;
+  opacity: .75;
 }
-.main-menu li:hover{
-  transform: translateX(.5em)
-}
-.header-nav-footer{
+.main-menu ul li a::before {
+  content: "0" counter(li) ".";
+  counter-increment: li;
   position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  display: flex;
-  justify-content: space-between;
-  padding: 40px 60px;
-  z-index: 999
+  top: 0;
+  right: -30px;
+  font-size: 30%;
+  opacity: .5
 }
-.social-links{
-  list-style-type: none;
-  display: flex;
-  align-items: center;
-  padding-left: 0;
-  width: 100%;
+.main-menu ul li a:hover {
+  opacity: 1
+} 
+
+.nav-info {
+  position: relative;
+  margin-top: -20px;
+  z-index: 99
 }
-.social-links li{
-  font-size: 18px;
-  color: #fff
+
+.nav-info-list {
+  margin-bottom: 35px
 }
-.social-links li + li{
-  margin-left: 16px;
+
+.nav-info-list li {
+  margin-bottom: .5em
 }
-.social-links li:last-child{
-  margin-left: auto;
+
+.nav-info-list li a {
+  font-size: 15px;
+  font-weight: 300
 }
-.social-links a{
-  color: #ffffff;
-  text-decoration: none;
+
+.nav-info-social svg {
+  margin-right: 5px
 }
 
 @media(max-width:767px) {
   .menu-toggle {
     margin-top: 0
   }  
-  .header-nav-footer{
-      padding: 30px 0;
-  }
   .main-menu li a {
       font-size: 35px;
-  }
-  .social-links li{
-      font-size: 16px;
   }
 }
