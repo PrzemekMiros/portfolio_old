@@ -6,7 +6,7 @@ description: W miarę jak internet staje się coraz bardziej popularny w
 date: 2023-01-11T15:27:05.326Z
 author: Przemek Miros
 thumbnail: /assets/img/blog/blog-web-design.jpg
-tags:
+tag:
   - strony www
 ---
 

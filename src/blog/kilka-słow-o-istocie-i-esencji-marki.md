@@ -6,7 +6,7 @@ description: Jeśli chodzi o branding firmy, posiadanie odpowiedniej marki jest
 date: 2021-11-19T22:37:00.000Z
 author: Przemek
 thumbnail: /assets/img/blog/blog-brand-essence.jpg
-tags:
+tag:
   - marketing
 ---
 

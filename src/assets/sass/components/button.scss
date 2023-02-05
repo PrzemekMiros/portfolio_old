@@ -29,16 +29,18 @@
     transition: .3s ease-in-out
 }
 
-.button:hover::before {
-    width: calc(100% + 1em)
-}
-
-.button:hover span {
-    color: #111;
-    transform: translateX(20px)
-}
-
-.button:hover svg {
-    stroke: #111;
-    transform: rotate(360deg)
+@media(min-width:767px) {
+    .button:hover::before {
+        width: calc(100% + 1em)
+    }
+    
+    .button:hover span {
+        color: #111;
+        transform: translateX(20px)
+    }
+    
+    .button:hover svg {
+        stroke: #111;
+        transform: rotate(360deg)
+    }
 }

@@ -6,7 +6,7 @@ description: Design ma znaczenie. Jeśli więc Twoja witryna nadal wygląda na
 date: 2022-02-09
 author: Przemek
 thumbnail: /assets/img/blog/blog-ugly-website.jpg
-tags:
+tag:
   - strony www
 ---
 ## Twój design jest przestarzały

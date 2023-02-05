@@ -1,5 +1,5 @@
 ---
-client: Business Woman
+client: Business Woman 
 title: Portal kobiet biznesu
 description: Serwis dla czasopisma Business Woman and Life. Indywidualny projekt graficzny i dedykowany motyw na Wordpressa. 
 date: 2022-11-15

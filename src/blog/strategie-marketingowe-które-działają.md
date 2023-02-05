@@ -6,7 +6,7 @@ description: Marketing internetowy może przyciągnąć więcej osób do Twojej
 date: 2020-07-19T22:30:56.973Z
 author: Przemek Miros
 thumbnail: /assets/img/blog/blog-marketing-strategy.jpg
-tags:
+tag:
   - marketing
 ---
 Czy w pełni wykorzystujesz możliwości marketingu online? Przy tak wielu potencjalnych kupujących aktywnie korzystających z wyszukiwarek, witryn internetowych, aplikacji i mediów społecznościowych w celu wyboru najlepszego produktu lub usługi, musisz być widoczny i zapewniać najlepsze doświadczenia, aby pomóc im wybrać swoją markę.
