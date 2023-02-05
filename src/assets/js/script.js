@@ -269,7 +269,7 @@ tlintro = gsap.timeline();
 
 if (window.matchMedia("(min-width: 767px)").matches) {
 tlintro.from(".logo-wrap", {
-  y: "28vh",
+  y: "25vh",
   x: "61%",
   width: "540%",
   delay: 2,
