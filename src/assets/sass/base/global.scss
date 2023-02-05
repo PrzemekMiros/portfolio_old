@@ -193,24 +193,23 @@ body {
 
 .scrollprogress-wrap {
   position: relative;
-  height: 95vh;
-  margin-bottom: 40px;
+  height: calc(100vh - 50px);
   width: 1px
 }
 
 .scrollprogress-wrap::before {
   position: absolute;
   content: "";
-  top: 0;
+  top: 25px;
   bottom: 40px;
   left: 0;
   width: 1px;
-  background: rgba(153, 153, 153, 0.3)
+  background: rgba(153, 153, 153, 0.2)
 }
 
 .scrollprogress {
   position: fixed;
-  top: 0;
+  top: 25px;
   left: 0;
   -webkit-appearance: none;
   appearance: none;

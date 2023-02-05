@@ -10,7 +10,12 @@
 }
 
 .footer-top {
-    padding: 160px 0 20px
+    padding: 160px 0 20px;
+    pointer-events: none
+}
+
+.footer-top .lets-talk {
+    font-weight: 300
 }
 
 .footer-bottom {

@@ -100,10 +100,11 @@
   font-size: 48px;
   color: #fff;
   text-decoration: none;
-  font-weight: 200;
+  font-weight: 300;
   display: inline-block;
   line-height: 1;
-  opacity: .75;
+  transition: opacity .2s ease-in-out;
+  opacity: .85;
 }
 .main-menu ul li a::before {
   content: "0" counter(li) ".";
@@ -120,12 +121,12 @@
 
 .nav-info {
   position: relative;
-  margin-top: -20px;
+  margin-top: -25px;
   z-index: 99
 }
 
 .nav-info-list {
-  margin-bottom: 35px
+  margin-bottom: 38px
 }
 
 .nav-info-list li {

@@ -108,6 +108,7 @@ tl.from('.main-menu li a', {
 tl.from('.nav-info', {
 	duration: 1.3,
 	opacity: 0,
+  y: 20,
 	ease: 'Expo.easeInOut'
 }, "-=1.2");
 
@@ -200,9 +201,10 @@ if (window.matchMedia("(min-width: 767px)").matches) {
   }
 }; 
 
+// Scroll progress
 if (document.querySelector(".scrollprogress")) {
 gsap.to(".scrollprogress", {
-  height: "calc(100% - 40px)",
+  height: "calc(100% - 65px)",
   ease: 'none',
   scrollTrigger: { 
     scroller: ".scrollContainer",
