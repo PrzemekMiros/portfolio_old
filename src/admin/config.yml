@@ -18,7 +18,7 @@ collections:
       - {label: "Tytuł", name: "title", widget: "string"}
       - {label: "Autor", name: "author", widget: "string"}
       - {label: "Data", name: "date", widget: "datetime"}
-      - {label: "Kategoria", name: "tag", widget: "string"}
+      - {label: "Kategoria", name: "tag", widget: "list"}
       - {label: "Obrazek", name: "thumbnail", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
 
@@ -35,6 +35,6 @@ collections:
       - {label: "Autor", name: "author", widget: "string"}
       - {label: "Data", name: "date", widget: "datetime"}
       - {label: "Mockup", name: "thumbnail", widget: "image"}
-      - {label: "Kategoria", name: "category", widget: "string"}
+      - {label: "Kategoria", name: "category", widget: "list"}
       - {label: "Link", name: "link", widget: "string"}
       - {label: "Body", name: "body", widget: "markdown"}
