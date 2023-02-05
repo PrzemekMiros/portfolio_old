@@ -52,7 +52,10 @@ body {
   }
 
   .post-navigation a {
-    display: inline-block
+    position: relative;
+    display: inline-block;
+    mix-blend-mode: exclusion;
+    z-index: 9
   }
 
   ul, li {

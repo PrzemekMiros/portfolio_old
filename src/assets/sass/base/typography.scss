@@ -80,7 +80,7 @@ p, .paragraph {
 
 blockquote {
   margin-left: 0;
-  padding-left: 3em;
+  padding-left: 2em;
   border-left: 3px solid var(--color-accent-1)
 }
 
@@ -168,6 +168,9 @@ blockquote p {
   }
   .text-md-end {
     text-align: end
+  }
+  blockquote {
+    padding-left: 3em
   }
 }
 
