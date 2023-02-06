@@ -19,7 +19,7 @@
 }
 
 .footer-bottom {
-    padding: 0 0 100px;
+    padding: 0 0 60px;
 }
 
 .footer-arrow {
@@ -28,6 +28,16 @@
 
 .footer-mail {
     font-size: 24px
+}
+
+.copywright span {
+    font-weight: 200;
+    opacity: .5
+}
+
+.copywright a {
+    font-weight: 300;
+    opacity: .8
 }
 
 @media(min-width:767px) {

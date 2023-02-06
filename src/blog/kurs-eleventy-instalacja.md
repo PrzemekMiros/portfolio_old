@@ -6,9 +6,9 @@ author: Przemek Miros
 thumbnail: /assets/img/blog/eleventy-kurs-instalacja.jpg
 tag: ['poradniki']
 ---
-Masz już dosyć Wordpressa? Mam dla Ciebie dobrą alternatywę - generator stron statycznych Eleventy. W tym mini kursie pokaże Ci jak zbudować ponadprzecięnie szybką witrynę w pełni zoptymalizowaną pod SEO, a do tego z CMS'em :)
+Nudzi Ci się Wordpress? Mam dla Ciebie dobrą alternatywę - generator stron statycznych Eleventy. W tym mini kursie pokaże Ci jak zbudować ponadprzecięnie szybką witrynę zoptymalizowaną pod SEO z CMS'em i na darmowym hostingu :)
 
-Musisz znać HTML, CSS, podstawy JavaScript i Gita. Jak widzisz to nie są duże wymagania, a nawet jeżeli jeszcze nie znasz Gita to z tym tutorialem nie będzie problemu, a przy okazji poznasz jego absolutne podstawy. Dobra, to do dzieła!
+Musisz znać HTML, CSS, podstawy JavaScript i Gita. Jak widzisz to nie są duże wymagania. Dobra, to do dzieła!
 
 Zaczniemy od przygotowania środowiska (Node.js) i instalacji GIT. Przejdź na stronę https://nodejs.org/en/ i zainstaluj ostatnią stabilna wersję, w momencie pisania tego samouczka mamy wersję 18.12.1.
 
@@ -63,7 +63,7 @@ Inicjujemy node'a poleceniem
 npm init -y
 ```
 
-W katalogu głównym utworzył się plik konfiguracyjny o nazwie package-lock.json z zależnościami, na ten moment ten plik nie będzie nam potrzebny więc go pomijamy.
+W katalogu głównym utworzył się plik konfiguracyjny o nazwie package-lock.json z zależnościami, na ten moment ten plik nie będzie nas interesował więc go pomijamy.
 
 Teraz instalujemy eleventy przez npm
 
@@ -73,4 +73,13 @@ npm install @11ty/eleventy --save-dev
 
 Jak już pewnie zauważeś że utworzył się kolejny plik o nazwie package.json
 
-Plik zawiera kofigurację projektu
+Plik zawiera kofigurację projektu, utworzymy w nim własne nazwy poleceń do podglądu i kompilacji plików do folderu "public" w katalogu głownym projektu. Zdefiniujmy polecenie "start" i "build"
+
+```javascript
+"scripts": {
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+```
+
+Będziemy korzystać z polecenia "npm start" żeby uruchomić podgląd strony

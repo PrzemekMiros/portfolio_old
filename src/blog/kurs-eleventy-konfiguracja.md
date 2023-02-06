@@ -43,3 +43,5 @@ Teraz możemy uruchomić podgląd strony komendą:
 ```javascript
 npm start
 ```
+
+W tym momencie eleventy skompiluje pliki do katalogu "public", możesz podejrzeć stronę pod adresem "localhost:8080"
