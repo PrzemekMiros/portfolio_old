@@ -3,9 +3,18 @@
   --font-secondary: "Poppins";
 }
 
-.xxl {
+.xxxl {
   margin-bottom: .5em;
   font-size: 56px;
+  font-weight: 300;
+  line-height: 1.22;
+  letter-spacing: 1px;
+  color: var(--color-heading)
+}
+
+.xxl {
+  margin-bottom: .5em;
+  font-size: 42px;
   font-weight: 300;
   line-height: 1.22;
   letter-spacing: 1px;
@@ -130,8 +139,11 @@ blockquote p {
 }
 
 @media(min-width:767px) {
-  .xxl {
+  .xxxl {
     font-size: 90px
+  }
+  .xxl {
+    font-size: 78px
   }
   .xl {
     font-size: 60px
