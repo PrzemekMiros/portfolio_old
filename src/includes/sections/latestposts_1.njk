@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row gx-0">
             <div class="offset-md-1 col-md-10">
-                <h2 class="h1 fadeIn">
+                <h2 class="xl fadeIn">
                     Ciekawostki i porady<span class="dot">.</span>
                 </h2>
                 <div class="pt-small">
@@ -24,16 +24,15 @@
                         </a>
                         <p class="capitalize mb-2">
                             <small>
-                                {{ post.data.tags }}
+                                {{ post.data.tag }}
                             </small>
                         </p>
                         <a href="{{ post.url }}" title="{{ post.data.title }}">
-                            <h2 class="archive-post-title h5 mt-0 mb-3">
+                            <h2 class="archive-post-title h5 mt-2 mb-3">
                                 {{ post.data.title }}
                             </h2>
                         </a>
-                        <div class="line-x lx-1 lx-op"></div>
-                        <a href="{{ post.url }}" title="Czytaj" class="link-arrow mt-4 mb-2">
+                        <a href="{{ post.url }}" title="Czytaj" class="link-arrow mt-3 mb-4">
                             Czytaj
                             <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
@@ -43,6 +42,7 @@
                                     stroke-linecap="round" stroke-linejoin="round"></path>
                             </svg>
                         </a>
+                        <div class="line-x lx-1 lx-op"></div>
                     </div>
                     {% endfor %}
                 </div>
