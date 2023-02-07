@@ -14,7 +14,7 @@
 
 .xxl {
   margin-bottom: .5em;
-  font-size: 42px;
+  font-size: 37px;
   font-weight: 300;
   line-height: 1.22;
   letter-spacing: 1px;
@@ -23,7 +23,7 @@
 
 .xl {
   margin-bottom: .5em;
-  font-size: 38px;
+  font-size: 37px;
   font-weight: 300;
   line-height: 1.22;
   letter-spacing: 1px;
@@ -40,7 +40,7 @@ h1, .h1 {
   
 h2, .h2 {
   margin-bottom: .8em;
-  font-size: 28px;
+  font-size: 27px;
   font-weight: 300;
   line-height: 1.3;
   color: var(--color-heading)
@@ -140,31 +140,31 @@ blockquote p {
 
 @media(min-width:767px) {
   .xxxl {
-    font-size: 90px
+    font-size: 68px
   }
   .xxl {
-    font-size: 78px
+    font-size: 57px
   }
   .xl {
-    font-size: 60px
+    font-size: 47px
   }
   h1, .h1 {
       font-size: 40px
   }
   h2, .h2 {
-    font-size: 34px
+    font-size: 33px
   }
   h3, .h3 {
-    font-size: 28px
+    font-size: 27px
   }
   h4, .h4 {
-  font-size: 24px
+    font-size: 23px
   }
   h5, .h5 {
-    font-size: 20px
+    font-size: 19px
   }
   p, .paragraph {
-    font-size: 18px
+    font-size: 17px
   }
   blockquote {
     padding-left: 3em
@@ -198,6 +198,9 @@ blockquote p {
   }
   h5, .h5 {
   font-size: 22px
+  }
+  p, .paragraph {
+    font-size: 18px
   }
 }
 
