@@ -6,7 +6,7 @@ description: Wobec coraz większej ilości danych i sposobów łączenia się,
 date: 2022-11-19T22:33:50.159Z
 author: Przemek
 thumbnail: /assets/img/blog/blog-media-seo.jpg
-tag:
+tags:
   - pozycjonowanie
 ---
 
