@@ -5,7 +5,7 @@ author: Przemek Miros
 date: 2023-02-11T18:38:00.211Z
 tags:
   - Strony www
-thumbnail: /assets/img/responsive.jpg
+thumbnail: /assets/img/strona-firmowa.jpg
 ---
 Posiadanie strony internetowej jest niezwykle ważne dla każdej firmy, bez względu na branżę i wielkość działalności. W erze cyfrowej, strona internetowa jest jednym z najważniejszych narzędzi do promocji i marketingu. Daje ona możliwość dotarcia do szerokiej grupy potencjalnych klientów oraz zwiększenia świadomości marki.
 
