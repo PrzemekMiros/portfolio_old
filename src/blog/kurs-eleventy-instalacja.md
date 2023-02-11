@@ -4,7 +4,7 @@ description: Kurs z generatora stron statycznych Eleventy
 date: 2022-12-06T19:43:40.029Z
 author: Przemek Miros
 thumbnail: /assets/img/blog/eleventy-kurs-instalacja.jpg
-tag: ['poradniki']
+tags: ['poradniki']
 ---
 Nudzi Ci się Wordpress? Mam dla Ciebie dobrą alternatywę - generator stron statycznych Eleventy. W tym mini kursie pokaże Ci jak zbudować ponadprzecięnie szybką witrynę zoptymalizowaną pod SEO z CMS'em i na darmowym hostingu :)
 
