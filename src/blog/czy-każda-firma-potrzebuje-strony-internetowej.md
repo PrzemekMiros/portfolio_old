@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Czy każda firma potrzebuje strony internetowej?
+title: Czy każda firma potrzebuje strony www?
 author: Przemek Miros
 date: 2023-02-11T18:38:00.211Z
 tags:
