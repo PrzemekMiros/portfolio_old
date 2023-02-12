@@ -1,10 +1,11 @@
 ---
 title: Jak wyświetlić na stronie własny typ postów?
 description: Jak wyświetlić na stronie własny typ postów w Wordpressie
-date: 2023-01-08T19:34:41.039Z
 author: Przemek Miros
+date: 2023-01-08T19:34:41.039Z
+tags:
+  - wordpress
 thumbnail: /assets/img/blog/wordpress-kurs-petla.jpg
-tags: ['wordpress']
 ---
 
 
