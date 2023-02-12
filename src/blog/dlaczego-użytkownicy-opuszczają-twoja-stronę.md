@@ -1,8 +1,6 @@
 ---
 title: Dlaczego użytkownicy opuszczają Twoja stronę?
-description: Design ma znaczenie. Jeśli więc Twoja witryna nadal wygląda na
-  pochodzącą z ery lat 90-tych, to zdecydowanie jest to idealny moment na
-  ulepszenie wyglądu witryn
+description: Design ma znaczenie. Jeśli więc Twoja witryna nadal wygląda na pochodzącą z ery lat 90-tych, to zdecydowanie jest to idealny moment na ulepszenie wyglądu witryn
 author: Przemek
 date: 2022-02-09
 tags:

@@ -1,13 +1,11 @@
 ---
 title: Kilka słow o istocie i esencji marki
-description: Jeśli chodzi o branding firmy, posiadanie odpowiedniej marki jest
-  najważniejszym aspektem postaci, której Twoja firma używa, aby stawić czoła
-  światu
+description: Jeśli chodzi o branding firmy, posiadanie odpowiedniej marki jest najważniejszym aspektem postaci, której Twoja firma używa, aby stawić czoła światu
 date: 2021-11-19T22:37:00.000Z
 author: Przemek
-thumbnail: /assets/img/blog/blog-brand-essence.jpg
 tags:
   - marketing
+thumbnail: /blog/img/blog-brand-essence.jpg
 ---
 
 Możesz zrozumieć związek między odnoszącymi sukcesy biznesami a silnym brandingiem, a branding to znacznie więcej niż tylko logo lub sposób, w jaki Twoja firma jest postrzegana na zewnątrz. Niewiele osób zdaje sobie sprawę, że firmy odnoszące sukcesy stawiają branding na pierwszym miejscu.

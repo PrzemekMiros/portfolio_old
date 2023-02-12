@@ -4,11 +4,11 @@ title: Wypożyczalnia namiotów
 description: Strona internetowa dla firmy zajmującej się wynajmem namiotów i obsługą imprez
 date: 2023-01-15
 author: Przemek
-thumbnail: /assets/img/mockups/namioty-thumb.jpg
-imageMain: /assets/img/mockups/namioty-img.jpg
-imageMobile: /assets/img/mockups/longscroll-mobile.jpg
-imageGridOne: /assets/img/mockups/longscroll-1.jpg
-imageGridTwo: /assets/img/mockups/longscroll-2.jpg
+thumbnail: /realizacje/img/namioty-thumb.jpg
+imageMain: /realizacje/img/namioty-img.jpg
+imageMobile: /realizacje/img/longscroll-mobile.jpg
+imageGridOne: /realizacje/img/longscroll-1.jpg
+imageGridTwo: /realizacje/img/longscroll-2.jpg
 category: ['Strona internetowa']
 link: https://imprezowe-namioty.pl/
 ---

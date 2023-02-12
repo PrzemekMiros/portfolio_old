@@ -1,8 +1,6 @@
 ---
 title: Dobry projekt strony www to podstawa
-description: W miarę jak internet staje się coraz bardziej popularny w
-  dzisiejszym społeczeństwie, powszechne stało się korzystanie z niego w prawie
-  każdym aspekcie naszego codziennego życia.
+description: W miarę jak internet staje się coraz bardziej popularny w dzisiejszym społeczeństwie, powszechne stało się korzystanie z niego w prawie każdym aspekcie naszego codziennego życia.
 author: Przemek Miros
 date: 2023-01-11T15:27:05.326Z
 tags:

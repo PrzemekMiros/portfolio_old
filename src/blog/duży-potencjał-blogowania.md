@@ -1,11 +1,9 @@
 ---
 title: Duży potencjał blogowania
-description: Nowa era zachęca do tworzenia treści generowanych przez
-  użytkowników w postaci tekstów, filmów i zdjęć wraz z komentarzami, tagami i
-  ocenami.
+description: Nowa era zachęca do tworzenia treści generowanych przez użytkowników w postaci tekstów, filmów i zdjęć wraz z komentarzami, tagami i ocenami.
 date: 2021-07-23T12:39:03.586Z
 author: Przemek Miros
-thumbnail: /assets/img/blog/blog.jpg
+thumbnail: /blog/img/blog.jpg
 tags:
   - strony www
 ---

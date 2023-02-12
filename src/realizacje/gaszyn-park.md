@@ -4,11 +4,11 @@ title: Osiedle dla wymagających
 description: Strona internetowa dla kameralnego osiedla w zabudowie bliźniaczej i szeregowej. 
 date: 2020-11-20
 author: Przemek Miros
-thumbnail: /assets/img/mockups/gaszyn-thumb.jpg
-imageMain: /assets/img/mockups/gaszyn-img.jpg
-imageMobile: /assets/img/mockups/gaszyn-mobile.jpg
-imageGridOne: /assets/img/mockups/gaszyn-1.jpg
-imageGridTwo: /assets/img/mockups/gaszyn-2.jpg
+thumbnail: /realizacje/img/gaszyn-thumb.jpg
+imageMain: /realizacje/img/gaszyn-img.jpg
+imageMobile: /realizacje/img/gaszyn-mobile.jpg
+imageGridOne: /realizacje/img/gaszyn-1.jpg
+imageGridTwo: /realizacje/img/gaszyn-2.jpg
 category: ['Strona internetowa']
 link: https://gaszynpark.pl/
 ---
