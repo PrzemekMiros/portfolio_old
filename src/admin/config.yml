@@ -2,8 +2,8 @@ backend:
   name: git-gateway
   branch: main
   
-media_folder: "src/assets/img/blog"
-public_folder: "/assets/img/blog"
+media_folder: "src/assets/img"
+public_folder: "/assets/img"
 
 publish_mode: editorial_workflow
 
@@ -19,7 +19,7 @@ collections:
       - {label: "Autor", name: "author", widget: "string"}
       - {label: "Data", name: "date", widget: "datetime"}
       - {label: "Kategoria", name: "tags", widget: "list"}
-      - {label: "Obrazek", name: "thumbnail", widget: "image", media_folder: "/assets/img/blog"}
+      - {label: "Obrazek", name: "thumbnail", widget: "image", media_folder: "src/assets/img/blog", public_folder: "/assets/img/blog"}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "works"
