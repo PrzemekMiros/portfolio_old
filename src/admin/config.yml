@@ -19,7 +19,7 @@ collections:
       - {label: "Autor", name: "author", widget: "string"}
       - {label: "Data", name: "date", widget: "datetime"}
       - {label: "Kategoria", name: "tags", widget: "list"}
-      - {label: "Obrazek", name: "thumbnail", widget: "image", media_folder: "/", public_folder: "/assets/img/blog/"}
+      - {label: "Obrazek", name: "thumbnail", widget: "image", media_folder: "blog", public_folder: "/assets/img/blog/"}
       - {label: "Body", name: "body", widget: "markdown"}
 
   - name: "works"
