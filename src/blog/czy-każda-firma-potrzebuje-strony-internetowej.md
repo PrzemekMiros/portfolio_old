@@ -1,6 +1,9 @@
 ---
 layout: layouts/post.njk
 title: Czy każda firma potrzebuje strony www?
+description: W dzisiejszym świecie, gdzie wszystko jest coraz bardziej
+  zdigitalizowane, strona internetowa jest jednym z najważniejszych elementów
+  sukcesu każdej firmy.
 author: Przemek Miros
 date: 2023-02-11T18:38:00.211Z
 tags:
