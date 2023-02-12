@@ -27,8 +27,8 @@ collections:
   - name: "works"
     label: "Realizacje"
     folder: "src/realizacje"
-    media_folder: "../src/assets/img/blog/"
-    public_folder: "../assets/img/"
+    media_folder: "./src/assets/img/blog/"
+    public_folder: "./assets/img/"
     create: true
     slug: "{{slug}}"
     fields:
