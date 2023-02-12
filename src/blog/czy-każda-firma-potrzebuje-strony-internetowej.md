@@ -5,7 +5,7 @@ author: Przemek Miros
 date: 2023-02-11T18:38:00.211Z
 tags:
   - strony www
-thumbnail: /assets/img/blog/strona-firmowa.jpg
+thumbnail: /blog/img/strona-firmowa.jpg
 ---
 W dzisiejszym świecie, gdzie wszystko jest coraz bardziej zdigitalizowane, **strona internetowa jest jednym z najważniejszych elementów sukcesu każdej firmy.** Niezależnie od branży, wielkości działalności czy lokalizacji, posiadanie profesjonalnej i atrakcyjnej strony internetowej jest kluczowe dla osiągnięcia sukcesu na rynku.
 
