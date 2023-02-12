@@ -11,8 +11,8 @@ collections:
   - name: "posts"
     label: "Blog"
     folder: "src/blog"
-    media_folder: "src/assets/img/blog"
-    public_folder: "/assets/img/blog/"
+    media_folder: ""
+    public_folder: ""
     create: true
     slug: "{{slug}}"
     fields:
