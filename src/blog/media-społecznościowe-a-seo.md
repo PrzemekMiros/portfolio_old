@@ -1,13 +1,14 @@
 ---
 title: Media społecznościowe a SEO
-description: Wobec coraz większej ilości danych i sposobów łączenia się, specjaliści ds. PR i komunikacji mają nieodpartą pozycję do opanowania nowych zasad odkrywania, wykorzystywania i udostępniania informacji konsumentom
-date: 2022-11-19T22:33:50.159Z
+description: Wobec coraz większej ilości danych i sposobów łączenia się,
+  specjaliści ds. PR i komunikacji mają nieodpartą pozycję do opanowania nowych
+  zasad odkrywania, wykorzystywania i udostępniania informacji konsumentom
 author: Przemek
+date: 2022-11-19T22:33:50.159Z
 tags:
   - pozycjonowanie
 thumbnail: /blog/img/blog-media-seo.jpg
 ---
-
 Google obsługuje ponad 11 miliardów zapytań miesięcznie, a Facebook zbliża się do 800 milionów użytkowników. Na całym świecie jest ponad 5 miliardów abonentów smartfonów, a co dwa dni powstaje więcej informacji niż między początkiem cywilizacji a 2003 rokiem. Era komunikacji i cyfrowych relacji między markami, mediami i konsumentami zmieniła się szybciej i w sposób, w jaki niewiele osób mogło się zmienić.
 
 **Wobec coraz większej ilości danych i sposobów łączenia się,** specjaliści ds. PR i komunikacji mają nieodpartą pozycję do opanowania nowych zasad odkrywania, wykorzystywania i udostępniania informacji konsumentom. Ponieważ uczestnicy i twórcy treści znają się na wyszukiwarce i sieciach społecznościowych, specjaliści PR mogą bezpośrednio wpływać na widoczność marki w Internecie, zaangażowanie klientów i pozyskiwanie.
@@ -16,7 +17,7 @@ Dużą częścią tego, w jaki sposób specjaliści ds. Public relations mogą w
 
 **A Ty jak wykorzystujesz te informacje?** W jaki sposób upewniasz się, że Twoje wysiłki w mediach społecznościowych poprawią Twoją pozycję w wyszukiwarce? Oto kilka przydatnych strategii SEO, które możesz wykorzystać w mediach społecznościowych.
 
-## Wykorzystaj w pełni metadane mediów społecznościowych
+## Wykorzystaj w pełni metadane 
 
 Uwzględnienie metadanych mediów społecznościowych w treściach pomaga zoptymalizować sposób, w jaki ludzie uzyskują podgląd Twojego linku na platformach mediów społecznościowych. Celem jest upewnienie się, że treść wygląda wystarczająco interesująco, aby ludzie mogli ją kliknąć, ponieważ przekłada się to na więcej odwiedzin strony, co jest dobre dla SEO.
 
