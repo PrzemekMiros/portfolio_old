@@ -7,7 +7,7 @@ description: Starannie skonstruowana kampania marketingowa może przynieść
 author: Przemek
 date: 2023-02-12T23:21:08.383Z
 tags:
-  - strony www
+  - marketing
 thumbnail: /blog/img/marketing-online.jpg
 ---
 Starannie skonstruowana kampania marketingowa może przynieść znaczne dochody ze sprzedaży, ale zanim zacznie działać jak dobrze naoliwiona maszyna, marketerzy muszą odpowiedzieć na szereg kluczowych pytań, które ostatecznie określą, w jaki sposób klienci klikają, udostępniają i kupują.
