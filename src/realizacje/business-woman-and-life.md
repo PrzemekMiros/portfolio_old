@@ -3,7 +3,7 @@ imageGridOne: /realizacje/img/longscroll-1.jpg
 author: Przemek
 imageGridTwo: /realizacje/img/longscroll-2.jpg
 client: Business Woman Life
-date: 2022-11-15
+date: 2023-02-03T20:19:43.571Z
 thumbnail: /realizacje/img/business-thumb.jpg
 imageMain: /realizacje/img/business-img.jpg
 title: Portal kobiet biznesu
