@@ -27,8 +27,8 @@ function animationMain() {
     
     gsap.from(reveal, {
       y: "100%",
-      duration: .6,
-      stagger: .03,
+      duration: .5,
+      stagger: .015,
       ease: Power3,
       scrollTrigger: {
         scroller: ".scrollContainer",
