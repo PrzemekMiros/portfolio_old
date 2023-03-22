@@ -290,7 +290,7 @@ if (window.matchMedia("(min-width: 767px)").matches) {
 tlintro.from(".logo-wrap", {
   y: "25vh",
   x: "24%",
-  width: "440%",
+  width: "530%",
   delay: 2,
   duration: 1
 });
