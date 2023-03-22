@@ -41,6 +41,6 @@ collections:
       - {label: "Data", name: "date", widget: "datetime"}
       - {label: "Kategoria", name: "category", widget: "list"}
       - {label: "Link", name: "link", widget: "string"}
-      - {label: "Mockup", name: "thumbnail", widget: "image"}
+      - {label: "Thumb", name: "thumbnail", widget: "image"}
       - {label: "Mockup", name: "imageMain", widget: "image"}
       - {label: "Body", name: "body", widget: "markdown"}
