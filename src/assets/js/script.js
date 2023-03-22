@@ -265,21 +265,40 @@ gsap.from(".logo-line-3", {
   ease: Power3,
 });
 
+gsap.from(".logo-text-line-1", {
+  opacity: 0,
+  duration: .8,
+  delay: 3.3,
+  ease: Power3,
+});
+gsap.from(".logo-text-line-2", {
+  opacity: 0,
+  duration: .8,
+  delay: 3.3,
+  ease: Power3,
+});
+gsap.from(".logo-text-line-3", {
+  opacity: 0,
+  duration: .8,
+  delay: 3.3,
+  ease: Power3,
+});
+
 tlintro = gsap.timeline();
 
 if (window.matchMedia("(min-width: 767px)").matches) {
 tlintro.from(".logo-wrap", {
   y: "25vh",
-  x: "61%",
-  width: "540%",
+  x: "24%",
+  width: "440%",
   delay: 2,
   duration: 1
 });
 } else {
   tlintro.from(".logo-wrap", {
     y: "28vh",
-    x: "13%",
-    width: "475%",
+    x: "8%",
+    width: "200%",
     delay: 2,
     duration: 1
   });

@@ -44,7 +44,6 @@
         url('/assets/fonts/poppins-v20-latin-ext_latin-200.ttf') format('truetype'),
         url('/assets/fonts/poppins-v20-latin-ext_latin-200.svg#Poppins') format('svg');
     }
-
     @font-face {
       font-family: 'Poppins';
       font-style: normal;
@@ -58,14 +57,12 @@
         url('/assets/fonts/poppins-v20-latin-ext_latin-300.ttf') format('truetype'),
         url('/assets/fonts/poppins-v20-latin-ext_latin-300.svg#Poppins') format('svg');
     }
-
     @font-face {
       font-family: 'Poppins';
       font-style: normal;
       font-weight: 400;
       font-display: swap;
       src: url('/assets/fonts/poppins-v20-latin-ext_latin-regular.eot');
-      /* IE9 Compat Modes */
       src: local(''),
         url('/assets/fonts/poppins-v20-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'),
         url('/assets/fonts/poppins-v20-latin-ext_latin-regular.woff2') format('woff2'),
@@ -73,47 +70,31 @@
         url('/assets/fonts/poppins-v20-latin-ext_latin-regular.ttf') format('truetype'),
         url('/assets/fonts/poppins-v20-latin-ext_latin-regular.svg#Poppins') format('svg');
     }
-
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'Spline Sans Mono';
   font-style: normal;
   font-weight: 400;
-  src: url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-regular.eot'); /* IE9 Compat Modes */
-  src: url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-regular.woff') format('woff'), /* Modern Browsers */
-       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-regular.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-regular.svg#SplineSansMono') format('svg'); /* Legacy iOS */
+  src: url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-regular.eot'); 
+  src: url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'), 
+       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-regular.woff2') format('woff2'), 
+       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-regular.woff') format('woff'), 
+       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-regular.ttf') format('truetype'), 
+       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-regular.svg#SplineSansMono') format('svg'); 
 }
-
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap; 
   font-family: 'Spline Sans Mono';
   font-style: normal;
   font-weight: 500;
-  src: url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-500.eot'); /* IE9 Compat Modes */
-  src: url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-500.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-500.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-500.woff') format('woff'), /* Modern Browsers */
-       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-500.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-500.svg#SplineSansMono') format('svg'); /* Legacy iOS */
+  src: url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-500.eot'); 
+  src: url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-500.eot?#iefix') format('embedded-opentype'), 
+       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-500.woff2') format('woff2'), 
+       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-500.woff') format('woff'), 
+       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-500.ttf') format('truetype'), 
+       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-500.svg#SplineSansMono') format('svg'); 
 }
-
-@font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
-  font-family: 'Spline Sans Mono';
-  font-style: normal;
-  font-weight: 600;
-  src: url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-600.eot'); /* IE9 Compat Modes */
-  src: url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-600.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
-       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-600.woff2') format('woff2'), /* Super Modern Browsers */
-       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-600.woff') format('woff'), /* Modern Browsers */
-       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-600.ttf') format('truetype'), /* Safari, Android, iOS */
-       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-600.svg#SplineSansMono') format('svg'); /* Legacy iOS */
-}
-
-  </style>
+</style>
 </head>
 
 <body class="page-{% if page.fileSlug %}{{ page.fileSlug }}{% else %}home{% endif %}">
@@ -123,10 +104,10 @@
     <header class="site-header">
       <div class="container" data-scroll-sticky data-scroll-target="#pinSection">
         <div class="row gx-0">
-          <div class="col-2 col-md-1">
+          <div class="col-11 col-md-4 col-xl-3">
             <div class="logo-wrap">
-              <a href="/" title="Logo">
-                <svg class="logo" width="568" height="273" viewBox="0 0 568 273" fill="none"
+              <a href="/" title="Logo" class="d-flex">
+                <svg class="logo" width="132" height="67" viewBox="0 0 568 273" fill="none"
                   xmlns="http://www.w3.org/2000/svg">
                   <g clip-path="url(#clip0_2675_2)">
                     <rect class="logo-line-1" x="92" y="-177" width="17" height="633" fill="black" />
@@ -201,10 +182,21 @@
                     </clipPath>
                   </defs>
                 </svg>
+                <div>
+                  <p class="logo-text-line-1 mt-0 mb-0">
+                    Przemek Miros
+                  </p>
+                  <p class="logo-text-line-2 mt-0 mb-0">
+                    PM@2023
+                  </p>
+                  <p class="logo-text-line-3 mt-0 mb-0">
+                    Strony internetowe
+                  </p>
+                </div>
               </a>
             </div>
           </div>
-          <div class="col-10 col-md-11 d-flex justify-content-end">
+          <div class="col-1 col-md-8 col-xl-9 d-flex justify-content-end">
             <button class="menu-toggle" id="menuToggle" aria-label="Otwórz menu">
               <svg class="hamburger" width="40" height="12" viewBox="0 0 40 12" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -223,7 +215,7 @@
           </div>
 
           <div class="row gx-0 w-100 h-100 align-items-center">
-            <div class="offset-md-2 col-md-4">
+            <div class="offset-md-1 col-md-5">
               <nav class="main-menu pt-md-small">
                 <ul class="main-menu-list">
                   <li>
