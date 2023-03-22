@@ -11,5 +11,6 @@ category:
   - Strona internetowa
 link: https://przychodniagrabow.pl/
 thumbnail: /realizacje/img/przychodnia-thumb.jpg
+imageMain: /realizacje/img/przychodnia.jpg
 ---
 Strona dla Przychodni Zdrowia. Indywidualny projekt graficzny. Technologia Jamstack (Eleventy.js i Netlify CMS). Animacje: GSAP, Locomotive Scroll, Swup.js
