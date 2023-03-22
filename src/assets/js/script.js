@@ -297,8 +297,8 @@ tlintro.from(".logo-wrap", {
 } else {
   tlintro.from(".logo-wrap", {
     y: "28vh",
-    x: "8%",
-    width: "200%",
+    x: "9%",
+    width: "220%",
     delay: 2,
     duration: 1
   });
