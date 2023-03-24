@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Dostosowanie strony internetowej do potrzeb osób niepełnosprawnych
+title: Dostosowanie strony do potrzeb osób niepełnosprawnych
 description: Dostosowanie strony internetowej do potrzeb osób niepełnosprawnych
   jest ważnym aspektem tworzenia stron internetowych. Jest to proces, który
   pozwala na zapewnienie dostępu do treści i funkcjonalności strony dla osób z
