@@ -23,15 +23,15 @@ Ulepszona reputacja firmy - Dostosowanie strony internetowej do potrzeb osób ni
 
 ## Jak dostosować stronę internetową do potrzeb osób niepełnosprawnych?
 
-Użyj odpowiedniego kodu - Dostosowanie strony internetowej do potrzeb osób niepełnosprawnych rozpoczyna się od odpowiedniego kodowania strony. Konieczne jest wykorzystanie semantycznego kodu HTML, który jest bardziej czytelny dla programów asystujących i umożliwia łatwiejsze dostosowanie strony do różnych rodzajów niepełnosprawności.
+Użyj odpowiedniego kodu - dostosowanie strony internetowej do potrzeb osób niepełnosprawnych rozpoczyna się od odpowiedniego kodowania strony. Konieczne jest wykorzystanie semantycznego kodu HTML, który jest bardziej czytelny dla programów asystujących i umożliwia łatwiejsze dostosowanie strony do różnych rodzajów niepełnosprawności.
 
-Dostosuj treść i układ strony - Dostosowanie strony internetowej do potrzeb osób niepełnosprawnych wymaga odpowiedniego dostosowania treści i układu strony. Konieczne jest zapewnienie klarowności i prostoty treści, tak aby była ona łatwo zrozumiała i dostępna dla osób z różnymi niepełnosprawnościami. Zwróć uwagę na rozmiar i kolor tekstu, kontrasty między tekstem a tłem oraz odstępy między elementami na stronie.
+Dostosuj treść i układ strony - wymaga odpowiedniego dostosowania treści i układu strony. Konieczne jest zapewnienie klarowności i prostoty treści, tak aby była ona łatwo zrozumiała i dostępna dla osób z różnymi niepełnosprawnościami. Zwróć uwagę na rozmiar i kolor tekstu, kontrasty między tekstem a tłem oraz odstępy między elementami na stronie.
 
-Zadbaj o alternatywne opisy grafik - Dostosowanie strony internetowej do potrzeb osób niewidomych lub słabowidzących wymaga zapewnienia alternatywnych opisów dla grafik i innych elementów wizualnych. Można to zrobić poprzez wykorzystanie atrybutu "alt" dla obrazów, opisującego zawartość obrazu dla osób korzystających z technologii asystujących, takich jak czytniki ekranowe.
+Zadbaj o alternatywne opisy grafik - wymaga zapewnienia alternatywnych opisów dla grafik i innych elementów wizualnych. Można to zrobić poprzez wykorzystanie atrybutu "alt" dla obrazów, opisującego zawartość obrazu dla osób korzystających z technologii asystujących, takich jak czytniki ekranowe.
 
-Zastosuj odpowiednie oznaczenia dla formularzy i przycisków - Dostosowanie formularzy i przycisków na stronie internetowej do potrzeb osób niewidomych lub słabowidzących wymaga stosowania odpowiednich oznaczeń. Można to zrobić poprzez zastosowanie atrybutów "label" dla etykiet pól formularza oraz "aria-label" dla przycisków i innych interaktywnych elementów strony.
+Zastosuj odpowiednie oznaczenia dla formularzy i przycisków - dostosowanie formularzy i przycisków na stronie internetowej do potrzeb osób niewidomych lub słabowidzących wymaga stosowania odpowiednich oznaczeń. Można to zrobić poprzez zastosowanie atrybutów "label" dla etykiet pól formularza oraz "aria-label" dla przycisków i innych interaktywnych elementów strony.
 
-Wykorzystaj technologie asystujące - Dostosowanie strony internetowej do potrzeb osób niepełnosprawnych wymaga uwzględnienia różnych technologii asystujących, takich jak czytniki ekranowe, klawiatury skanujące, powiększające lub wibracyjne urządzenia. Konieczne jest przetestowanie strony internetowej pod kątem różnych technologii asystujących, aby upewnić się, że jest ona w pełni dostępna dla osób z niepełnosprawnościami.
+Wykorzystaj technologie asystujące - trzeba uwzględnienić różne technologie asystujące, takie jak czytniki ekranowe, klawiatury skanujące, powiększające lub wibracyjne urządzenia. Konieczne jest przetestowanie strony internetowej pod kątem różnych technologii asystujących, aby upewnić się, że jest ona w pełni dostępna dla osób z niepełnosprawnościami.
 
 ## Podsumowanie
 
