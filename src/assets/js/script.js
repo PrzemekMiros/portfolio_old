@@ -255,19 +255,19 @@ gsap.from(".logo", {
 });
 gsap.from(".logo-line-1", {
   height: 0,
-  duration: 2.1,
+  duration: 1.8,
   delay: .5,
   ease: Power3,
 });
 gsap.from(".logo-line-2", {
   height: 0,
-  duration: 2,
+  duration: 1.6,
   delay: .4,
   ease: Power3,
 });
 gsap.from(".logo-line-3", {
   height: 0,
-  duration: 2.4,
+  duration: 2,
   delay: .3,
   ease: Power3,
 });

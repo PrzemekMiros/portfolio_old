@@ -48,7 +48,7 @@
 .logo-text-line-1,
 .logo-text-line-2,
 .logo-text-line-3 {
-  font-weight: 500;
+  font-weight: 300;
   line-height: 1.25;
   color: #fff
 }
@@ -67,10 +67,9 @@
 
 .logo-text-line-3 {
   font-size: 45%;
-  font-weight: 400;
   letter-spacing: 2.2px;
-  text-transform: uppercase;
-  color: var(--color-accent-1)
+  font-weight: 400;
+  text-transform: uppercase
 }
 
 .menu-toggle {
@@ -144,9 +143,9 @@
   top: 0;
   right: -30px;
   font-size: 30%;
-  font-weight: 500;
+  font-weight: 300;
   color: var(--color-accent-1);
-  opacity: .5
+  opacity: .8
 }
 .main-menu ul li a:hover {
   opacity: 1
@@ -197,5 +196,6 @@
   }
   .main-menu li a {
       font-size: 35px;
+      font-weight: 300
   }
 }
