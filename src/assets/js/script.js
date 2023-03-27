@@ -43,12 +43,12 @@ function animationMain() {
         gsap.from(fadeInItem, { 
           opacity: 0,
           y: 80,
-          duration: 1,
-          ease: Power3,
+          duration: 1.5,
+          ease: Power4,
           scrollTrigger: {
             scroller: ".scrollContainer",
             trigger: fadeInItem,
-            start: "top 90%",
+            start: "top 95%",
           }
     })
 });
