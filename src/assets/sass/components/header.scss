@@ -178,9 +178,17 @@
 .logo-text-line-1,
 .logo-text-line-2,
 .logo-text-line-3 {
-  line-height: 1.3;
+  line-height: 1.1;
 }
 }
+
+@media(min-width: 1400px) {
+  .logo-text-line-1,
+  .logo-text-line-2,
+  .logo-text-line-3 {
+    line-height: 1.3;
+  }
+  }
 
 @media(max-width:767px) {
   .menu-toggle {
