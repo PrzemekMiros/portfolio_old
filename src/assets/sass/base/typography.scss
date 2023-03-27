@@ -185,6 +185,33 @@ blockquote p {
 
 @media(min-width:1200px) {
   .xxxl {
+    font-size: 88px
+  }
+  .xxl {
+    font-size: 76px
+  }
+  .xl {
+    font-size: 66px
+  }
+  h1, .h1 {
+      font-size: 58px
+    }
+  h2, .h2 {
+    font-size: 46px
+  }
+  h3, .h3 {
+    font-size: 37px
+  } 
+  h4, .h4 {
+  font-size: 28px
+  }
+  h5, .h5 {
+  font-size: 22px
+  }
+}
+
+@media(min-width:1400px) {
+  .xxxl {
     font-size: 108px
   }
   .xxl {
