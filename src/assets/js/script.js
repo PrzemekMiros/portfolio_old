@@ -227,14 +227,13 @@ gsap.from(".scrollContainer", {
 });
 
 gsap.from(".site-header", {
-  "mix-blend-mode": "difference",
-  delay: 3,
+  delay: 3.5,
   duration: 1
-})
+});
 
 gsap.to(".logo-wrap-inner", {
   opacity: 0, 
-  delay: 3,
+  delay: 3.5,
   duration: 1,
 	ease: 'Expo.easeInOut'
 });
@@ -242,45 +241,53 @@ gsap.to(".logo-wrap-inner", {
 gsap.from(".menu-toggle", {
   autoAlpha: 0,
   opacity: 0,
-  delay: 3,
-})
+  delay: 3.5,
+});
+
+gsap.from(".logo-wrap a", {
+  pointerEvents: "none",
+  delay: 3.5,
+});
 
 gsap.from(".logo", {
-  "pointer-events": "none",
-  duration: 3,
+  pointerEvents: "none",
+  duration: 3.5,
 });
 gsap.from(".logo-line-1", {
   height: 0,
   duration: 2.1,
+  delay: .5,
   ease: Power3,
 });
 gsap.from(".logo-line-2", {
   height: 0,
-  duration: 1.8,
+  duration: 2,
+  delay: .4,
   ease: Power3,
 });
 gsap.from(".logo-line-3", {
   height: 0,
   duration: 2.4,
+  delay: .3,
   ease: Power3,
 });
 
 gsap.from(".logo-text-line-1", {
   opacity: 0,
-  duration: .8,
-  delay: 3.3,
+  duration: .7,
+  delay: 3.8,
   ease: Power3,
 });
 gsap.from(".logo-text-line-2", {
   opacity: 0,
-  duration: .8,
-  delay: 3.3,
+  duration: .7,
+  delay: 3.8,
   ease: Power3,
 });
 gsap.from(".logo-text-line-3", {
   opacity: 0,
-  duration: .8,
-  delay: 3.3,
+  duration: .7,
+  delay: 3.8,
   ease: Power3,
 });
 
@@ -291,7 +298,7 @@ tlintro.from(".logo-wrap", {
   y: "25vh",
   x: "22%",
   width: "520%",
-  delay: 2,
+  delay: 2.8,
   duration: 1
 });
 } else {
@@ -299,7 +306,7 @@ tlintro.from(".logo-wrap", {
     y: "28vh",
     x: "9%",
     width: "220%",
-    delay: 2,
+    delay: 2.8,
     duration: 1
   });
 }

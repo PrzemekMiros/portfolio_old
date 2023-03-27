@@ -68,8 +68,9 @@
 .logo-text-line-3 {
   font-size: 45%;
   font-weight: 400;
-  letter-spacing: 2.5px;
-  text-transform: uppercase
+  letter-spacing: 2.2px;
+  text-transform: uppercase;
+  color: var(--color-accent-1)
 }
 
 .menu-toggle {
@@ -130,7 +131,7 @@
   font-size: 48px;
   color: #fff;
   text-decoration: none;
-  font-weight: 300;
+  font-weight: 200;
   display: inline-block;
   line-height: 1.2;
   transition: opacity .2s ease-in-out;
@@ -143,6 +144,8 @@
   top: 0;
   right: -30px;
   font-size: 30%;
+  font-weight: 500;
+  color: var(--color-accent-1);
   opacity: .5
 }
 .main-menu ul li a:hover {

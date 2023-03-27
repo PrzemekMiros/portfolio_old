@@ -1,6 +1,6 @@
 ---
 title: Strony internetowe
-description: Atrakcyjne wizualnie i zoptymalizowane technicznie strony www. Skuteczne i intuicyjne dla użytkownika.
+description: Atrakcyjne wizualnie i zoptymalizowane technicznie strony www skupione na realizacji celów biznesowych.
 date: 2022-09-15
 thumbnail: /assets/img/services/strony.jpg
 ---
