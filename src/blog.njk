@@ -1,7 +1,7 @@
 ---
 layout: layouts/blog.njk
 title: Artykuły
-description: Porady i ciekawostki dotyczące tworzenia stron, pozycjonowania i digital marketingu
+description: Porady i ciekawostki dotyczące tworzenia stron, pozycjonowania i digital marketingu. 
 pagination: 
     data: collections.posts
     size: 10
@@ -33,7 +33,7 @@ pagination:
     <div class="offset-md-1 col-md-10">
       <div class="row gx-4 pb-medium">
         <div class="col-md-3">
-            <a href="/blog/strony-www/">
+            <a href="/blog/strony-www/" title="Strony www">
           <div class="category-card fadeIn">
             <h3 class="h5 my-1"> Strony www </h3>
             <small>Informacje o budowie i funkcjonowaniu stron www</small>
@@ -41,7 +41,7 @@ pagination:
           </a>
         </div>
         <div class="col-md-3">
-            <a href="/blog/pozycjonowanie/">
+            <a href="/blog/pozycjonowanie/" title="Pozycjonowanie">
           <div class="category-card fadeIn">
             <h3 class="h5 my-1"> Pozycjonowanie </h3>
             <small>Sposoby na zwiększenie widoczności w wyszukiwarkach</small>
@@ -49,7 +49,7 @@ pagination:
           </a>
         </div>
         <div class="col-md-3">
-            <a href="/blog/marketing/">
+            <a href="/blog/marketing/" title="Marketing">
           <div class="category-card fadeIn">
             <h3 class="h5 my-1"> Marketing </h3>
             <small>Porady i ciekawostki na temat Wordpressa</small>
@@ -57,7 +57,7 @@ pagination:
           </a>
         </div>
         <div class="col-md-3">
-          <a href="/blog/wordpress/">
+          <a href="/blog/wordpress/" title="Wordpress">
           <div class="category-card fadeIn">
             <h3 class="h5 my-1"> Wordpress </h3>
             <small>Porady i ciekawostki na temat Wordpressa</small>
@@ -67,7 +67,7 @@ pagination:
       </div>
       <div class="row gx-4"> {% for post in blog %} 
         <div class="col-md-6 fadeIn">
-          <a href="{{ post.url }}">
+          <a href="{{ post.url }}" title="{{ post.data.title }}">
             <div class="archive-post pb-small">
               <div class="portfolio-item">
               <div class="parallax-wrap aspect_16-9">
@@ -81,7 +81,7 @@ pagination:
                 {{ post.data.title }}
               </h2>
               <div class="line-x lx-1 lx-op"></div>
-              <a href="{{ post.url }}" class="link-arrow mt-4 mb-2">
+              <a href="{{ post.url }}" class="link-arrow mt-4 mb-2" title="Czytaj">
                 Czytaj 
                 <svg
                   width="14"
@@ -114,8 +114,9 @@ pagination:
       <div class="row gx-4">
         <div class="col-md-6">
           <nav>
-            <ul class="pagination d-flex fadeIn"> {%- for pageEntry in pagination.pages %} <li class="pagination-item">
-                <a class="pagination-link" href="{{ pagination.hrefs[ loop.index0 ] }}" {% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="active" {% endif %}>{{ loop.index }}</a>
+            <ul class="pagination d-flex fadeIn"> {%- for pageEntry in pagination.pages %} 
+              <li class="pagination-item">
+                <a class="pagination-link" title="Paginacja" href="{{ pagination.hrefs[ loop.index0 ] }}" {% if page.url == pagination.hrefs[ loop.index0 ] %} aria-current="active" {% endif %}>{{ loop.index }}</a>
               </li> {%- endfor %} </ul>
           </nav>
         </div>

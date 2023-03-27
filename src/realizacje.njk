@@ -1,7 +1,7 @@
 ---
 layout: layouts/works.njk
 title: Realizacje
-description: Zobacz moje ostatnie realizacje stron, sklepów i serwisów internetowych
+description: Zobacz wybrane realizacje stron, sklepów i serwisów internetowych. Postaw na specjalistyczne wsparcie i skutecznie rozwijaj swój biznes.
 ---
 
 <div class="row gx-4">
@@ -52,7 +52,7 @@ description: Zobacz moje ostatnie realizacje stron, sklepów i serwisów interne
       {% for post in collections.works %}
       <div class="col-md-6 works-grid-item fadeIn">
           <div class="archive-post pb-medium pb-md-large">
-            <a href="{{ post.url }}">
+            <a href="{{ post.url }}" title="{{ post.data.title }}">
             <div class="portfolio-item">
             <div class="parallax-wrap aspect_16-12">
               <img

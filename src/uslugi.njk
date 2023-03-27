@@ -15,7 +15,7 @@ description:
 
 {% set counter = 1 %}
 {% for post in collections.services %}
-<a href="{{ post.url }}">
+<a href="{{ post.url }}" title="{{ post.data.title }}">
     <div class="service-item">
         <div class="row gx-0 pt-large pb-medium fadeIn">
             <div class="offset-md-1 col-md-1">
