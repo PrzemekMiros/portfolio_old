@@ -13,8 +13,7 @@ eleventyComputed:
 <div class="row gx-4">
   <div class="offset-md-1 col-md-8">
     <h1 class="xxl capitalize-f" data-splitting>
-      {{ tag }}
-      <span class="dot">.</span>
+      {{ tag }}<span class="dot">.</span>
     </h1>
   </div>
   <div class="col-md-2 d-none d-lg-flex align-items-end pb-small fadeIn">
@@ -36,7 +35,7 @@ eleventyComputed:
     <div class="offset-md-1 col-md-10">
       <div class="row gx-4 pb-medium">
         <div class="col-md-3">
-            <a href="/blog/strony-www/">
+            <a href="/blog/strony-www/" title="Strony www">
           <div class="category-card fadeIn">
             <h3 class="h5 my-1"> Strony www </h3>
             <small>Informacje o budowie i funkcjonowaniu stron www</small>
@@ -44,7 +43,7 @@ eleventyComputed:
           </a>
         </div>
         <div class="col-md-3">
-            <a href="/blog/pozycjonowanie/">
+            <a href="/blog/pozycjonowanie/" title="Pozycjonowanie">
           <div class="category-card fadeIn">
             <h3 class="h5 my-1"> Pozycjonowanie </h3>
             <small>Sposoby na zwiększenie widoczności w wyszukiwarkach</small>
@@ -52,7 +51,7 @@ eleventyComputed:
           </a>
         </div>
         <div class="col-md-3">
-            <a href="/blog/marketing/">
+            <a href="/blog/marketing/" title="Marketing">
           <div class="category-card fadeIn">
             <h3 class="h5 my-1"> Marketing </h3>
             <small>Porady i ciekawostki na temat Wordpressa</small>
@@ -60,7 +59,7 @@ eleventyComputed:
           </a>
         </div>
         <div class="col-md-3">
-          <a href="/blog/wordpress/">
+          <a href="/blog/wordpress/" title="Wordpress">
           <div class="category-card fadeIn">
             <h3 class="h5 my-1"> Wordpress </h3>
             <small>Porady i ciekawostki na temat Wordpressa</small>
@@ -71,7 +70,7 @@ eleventyComputed:
         <div class="row gx-4"> 
             {% for post in collections[tag] %} 
             <div class="col-md-6 fadeIn">
-                <a href="{{ post.url }}">
+                <a href="{{ post.url }}" title="{{ post.data.title }}">
                     <div class="archive-post pb-small">
                         <div class="portfolio-item">
                         <div class="parallax-wrap aspect_16-9">

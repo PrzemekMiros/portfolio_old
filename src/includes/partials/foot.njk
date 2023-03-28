@@ -3,7 +3,6 @@
 <!-- Scripts -->
 <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/script.js"></script>
-
 <script>
   // Init locomotive
   const locoScroll = new LocomotiveScroll({
@@ -39,6 +38,35 @@
 <script>
   animationMain();
 </script>
-
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ProfessionalService",
+    "name": "Przemek Miros",
+    "image": "https://przemekmiros.pl/assets/img/opengraph.png",
+    "@id": "",
+    "url": "https://przemekmiros.pl",
+    "telephone": "+48 788 660 190",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Orzeszkowej 5",
+      "addressLocality": "Warka",
+      "postalCode": "05-660",
+      "addressCountry": "PL"
+    },
+    "openingHoursSpecification": {
+      "@type": "OpeningHoursSpecification",
+      "dayOfWeek": [
+        "Monday",
+        "Tuesday",
+        "Wednesday",
+        "Thursday",
+        "Friday"
+      ],
+      "opens": "08:00",
+      "closes": "17:00"
+    } 
+  }
+  </script>  
 </body>
 </html>

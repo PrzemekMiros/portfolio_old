@@ -1,6 +1,6 @@
 ---
 title: Sklepy internetowe
-description: Wyposażone w niezbędne narzędzia ułatwiające sprzedaż w internecie. Narzędzia analityczne, płatności online i zewnętrzne integracje.
+description: Wyposażone w niezbędne narzędzia ułatwiające sprzedaż w internecie. Narzędzia analityczne, płatności online i integracje.
 date: 2022-08-15
 thumbnail: /assets/img/services/sklepy.jpg
 ---

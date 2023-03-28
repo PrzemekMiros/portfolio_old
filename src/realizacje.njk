@@ -1,14 +1,13 @@
 ---
 layout: layouts/works.njk
 title: Realizacje
-description: Zobacz moje ostatnie realizacje stron, sklepów i serwisów internetowych
+description: Zobacz wybrane realizacje stron, sklepów i serwisów internetowych. Postaw na specjalistyczne wsparcie i skutecznie rozwijaj swój biznes.
 ---
 
 <div class="row gx-4">
   <div class="offset-md-1 col-md-8">
     <h1 class="xxl" data-splitting>
-      {{ title }}
-      <span class="dot">.</span>
+      {{ title }}<span class="dot">.</span>
     </h1>
   </div>
   <div class="col-md-2 d-none d-lg-flex align-items-end pb-small fadeIn">
@@ -22,19 +21,19 @@ description: Zobacz moje ostatnie realizacje stron, sklepów i serwisów interne
       <path
         d="M63.5 1L63.5 191"
         stroke="var(--color-dark-1)"
-        stroke-width="2"
+        stroke-width="3"
         stroke-linecap="round"
       />
       <path
         d="M126 128.5L63.5 191"
         stroke="var(--color-dark-1)"
-        stroke-width="2"
+        stroke-width="3"
         stroke-linecap="round"
       />
       <path
         d="M1 128.5L63.5 191"
         stroke="var(--color-dark-1)"
-        stroke-width="2"
+        stroke-width="3"
         stroke-linecap="round"
       />
     </svg>
@@ -53,7 +52,7 @@ description: Zobacz moje ostatnie realizacje stron, sklepów i serwisów interne
       {% for post in collections.works %}
       <div class="col-md-6 works-grid-item fadeIn">
           <div class="archive-post pb-medium pb-md-large">
-            <a href="{{ post.url }}">
+            <a href="{{ post.url }}" title="{{ post.data.title }}">
             <div class="portfolio-item">
             <div class="parallax-wrap aspect_16-12">
               <img

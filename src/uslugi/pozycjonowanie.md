@@ -1,6 +1,6 @@
 ---
 title: Pozycjonowanie w Google
-description: Analiza konkurencji i słów kluczowych. Pozyskiwanie linków zewnętrznych, planowanie treści i optymalizacja techniczna.
+description: Analiza konkurencji i słów kluczowych. Pozyskiwanie linków zewnętrznych, planowanie treści i optymalizacja.
 date: 2022-07-15
 thumbnail: /assets/img/services/pozycjonowanie.jpg
 ---

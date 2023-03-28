@@ -14,7 +14,7 @@
 <meta property="og:type" content="website">
 <meta property="og:title" content="{{ title }}">
 <meta property="og:description" content="{{ description }}">
-<meta property="og:image" content="/static/img/opengraph.png">
+<meta property="og:image" content="https://przemekmiros.pl/assets/img/opengraph.png">
 
 <!-- Twitter Meta Tags -->
 <meta name="twitter:card" content="summary_large_image">
@@ -22,7 +22,7 @@
 <meta property="twitter:url" content="https://przemekmiros.pl/">
 <meta name="twitter:title" content="{{ title }}">
 <meta name="twitter:description" content="{{ description }}">
-<meta name="twitter:image" content="/static/img/opengraph.png">
+<meta name="twitter:image" content="https://przemekmiros.pl/assets/img/opengraph.png">
   <link rel="icon" type="image/png" sizes="32x32" href="/assets/img/favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="/assets/img/favicon/favicon-16x16.png">
   <link rel="manifest" href="/assets/img/favicon/site.webmanifest">
@@ -44,7 +44,6 @@
         url('/assets/fonts/poppins-v20-latin-ext_latin-200.ttf') format('truetype'),
         url('/assets/fonts/poppins-v20-latin-ext_latin-200.svg#Poppins') format('svg');
     }
-
     @font-face {
       font-family: 'Poppins';
       font-style: normal;
@@ -58,14 +57,12 @@
         url('/assets/fonts/poppins-v20-latin-ext_latin-300.ttf') format('truetype'),
         url('/assets/fonts/poppins-v20-latin-ext_latin-300.svg#Poppins') format('svg');
     }
-
     @font-face {
       font-family: 'Poppins';
       font-style: normal;
       font-weight: 400;
       font-display: swap;
       src: url('/assets/fonts/poppins-v20-latin-ext_latin-regular.eot');
-      /* IE9 Compat Modes */
       src: local(''),
         url('/assets/fonts/poppins-v20-latin-ext_latin-regular.eot?#iefix') format('embedded-opentype'),
         url('/assets/fonts/poppins-v20-latin-ext_latin-regular.woff2') format('woff2'),
@@ -73,7 +70,33 @@
         url('/assets/fonts/poppins-v20-latin-ext_latin-regular.ttf') format('truetype'),
         url('/assets/fonts/poppins-v20-latin-ext_latin-regular.svg#Poppins') format('svg');
     }
-  </style>
+/*
+@font-face {
+  font-display: swap; 
+  font-family: 'Spline Sans Mono';
+  font-style: normal;
+  font-weight: 400;
+  src: url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-regular.eot'); 
+  src: url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-regular.eot?#iefix') format('embedded-opentype'), 
+       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-regular.woff2') format('woff2'), 
+       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-regular.woff') format('woff'), 
+       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-regular.ttf') format('truetype'), 
+       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-regular.svg#SplineSansMono') format('svg'); 
+}
+@font-face {
+  font-display: swap; 
+  font-family: 'Spline Sans Mono';
+  font-style: normal;
+  font-weight: 500;
+  src: url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-500.eot'); 
+  src: url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-500.eot?#iefix') format('embedded-opentype'), 
+       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-500.woff2') format('woff2'), 
+       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-500.woff') format('woff'), 
+       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-500.ttf') format('truetype'), 
+       url('/assets/fonts/spline-sans-mono-v4-latin_latin-ext-500.svg#SplineSansMono') format('svg'); 
+}
+*/
+</style>
 </head>
 
 <body class="page-{% if page.fileSlug %}{{ page.fileSlug }}{% else %}home{% endif %}">
@@ -83,88 +106,82 @@
     <header class="site-header">
       <div class="container" data-scroll-sticky data-scroll-target="#pinSection">
         <div class="row gx-0">
-          <div class="col-2 col-md-1">
+          <div class="col-11 col-md-4 col-xl-3">
             <div class="logo-wrap">
-              <a href="/" title="Logo">
-                <svg class="logo" width="568" height="273" viewBox="0 0 568 273" fill="none"
-                  xmlns="http://www.w3.org/2000/svg">
-                  <g clip-path="url(#clip0_2675_2)">
-                    <rect class="logo-line-1" x="92" y="-177" width="17" height="633" fill="black" />
-                    <rect class="logo-line-2" x="144" y="-177" width="12" height="633" fill="black" />
-                    <rect class="logo-line-3" x="116" y="-177" width="6" height="633" fill="black" />
-                    <rect class="logo-line-1" x="128" y="-177" width="9" height="633" fill="black" />
-                    <rect class="logo-line-2" width="8" height="632" transform="matrix(-1 0 0 1 196 -184)"
-                      fill="black" />
-                    <rect class="logo-line-3" width="7" height="632" transform="matrix(-1 0 0 1 167 -184)"
-                      fill="black" />
-                    <rect class="logo-line-1" x="-13" y="-182" width="17" height="633" fill="black" />
-                    <rect class="logo-line-2" x="35" y="-182" width="14" height="633" fill="black" />
-                    <rect class="logo-line-3" x="7" y="-182" width="8" height="633" fill="black" />
-                    <rect class="logo-line-1" x="21" y="-182" width="8" height="633" fill="black" />
-                    <rect class="logo-line-2" width="9" height="634" transform="matrix(-1 0 0 1 87 -189)"
-                      fill="black" />
-                    <rect class="logo-line-3" width="7" height="634" transform="matrix(-1 0 0 1 59 -189)"
-                      fill="black" />
-                    <rect class="logo-line-1" width="1" height="634" transform="matrix(-1 0 0 1 73 -189)"
-                      fill="black" />
-                    <rect class="logo-line-2" width="4" height="634" transform="matrix(-1 0 0 1 67 -189)"
-                      fill="black" />
-                    <rect class="logo-line-3" width="16" height="633" transform="matrix(-1 0 0 1 511 -177)"
-                      fill="black" />
-                    <rect class="logo-line-1" width="13" height="633" transform="matrix(-1 0 0 1 459 -177)"
-                      fill="black" />
-                    <rect class="logo-line-2" width="12" height="633" transform="matrix(-1 0 0 1 433 -181)"
-                      fill="black" />
-                    <rect class="logo-line-3" width="6" height="633" transform="matrix(-1 0 0 1 487 -177)"
-                      fill="black" />
-                    <rect class="logo-line-1" width="9" height="633" transform="matrix(-1 0 0 1 474 -177)"
-                      fill="black" />
-                    <rect class="logo-line-2" x="408" y="-184" width="8" height="632" fill="black" />
-                    <rect class="logo-line-3" x="436" y="-184" width="6" height="632" fill="black" />
-                    <rect class="logo-line-1" width="15" height="643" transform="matrix(-1 0 0 1 358 -182)"
-                      fill="black" />
-                    <rect class="logo-line-2" width="13" height="643" transform="matrix(-1 0 0 1 184 -186)"
-                      fill="black" />
-                    <rect class="logo-line-3" width="8" height="643" transform="matrix(-1 0 0 1 393 -182)"
-                      fill="black" />
-                    <rect class="logo-line-1" width="6" height="643" transform="matrix(-1 0 0 1 404 -182)"
-                      fill="black" />
-                    <rect class="logo-line-2" width="9" height="643" transform="matrix(-1 0 0 1 379 -182)"
-                      fill="black" />
-                    <rect class="logo-line-3" x="297" y="-189" width="10" height="645" fill="black" />
-                    <rect class="logo-line-1" x="331" y="-189" width="6" height="645" fill="black" />
-                    <rect class="logo-line-2" x="361" y="-189" width="6" height="645" fill="black" />
-                    <rect class="logo-line-3" x="311" y="-189" width="4" height="645" fill="black" />
-                    <rect class="logo-line-1" x="320" y="-189" width="5" height="645" fill="black" />
-                    <rect class="logo-line-2" width="14" height="632" transform="matrix(-1 0 0 1 255 -171)"
-                      fill="black" />
-                    <rect class="logo-line-3" width="6" height="632" transform="matrix(-1 0 0 1 281 -171)"
-                      fill="black" />
-                    <rect class="logo-line-1" width="7" height="632" transform="matrix(-1 0 0 1 292 -171)"
-                      fill="black" />
-                    <rect class="logo-line-2" width="9" height="632" transform="matrix(-1 0 0 1 269 -171)"
-                      fill="black" />
-                    <rect class="logo-line-3" x="201" y="-177" width="9" height="633" fill="black" />
-                    <rect class="logo-line-1" x="230" y="-177" width="7" height="633" fill="black" />
-                    <rect class="logo-line-2" x="215" y="-177" width="1" height="633" fill="black" />
-                    <rect class="logo-line-3" x="220" y="-177" width="5" height="633" fill="black" />
-                    <rect class="logo-line-1" width="12" height="633" transform="matrix(-1 0 0 1 569 -182)"
-                      fill="black" />
-                    <rect class="logo-line-2" x="518" y="-189" width="7" height="634" fill="black" />
-                    <rect class="logo-line-3" x="546" y="-189" width="6" height="634" fill="black" />
-                    <rect class="logo-line-1" x="530" y="-189" width="3" height="634" fill="black" />
-                    <rect class="logo-line-2" x="537" y="-189" width="4" height="634" fill="black" />
+              <a href="/" title="Logo" class="d-flex">
+                <svg class="logo" width="132" height="67" viewBox="0 0 563 271" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <g clip-path="url(#clip0_2783_2)">
+                  <rect class="logo-line-1" class="logo-line-1" x="105" width="6" height="271" fill="black"/>
+                  <rect class="logo-line-2" class="logo-line-1" x="174" width="12" height="271" fill="black"/>
+                  <rect class="logo-line-3" x="130" width="6" height="271" fill="black"/>
+                  <rect class="logo-line-1" x="114" width="12" height="271" fill="black"/>
+                  <rect class="logo-line-2" x="146" width="6" height="271" fill="black"/>
+                  <rect class="logo-line-3" width="9" height="271" transform="matrix(-1 0 0 1 199 0)" fill="black"/>
+                  <rect class="logo-line-1" width="7" height="271" fill="black"/>
+                  <rect class="logo-line-2" x="47" width="9" height="271" fill="black"/>
+                  <rect class="logo-line-3" x="10" width="3" height="271" fill="#333333"/>
+                  <rect class="logo-line-1" x="20" width="3" height="271" fill="#333333"/>
+                  <rect class="logo-line-2" x="35" width="8" height="271" fill="black"/>
+                  <rect class="logo-line-3" width="12" height="271" transform="matrix(-1 0 0 1 101 0)" fill="black"/>
+                  <rect class="logo-line-1" width="3" height="271" transform="matrix(-1 0 0 1 73 0)" fill="#333333"/>
+                  <rect class="logo-line-2" width="3" height="271" transform="matrix(-1 0 0 1 142 0)" fill="#333333"/>
+                  <rect class="logo-line-3" width="3" height="271" transform="matrix(-1 0 0 1 83 0)" fill="#333333"/>
+                  <rect class="logo-line-1" width="3" height="271" transform="matrix(-1 0 0 1 161 0)" fill="#333333"/>
+                  <rect class="logo-line-2" width="3" height="271" transform="matrix(-1 0 0 1 231 0)" fill="#333333"/>
+                  <rect class="logo-line-3" width="3" height="271" transform="matrix(-1 0 0 1 266 0)" fill="#333333"/>
+                  <rect class="logo-line-1" width="3" height="271" transform="matrix(-1 0 0 1 275 0)" fill="#333333"/>
+                  <rect class="logo-line-2" width="3" height="271" transform="matrix(-1 0 0 1 316 0)" fill="#333333"/>
+                  <rect class="logo-line-3" width="3" height="271" transform="matrix(-1 0 0 1 206 0)" fill="#333333"/>
+                  <rect class="logo-line-1" width="3" height="271" transform="matrix(-1 0 0 1 212 0)" fill="#333333"/>
+                  <rect class="logo-line-2" width="6" height="271" transform="matrix(-1 0 0 1 66 0)" fill="black"/>
+                  <rect class="logo-line-3" width="9" height="271" transform="matrix(-1 0 0 1 547 0)" fill="black"/>
+                  <rect class="logo-line-1" width="6" height="271" transform="matrix(-1 0 0 1 500 0)" fill="black"/>
+                  <rect class="logo-line-2" width="11" height="271" transform="matrix(-1 0 0 1 471 0)" fill="black"/>
+                  <rect class="logo-line-3" width="6" height="271" transform="matrix(-1 0 0 1 528 0)" fill="black"/>
+                  <rect class="logo-line-1" width="6" height="271" transform="matrix(-1 0 0 1 563 0)" fill="black"/>
+                  <rect class="logo-line-2" x="320" width="9" height="271" fill="black"/>
+                  <rect class="logo-line-3" x="332" width="6" height="271" fill="black"/>
+                  <rect class="logo-line-1" x="363" width="6" height="271" fill="black"/>
+                  <rect class="logo-line-2" x="402" width="12" height="271" fill="black"/>
+                  <rect class="logo-line-3" x="347" width="3" height="271" fill="#333333"/>
+                  <rect class="logo-line-1" x="373" width="3" height="271" fill="#333333"/>
+                  <rect class="logo-line-2" x="383" width="3" height="271" fill="#333333"/>
+                  <rect class="logo-line-3" x="392" width="3" height="271" fill="#333333"/>
+                  <rect class="logo-line-1" x="418" width="3" height="271" fill="#333333"/>
+                  <rect class="logo-line-2" x="446" width="3" height="271" fill="#222222"/>
+                  <rect class="logo-line-3" x="478" width="3" height="271" fill="#222222"/>
+                  <rect class="logo-line-1" x="487" width="3" height="271" fill="#222222"/>
+                  <rect class="logo-line-2" x="513" width="3" height="271" fill="#222222"/>
+                  <rect class="logo-line-3" x="551" width="3" height="271" fill="#222222"/>
+                  <rect class="logo-line-1" x="453" width="3" height="271" fill="#222222"/>
+                  <rect class="logo-line-2" x="216" width="5" height="271" fill="black"/>
+                  <rect class="logo-line-3" x="243" width="6" height="271" fill="black"/>
+                  <rect class="logo-line-1" width="11" height="271" transform="matrix(-1 0 0 1 441 0)" fill="black"/>
+                  <rect class="logo-line-2" width="6" height="271" transform="matrix(-1 0 0 1 307 0)" fill="black"/>
+                  <rect class="logo-line-3" width="6" height="271" transform="matrix(-1 0 0 1 284 0)" fill="black"/>
+                  <rect class="logo-line-1" width="6" height="271" transform="matrix(-1 0 0 1 294 0)" fill="black"/>
                   </g>
                   <defs>
-                    <clipPath id="clip0_2675_2">
-                      <rect width="568" height="273" fill="white" />
-                    </clipPath>
+                  <clipPath id="clip0_2783_2">
+                  <rect width="563" height="271" fill="white"/>
+                  </clipPath>
                   </defs>
                 </svg>
+                <div>
+                  <p class="logo-text-line-1 mt-0 mb-0">
+                    Przemek Miros
+                  </p>
+                  <p class="logo-text-line-2 mt-0 mb-0">
+                    PM@2023
+                  </p>
+                  <p class="logo-text-line-3 mt-0 mb-0">
+                    Frontend web dev
+                  </p>
+                </div>
               </a>
             </div>
           </div>
-          <div class="col-10 col-md-11 d-flex justify-content-end">
+          <div class="col-1 col-md-8 col-xl-9 d-flex justify-content-end">
             <button class="menu-toggle" id="menuToggle" aria-label="Otwórz menu">
               <svg class="hamburger" width="40" height="12" viewBox="0 0 40 12" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -201,24 +218,27 @@
                 </ul>
               </nav>
             </div>
-            <div class="col-md-2 d-none d-md-block h-100">
+            <div class="col-md-1 d-none d-md-block h-100">
               <div class="h-line-y mx-auto"></div>
             </div>
-            <div class="col-md-2 d-none d-md-block">
+            <div class="offset-md-1 col-md-3 col-lg-2 d-none d-md-block">
               <div class="nav-info pt-md-small">
+                <!--
                 <h4 class="h5 mt-0 color-heading" id="greeting"></h4>
+                -->
+                <h4 class="h5 mt-0 color-heading">Skontaktuj się</h4>
                 <p class="small color-text">
-                  Tworzę strony opartę na solidnych rozwiązaniach technologicznych.
+                  Masz pytania, potrzebujesz porady? Napisz do mnie lub zadzwoń.
                 </p>
                 <p class="small color-text">
                   Postaw na specjalistyczne wsparcie i skutecznie rozwijaj swój biznes.
                 </p>
                 <ul class="nav-info-list">
                   <li>
-                    <a href="tel:+48788660190" title="Zadzwoń" class="color-heading">+48 788 660 190</a>
+                    <a href="mailto:kontakt@futurewebstudio.pl" title="Wyślij wiadomość" class="color-heading">kontakt@futurewebstudio.pl</a>
                   </li>
                   <li>
-                    <a href="mailto:kontakt@futurewebstudio.pl" title="Wyślij wiadomość" class="color-heading">kontakt@futurewebstudio.pl</a>
+                    <a href="tel:+48788660190" title="Zadzwoń" class="color-heading">+48 788 660 190</a>
                   </li>
                 </ul>
                 <div class="nav-info-social">
@@ -257,4 +277,4 @@
 
         </div>
       </section>
-      <main class="main">
+      <main class="main pt-md-xsmall">
