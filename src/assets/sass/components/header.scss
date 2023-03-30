@@ -130,7 +130,7 @@
   font-size: 48px;
   color: #fff;
   text-decoration: none;
-  font-weight: 200;
+  font-weight: 300;
   display: inline-block;
   line-height: 1.2;
   transition: opacity .2s ease-in-out;
@@ -144,8 +144,8 @@
   right: -30px;
   font-size: 30%;
   font-weight: 300;
-  color: var(--color-accent-1);
-  opacity: .8
+  color: var(--color-light-1);
+  opacity: .6
 }
 .main-menu ul li a:hover {
   opacity: 1
