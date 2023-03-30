@@ -1,10 +1,10 @@
 ---
 layout: layouts/post.njk
-title: 20 pomysłów na własny biznes
+title: "20 pomysłów na własny biznes "
 description: Przygotowałem dla Ciebie listę 20 pomysłów na biznes, które mogą
   Cię zainspirować i pomóc w rozpoczęciu własnej działalności gospodarczej.
 author: Przemek Miros
-date: 2023-03-30T13:09:53.409Z
+date: 2023-03-20T14:09:53.409Z
 tags:
   - marketing
 thumbnail: /blog/img/business-idea.jpg
