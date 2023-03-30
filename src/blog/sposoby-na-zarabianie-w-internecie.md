@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Sposoby na zarabianie w internecie
+title: Poznaj sposoby na zarabianie w internecie
 description: W dzisiejszych czasach coraz więcej osób zastanawia się nad tym,
   jak zarabiać pieniądze w internecie. To naturalne, ponieważ internet oferuje
   wiele możliwości zarobkowych, nie wymagając jednocześnie specjalnych
