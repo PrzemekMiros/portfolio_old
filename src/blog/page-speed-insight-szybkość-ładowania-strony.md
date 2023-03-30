@@ -10,7 +10,7 @@ tags:
   - pozycjonowanie
 thumbnail: /blog/img/page-speed.png
 ---
-Page Speed Insight - szybkość ładowania strony. Jak wpływa na pozycjonowanie w Google?
+**Page Speed Insight - szybkość ładowania strony. Jak wpływa na pozycjonowanie w Google?**
 
 Czy wiesz, że szybkość ładowania strony jest jednym z kluczowych czynników wpływających na pozycjonowanie w Google? Im szybciej strona się ładuje, tym większa szansa na wysoką pozycję w wynikach wyszukiwania. W tym artykule opiszemy, co to jest Page Speed Insight i jak wpływa na szybkość ładowania strony oraz pozycjonowanie w Google.
 
