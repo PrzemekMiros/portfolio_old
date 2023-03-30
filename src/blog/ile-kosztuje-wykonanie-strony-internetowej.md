@@ -6,7 +6,7 @@ description: Tworzenie strony internetowej to proces, który wymaga sporo pracy 
   internetowej. W tym artykule omówimy, ile kosztuje wykonanie strony
   internetowej i jakie są czynniki wpływające na cenę.
 author: Przemek
-date: 2023-03-24T15:55:23.219Z
+date: 2023-03-08T15:55:23.219Z
 tags:
   - strony www
 thumbnail: /blog/img/wykonanie-strony.jpg
