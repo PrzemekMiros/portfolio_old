@@ -1,23 +1,16 @@
 .transition-fade {
-    transition: 0.35s ease-in;
+    transition: 0.5s;
     opacity: 1
   }
   
   html.is-animating .transition-fade {
+    transform: translateY(-100px);
     opacity: 0
   }
-  
+
   html.is-rendering .transition-fade {
+    transform: translateY(100px);
     opacity: 0
-  }
-
-  .transition-fade-out {
-    transition: 0.3s ease-in;
-    opacity: 1
-  }
-
-  html.is-animating .transition-fade-out {
-    opacity: 1
   }
 
 
