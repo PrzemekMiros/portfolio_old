@@ -35,6 +35,19 @@
   z-index: 9
 }
 
+.page-overlay-in {
+  display: none;
+  position: fixed;
+  left: 0%;
+  top: 0%;
+  right: 0%;
+  bottom: auto;
+  z-index: 99;
+  display: none;
+  height: 100vh;
+  background-color: var(--color-light-2)
+}
+
 .logo-wrap svg {
   margin-right: .8em;
   width: 32%;
@@ -62,7 +75,8 @@
 
 .logo-text-line-2 {
   font-size: 150%;
-  letter-spacing: -2px
+  font-weight: 500;
+  letter-spacing: -2.2px
 }
 
 .logo-text-line-3 {
