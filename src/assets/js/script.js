@@ -42,9 +42,9 @@ function animationMain() {
       fadeIn.forEach(fadeInItem => {
         gsap.from(fadeInItem, { 
           opacity: 0,
-          y: 80,
+          y: 30,
           duration: 1.5,
-          ease: Power4,
+          ease: Power3,
           scrollTrigger: {
             scroller: ".scrollContainer",
             trigger: fadeInItem,
