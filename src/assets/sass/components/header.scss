@@ -48,41 +48,14 @@
   background-color: var(--color-light-2)
 }
 
-.logo-wrap svg {
-  width: 115%;
+.logo-wrap a {
+  display: block;
+  width: 110%;
   height: auto
 }
 
 .logo rect {
   fill: #eee
-}
-
-.logo-text-line-1,
-.logo-text-line-2,
-.logo-text-line-3 {
-  font-weight: 300;
-  line-height: 1.25;
-  color: #fff
-}
-
-.logo-text-line-1 {
-  font-size: 65%;
-  line-height: 1;
-  letter-spacing: 2px;
-  text-transform: uppercase
-}
-
-.logo-text-line-2 {
-  font-size: 150%;
-  font-weight: 500;
-  letter-spacing: -2.2px
-}
-
-.logo-text-line-3 {
-  font-size: 45%;
-  letter-spacing: 2.2px;
-  font-weight: 400;
-  text-transform: uppercase
 }
 
 .menu-toggle {

@@ -50,3 +50,13 @@ html.has-scroll-smooth {
     cursor: -webkit-grabbing;
     cursor: grabbing 
   }
+
+  .progress-bar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 10px;
+    height: 0;
+    background: red;
+    z-index: 9999
+  }
