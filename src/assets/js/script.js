@@ -294,9 +294,9 @@ tlintro = gsap.timeline();
 
 if (window.matchMedia("(min-width: 767px)").matches) {
 tlintro.from(".logo-wrap", {
-  y: "25vh",
-  x: "22%",
-  width: "520%",
+  y: "28vh",
+  x: "33%",
+  width: "320%",
   delay: 2.8,
   duration: 1
 });
