@@ -27,8 +27,8 @@ function animationMain() {
     
     gsap.from(reveal, {
       y: "100%",
-      duration: .5,
-      ease: Power3,
+      duration: 1,
+      ease: Expo. easeOut,
       scrollTrigger: {
         scroller: ".scrollContainer",
         trigger: ".word",
@@ -41,9 +41,9 @@ function animationMain() {
       fadeIn.forEach(fadeInItem => {
         gsap.from(fadeInItem, { 
           opacity: 0,
-          y: 30,
+          y: 40,
           duration: 1.5,
-          ease: Power3,
+          ease: Expo. easeOut,
           scrollTrigger: {
             scroller: ".scrollContainer",
             trigger: fadeInItem,
@@ -58,7 +58,7 @@ lineX.forEach(lineXItem => {
   gsap.from(lineXItem, { 
     width: "0",
     duration: 1,
-    ease: Power3,
+    ease: Expo. easeOut,
     scrollTrigger: {
       scroller: ".scrollContainer",
       trigger: lineXItem,
