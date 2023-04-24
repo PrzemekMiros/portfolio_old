@@ -303,8 +303,8 @@ tlintro.from(".logo-wrap", {
 } else {
   tlintro.from(".logo-wrap", {
     y: "28vh",
-    x: "9%",
-    width: "220%",
+    x: "7%",
+    width: "160%",
     delay: 2.8,
     duration: 1
   });
