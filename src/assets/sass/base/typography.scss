@@ -7,7 +7,7 @@
   margin-bottom: .5em;
   font-size: 56px;
   font-weight: 500;
-  line-height: 1;
+  line-height: 1.22;
   letter-spacing: 1px;
   color: var(--color-heading)
 }
@@ -16,7 +16,7 @@
   margin-bottom: .5em;
   font-size: 37px;
   font-weight: 500;
-  line-height: 1;
+  line-height: 1.22;
   letter-spacing: 1px;
   color: var(--color-heading)
 }
@@ -25,7 +25,7 @@
   margin-bottom: .5em;
   font-size: 37px;
   font-weight: 500;
-  line-height: 1;
+  line-height: 1.22;
   letter-spacing: 1px;
   color: var(--color-heading)
 }
@@ -34,7 +34,7 @@ h1, .h1 {
     margin-bottom: .5em;
     font-size: 32px;
     font-weight: 500;
-    line-height: 1;
+    line-height: 1.22;
     color: var(--color-heading)
   }
   
@@ -241,7 +241,9 @@ blockquote p {
 
   .splitting .word,
   .splitting .char {
-    display: inline-block
+    display: inline-block;
+    margin-top: -10px;
+    margin-bottom: -10px
   }
   
   .splitting .char {
