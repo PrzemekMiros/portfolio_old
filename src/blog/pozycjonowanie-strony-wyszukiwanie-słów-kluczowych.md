@@ -5,7 +5,7 @@ description: Ważne jest, aby Twoja strona internetowa była widoczna na
   pierwszych pozycjach w wynikach wyszukiwania. Aby to osiągnąć, musisz
   zrozumieć, jak działa wyszukiwanie słów kluczowych.
 author: Przemek Miros
-date: 2023-03-30T12:59:32.236Z
+date: 2023-02-28T12:59:32.236Z
 tags:
   - pozycjonowanie
 thumbnail: /blog/img/keyword.jpg
