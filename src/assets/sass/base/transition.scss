@@ -1,11 +1,9 @@
 
-  
 .transition-fade {
   opacity: 1;
 	transform: translateY(0);
 	transition: .6s ease-in-out
 }
-  
   
 html.is-animating .transition-fade {
 transform: translateY(-20vh);
@@ -16,7 +14,6 @@ html.is-rendering .transition-fade {
 transform: translateY(5vh);
 opacity: 0
 }
-
 
 @keyframes page-overlay-anim {
   0%   	{ transform: translate(0, 100%); }
@@ -35,9 +32,7 @@ html.is-changing .page-overlay-in {
   	animation-timing-function: cubic-bezier(.49,.16,.33,1);
 }
 
-
-
-  .swup-progress-bar {
+.swup-progress-bar {
     height: 2px;
     background-color: var(--color-dark-1)
   }
