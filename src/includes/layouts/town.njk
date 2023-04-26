@@ -1,0 +1,119 @@
+{% include "partials/header.njk" %}
+
+<section class="pt-large pt-md-xlarge pb-xlarge" data-scroll-section>
+    <div class="container">
+
+        <div class="row">
+            <div class="offset-md-2 offset-lg-3 col-md-9 col-lg-7">
+                <div class="single-post-title-wrap pb-xsmall pb-md-small">
+                    <div class="breacrumbs fadeIn">
+                        <a href="/" title="Strona główna">
+                            Główna
+                        </a>
+                        <span>
+                            |
+                        </span>
+                        <a href="/blog" title="Blog">
+                            Blog
+                        </a>
+                        <span>
+                            |
+                        </span>
+                        <span>
+                            {{ title }}
+                        </span>
+                    </div>
+                    <h1 class="single-post-title mt-4 mb-2" data-splitting>
+                        {{ title }}
+                    </h1>
+                    <div class="breacrumbs fadeIn">
+                        <span>
+                            Kategoria:
+                        </span>
+                        <span>
+                             {{ tags }}
+                        </span>
+                        <span>
+                              |
+                        </span>
+                        <span>
+                            Opublikowano:
+                        </span>
+                        <span>
+                             {{ date | dateDisplay }}
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="offset-lg-1 col-lg-10">
+                <div class="parallax-wrap aspect_16-9 fadeIn mb-3 mb-lg-5">
+                    <img src="{{ thumbnail | url }}" alt="{{ title }}" class="single-post-image img-fluid">
+                </div>
+            </div>
+        </div>
+
+        <div class="content row gx-5 fadeIn" id="pinShare">
+            <div class="offset-md-1 offset-lg-2 col-md-1 col-lg-1 d-none d-md-block">
+
+            </div>
+            <div class="col-md-8 col-lg-6">
+                {{ content | safe}}
+            </div>
+        </div>
+
+        <div class="row pt-medium fadeIn">
+            <div class="offset-md-1 col-md-10">
+                <div class="line-x"></div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <div class="post-navigation pt-small">
+                    {%- if collections.towns %}
+                    {%- set nextPost = collections.towns | getNextCollectionItem(page) %}
+                    {%- set previousPost = collections.towns | getPreviousCollectionItem(page) %}
+                    {%- if nextPost or previousPost %}
+                    <ul class="d-flex flex-wrap fadeIn">
+                        {%- if previousPost %}
+                        <li class="hover-reveal-wrap offset-md-1 col-md-5 prev d-none d-md-block">
+                            <p class="mb-4">
+                                <small>
+                                    Poprzedni:
+                                </small>
+                            </p>
+                            <a href="{{ previousPost.url | url }}" title="{{ previousPost.data.client }}"
+                                class="h4">{{ previousPost.data.title }}</a>
+                            <div class="hover-reveal">
+                                <img src="{{ previousPost.data.thumbnail }}" class="hidden-img">
+                            </div>
+                        </li>
+                        {% endif %}
+                        {%- if nextPost %}
+                        <li class="hover-reveal-wrap offset-md-1 col-md-5 next">
+                            <p class="mb-4">
+                                <small>
+                                    Kolejny:
+                                </small>
+                            </p>
+                            <a href="{{ nextPost.url | url }}" title="{{ nextPost.data.client }}"
+                                class="h4">{{ nextPost.data.title }}</a>
+                            <div class="hover-reveal">
+                                <img src="{{ nextPost.data.thumbnail }}" class="hidden-img">
+                            </div>
+                        </li>
+                        {% endif %}
+                    </ul>
+                    {%- endif %}
+                    {%- endif %}
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+{% include "partials/footer.njk" %}
