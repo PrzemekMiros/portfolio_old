@@ -1,8 +1,7 @@
 ---
 town: Pruszkowa
 title: Strony internetowe Pruszków
-description: Strony internetowe Pruszków
-date: 2022-07-15
+description: Tworzę atrakcyjne strony internetowe w przystepnych cenach dla firm z Pruszkowa. Zadzwoń do mnie +48 788 660 190
 thumbnail: /assets/img/services/pozycjonowanie.jpg
 ---
 

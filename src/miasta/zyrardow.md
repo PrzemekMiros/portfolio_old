@@ -1,8 +1,7 @@
 ---
 town: Żyrardowa
 title: Strony internetowe Żyrardów
-description: Strony internetowe Żyrardów
-date: 2022-07-15
+description: Tworzę atrakcyjne strony internetowe w przystepnych cenach dla firm z Żyrardowa. Zadzwoń do mnie +48 788 660 190
 thumbnail: /assets/img/services/pozycjonowanie.jpg
 ---
 
