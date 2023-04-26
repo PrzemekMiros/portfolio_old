@@ -135,7 +135,6 @@
   </section>
 
 
-
   <section class="pt-small pt-md-medium pb-medium" data-scroll-section>
     <div class="container">
         <div class="row gx-0">
@@ -143,9 +142,9 @@
               <div class="">
                 <h2 class="h1 mb-4 fadeIn">
                 O mnie<span class="dot">.</span>
-                </h2>
+                </h2> 
                 <p class="fadeIn">
-                  Wykonuję strony internetowe dla małych i średnich firm z {{ town }}. Do każdego zlecenia podchodzę z dużym zaangażowaniem oraz z dbałością o każdy szczegół. Nie korzystam z szablonów i pagebuldierów.
+                  Wykonuję strony internetowe dla firm z {{ town }}. Do każdego zlecenia podchodzę z dużym zaangażowaniem oraz z dbałością o każdy szczegół. Nie korzystam z szablonów i pagebuldierów.
                 </p>
                 <a href="/realizacje/" class="button fadeIn" title="Realizacje">
                   <span>Zobacz realizacje</span>
@@ -297,8 +296,179 @@
     </div>
 </section>
 
+<section class="pb-medium" data-scroll-section>
+    <div class="container">
+        <div class="row gx-0">
+            <div class="offset-md-1 col-md-10">
+                <h2 class="xl fadeIn">
+                    Ciekawostki i porady<span class="dot">.</span>
+                </h2>
+                <div class="pt-small">
+                    <div class="line-x"></div>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-medium">
+            <div class="offset-md-1 col-md-10">
+                <div class="row gx-3 gx-xl-5">
+                    {% for post in collections.posts.slice(0,3) %}
+                    <div class="col-md-4 fadeIn pb-small">
+                        <a href="{{ post.url }}" title="{{ post.data.title }}">
+                            <div class="portfolio-item">
+                                <div class="parallax-wrap aspect_16-9">
+                                    <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy" />
+                                </div>
+                            </div>
+                        </a>
+                        <p class="capitalize mb-2">
+                            <small>
+                                {{ post.data.tag }}
+                            </small>
+                        </p>
+                        <a href="{{ post.url }}" title="{{ post.data.title }}">
+                            <h2 class="line-clamp-2 h5 mt-2 mb-3">
+                                {{ post.data.title }}
+                            </h2>
+                        </a>
+                        <a href="{{ post.url }}" title="Czytaj" class="button mt-3 mb-4">
+                            <span>Czytaj</span>
+                            <svg width="14" height="14" viewBox="0 0 14 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 1L1 13" stroke="var(--color-accent-1)" stroke-width="1"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M3 1H13V11" stroke="var(--color-accent-1)" stroke-width="1"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </a>
+                        <div class="line-x lx-1 lx-op"></div>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
 
+<section class="pt-large pt-md-small pb-xlarge bg-dark" data-scroll-section>
+  <div class="container">
+      <div class="row gx-0">
+          <div class="offset-md-1 col-md-10">
+              <h2 class="xl color-heading fadeIn">
+                  Pytania i odpowiedzi<span class="dot">.</span>
+              </h2>
+              <div class="pt-small">
+                  <div class="line-x lx-light"></div>
+              </div>
+          </div>
+      </div>
 
+      <div class="row gx-0 pt-md-medium">
+       
+          <div class="offset-md-1 col-md-7">
+              <div class="accordion-wrap">
+                  <div class="item-21 mt-4 pb-xsmall fadeIn">
+                      <div class="accordion">
+                          <div class="h4 title color-heading">Ile kosztuje wykonanie strony www?</div>
+                          <div class="icon"></div>
+                      </div>
+                      <div class="panel col-md-11">
+                          <p class="color-text">
+                              Koszt budowy jest bardzo zróżnicowany. Zależy od złożoności witryny, technologii jaka zostanie wykorzystana oraz
+                              funkcjonalności jakie będzie posiadać. Podstawowa strona typu one page (oparta na jednej długiej podstronie) zawierająca
+                              do 7 sekcji, slider, formularz kontaktowy, live chat oraz integracje z social media to koszt od 1500zł netto.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="line-x lx-op lx-light"></div>
+                  <div class="item-22 pt-small pb-xsmall fadeIn">
+                      <div class="accordion">
+                          <div class="h4 title color-heading">Co będę musiał/a przygotować?</div>
+                          <div class="icon"></div>
+                      </div>
+                      <div class="panel col-md-11">
+                           <p class="color-text">
+                              Stworzenie strony internetowej nie wymaga od Ciebie dużego zaangażowania. Po dostarczeniu materiałów (treści i
+                              ewentualnie grafik) zajmę się zaplanowaniem mapy strony, projektem graficznym i przystosowaniem treści pod kątem
+                              pozycjonowania. Po zaakceptowaniu prze Ciebie projektu przystępuje do kodowania.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="line-x lx-op lx-light"></div>
+                  <div class="item-23 pt-small pb-xsmall fadeIn">
+                      <div class="accordion">
+                          <div class="h4 title color-heading">Ile trwa wykonanie strony www?</div>
+                          <div class="icon"></div>
+                      </div>
+                      <div class="panel col-md-11">
+                           <p class="color-text">
+                              Wykonanie podstawowej strony od projektu do opublikowania zajmuje 1 - 2 tygodnie. Bardziej zaawansowane projekty zajmują
+                              1 - 3 miesiące.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="line-x lx-op lx-light"></div>
+                  <div class="item-24 pt-small pb-xsmall fadeIn">
+                      <div class="accordion">
+                          <div class="h4 title color-heading">Czy strona będzie responsywna?</div>
+                          <div class="icon"></div>
+                      </div>
+                      <div class="panel col-md-11">
+                           <p class="color-text">
+                              W dzisiejszych czasach ok 65% ruchu na stronach pochodzi z urządzeń mobilnych. Podczas kodowania stosuje zasadę mobile
+                              first, Twoja strona będzie dopasowana do każdego urządzenia na którym zostanie wyświetlona
+                          </p>
+                      </div>
+                  </div>
+                  <div class="line-x lx-op lx-light"></div>
+                  <div class="item-25 pt-small pb-xsmall fadeIn">
+                      <div class="accordion">
+                          <div class="h4 title color-heading">Czy można samemu edytować stronę?</div>
+                          <div class="icon"></div>
+                      </div>
+                      <div class="panel col-md-11">
+                           <p class="color-text">
+                              Tak. Strony wyposażam w wygodny i intuicyjny panel zarządzania, który umożliwia łatwe dodawanie zdjęć, treści oraz
+                              dowolnych aktualności na stronie internetowej. Mogę go również dostosować pod indywidualne wymagania.
+                          </p>
+                      </div>
+                  </div>
+                  <div class="line-x lx-op lx-light"></div>
+                  <div class="item-26 pt-small pb-xsmall fadeIn">
+                      <div class="accordion">
+                          <div class="h4 title color-heading">Czy strona będzie widoczna w Google?</div>
+                          <div class="icon"></div>
+                      </div>
+                      <div class="panel col-md-11">
+                           <p class="color-text">
+                              Każda tworzona przeze mnie strona jest optymalizowana pod kątem przyszłego pozycjonowania. Kod źródłowy piszę tak aby
+                              sprzyjał osiągnięciu wysokich pozycji w wyszukiwarkach
+                          </p>
+                      </div>
+                  </div>
+                  <div class="line-x lx-op lx-light"></div>
+              </div>
+          </div>
+
+          <div class="offset-md-1 col-md-3 pt-xsmall pb-medium d-none d-md-block" id="pinSection2">
+            <div class="pb-small" data-scroll data-scroll-sticky data-scroll-target="#pinSection2">
+              <svg fill="var(--color-dark-2)" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
+            width="250px" height="250px" viewBox="0 0 27.774 27.774"
+            xml:space="preserve">
+         <g>
+           <path d="M10.398,22.811h4.618v4.964h-4.618V22.811z M21.058,1.594C19.854,0.532,17.612,0,14.33,0c-3.711,0-6.205,0.514-7.482,1.543
+             c-1.277,1.027-1.916,3.027-1.916,6L4.911,8.551h4.577l-0.02-1.049c0-1.424,0.303-2.377,0.907-2.854
+             c0.604-0.477,1.814-0.717,3.632-0.717c1.936,0,3.184,0.228,3.74,0.676c0.559,0.451,0.837,1.457,0.837,3.017
+             c0,1.883-0.745,3.133-2.237,3.752l-1.797,0.766c-1.882,0.781-3.044,1.538-3.489,2.27c-0.442,0.732-0.665,2.242-0.665,4.529h4.68
+             v-0.646c0-1.41,0.987-2.533,2.965-3.365c2.03-0.861,3.343-1.746,3.935-2.651c0.592-0.908,0.888-2.498,0.888-4.771
+             C22.863,4.625,22.261,2.655,21.058,1.594z"/>
+         </g>
+         </svg>
+            </div>
+          </div>
+
+      </div>
+  </div>
+</section>
 
 
 
