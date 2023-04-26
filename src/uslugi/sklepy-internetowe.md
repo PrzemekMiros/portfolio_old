@@ -8,6 +8,7 @@ thumbnail: /assets/img/services/sklepy.jpg
 ## Projekt i funkcjonalność
 
 Projekt i funkcjonalność Twojej platformy eCommerce ma znaczący wpływ na konwersje sprzedaży. Wiem, że sklepy internetowe wymagają większej funkcjonalności niż zwykła strona internetowa, od odpowiedniego hostingu przez obsługę sklepu, przetwarzanie płatności, aż po zarządzanie zapasami i system wysyłkowy.
+
 ## Analiza i dobór rozwiązań
 
 Wykorzystując doświadczenie i wiedzę buduje sklepy internetowe, które przyciągają odwiedzających i utrzymują ich lojalność. Analizuje Twoją niszę biznesową, identyfikuje odpowiednich odbiorców i starannie dobieram najlepsze rozwiązania narzędzia.Sprzedaż online nigdy nie była ważniejsza niż obecnie. Pozwól, że pomogę Ci zbudować Twój sukces w Internecie.
