@@ -70,13 +70,17 @@ h5, .h5 {
   color: var(--color-heading)
 }
 
-p, .paragraph, ol li {
+p, .paragraph, li {
   margin-bottom: 2em;
   font-family: var(--font-secondary);
   font-size: 16px;
   font-weight: 300;
   line-height: 1.8;
   color: var(--color-text)
+}
+
+ol li {
+  margin-bottom: 1em
 }
 
 blockquote {

@@ -1,5 +1,4 @@
 ---
-
 author: Przemek
 client: Business Woman Life
 date: 2023-02-03T20:19:43.571Z
@@ -12,13 +11,13 @@ description: Serwis dla czasopisma Business Woman and Life. Indywidualny projekt
 link: https://businesswomanlife.pl/
 imageMobile: /realizacje/img/longscroll-mobile.jpg
 category:
-  - Strona internetowa
+  - Portal internetowy
 ---
 
 ## Portal kobiet biznesu
 
-Serwis dla czasopisma Business Woman and Life. Indywidualny projekt graficzny i dedykowany motyw na Wordpressa.
+Serwis dla czasopisma Business Woman and Life. Indywidualny projekt graficzny i dedykowany motyw na Wordpressa. 
 
-<a href="https://businesswomanlife.pl/" title="Zobacz online" target="_blank" class="button" rel="nofollow">
-    <span>Zobacz online</span>
-</a>
+Serwis ogłoszeń, sklep online, szybkie płatności, newsletter, sybskrypcje.
+
+

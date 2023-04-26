@@ -4,6 +4,11 @@
     background-position: center;
 }
 
+.footer-parallax {
+    position: relative;
+    z-index: -1
+}
+
 .site-footer p,
 .site-footer a {
     color: #fff

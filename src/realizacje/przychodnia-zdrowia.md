@@ -15,6 +15,3 @@ imageMain: /realizacje/img/przychodnia.jpg
 ---
 Strona dla Przychodni Zdrowia. Indywidualny projekt graficzny. Technologia Jamstack (Eleventy.js i Netlify CMS). Animacje: GSAP, Locomotive Scroll, Swup.js
 
-<a href="https://przychodniagrabow.pl/" title="Zobacz online" target="_blank" class="button" rel="nofollow">
-    <span>Zobacz online</span>
-</a>

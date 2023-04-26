@@ -16,5 +16,3 @@ link: https://gaszynpark.pl/
 ## Osiedle dla wymagających
 
 Strona internetowa dla kameralnego osiedla w zabudowie bliźniaczej i szeregowej. Html, css, js.
-
-<a href="https://gaszyn.pl/" title="Zobacz online" target="_blank" class="button" rel="nofollow">Zobacz online</a>

@@ -9,7 +9,7 @@ imageMain: /realizacje/img/egp-img.jpg
 imageMobile: /realizacje/img/egp-mobile.jpg
 imageGridOne: /realizacje/img/egp-1.jpg
 imageGridTwo: /realizacje/img/egp-2.jpg
-category: ['Strona internetowa']
+category: ['Sklep internetowy']
 link: https://egp-system.com/
 ---
 
@@ -17,4 +17,3 @@ link: https://egp-system.com/
 
 Strona i sklep interentowy dla producenta nanokoloidów. System zarządzania treścią Wordpress, sklep oparty na Woocommerce, integracja z Baselinker, płatności online. Szybka, zapezpieczona i zoptymalizowana pod wyszukiwarki.
 
-<a href="https://egp-system.com/" title="Zobacz online" target="_blank" class="button" rel="nofollow">Zobacz online</a>
