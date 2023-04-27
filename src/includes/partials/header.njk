@@ -8,6 +8,8 @@
   <title>{{ title }} - Przemek Miros</title>
   <meta name="description" content="{{ description }}">
   <meta name="google-site-verification" content="_uLorccZIpY-NlRb036yMXgs2lvctMD5A_aSlU6HRa4" />
+  {% set robots = robots | default('index') %}
+  <meta name="robots" content="{{ robots }}">  
 
 <!-- Facebook Meta Tags -->
 <meta property="og:url" content="https://przemekmiros.pl/">
