@@ -1,0 +1,5 @@
+{
+    "layout": "layouts/rodo.njk",
+    "permalink": "/{{ title | slugify }}/",
+    "robots": "noindex"
+}

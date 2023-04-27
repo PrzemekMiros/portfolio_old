@@ -2,7 +2,7 @@
 .transition-fade {
   opacity: 1;
 	transform: translateY(0);
-	transition: .6s ease-in-out
+	transition: .66s ease-in-out
 }
   
 html.is-animating .transition-fade {
@@ -17,8 +17,8 @@ opacity: 0
 
 @keyframes page-overlay-anim {
   0%   	{ transform: translate(0, 100%); }
-  60% 	{ transform: translate(0, 0%); }
-  75% 	{ transform: translate(0, 0%); }
+  65% 	{ transform: translate(0, 0%); }
+  80% 	{ transform: translate(0, 0%); }
   100% 	{ transform: translate(0, -100%); }
 }
 

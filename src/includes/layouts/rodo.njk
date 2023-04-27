@@ -1,0 +1,56 @@
+{% include "partials/header.njk" %}
+<section class="pt-large pb-large" data-scroll-section>
+  <div class="container">
+
+    <div class="row gx-4">
+      <div class="offset-md-1 col-md-8">
+        <h1 class="xxl" data-splitting>
+          {{ title }}<span class="dot">.</span>
+        </h1>
+      </div>
+      <div class="col-md-2 d-none d-lg-flex align-items-end pb-small fadeIn">
+        <svg
+          width="107"
+          height="172"
+          viewBox="0 0 127 192"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M63.5 1L63.5 191"
+            stroke="var(--color-dark-1)"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            d="M126 128.5L63.5 191"
+            stroke="var(--color-dark-1)"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+          <path
+            d="M1 128.5L63.5 191"
+            stroke="var(--color-dark-1)"
+            stroke-width="3"
+            stroke-linecap="round"
+          />
+        </svg>
+      </div>
+    </div>
+    
+    <div class="row gx-4 pb-xsmall">
+      <div class="offset-md-1 col-md-10">
+        <div class="line-x lx-2"></div>
+      </div>
+    </div>
+
+    <div class="row gx-4">
+      <div class="offset-md-1 col-md-8">
+        {{ content | safe}}
+      </div>
+    </div>
+
+</div>
+</section>
+
+{% include "partials/footer.njk" %}
