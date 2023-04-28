@@ -1,0 +1,32 @@
+.clients-wrap {
+    margin-top: -1px;
+    margin-left: -1px;
+    overflow: hidden;
+}
+
+.client-item {
+    margin-top: 0;
+    margin-left: -1px;
+    margin-bottom: -1px;
+    padding: 2em 0.5em;
+    border: 1px solid #89898947
+}
+
+.client-item img {
+    transition: .3s ease-in-out;
+    filter: grayscale(99%);
+    opacity: .65
+}
+
+@media (prefers-color-scheme:dark) {
+.client-item img {
+    transition: .3s ease-in-out;
+    filter: grayscale(99%) brightness(200%);
+    opacity: .65
+}
+}
+
+.client-item:hover img {
+    filter: grayscale(0) brightness(100%);
+    opacity: 1
+}

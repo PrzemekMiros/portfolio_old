@@ -2,6 +2,16 @@
     overflow: hidden
 }
 
+.service-number {
+    font-weight: 700;
+    margin-top: 10px;
+    opacity: .8
+}
+
+.service-arrow {
+    opacity: .8
+}
+
 @media(min-width:767px) {
     .service-item {
         position: relative

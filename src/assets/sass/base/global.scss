@@ -106,6 +106,10 @@ body {
   letter-spacing: 1px
 }
 
+.overflow-hidden {
+  overflow: hidden
+}
+
 @media(min-width:767px) {
   html {
     overflow-y: hidden
