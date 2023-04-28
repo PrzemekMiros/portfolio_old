@@ -1,11 +1,9 @@
 
-  
 .transition-fade {
   opacity: 1;
 	transform: translateY(0);
-	transition: .6s ease-in-out
+	transition: .7s ease-in-out
 }
-  
   
 html.is-animating .transition-fade {
 transform: translateY(-20vh);
@@ -17,11 +15,10 @@ transform: translateY(5vh);
 opacity: 0
 }
 
-
 @keyframes page-overlay-anim {
   0%   	{ transform: translate(0, 100%); }
-  55% 	{ transform: translate(0, 0%); }
-  64% 	{ transform: translate(0, 0%); }
+  65% 	{ transform: translate(0, 0%); }
+  75% 	{ transform: translate(0, 0%); }
   100% 	{ transform: translate(0, -100%); }
 }
 
@@ -31,13 +28,11 @@ opacity: 0
 }
   
 html.is-changing .page-overlay-in {
-  	animation: page-overlay-anim 1.45s 1; 
+  	animation: page-overlay-anim 1.3s 1; 
   	animation-timing-function: cubic-bezier(.49,.16,.33,1);
 }
 
-
-
-  .swup-progress-bar {
+.swup-progress-bar {
     height: 2px;
     background-color: var(--color-dark-1)
   }

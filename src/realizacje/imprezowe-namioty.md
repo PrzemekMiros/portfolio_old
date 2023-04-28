@@ -17,4 +17,3 @@ link: https://imprezowe-namioty.pl/
 
 Serwis dla firmy zajmującej się wynajmem namiotów i obsługą imprez. Indywidualny projekt graficzny i CMS Wordpress. Optymalizacja techniczna pod kątem wyszukiwarek.
 
-<a href="https://imprezowe-namioty.pl/" title="Zobacz online" target="_blank" class="button" rel="nofollow">Zobacz online</a>

@@ -20,6 +20,7 @@
       smooth: !0
     }
   });
+
   // Swup init
   const swup = new Swup({
     animateHistoryBrowsing: true,
@@ -41,33 +42,16 @@
 </script>
 <script type="application/ld+json">
   {
-    "@context": "https://schema.org",
-    "@type": "ProfessionalService",
-    "name": "Przemek Miros",
-    "image": "https://przemekmiros.pl/assets/img/opengraph.png",
-    "@id": "",
-    "url": "https://przemekmiros.pl",
-    "telephone": "+48 788 660 190",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Orzeszkowej 5",
-      "addressLocality": "Warka",
-      "postalCode": "05-660",
-      "addressCountry": "PL"
-    },
-    "openingHoursSpecification": {
-      "@type": "OpeningHoursSpecification",
-      "dayOfWeek": [
-        "Monday",
-        "Tuesday",
-        "Wednesday",
-        "Thursday",
-        "Friday"
-      ],
-      "opens": "08:00",
-      "closes": "17:00"
-    } 
+    "@context": "https://schema.org/",
+    "@type": "WebSite",
+    "name": "Przemek Miros Strony Internetowe",
+    "url": "https://przemekmiros.pl/",
+    "potentialAction": {
+      "@type": "SearchAction",
+      "target": "{search_term_string}",
+      "query-input": "required name=search_term_string"
+    }
   }
-  </script>  
+</script>   
 </body>
 </html>

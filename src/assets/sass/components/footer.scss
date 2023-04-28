@@ -4,6 +4,11 @@
     background-position: center;
 }
 
+.footer-parallax {
+    position: relative;
+    z-index: -1
+}
+
 .site-footer p,
 .site-footer a {
     color: #fff
@@ -23,8 +28,8 @@
 }
 
 .footer-arrow {
-    width: 18px;
-    transform: rotate(90deg)
+    width: 24px;
+    transform: rotate(90deg) translateX(7px)
 }
 
 .footer-mail {
@@ -54,7 +59,8 @@
 
 @media(min-width:1200px) {
     .footer-arrow {
-        width: 46px
+        width: 46px;
+        margin-bottom: 7px
     }
 }
 

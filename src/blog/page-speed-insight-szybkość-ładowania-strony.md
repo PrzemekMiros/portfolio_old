@@ -5,7 +5,7 @@ description: Czy wiesz, że szybkość ładowania strony jest jednym z kluczowyc
   czynników wpływających na pozycjonowanie w Google? Im szybciej strona się
   ładuje, tym większa szansa na wysoką pozycję w wynikach wyszukiwania.
 author: Przemek Miros
-date: 2023-03-30T14:03:57.668Z
+date: 2023-02-30T14:03:57.668Z
 tags:
   - pozycjonowanie
 thumbnail: /blog/img/page-speed.png

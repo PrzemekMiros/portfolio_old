@@ -1,6 +1,6 @@
 ---
 title: Strony internetowe
-description: Atrakcyjne wizualnie i zoptymalizowane technicznie strony www skupione na realizacji celów biznesowych.
+description: Atrakcyjne wizualnie i dobrze zoptymalizowane technicznie strony www skupione na realizacji celów biznesowych.
 date: 2022-09-15
 thumbnail: /assets/img/services/strony.jpg
 ---
@@ -12,6 +12,7 @@ W dzisiejszych czasach solidnie wykonana strona internetowa jest podstawą dla k
 ## Zoptymalizowana pod Google
 
 Wybierając moją ofertę decydujesz się na sprawdzone i skuteczne rozwiązania. Strony internetowe wykonywane przeze mnie są zoptymalizowane pod wyszukiwarki tak, aby uzyskać jak najwyższą pozycję w sieci co pozytywnie wpłynie na pozyskiwanie klientów dla Ciebie lub dla Twojej firmy. Doskonale wiem w jaki sposób zoptymalizować witrynę lub sklep internetowy tak, abyś uzyskał dobre wyniki w wyszukiwarce Google.
+
 ## Szybka i niezawodna
 
 W dzisiejszych czasach szybkość ładowania strony internetowej ma coraz większe znaczenie. Przykładam dużą wagę do prędkości ładowania witryny, co pozytywnie wpływa na jej użytkowanie i konwersje. Z wielu badań wynika, że szybsze strony mają wysokie pozycje w Google, co w efekcie może sprowadzić do Twojej firmy więcej klientów.

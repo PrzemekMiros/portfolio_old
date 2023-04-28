@@ -1,9 +1,8 @@
 ---
 title: Zatrzymaj ludzi dłużej na stronie
-description: Jeśli Twoja witryna nadal jest pełna animowanych obrazów,
-  nadmiarowych funkcji projektowych i innych nowoczesnych rozwiązań „nie, nie”,
+description: Jeśli Twoja witryna nadal jest pełna animowanych obrazów, nadmiarowych funkcji projektowych i innych nowoczesnych rozwiązań,
   czas na przeprojektowanie.
-date: 2022-11-19T22:48:49.663Z
+date: 2023-03-21
 author: Przemek
 tags:
   - pozycjonowanie
@@ -13,7 +12,7 @@ Dowiedziałeś się, jakie problemy powodują, że klienci opuszczają witrynę 
 
 ## Odśwież design
 
-Jeśli więc Twoja witryna nadal jest pełna animowanych obrazów, nadmiarowych funkcji projektowych i innych nowoczesnych rozwiązań „nie, nie”, czas na przeprojektowanie. Według badań masz tylko 15 sekund (lub mniej), aby przekonać nowych użytkowników, aby pozostali w mocy samego projektu witryny.
+Jeśli więc Twoja witryna nadal jest pełna animowanych obrazów, nadmiarowych funkcji projektowych i innych niepotrzebnych rozwiązań, czas na przeprojektowanie. Według badań masz tylko 15 sekund (lub mniej), aby przekonać nowych użytkowników, aby pozostali w mocy samego projektu witryny.
 
 ## Zmniejsz liczbę fontów
 

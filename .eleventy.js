@@ -35,6 +35,11 @@ module.exports = function(eleventyConfig) {
         return collectionApi.getFilteredByGlob('src/uslugi/**/*.md').reverse();
         });
 
+        // Collections towns
+        eleventyConfig.addCollection('towns', function(collectionApi) {
+        return collectionApi.getFilteredByGlob('src/miasta/**/*.md').reverse();
+        });
+
     eleventyConfig.addNunjucksAsyncShortcode('Image', async (src, alt) => {
         if (!alt) {
           throw new Error(`Missing \`alt\` on myImage from: ${src}`);

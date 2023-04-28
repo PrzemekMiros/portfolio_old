@@ -27,9 +27,8 @@ function animationMain() {
     
     gsap.from(reveal, {
       y: "100%",
-      duration: .5,
-      stagger: .015,
-      ease: Power3,
+      duration: 1,
+      ease: Expo. easeOut,
       scrollTrigger: {
         scroller: ".scrollContainer",
         trigger: ".word",
@@ -42,9 +41,9 @@ function animationMain() {
       fadeIn.forEach(fadeInItem => {
         gsap.from(fadeInItem, { 
           opacity: 0,
-          y: 30,
+          y: 40,
           duration: 1.5,
-          ease: Power3,
+          ease: Expo. easeOut,
           scrollTrigger: {
             scroller: ".scrollContainer",
             trigger: fadeInItem,
@@ -59,7 +58,7 @@ lineX.forEach(lineXItem => {
   gsap.from(lineXItem, { 
     width: "0",
     duration: 1,
-    ease: Power3,
+    ease: Expo. easeOut,
     scrollTrigger: {
       scroller: ".scrollContainer",
       trigger: lineXItem,
@@ -295,17 +294,17 @@ tlintro = gsap.timeline();
 
 if (window.matchMedia("(min-width: 767px)").matches) {
 tlintro.from(".logo-wrap", {
-  y: "25vh",
-  x: "22%",
-  width: "520%",
+  y: "28vh",
+  x: "33%",
+  width: "320%",
   delay: 2.8,
   duration: 1
 });
 } else {
   tlintro.from(".logo-wrap", {
     y: "28vh",
-    x: "9%",
-    width: "220%",
+    x: "7%",
+    width: "160%",
     delay: 2.8,
     duration: 1
   });
