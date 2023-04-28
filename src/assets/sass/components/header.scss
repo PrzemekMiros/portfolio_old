@@ -2,7 +2,7 @@
   position: fixed;
   left: 0; 
   top: 0;
-  padding-top: 25px;
+  padding-top: 35px;
   width: 100vw;
   opacity: 0;
   animation: headerFade .1s forwards .2s;
@@ -215,6 +215,9 @@
   }
 
 @media(max-width:767px) {
+  .site-header {
+    padding-top: 25px
+  }
   .menu-toggle {
     margin-top: 0
   }  
