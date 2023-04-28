@@ -137,8 +137,15 @@ blockquote p {
 }
 
 .text-stroke {
-  text-shadow: 2px 2px 0 var(--color-heading), -1px -1px 0 var(--color-heading), 1px -1px 0 var(--color-heading), -1px 1px 0 var(--color-heading), 1px 1px 0 var(--color-heading);
+  text-shadow: 2px 2px 0 var(--color-heading), -1px -1px 0 var(--color-heading), 1px -1px 0 var(--color-heading), -1px 1px 0 var(--color-heading), 1px 1px 0 var(--color-heading)
+}
+
+.ts-1 {
   color: var(--color-light-1)
+}
+
+.ts-2 {
+  color: var(--color-dark-1)
 }
 
 .line-clamp-2,
