@@ -89,7 +89,7 @@
   top: 0;
   height: 100%;
   width: 100%;
-  background: #050505;
+  background: #10151a;
   z-index: 99
 }
 
@@ -116,6 +116,7 @@
   font-size: 48px;
   color: #fff;
   text-decoration: none;
+  font-family: var(--font-primary);
   font-weight: 700;
   display: inline-block;
   line-height: 1.2;
