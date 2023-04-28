@@ -237,7 +237,7 @@ gsap.to(".logo-wrap-inner", {
 	ease: 'Expo.easeInOut'
 });
 
-gsap.from(".menu-toggle", {
+gsap.from(".menu-toggle-wrap", {
   autoAlpha: 0,
   opacity: 0,
   delay: 3.5,

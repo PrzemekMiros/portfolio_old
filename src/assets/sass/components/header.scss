@@ -161,6 +161,43 @@
   margin-right: 5px
 }
 
+.change-theme {
+	display: inline-block;
+	margin-left: 1em;
+	border: none;
+	background-color: transparent;
+	color: #fff;
+  transform: translateY(0.5em) translateX(-.5em);
+	transition: all 0.3s ease-in-out;
+  pointer-events: all;
+  cursor: pointer
+}
+  
+.change-theme .moon {
+	display: none
+}
+
+.change-theme .sun {
+	display: block
+  }
+
+.light .change-theme .moon {
+	display: block
+}
+
+.light .change-theme .sun {
+	display: none
+  }
+
+.dark .change-theme .sun {
+	display: block
+  }
+  
+.dark .change-theme .moon {
+	display: none
+  }
+
+
 @media(min-width: 1200px) {
 .logo-text-line-1,
 .logo-text-line-2,

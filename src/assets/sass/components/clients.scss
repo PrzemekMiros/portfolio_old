@@ -18,6 +18,12 @@
     opacity: .65
 }
 
+.light .client-item img {
+    transition: .3s ease-in-out;
+    filter: grayscale(99%);
+    opacity: .65
+}
+
 @media (prefers-color-scheme:dark) {
 .client-item img {
     transition: .3s ease-in-out;
@@ -25,6 +31,12 @@
     opacity: .65
 }
 }
+
+.dark .client-item img {
+        transition: .3s ease-in-out;
+        filter: grayscale(99%) brightness(200%);
+        opacity: .65
+    }
 
 .client-item:hover img {
     filter: grayscale(0) brightness(100%);
