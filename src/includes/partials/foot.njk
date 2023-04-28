@@ -5,6 +5,28 @@
 <script src="/assets/js/vendor.js"></script>
 <script src="/assets/js/script.js"></script>
 <script>
+const changeTheme = document.querySelector(".change-theme");
+let theme = localStorage.getItem("theme");
+changeTheme.addEventListener('click', () => {
+    if (theme === "dark") {
+        document.querySelector("html").classList.remove("dark");
+        document.querySelector("html").classList.add("light");
+        theme = "light";
+    } else {
+        document.querySelector("html").classList.add("dark");
+        document.querySelector("html").classList.remove("light");
+        theme = "dark";
+    }
+    localStorage.setItem("theme", theme);
+});
+if (theme === "dark") {
+    document.querySelector("html").classList.add("dark");
+}
+if (theme === "light") {
+    document.querySelector("html").classList.add("light");
+}
+</script>
+<script>
   // Init locomotive
   const locoScroll = new LocomotiveScroll({
     el: document.querySelector(".scrollContainer"),
@@ -39,28 +61,6 @@
 </script>
 <script>
   animationMain();
-</script>
-<script>
-const changeTheme = document.querySelector(".change-theme");
-let theme = localStorage.getItem("theme");
-changeTheme.addEventListener('click', () => {
-    if (theme === "dark") {
-        document.querySelector("body").classList.remove("dark");
-        document.querySelector("body").classList.add("light");
-        theme = "light";
-    } else {
-        document.querySelector("body").classList.add("dark");
-        document.querySelector("body").classList.remove("light");
-        theme = "dark";
-    }
-    localStorage.setItem("theme", theme);
-});
-if (theme === "dark") {
-    document.querySelector("body").classList.add("dark");
-}
-if (theme === "light") {
-    document.querySelector("body").classList.add("light");
-}
 </script>
 <script type="application/ld+json">
   {
