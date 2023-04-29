@@ -27,12 +27,15 @@ html.has-scroll-smooth {
     transform-origin: center right;
     transition: transform 0.3s, opacity 0.3s;
     opacity: 0; 
+    z-index: 9999
   }
-  .c-scrollbar:hover {
-    transform: scaleX(1.45); 
+  .c-scrollbar:hover .c-scrollbar_thumb {
+    background-color: var(--color-light-1);
+    opacity: 0.7
   }
   .c-scrollbar:hover, .has-scroll-scrolling .c-scrollbar, .has-scroll-dragging .c-scrollbar {
-    opacity: 1 
+    background-color: var(--color-light-1);
+    opacity: 0.7
   }
   .c-scrollbar_thumb {
     position: absolute;
@@ -40,9 +43,8 @@ html.has-scroll-smooth {
     right: 0;
     background-color: rgb(128, 128, 128);
     opacity: 0.5;
-    width: 8px;
+    width: 10px;
     border-radius: 5px;
-    margin: 2px;
     cursor: -webkit-grab;
     cursor: grab; 
   }

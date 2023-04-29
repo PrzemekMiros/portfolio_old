@@ -6,11 +6,23 @@
 body {
     margin: 0;
     padding: 0;
-    width: 100vw;
+    border: 10px solid var(--color-dark-1);
+    height: calc(100vh - 20px);
     color: var(--color-text);
-    font-family: var(--font-primary);
-    font-weight: 200
+    font-family: var(--font-primary)
   }
+  
+body::before {
+  position: fixed;
+  content: "";
+  top: 0;
+  left: 0;
+  width: calc(100vw - 20px);
+  height: calc(100vh - 20px);
+  border: 10px solid var(--color-dark-1);
+  pointer-events: none;
+  z-index: 9999
+}
 
   .scrollContainer {
     background-color: var(--color-light-1);
@@ -19,7 +31,7 @@ body {
   img {
     display: block;
     width: 100%;
-    height: auto;
+    height: auto
   }
 
   a {
@@ -44,7 +56,7 @@ body {
   }
 
   .link:hover::before {
-    width: 100%;
+    width: 100%
   }
 
   .link-white::before {

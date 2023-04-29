@@ -254,41 +254,40 @@ gsap.from(".logo", {
 });
 gsap.from(".logo-line-1", {
   height: 0,
-  duration: 1.8,
+  duration: 2.2,
   delay: .5,
   ease: Power3,
 });
 gsap.from(".logo-line-2", {
   height: 0,
-  duration: 1.6,
+  duration: 2,
   delay: .4,
   ease: Power3,
 });
 gsap.from(".logo-line-3", {
   height: 0,
-  duration: 2,
+  duration: 2.4,
   delay: .3,
   ease: Power3,
 });
 
-gsap.from(".logo-text-line-1", {
-  opacity: 0,
-  duration: .7,
-  delay: 3.8,
-  ease: Power3,
+
+gsap.from(".ls-stroke", 3.3, {
+  strokeDashoffset: "60%"
 });
-gsap.from(".logo-text-line-2", {
-  opacity: 0,
-  duration: .7,
-  delay: 3.8,
-  ease: Power3,
+gsap.from(".ls-filled", 3.3, {
+  strokeDashoffset: "90%"
 });
-gsap.from(".logo-text-line-3", {
-  opacity: 0,
-  duration: .7,
-  delay: 3.8,
-  ease: Power3,
+gsap.from(".ls-filled", 1.3, {
+  fill: "#000",
+  delay: 2.2
 });
+gsap.from(".ls-opacity", {
+  opacity: 0,
+  duration: 1,
+  delay: 2.3
+});
+
 
 tlintro = gsap.timeline();
 
@@ -297,7 +296,7 @@ tlintro.from(".logo-wrap", {
   y: "28vh",
   x: "33%",
   width: "320%",
-  delay: 2.8,
+  delay: 3,
   duration: 1
 });
 } else {
@@ -305,7 +304,7 @@ tlintro.from(".logo-wrap", {
     y: "28vh",
     x: "7%",
     width: "160%",
-    delay: 2.8,
+    delay: 3,
     duration: 1
   });
 }

@@ -2,7 +2,7 @@
   position: fixed;
   left: 0; 
   top: 0;
-  padding-top: 35px;
+  padding-top: 50px;
   width: 100vw;
   opacity: 0;
   animation: headerFade .1s forwards .2s;
@@ -27,24 +27,24 @@
 .logo-wrap-inner {
   position: fixed;
   top: 0;
+  left: 0;
   width: 100vw;
   height: 100vh;
   background-color: var(--color-light-1);
   pointer-events: none;
   opacity: 1;
-  z-index: 9
+  z-index: 999
 }
 
 .page-overlay-in {
   display: none;
   position: fixed;
-  left: 0%;
-  top: 0%;
-  right: 0%;
-  bottom: auto;
+  left: 10px;
+  top: 10px;
+  width: calc(100vw - 20px);
+  height: calc(100vh - 20px);
   z-index: 99;
   display: none;
-  height: 100vh;
   background-color: var(--color-light-2)
 }
 
@@ -54,8 +54,28 @@
   height: auto
 }
 
-.logo rect {
-  fill: #fff
+.logo {
+  width: 100%;
+  height: auto
+}
+
+.ls-stroke {
+  stroke: #fff;
+  stroke-width: 3px;
+  stroke-dasharray: 60%;
+  stroke-dashoffset: 0
+}
+
+.ls-filled {
+  fill: #fff;
+  stroke: #fff;
+  stroke-width: 3px;
+  stroke-dasharray: 90%;
+  stroke-dashoffset: 0
+}
+
+.ls-filled {
+    fill: "#111"
 }
 
 .menu-toggle {
