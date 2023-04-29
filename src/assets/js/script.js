@@ -233,7 +233,7 @@ gsap.from(".site-header", {
 gsap.to(".logo-wrap-inner", {
   opacity: 0, 
   duration: .4,
-  delay: 4,
+  delay: 3.9,
 	ease: Power3
 });
 
