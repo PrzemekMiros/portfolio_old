@@ -137,7 +137,7 @@ blockquote p {
 }
 
 .text-stroke {
-  text-shadow: 1px 1px 0 var(--color-heading), -1px -1px 0 var(--color-heading), 1px -1px 0 var(--color-heading), -1px 1px 0 var(--color-heading), 1px 1px 0 var(--color-heading)
+  text-shadow: 1.5px 1.5px 0 var(--color-heading), -1.5px -1.5px 0 var(--color-heading), 1.5px -1.5px 0 var(--color-heading), -1.5px 1.5px 0 var(--color-heading), 1.5px 1.5px 0 var(--color-heading)
 }
 
 .ts-1 {
@@ -145,6 +145,7 @@ blockquote p {
 }
 
 .ts-2 {
+  text-shadow: 1px 1px 0 var(--color-heading), -1px -1px 0 var(--color-heading), 1px -1px 0 var(--color-heading), -1px 1px 0 var(--color-heading), 1px 1px 0 var(--color-heading);
   color: var(--color-dark-1)
 }
 

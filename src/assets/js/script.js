@@ -296,7 +296,7 @@ tlintro.from(".logo-wrap", {
   y: "28vh",
   x: "33%",
   width: "320%",
-  delay: 3,
+  delay: 3.2,
   duration: 1
 });
 } else {
@@ -304,7 +304,7 @@ tlintro.from(".logo-wrap", {
     y: "28vh",
     x: "7%",
     width: "160%",
-    delay: 3,
+    delay: 3.2,
     duration: 1
   });
 }
