@@ -232,9 +232,9 @@ gsap.from(".site-header", {
 
 gsap.to(".logo-wrap-inner", {
   opacity: 0, 
-  delay: 3.5,
-  duration: 1,
-	ease: 'Expo.easeInOut'
+  duration: .8,
+  delay: 4,
+	ease: Power3
 });
 
 gsap.from(".menu-toggle-wrap", {
@@ -297,7 +297,8 @@ tlintro.from(".logo-wrap", {
   x: "33%",
   width: "320%",
   delay: 3.2,
-  duration: 1
+  duration: 1.3,
+  ease: 'Expo.easeInOut'
 });
 } else {
   tlintro.from(".logo-wrap", {
@@ -305,6 +306,7 @@ tlintro.from(".logo-wrap", {
     x: "7%",
     width: "160%",
     delay: 3.2,
-    duration: 1
+    duration: 1.3,
+    ease: 'Expo.easeInOut'
   });
 }
