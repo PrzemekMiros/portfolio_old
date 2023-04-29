@@ -232,7 +232,7 @@ gsap.from(".site-header", {
 
 gsap.to(".logo-wrap-inner", {
   opacity: 0, 
-  duration: .8,
+  duration: .4,
   delay: 4,
 	ease: Power3
 });
@@ -297,7 +297,7 @@ tlintro.from(".logo-wrap", {
   x: "33%",
   width: "320%",
   delay: 3.2,
-  duration: 1.3,
+  duration: 1.2,
   ease: 'Expo.easeInOut'
 });
 } else {
@@ -306,7 +306,7 @@ tlintro.from(".logo-wrap", {
     x: "7%",
     width: "160%",
     delay: 3.2,
-    duration: 1.3,
+    duration: 1.2,
     ease: 'Expo.easeInOut'
   });
 }
