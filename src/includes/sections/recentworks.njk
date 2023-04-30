@@ -16,8 +16,8 @@
             <div class="offset-md-1 col-md-10">
                 <div class="row gx-5 works-grid">
                     {% for post in collections.works %}
-                    <div class="col-md-6 works-grid-item fadeIn">
-                        <div class="archive-post pb-medium pb-md-large">
+                    <div class="col-md-6 works-grid-item pb-small pb-md-medium">
+                        <div class="archive-post pb-xsmall fadeIn">
                             <a href="{{ post.url }}" title="{{ post.data.title }}">
                                 <div class="portfolio-item">
                                     <div class="parallax-wrap aspect_16-12">
@@ -25,26 +25,25 @@
                                             loading="lazy" />
                                     </div>
                                 </div>
-                                <p class="archive-post-date mt-4 mb-1">
+                                <p class="archive-post-date mt-4 mb-2">
                                     <small>{{ post.data.category }}</small>
                                 </p>
                                 <h2 class="archive-post-title h4 mt-0">
                                     {{ post.data.client }}
                                 </h2>
                             </a>
-                            <div class="line-x lx-1 lx-op"></div>
-                            <a href="{{ post.data.link }}" title="{{ post.data.title }}" target="_blank" rel="nofollow"
-                                class="link-arrow mt-4 mb-2">
-                                Zobacz online
-                                <svg width="11" height="11" viewBox="0 0 14 14" fill="none"
-                                    xmlns="http://www.w3.org/2000/svg">
-                                    <path d="M13 1L1 13" stroke="var(--color-accent-1)" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                    <path d="M3 1H13V11" stroke="var(--color-accent-1)" stroke-width="2"
-                                        stroke-linecap="round" stroke-linejoin="round"></path>
-                                </svg>
-                            </a>
+                            <a href="{{ post.data.link }}" title="{{ post.data.title }}" class="button mt-2 mb-2">
+                            <span> Zobacz online</span>
+                            <svg width="11" height="11" viewBox="0 0 14 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 1L1 13" stroke="var(--color-accent-1)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M3 1H13V11" stroke="var(--color-accent-1)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </a>
                         </div>
+                        <div class="line-x lx-1 lx-op"></div>
                     </div>
                     {% endfor %}
                 </div>
