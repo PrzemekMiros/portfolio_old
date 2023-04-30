@@ -15,7 +15,7 @@ Dostosowanie strony internetowej do potrzeb osób niepełnosprawnych jest ważny
 
 **To nie tylko kwestia etyczna, ale także biznesowa, ponieważ może przyczynić się do zwiększenia ruchu na stronie i lepszego jej pozycjonowania w wynikach wyszukiwania**
 
-## Jakie są korzyści z dostosowania strony internetowej do potrzeb osób niepełnosprawnych?
+## Korzyści z dostosowania strony www do potrzeb osób niepełnosprawnych
 
 **Zwiększenie liczby użytkowników** - według raportu World Health Organization około 15% ludności świata żyje z niepełnosprawnością, a wiele osób korzysta z Internetu jako głównego źródła informacji. Dostosowanie strony internetowej do potrzeb osób niepełnosprawnych pozwala na zwiększenie liczby użytkowników, którzy będą mogli korzystać z treści i funkcjonalności strony.
 
