@@ -215,7 +215,6 @@ gsap.to(".scrollprogress", {
 });
 }
 
-
 }
 
 // Intro
