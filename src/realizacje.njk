@@ -4,7 +4,7 @@ title: Realizacje
 description: Zobacz wybrane realizacje stron, sklepów i serwisów internetowych. Postaw na specjalistyczne wsparcie i skutecznie rozwijaj swój biznes.
 ---
 
-<div class="row gx-4">
+<div class="row gx-4 pb-small">
   <div class="offset-md-1 col-md-8">
     <h1 class="xxl" data-splitting>
       {{ title }}<span class="dot">.</span>
@@ -40,7 +40,7 @@ description: Zobacz wybrane realizacje stron, sklepów i serwisów internetowych
   </div>
 </div>
 
-<div class="row gx-4 pb-large">
+<div class="row gx-4 pb-medium pb-md-large">
   <div class="offset-md-1 col-md-10">
     <div class="line-x lx-2"></div>
   </div>
@@ -48,9 +48,9 @@ description: Zobacz wybrane realizacje stron, sklepów i serwisów internetowych
 
             {% for post in collections.works.slice(0,12) %}
                 <div class="works-grid-item">             
-                    <div class="row gx-0 flex-row-reverse archive-post pb-md-medium">
+                    <div class="row gx-0 flex-row-reverse archive-post pb-xsmall pb-md-medium">
                       <div class="col-md-1"></div>
-                      <div class="col-md-5 fadeIn mb-2 mb-md-0">
+                      <div class="col-md-5 fadeIn mb-0">
                         <a href="{{ post.url }}" title="{{ post.data.title }}">
                          <div class="portfolio-item">
                           <div class="parallax-wrap aspect_16-12">
@@ -62,12 +62,12 @@ description: Zobacz wybrane realizacje stron, sklepów i serwisów internetowych
                       <div class="offset-md-1 col-md-5 fadeIn d-flex align-items-center">
                         <div class="pr-md-5">
                             <a href="{{ post.url }}" title="{{ post.data.client }}">
-                                <p class="archive-post-client mb-2 mb-md-3">
-                                    {{ post.data.client }}
+                                <p class="archive-post-client mt-4 mb-2">
+                                    <small> {{ post.data.client }}</small>
                                 </p>
                             </a>
                             <a href="{{ post.url }}" title="{{ post.data.title }}">
-                                <h3 class="archive-post-title h4 mt-0 mb-1">
+                                <h3 class="archive-post-title h4 mt-0">
                                     {{ post.data.title }}
                                 </h3>
                             </a>
@@ -76,7 +76,7 @@ description: Zobacz wybrane realizacje stron, sklepów i serwisów internetowych
                                     {{ post.data.description}}
                                 </p>
                             </div>
-                            <a href="{{ post.url }}" title="Zobacz więcej" class="button mt-4 mb-4"> 
+                            <a href="{{ post.url }}" title="Zobacz więcej" class="button mt-2 mb-2"> 
                                 <span>Zobacz więcej</span>
                                 <svg width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M13 1L1 13" stroke="var(--color-accent-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
@@ -94,3 +94,4 @@ description: Zobacz wybrane realizacje stron, sklepów i serwisów internetowych
                 </div>
             {% endfor %}
 
+ 

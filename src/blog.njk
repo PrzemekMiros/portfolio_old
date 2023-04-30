@@ -8,7 +8,7 @@ pagination:
     alias: blog
 ---
 
-  <div class="row gx-4">
+  <div class="row gx-4 pb-small">
     <div class="offset-md-1 col-md-8">
       <h1 class="xxl" data-splitting>
         {{ title }}<span class="dot">.</span>
@@ -23,11 +23,11 @@ pagination:
     </div>
   </div>
 
-  <div class="row gx-4 pb-medium">
-    <div class="offset-md-1 col-md-10">
-      <div class="line-x lx-2"></div>
-    </div>
+<div class="row gx-4 pb-medium pb-md-large">
+  <div class="offset-md-1 col-md-10">
+    <div class="line-x lx-2"></div>
   </div>
+</div>
  
   <div class="row gx-4">
     <div class="offset-md-1 col-md-10">
@@ -66,48 +66,35 @@ pagination:
         </div>
       </div>
       <div class="row gx-4"> {% for post in blog %} 
-        <div class="col-md-6 fadeIn">
-          <a href="{{ post.url }}" title="{{ post.data.title }}">
-            <div class="archive-post pb-small">
-              <div class="portfolio-item">
-              <div class="parallax-wrap aspect_16-9">
-                <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy" />
-              </div>
-              </div>
-              <p class="archive-post-date mt-4 mb-1">
-                <small>{{ post.data.date | dateDisplay}}</small>
-              </p>
-              <h2 class="archive-post-title h4 mt-0">
-                {{ post.data.title }}
-              </h2>
-              <div class="line-x lx-1 lx-op"></div>
-              <a href="{{ post.url }}" class="link-arrow mt-4 mb-2" title="Czytaj">
-                Czytaj 
-                <svg
-                  width="11"
-                  height="11"
-                  viewBox="0 0 14 14"
-                  fill="none"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    d="M13 1L1 13"
-                    stroke="var(--color-accent-1)"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                  <path
-                    d="M3 1H13V11"
-                    stroke="var(--color-accent-1)"
-                    stroke-width="2"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                  ></path>
-                </svg>
-              </a>
-            </div>
-          </a>
+        <div class="col-md-6 fadeIn pb-small"> 
+        <a href="{{ post.url }}" title="{{ post.data.title }}">
+                            <div class="portfolio-item">
+                                <div class="parallax-wrap aspect_16-9">
+                                    <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy" />
+                                </div>
+                            </div>
+                        </a>
+                        <p class="capitalize mt-4 mb-2">
+                            <small>
+                                {{ post.data.tags }}
+                            </small>
+                        </p>
+                        <a href="{{ post.url }}" title="{{ post.data.title }}">
+                            <h3 class="line-clamp-2 h5 mt-0 mb-2">
+                                {{ post.data.title }}
+                            </h3>
+                        </a>
+                        <a href="{{ post.url }}" title="Czytaj" class="button mt-3 mb-4">
+                            <span>Czytaj</span>
+                            <svg width="11" height="11" viewBox="0 0 14 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 1L1 13" stroke="var(--color-accent-1)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M3 1H13V11" stroke="var(--color-accent-1)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </a>
+                        <div class="line-x lx-1 lx-op"></div>
       </div> 
       {% endfor %} 
     </div>
