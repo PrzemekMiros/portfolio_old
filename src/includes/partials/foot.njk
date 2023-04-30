@@ -31,10 +31,11 @@ if (theme === "light") {
   const locoScroll = new LocomotiveScroll({
     el: document.querySelector(".scrollContainer"),
     smooth: true,
+    smoothMobile: true,
     reloadOnContextChange: !0,
     multiplier: .75,
     lerp: .1,
-    touchMultiplier: 2,
+    touchMultiplier: 4,
   });
 
   // Swup init

@@ -244,7 +244,7 @@ gsap.to(".logo-wrap-inner", {
 gsap.from(".menu-toggle-wrap", {
   autoAlpha: 0,
   opacity: 0,
-  delay: 3.5,
+  delay: 4,
 });
 
 gsap.from(".logo-wrap a", {
