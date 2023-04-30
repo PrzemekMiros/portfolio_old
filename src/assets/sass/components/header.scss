@@ -86,6 +86,11 @@
   cursor: pointer
 }
 
+.fixed {
+  position: fixed;
+  width: 100%
+}
+
 .hamburger path {
   fill: none;
   stroke: #fff;
@@ -104,7 +109,7 @@
 
 .menu-bg {
   display: flex;
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   height: 100%;

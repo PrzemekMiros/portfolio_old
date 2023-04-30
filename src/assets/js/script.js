@@ -77,7 +77,12 @@ gsap.from(".footer-parallax", {
     end: "bottom 90%",
     scrub: true
   }
-})
+});
+
+// Mobile menu pinned
+// const menuToggle = document.querySelector("#menuToggle");
+// const mainWrap = document.querySelector(".scrollContainer");
+
 
 const menuToggle = document.getElementById("menuToggle");
 
