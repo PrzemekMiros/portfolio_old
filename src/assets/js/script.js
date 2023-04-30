@@ -232,8 +232,8 @@ gsap.from(".site-header", {
 
 gsap.to(".logo-wrap-inner", {
   opacity: 0, 
-  duration: .4,
-  delay: 3.9,
+  duration: .2,
+  delay: 4.04,
 	ease: Power3
 });
 
