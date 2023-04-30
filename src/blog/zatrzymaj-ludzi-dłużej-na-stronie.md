@@ -1,22 +1,23 @@
 ---
 title: Zatrzymaj ludzi dłużej na stronie
-description: Jeśli Twoja witryna nadal jest pełna animowanych obrazów, nadmiarowych funkcji projektowych i innych nowoczesnych rozwiązań,
-  czas na przeprojektowanie.
-date: 2023-03-21
+description: Jeśli Twoja witryna nadal jest pełna animowanych obrazów,
+  nadmiarowych funkcji projektowych i innych przestarzałych rozwiązań, czas na
+  przeprojektowanie.
 author: Przemek
+date: 2023-03-21
 tags:
   - pozycjonowanie
 thumbnail: /blog/img/blog-site-long.jpg
 ---
-Dowiedziałeś się, jakie problemy powodują, że klienci opuszczają witrynę Twojej firmy. Teraz skupiamy się na tym, jak utrzymać je dłużej w witrynie, aby zmaksymalizować prezentację i przekształcić ją w płacących i lojalnych klientów.
+Dowiedziałeś się, jakie problemy powodują, że klienci opuszczają witrynę Twojej firmy. Teraz skupmy się na tym, jak zatrzymać ich dłużej na stronie, aby zmaksymalizować konwersję i przekształcić użytkowników w płacących i lojalnych klientów.
 
 ## Odśwież design
 
-Jeśli więc Twoja witryna nadal jest pełna animowanych obrazów, nadmiarowych funkcji projektowych i innych niepotrzebnych rozwiązań, czas na przeprojektowanie. Według badań masz tylko 15 sekund (lub mniej), aby przekonać nowych użytkowników, aby pozostali w mocy samego projektu witryny.
+Jeżeli Twoja witryna nadal jest pełna animowanych obrazów, nadmiarowych funkcji projektowych i innych niepotrzebnych rozwiązań, czas na przeprojektowanie. Według badań masz tylko 15 sekund (lub mniej), aby przekonać nowych użytkowników, aby pozostali w mocy samego projektu strony www.
 
 ## Zmniejsz liczbę fontów
 
-Jedno wrażenie, które Twój gość zauważy w pierwszej minucie. Jeśli na swojej stronie głównej masz więcej niż dwa lub trzy, zmniejsz ich liczbę do jednego - maksymalnie dwóch, aby uzyskać bardziej nowoczesny wygląd.
+Za dużo rodzai fontów - pierwsze wrażenie, które użytkownik odniesie po wejściu na stronę. Jeśli na swojej stronie głównej masz więcej niż dwa lub trzy fonty, zmniejsz ich liczbę do jednego - maksymalnie dwóch, aby uzyskać bardziej nowoczesny wygląd.
 
 ## Zachęcaj do komentowania
 
