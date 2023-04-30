@@ -1,0 +1,70 @@
+      <svg viewBox="0 0 563 271" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <style>
+            :root {
+                --color-dark-1: #151c23;
+                --color-light-1: #f8f8f8;
+            }
+        @media(prefers-color-scheme: dark) {
+            :root {
+                --color-dark-1: #f8f8f8;
+                --color-light-1: #151c23;
+            }
+        }
+      </style>
+        <g clip-path="url(#clip0_2783_2)">
+        <rect x="105" width="6" height="271" fill="var(--color-dark-1)"/>
+        <rect x="174" width="12" height="271" fill="var(--color-dark-1)"/>
+        <rect x="130" width="6" height="271" fill="var(--color-dark-1)"/>
+        <rect x="114" width="12" height="271" fill="var(--color-dark-1)"/>
+        <rect x="146" width="6" height="271" fill="var(--color-dark-1)"/>
+        <rect width="9" height="271" transform="matrix(-1 0 0 1 199 0)" fill="var(--color-dark-1)"/>
+        <rect width="7" height="271" fill="var(--color-dark-1)"/>
+        <rect x="47" width="9" height="271" fill="var(--color-dark-1)"/>
+        <rect x="10" width="3" height="271" fill="var(--color-dark-1)"/>
+        <rect x="20" width="3" height="271" fill="var(--color-dark-1)"/>
+        <rect x="35" width="8" height="271" fill="var(--color-dark-1)"/>
+        <rect width="12" height="271" transform="matrix(-1 0 0 1 101 0)" fill="var(--color-dark-1)"/>
+        <rect width="3" height="271" transform="matrix(-1 0 0 1 73 0)" fill="var(--color-dark-1)"/>
+        <rect width="3" height="271" transform="matrix(-1 0 0 1 142 0)" fill="var(--color-dark-1)"/>
+        <rect width="3" height="271" transform="matrix(-1 0 0 1 83 0)" fill="var(--color-dark-1)"/>
+        <rect width="3" height="271" transform="matrix(-1 0 0 1 161 0)" fill="var(--color-dark-1)"/>
+        <rect width="3" height="271" transform="matrix(-1 0 0 1 231 0)" fill="var(--color-dark-1)"/>
+        <rect width="3" height="271" transform="matrix(-1 0 0 1 266 0)" fill="var(--color-dark-1)"/>
+        <rect width="3" height="271" transform="matrix(-1 0 0 1 275 0)" fill="var(--color-dark-1)"/>
+        <rect width="3" height="271" transform="matrix(-1 0 0 1 316 0)" fill="var(--color-dark-1)"/>
+        <rect width="3" height="271" transform="matrix(-1 0 0 1 206 0)" fill="var(--color-dark-1)"/>
+        <rect width="3" height="271" transform="matrix(-1 0 0 1 212 0)" fill="var(--color-dark-1)"/>
+        <rect width="6" height="271" transform="matrix(-1 0 0 1 66 0)" fill="var(--color-dark-1)"/>
+        <rect width="9" height="271" transform="matrix(-1 0 0 1 547 0)" fill="var(--color-dark-1)"/>
+        <rect width="6" height="271" transform="matrix(-1 0 0 1 500 0)" fill="var(--color-dark-1)"/>
+        <rect width="11" height="271" transform="matrix(-1 0 0 1 471 0)" fill="var(--color-dark-1)"/>
+        <rect width="6" height="271" transform="matrix(-1 0 0 1 528 0)" fill="var(--color-dark-1)"/>
+        <rect width="6" height="271" transform="matrix(-1 0 0 1 563 0)" fill="var(--color-dark-1)"/>
+        <rect x="320" width="9" height="271" fill="var(--color-dark-1)"/>
+        <rect x="332" width="6" height="271" fill="var(--color-dark-1)"/>
+        <rect x="363" width="6" height="271" fill="var(--color-dark-1)"/>
+        <rect x="402" width="12" height="271" fill="var(--color-dark-1)"/>
+        <rect x="347" width="3" height="271" fill="var(--color-dark-1)"/>
+        <rect x="373" width="3" height="271" fill="var(--color-dark-1)"/>
+        <rect x="383" width="3" height="271" fill="var(--color-dark-1)"/>
+        <rect x="392" width="3" height="271" fill="var(--color-dark-1)"/>
+        <rect x="418" width="3" height="271" fill="var(--color-dark-1)"/>
+        <rect x="446" width="3" height="271" fill="var(--color-dark-1)"/>
+        <rect x="478" width="3" height="271" fill="var(--color-dark-1)"/>
+        <rect x="487" width="3" height="271" fill="var(--color-dark-1)"/>
+        <rect x="513" width="3" height="271" fill="var(--color-dark-1)"/>
+        <rect x="551" width="3" height="271" fill="var(--color-dark-1)"/>
+        <rect x="453" width="3" height="271" fill="var(--color-dark-1)"/>
+        <rect x="216" width="5" height="271" fill="var(--color-dark-1)"/>
+        <rect x="243" width="6" height="271" fill="var(--color-dark-1)"/>
+        <rect width="11" height="271" transform="matrix(-1 0 0 1 441 0)" fill="var(--color-dark-1)"/>
+        <rect width="6" height="271" transform="matrix(-1 0 0 1 307 0)" fill="var(--color-dark-1)"/>
+        <rect width="6" height="271" transform="matrix(-1 0 0 1 284 0)" fill="var(--color-dark-1)"/>
+        <rect width="6" height="271" transform="matrix(-1 0 0 1 294 0)" fill="var(--color-dark-1)"/>
+        </g>
+        <defs>
+        <clipPath id="clip0_2783_2">
+        <rect width="563" height="271" fill="white"/>
+        </clipPath>
+        </defs>
+      </svg>

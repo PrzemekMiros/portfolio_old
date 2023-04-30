@@ -6,8 +6,6 @@
 body {
     margin: 0;
     padding: 0;
-    border: 10px solid var(--color-dark-1);
-    height: calc(100vh - 20px);
     color: var(--color-text);
     font-family: var(--font-primary)
   }
@@ -203,15 +201,15 @@ body::before {
 }
 
 .brief {
-  width: 1px; 
-  min-width: 100%; 
-  min-height: 100vh; 
-  height: 100%; 
+  width: 1px;
+  min-width: 100%;
+  min-height: calc(100% - 20px);
+  height: calc(100% - 20px);
   border: none;
   opacity: 0;
   animation-name: fadeIn;
   animation-delay: 1s;
-  animation-duration: .8s;
+  animation-duration: 0.8s;
   animation-fill-mode: forwards
 }
 
