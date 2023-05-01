@@ -67,22 +67,33 @@ lineX.forEach(lineXItem => {
 })
 });
 
-gsap.from(".footer-parallax", {
-  y: "-25%",
-  opacity: 0,
-  scrollTrigger: {
-    scroller: ".scrollContainer",
-    trigger: ".site-footer",
-    start: "top 95%",
-    end: "bottom 90%",
-    scrub: true
-  }
-});
-
-// Mobile menu pinned
-// const menuToggle = document.querySelector("#menuToggle");
-// const mainWrap = document.querySelector(".scrollContainer");
-
+// Footer parallax
+if (window.matchMedia("(min-width: 767px)").matches) {
+  gsap.from(".footer-parallax", {
+    y: "-25%",
+    opacity: 0,
+    scrollTrigger: {
+      scroller: ".scrollContainer",
+      trigger: ".site-footer",
+      start: "top 95%",
+      end: "bottom 90%",
+      scrub: true
+    }
+  });
+  } else {
+    gsap.from(".footer-parallax", {
+      y: "-15%",
+      opacity: 0,
+      scrollTrigger: {
+        scroller: ".scrollContainer",
+        trigger: ".site-footer",
+        start: "top 95%",
+        end: "bottom 90%",
+        scrub: true
+      }
+    });
+  };
+  
 
 const menuToggle = document.getElementById("menuToggle");
 
@@ -163,18 +174,6 @@ if (window.matchMedia("(min-width: 767px)").matches) {
     });
   }
 
-  // Pinned menu
-
-gsap.to(".fullpage-menu", {
- yPercent: 0,
-  scrollTrigger: {
-    scroller: ".scrollContainer",
-    trigger: ".transition-fade",
-    // pin: true,
-    start: "top top",
-    scrub: 1
-  }
-})
 
   // Loop text
   if (document.querySelector(".loop-text")) {

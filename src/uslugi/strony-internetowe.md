@@ -7,11 +7,13 @@ thumbnail: /assets/img/services/strony.jpg
 
 ## Pokaż się z najlepszej strony
 
-W dzisiejszych czasach solidnie wykonana strona internetowa jest podstawą dla każdej firmy która chce liczyć się na rynku w którym funkcjonuje. Strona www jest czymś w rodzaju wizytówki jaką możemy sobie wystawić w sieci. Pomaga ona klientom uzyskać niezbędne informacje o danej firmie i daje możliwość kontaktu klienta z firmą. Decydując się na profesjonalną stronę internetową zwiększysz wiarygodność oraz poprawisz wizerunek firmy w internecie.
+W dzisiejszych czasach solidnie wykonana strona internetowa jest podstawą dla każdej firmy która chce liczyć się na rynku w którym funkcjonuje. Strona www jest czymś w rodzaju wizytówki jaką możemy sobie wystawić w sieci. Pomaga ona klientom uzyskać niezbędne informacje o danej firmie i daje możliwość kontaktu klienta z firmą. 
+
+**Decydując się na profesjonalną stronę internetową zwiększysz wiarygodność oraz poprawisz wizerunek firmy w internecie.**
  
 ## Zoptymalizowana pod Google
 
-Wybierając moją ofertę decydujesz się na sprawdzone i skuteczne rozwiązania. Strony internetowe wykonywane przeze mnie są zoptymalizowane pod wyszukiwarki tak, aby uzyskać jak najwyższą pozycję w sieci co pozytywnie wpłynie na pozyskiwanie klientów dla Ciebie lub dla Twojej firmy. Doskonale wiem w jaki sposób zoptymalizować witrynę lub sklep internetowy tak, abyś uzyskał dobre wyniki w wyszukiwarce Google.
+Wybierając moją ofertę decydujesz się na sprawdzone i skuteczne rozwiązania. Otzrymasz stronę zoptymalizowaną tak, aby uzyskać jak najwyższą pozycję w wynikach wyszukiwania co pozytywnie wpłynie na pozyskiwanie klientów dla Ciebie lub dla Twojej firmy. Doskonale wiem w jaki sposób zoptymalizować witrynę tak, abyś uzyskał dobre wyniki w wyszukiwarce Google.
 
 ## Szybka i niezawodna
 
@@ -23,7 +25,9 @@ Coraz więcej osób korzysta z urządzeń mobilnych. Tworzę responsywne strony 
 
 ## Atrakcyjna wizualnie i intuicyjna
 
-Strony internetowe stworzone przeze mnie są funkcjonalne, atrakcyjne wizualnie oraz intuicyjne. Z niezwykłą dokładnością dbam o aspekty wizualne i stosuje ponadczasowe wzorce. Zapewniam unikalny design, przejrzystość i ergonomie tak, aby strony były jak najbardziej czytelne dla odbiorców. Bardzo dużą uwagę przykuwam do użyteczności strony internetowej, czyli coraz bardziej popularny w ostatnich czasach User Experience. Klient który odwiedzi Twoją stronę na pewno się na niej nie zgubi, a to przybliży go do kontaktu z Twoją firmą.
+Strony internetowe stworzone przeze mnie są funkcjonalne, atrakcyjne wizualnie oraz intuicyjne. Z niezwykłą dokładnością dbam o aspekty wizualne i stosuje ponadczasowe wzorce. Zapewniam unikalny design, przejrzystość i ergonomie tak, aby strony były jak najbardziej czytelne dla odbiorców. Bardzo dużą uwagę przykuwam do użyteczności strony internetowej, czyli coraz bardziej popularny w ostatnich czasach User Experience. 
+
+**Klient który odwiedzi Twoją stronę na pewno się na niej nie zgubi, a to przybliży go do kontaktu z Twoją firmą.**
 
 ## Bezpieczna i szyta na miarę
 

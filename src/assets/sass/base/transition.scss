@@ -6,12 +6,12 @@
 }
   
 html.is-animating .transition-fade {
-transform: translateY(-20vh);
+// transform: translateY(-20vh);
 opacity: 0
 }
 
 html.is-rendering .transition-fade {
-transform: translateY(5vh);
+transform: translateY(40px);
 opacity: 0
 }
 
@@ -38,3 +38,14 @@ html.is-changing .page-overlay-in {
     z-index: 999999
   }
   
+@media(min-width:767px) {
+  .transition-fade {
+    transform: translateY(0)
+  }
+  html.is-animating .transition-fade {
+    transform: translateY(-20vh)
+    }
+  html.is-rendering .transition-fade {
+    transform: translateY(5vh)
+    }
+}

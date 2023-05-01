@@ -11,7 +11,7 @@ Projekt i funkcjonalność Twojej platformy eCommerce ma znaczący wpływ na kon
 
 ## Analiza i dobór rozwiązań
 
-Wykorzystując doświadczenie i wiedzę buduje sklepy internetowe, które przyciągają odwiedzających i utrzymują ich lojalność. Analizuje Twoją niszę biznesową, identyfikuje odpowiednich odbiorców i starannie dobieram najlepsze rozwiązania narzędzia.Sprzedaż online nigdy nie była ważniejsza niż obecnie. Pozwól, że pomogę Ci zbudować Twój sukces w Internecie.
+Wykorzystując doświadczenie i wiedzę buduje sklepy internetowe, które przyciągają odwiedzających i utrzymują ich lojalność. Analizuje Twoją niszę biznesową, identyfikuje odpowiednich odbiorców i starannie dobieram najlepsze rozwiązania narzędzia.Sprzedaż online nigdy nie była ważniejsza niż obecnie. 
 
 ## Responsywna witryna eCommerce
 
