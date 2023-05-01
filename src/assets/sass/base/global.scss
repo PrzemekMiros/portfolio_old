@@ -15,9 +15,9 @@ body::before {
   content: "";
   top: 0;
   left: 0;
-  width: calc(100vw - 20px);
-  height: calc(100vh - 20px);
-  border: 10px solid var(--color-dark-1);
+  width: calc(100vw - 14px);
+  height: calc(100vh - 14px);
+  border: 7px solid var(--color-dark-1);
   pointer-events: none;
   z-index: 9999
 }
@@ -124,6 +124,12 @@ body::before {
   html {
     overflow-y: hidden
   }
+  body::before {
+    width: calc(100vw - 20px);
+    height: calc(100vh - 20px);
+    border: 10px solid var(--color-dark-1)
+  }
+  
 }
 
 .about-img-wrap {

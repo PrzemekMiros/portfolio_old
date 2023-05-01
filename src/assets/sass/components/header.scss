@@ -250,6 +250,12 @@
   }
 
 @media(max-width:767px) {
+  .page-overlay-in {
+    left: 7px;
+    top: 7px;
+    width: calc(100vw - 14px);
+    height: calc(100vh - 14px)
+  }
   .site-header {
     padding-top: 25px
   }
