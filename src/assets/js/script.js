@@ -163,6 +163,19 @@ if (window.matchMedia("(min-width: 767px)").matches) {
     });
   }
 
+  // Pinned menu
+
+gsap.to(".fullpage-menu", {
+ yPercent: 0,
+  scrollTrigger: {
+    scroller: ".scrollContainer",
+    trigger: ".transition-fade",
+    // pin: true,
+    start: "top top",
+    scrub: 1
+  }
+})
+
   // Loop text
   if (document.querySelector(".loop-text")) {
   gsap.to(".loop-text", { xPercent: -50, ease: 'none', duration: 13, repeat: -1 })
