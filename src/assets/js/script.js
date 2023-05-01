@@ -96,6 +96,7 @@ if (window.matchMedia("(min-width: 767px)").matches) {
   
 
 const menuToggle = document.getElementById("menuToggle");
+const menuWrap = document.querySelector(".trans-none");
 
 const menuBar = gsap.timeline();
 
@@ -138,6 +139,7 @@ tl.reverse();
 menuToggle.addEventListener('click', function(){
 	menuBar.reversed(!menuBar.reversed());
 	tl.reversed(!tl.reversed());
+  // menuWrap.classList.toggle("active");
 });
 
 // Greeting
