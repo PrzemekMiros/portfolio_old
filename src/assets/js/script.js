@@ -57,7 +57,7 @@ splitTextLines.forEach(element =>{
       fadeIn.forEach(fadeInItem => {
         gsap.from(fadeInItem, { 
           opacity: 0,
-          y: 40,
+          y: 50,
           duration: 2.5,
           delay: 0.3,
           ease: Expo. easeOut,
