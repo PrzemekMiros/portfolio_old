@@ -1,5 +1,4 @@
 function animationMain() {
- Splitting();
  locoScroll.on("scroll", ScrollTrigger.update);
   // tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
   ScrollTrigger.scrollerProxy(".scrollContainer", {
@@ -23,18 +22,35 @@ function animationMain() {
   ScrollTrigger.refresh();
   new ResizeObserver(() => locoScroll.update()).observe(document.querySelector(".scrollContainer"));
 
-    const reveal = document.querySelectorAll(".char");
-    
-    gsap.from(reveal, {
-      y: "100%",
-      duration: 1,
-      ease: Expo. easeOut,
-      scrollTrigger: {
-        scroller: ".scrollContainer",
-        trigger: ".word",
-        start: "top 80%",
-      }
+// Paragraph --------------------------------------------------------------
+
+let splitTextLines = [...document.querySelectorAll('.split-text-lines')];
+
+splitTextLines.forEach(element =>{
+   let mySplitText = new SplitText(element, {
+     type:"lines",
+     linesClass: "line"
+   });
+    new SplitText(element, {
+     type:"lines",
+     linesClass: "line-parent",
+   });
+   
+    gsap.from(mySplitText.lines, {
+        duration: 0.6,
+        stagger: 0.1,
+        yPercent: 100,
+        ease: "sine.out",
+        delay: 0.2,
+        scrollTrigger: { 
+          scroller: ".scrollContainer",
+          trigger: element,
+          start: "top 90%",
+          //toggleActions: 'restart pause reverse pause',
+        },
     })
+});
+
 
     const fadeIn = gsap.utils.toArray('.fadeIn');
 
@@ -42,12 +58,13 @@ function animationMain() {
         gsap.from(fadeInItem, { 
           opacity: 0,
           y: 40,
-          duration: 1.5,
+          duration: 2.5,
+          delay: 0.3,
           ease: Expo. easeOut,
           scrollTrigger: {
             scroller: ".scrollContainer",
             trigger: fadeInItem,
-            start: "top 95%",
+            start: "top 90%",
           }
     })
 });
@@ -57,7 +74,8 @@ const lineX = gsap.utils.toArray('.line-x');
 lineX.forEach(lineXItem => {
   gsap.from(lineXItem, { 
     width: "0",
-    duration: 1,
+    duration: 2.5,
+    delay: 0.5,
     ease: Expo. easeOut,
     scrollTrigger: {
       scroller: ".scrollContainer",
@@ -96,7 +114,6 @@ if (window.matchMedia("(min-width: 767px)").matches) {
   
 
 const menuToggle = document.getElementById("menuToggle");
-const menuWrap = document.querySelector(".trans-none");
 
 const menuBar = gsap.timeline();
 

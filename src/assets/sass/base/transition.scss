@@ -2,7 +2,7 @@
 .transition-fade {
   opacity: 1;
 	// transform: translateY(0);
-	transition: .7s ease-in-out
+	transition: .3s ease-in-out
 }
   
 html.is-animating .transition-fade {
@@ -11,10 +11,11 @@ opacity: 0
 }
 
 html.is-rendering .transition-fade {
-transform: translateY(40px);
+transform: translateY(20px);
 opacity: 0
 }
 
+/*
 @keyframes page-overlay-anim {
   0%   	{ transform: translate(0, 100%); }
   65% 	{ transform: translate(0, 0%); }
@@ -31,6 +32,7 @@ html.is-changing .page-overlay-in {
   	animation: page-overlay-anim 1.3s 1; 
   	animation-timing-function: cubic-bezier(.49,.16,.33,1);
 }
+*/
 
 .swup-progress-bar {
     height: 3px;
@@ -44,7 +46,7 @@ html.is-changing .page-overlay-in {
     transform: translateY(0)
   }
   html.is-animating .transition-fade {
-    transform: translateY(-20vh)
+    transform: translateY(-10vh)
     }
   html.is-rendering .transition-fade {
     transform: translateY(5vh)

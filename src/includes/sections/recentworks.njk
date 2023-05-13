@@ -2,7 +2,7 @@
     <div class="container">
         <div class="row gx-0">
             <div class="offset-md-1 col-md-10">
-                <h2 class="xl fadeIn">
+                <h2 class="xl split-text-lines">
                     Zobacz realizacje<span class="dot">.</span>
                 </h2>
                 <div class="pt-small">
@@ -17,23 +17,23 @@
                 <div class="row gx-5 works-grid">
                     {% for post in collections.works %}
                     <div class="col-md-6 works-grid-item pb-small pb-md-medium">
-                        <div class="archive-post pb-xsmall fadeIn">
+                        <div class="archive-post pb-xsmall">
                             <a href="{{ post.url }}" title="{{ post.data.title }}">
-                                <div class="portfolio-item">
+                                <div class="portfolio-item fadeIn">
                                     <div class="parallax-wrap aspect_16-12">
                                         <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy" />
                                     </div>
                                 </div>
                             </a>
-                                <p class="archive-post-date mt-4 mb-2">
+                                <p class="archive-post-date fadeIn mt-4 mb-2">
                                     <small>{{ post.data.category }}</small>
                                 </p>
                             <a href="{{ post.url }}" title="{{ post.data.title }}">
-                                <h2 class="archive-post-title h4 mt-0">
+                                <h2 class="archive-post-title split-text-lines h4 mt-0">
                                     {{ post.data.client }}
                                 </h2>
                             </a>
-                            <a href="{{ post.data.link }}" title="{{ post.data.title }}" class="button mt-2 mb-2">
+                            <a href="{{ post.data.link }}" title="{{ post.data.title }}" class="button fadeIn mt-2 mb-2">
                             <span> Zobacz online</span>
                             <svg width="11" height="11" viewBox="0 0 14 14" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">

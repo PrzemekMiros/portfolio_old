@@ -6,7 +6,7 @@ description: Zobacz wybrane realizacje stron, sklepów i serwisów internetowych
 
 <div class="row gx-4 mb-3 mb-md-0">
   <div class="offset-md-1 col-md-8">
-    <h1 class="xxl" data-splitting>
+    <h1 class="xxl split-text-lines">
       {{ title }}<span class="dot">.</span>
     </h1>
   </div>
@@ -59,24 +59,24 @@ description: Zobacz wybrane realizacje stron, sklepów i serwisów internetowych
                          </div>
                         </a>
                       </div>
-                      <div class="offset-md-1 col-md-5 fadeIn d-flex align-items-center">
+                      <div class="offset-md-1 col-md-5 d-flex align-items-center">
                         <div class="pr-md-5">
                             <a href="{{ post.url }}" title="{{ post.data.client }}">
-                                <p class="archive-post-client mt-4 mb-2">
+                                <p class="archive-post-client fadeIn mt-4 mb-2">
                                     <small> {{ post.data.client }}</small>
                                 </p>
                             </a>
                             <a href="{{ post.url }}" title="{{ post.data.title }}">
-                                <h3 class="archive-post-title h4 mt-0">
+                                <h3 class="archive-post-title split-text-lines h4 mt-0">
                                     {{ post.data.title }}
                                 </h3>
                             </a>
                             <div class="d-none d-lg-block">
-                                <p class="line-clamp-3 mt-4 mb-4">
+                                <p class="line-clamp-3 split-text-lines mt-4 mb-4">
                                     {{ post.data.description}}
                                 </p>
                             </div>
-                            <a href="{{ post.url }}" title="Zobacz więcej" class="button mt-2 mb-2"> 
+                            <a href="{{ post.url }}" title="Zobacz więcej" class="button fadeIn mt-2 mb-2"> 
                                 <span>Zobacz więcej</span>
                                 <svg width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
                                     <path d="M13 1L1 13" stroke="var(--color-accent-1)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"></path>
