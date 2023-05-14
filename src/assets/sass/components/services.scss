@@ -37,8 +37,10 @@
     }
     .section-services .service-number,
     .section-services .service-arrow {
+        position: relative;
         color: var(--color-accent-1);
-        transition: .5s cubic-bezier(.79,0,.07,.88)
+        transition: .5s cubic-bezier(.79,0,.07,.88);
+        z-index: -1
     }
     .section-services .service-item:hover .service-number,
     .section-services .service-item:hover .service-arrow {

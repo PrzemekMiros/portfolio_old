@@ -22,9 +22,8 @@ function animationMain() {
   ScrollTrigger.refresh();
   new ResizeObserver(() => locoScroll.update()).observe(document.querySelector(".scrollContainer"));
 
-  
+if (document.querySelector('.split-text-lines')) {
 // Paragraph --------------------------------------------------------------
-
 let splitTextLines = [...document.querySelectorAll('.split-text-lines')];
 
 splitTextLines.forEach(element =>{
@@ -51,9 +50,10 @@ splitTextLines.forEach(element =>{
         },
     })
 });
+};
 
+// Fade in
     const fadeIn = gsap.utils.toArray('.fadeIn');
-
       fadeIn.forEach(fadeInItem => {
         gsap.from(fadeInItem, { 
           opacity: 0,
@@ -69,8 +69,8 @@ splitTextLines.forEach(element =>{
     })
 });
 
+// Line animation
 const lineX = gsap.utils.toArray('.line-x');
-
 lineX.forEach(lineXItem => {
   gsap.from(lineXItem, { 
     width: "0",
@@ -111,12 +111,59 @@ if (window.matchMedia("(min-width: 767px)").matches) {
       }
     });
   };
+
+// Magnetic
+if(document.querySelector('.magnetic')) {
+  var magnets = document.querySelectorAll('.magnetic');
+  var magnetText = document.querySelectorAll(".btn-text");
+  var strength = 100;
+
+  if(window.innerWidth > 767){
+    // Mouse Reset
+    magnets.forEach( (magnet) => {
+      magnet.addEventListener('mousemove', moveMagnet );
+      // $(this.parentNode).removeClass('not-active');
+      magnet.addEventListener('mouseleave', function(event) {
+        gsap.to( event.currentTarget, 1.5, {
+          x: 0, 
+          y: 0, 
+          ease: 'Elastic.easeOut'
+        });
+        gsap.to( magnetText, 1.5, {
+          x: 0, 
+          y: 0, 
+          ease: 'Elastic.easeOut'
+        });
+      });
+    });
+
+    // Mouse move
+    function moveMagnet(event) {
+      var magnetButton = event.currentTarget;
+      var bounding = magnetButton.getBoundingClientRect();
+      var magnetsStrength = magnetButton.getAttribute("data-strength");
+      var magnetsStrengthText = magnetButton.getAttribute("data-strength-text");
+      var magnetText = magnetButton.querySelector(".btn-text");
+
+      gsap.to( magnetButton, 1.5, {
+        x: ((( event.clientX - bounding.left)/magnetButton.offsetWidth) - 0.5) * magnetsStrength,
+        y: ((( event.clientY - bounding.top)/magnetButton.offsetHeight) - 0.5) * magnetsStrength,
+        rotate: '0.005deg',
+        ease: 'Power4.easeOut'
+      });
+      gsap.to( magnetText, 1.5, {
+        x: ((( event.clientX - bounding.left)/magnetButton.offsetWidth) - 0.5) * magnetsStrengthText,
+        y: ((( event.clientY - bounding.top)/magnetButton.offsetHeight) - 0.5) * magnetsStrengthText,
+        rotate: '0.001deg',
+        ease: 'Power4.easeOut'
+      });
+    }
+  }; 
+};
   
-
+// Nav menu
 const menuToggle = document.getElementById("menuToggle");
-
 const menuBar = gsap.timeline();
-
 var tl = gsap.timeline({ paused: true});
 
 tl.to('.fullpage-menu', {
