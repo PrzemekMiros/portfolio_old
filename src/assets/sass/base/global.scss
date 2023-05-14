@@ -206,8 +206,8 @@ body::before {
 .brief {
   width: 1px;
   min-width: 100%;
-  min-height: calc(100% - 20px);
-  height: calc(100% - 20px);
+  min-height: calc(100% - 10px);
+  height: calc(100% - 10px);
   border: none;
   opacity: 0;
   animation-name: fadeIn;
