@@ -14,7 +14,7 @@
             <div class="offset-md-1 col-md-10">
                 <div class="row gx-3 gx-xl-5">
                     {% for post in collections.posts.slice(0,3) %}
-                    <div class="col-md-4 pb-small">
+                    <div class="col-md-4 pb-small fadeIn">
                         <a href="{{ post.url }}" title="{{ post.data.title }}">
                             <div class="portfolio-item fadeIn">
                                 <div class="parallax-wrap aspect_16-9">
@@ -22,17 +22,17 @@
                                 </div>
                             </div>
                         </a>
-                        <p class="capitalize fadeIn mt-4 mb-2">
+                        <p class="capitalize mt-4 mb-2">
                             <small>
                                 {{ post.data.tags }}
                             </small>
                         </p>
                         <a href="{{ post.url }}" title="{{ post.data.title }}">
-                            <h3 class="line-clamp-2 h5 fadeIn mt-0 mb-2">
+                            <h3 class="line-clamp-2 h5 mt-0 mb-2">
                                 {{ post.data.title }}
                             </h3>
                         </a>
-                        <a href="{{ post.url }}" title="Czytaj" class="button magnetic fadeIn mt-3 mb-4" data-strength="100" data-strength-text="50">
+                        <a href="{{ post.url }}" title="Czytaj" class="button magnetic mt-3 mb-4" data-strength="100" data-strength-text="50">
                             <span>Czytaj</span>
                             <svg width="11" height="11" viewBox="0 0 14 14" fill="none"
                                 xmlns="http://www.w3.org/2000/svg">
