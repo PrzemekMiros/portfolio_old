@@ -26,4 +26,4 @@
 
 ### Description
 
-My portfolio site. Optimized for Page Speed Insights. Full SEO optimalization.
+My portfolio site. Optimized for Page Speed Insights. Full SEO optimization.
