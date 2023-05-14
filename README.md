@@ -1,18 +1,19 @@
-## Generator
+### Generator
 
 - Eleventy
 - Nunjucks
 - Scss
 - Minifier
 - Images processor
+- Netlify CMS
 
-## Libraries
+### Libraries
 
 - GSAP
 - Swup
 - Locomotive scroll
 
-## Features
+### Features
 
 - Intro preloader 
 - Dark mode with local storage
@@ -23,4 +24,6 @@
 - Parallax images
 - Fluid fonts
 
+### Description
 
+My portfolio site. Optimized for Page Speed Insights. Full SEO optimalization.
