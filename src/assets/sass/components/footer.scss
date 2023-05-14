@@ -1,7 +1,9 @@
 .site-footer {
+    position: relative;
     background: #11171a;
     background-size: cover;
-    background-position: center
+    background-position: center;
+    z-index: -1
 }
 
 .footer-parallax {
