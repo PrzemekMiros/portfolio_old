@@ -22,6 +22,7 @@ function animationMain() {
   ScrollTrigger.refresh();
   new ResizeObserver(() => locoScroll.update()).observe(document.querySelector(".scrollContainer"));
 
+  
 // Paragraph --------------------------------------------------------------
 
 let splitTextLines = [...document.querySelectorAll('.split-text-lines')];
@@ -50,7 +51,6 @@ splitTextLines.forEach(element =>{
         },
     })
 });
-
 
     const fadeIn = gsap.utils.toArray('.fadeIn');
 
