@@ -135,25 +135,6 @@ blockquote p {
   color: #ddd
 }
 
-.text-stroke {
-  text-shadow: 1.5px 1.5px 0 var(--color-heading), -1.5px -1.5px 0 var(--color-heading), 1.5px -1.5px 0 var(--color-heading), -1.5px 1.5px 0 var(--color-heading), 1.5px 1.5px 0 var(--color-heading);
-  // -webkit-text-stroke-width: 2.5px;
-  // -webkit-text-stroke-color: var(--color-heading);
-  // -webkit-text-fill-color: var(--color-light-1);
-}
-
-.ts-1 {
-  color: var(--color-light-1)
-}
-
-.ts-2 {
-  text-shadow: 1px 1px 0 var(--color-heading), -1px -1px 0 var(--color-heading), 1px -1px 0 var(--color-heading), -1px 1px 0 var(--color-heading), 1px 1px 0 var(--color-heading);
- // -webkit-text-stroke-width: 2.5px;
- // -webkit-text-stroke-color: var(--color-heading);
- // -webkit-text-fill-color: var(--color-heading);
-  color: var(--color-heading)
-}
-
 .line-clamp-2,
 .line-clamp-3 {
   display: -webkit-box;
