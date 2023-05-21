@@ -1,9 +1,9 @@
 
   .details {
-      min-height:100vh;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
+      min-height: 90vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
   }
   
   .details:last-child {
@@ -11,23 +11,23 @@
   }
   
   .right {
-      min-height:100vh;
-      display:flex;
-      flex-direction:column;
-      justify-content:center;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
   }
   
   .photos {
       aspect-ratio: 4/4;
-      position:relative;
+      position: relative;
       max-height: 65vh;
       overflow: hidden
   }
   
   .photo {
-      position:absolute;
-      width:100%;
-      height:100%;
+      position: absolute;
+      width: 100%;
+      height: 100%;
   }
   
   .photo img {
