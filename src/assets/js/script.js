@@ -50,7 +50,7 @@ details.forEach((detail, index)=>{
 		trigger: headline,
 		start:"top 80%",
 		end:"top 50%",
-		scrub:true
+		scrub:1.2
    }
  });
 });
