@@ -49,7 +49,9 @@
                         <div class="photos fadeIn">
                         {% for post in collections.works.slice(0,12) %}
                                 <div class="photo">
-                                    <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy" class="swipeimage" />
+                                    <a href="{{ post.url }}" title="{{ post.data.title }}">
+                                        <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy" class="swipeimage" />
+                                    </a>
                                 </div>
                         {% endfor %}
                         </div>
