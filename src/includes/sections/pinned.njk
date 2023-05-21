@@ -1,11 +1,11 @@
-<section class="pb-large" data-scroll-section>
+<section data-scroll-section>
     <div class="container">
         <div class="row gx-5 pin-gallery">
             <div class="offset-md-1 col-md-5">
                 <div class="left">
                     <div class="detailsWrapper">
                         {% for post in collections.works.slice(0,12) %}
-                        <div class="details pb-xsmall">
+                        <div class="details">
 
                             <a href="{{ post.url }}" title="{{ post.data.client }}">
                                 <p class="archive-post-client split-text-lines mt-4 mb-2">
@@ -39,7 +39,6 @@
                             </div>
 
                         </div>
-                        <div class="line-x lx-1 lx-op"></div>
                         {% endfor %}
                     </div>
                 </div>

@@ -150,6 +150,17 @@ blockquote p {
     -webkit-line-clamp: 3
 }
 
+.line-clamp-2 .line-parent:nth-child(3),
+.line-clamp-2 .line-parent:nth-child(4),
+.line-clamp-2 .line-parent:nth-child(5) {
+  display: none!important
+}
+
+.line-clamp-3 .line-parent:nth-child(4),
+.line-clamp-3 .line-parent:nth-child(5) {
+  display: none!important
+}
+
 @media(min-width:767px) {
   .xxxl {
     font-size: 68px
