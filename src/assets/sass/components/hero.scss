@@ -3,10 +3,15 @@
   margin-bottom: -15px
 }
 
-
 .hero-intro-header h1 .line-parent:nth-child(1) {
   text-shadow: 1.5px 1.5px 0 var(--color-heading), -1.5px -1.5px 0 var(--color-heading), 1.5px -1.5px 0 var(--color-heading), -1.5px 1.5px 0 var(--color-heading), 1.5px 1.5px 0 var(--color-heading);
   color: var(--color-light-1)
+}
+
+.hero-intro-header h1 .line-parent:nth-child(2),
+.hero-intro-header h1 .line-parent:nth-child(3) {
+  text-shadow: 1px 1px 0 var(--color-heading), -1px -1px 0 var(--color-heading), 1px -1px 0 var(--color-heading), -1px 1px 0 var(--color-heading), 1px 1px 0 var(--color-heading);
+  color: var(--color-heading)
 }
 
 .text-stroke {

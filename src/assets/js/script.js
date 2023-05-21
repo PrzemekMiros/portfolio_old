@@ -202,7 +202,7 @@ gsap.from(".client-item", {
   autoAlpha: 0,
   y: 20,
   duration: 1.5,
-  stagger: 0.2,
+  stagger: 0.12,
   scrollTrigger: {
     trigger: ".clients-wrap",
     scroller: ".scrollContainer",

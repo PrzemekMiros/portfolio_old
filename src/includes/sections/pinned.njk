@@ -1,78 +1,62 @@
-
-<section class="pt-small pb-large bg-dark" data-scroll-section>
-  <div class="container">
-
-    <div class="row pin-gallery">
-
-      <div class="offset-md-1 col-md-5">
+<section class="pb-large" data-scroll-section>
+    <div class="container">
+        <div class="row gx-5 pin-gallery">
+            <div class="offset-md-1 col-md-5">
                 <div class="left">
                     <div class="detailsWrapper">
-                        <div class="details">
-                            <h2 class="pin-headline">
-                                Przykładowa realizacja nr 1
-                            </h2>
-                            <p class="text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
-                            </p>
-                        </div>
+                        {% for post in collections.works.slice(0,12) %}
+                        <div class="details pb-xsmall">
 
-                        <div class="details">
-                            <h2 class="pin-headline">
-                                Przykładowa realizacja nr 2
-                            </h2>
-                            <p class="text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
-                            </p>
-                        </div>
+                            <a href="{{ post.url }}" title="{{ post.data.client }}">
+                                <p class="archive-post-client split-text-lines mt-4 mb-2">
+                                    <small> {{ post.data.client }}</small>
+                                </p>
+                            </a>
 
-                        <div class="details">
-                            <h2 class="pin-headline">
-                                Przykładowa realizacja nr 3
-                            </h2>
-                            <p class="text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
-                            </p>
-                        </div>
+                            <a href="{{ post.url }}" title="{{ post.data.title }}" class="d-inline-block">
+                                <h2 class="split-text-lines pin-headline h3 my-2">
+                                    {{ post.data.title }}
+                                </h2>
+                            </a>
 
-                        <div class="details pb-medium">
-                            <h2 class="pin-headline">
-                                Przykładowa realizacja nr 4
-                            </h2>
-                            <p class="text">
-                                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-                                incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. 
-                            </p>
-                        </div>
+                            <div>
+                                <p class="line-clamp-3 split-text-lines mt-4 mb-4">
+                                    {{ post.data.description}}
+                                </p>
+                            </div>
 
+                            <div>
+                            <a href="{{ post.data.link }}" title="{{ post.data.title }}" target="_blank" rel="nofollow" class="button magnetic fadeIn mt-2 mb-2" data-strength="100" data-strength-text="50">
+                            <span> Zobacz online</span>
+                            <svg width="11" height="11" viewBox="0 0 14 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 1L1 13" stroke="var(--color-accent-1)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M3 1H13V11" stroke="var(--color-accent-1)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                            </a>
+                            </div>
+
+                        </div>
+                        <div class="line-x lx-1 lx-op"></div>
+                        {% endfor %}
                     </div>
                 </div>
-      </div>
-
-      <div class="col-md-6" id="pinSection2">
-        <div class="pb-small" data-scroll data-scroll-sticky data-scroll-target="#pinSection2">
-                <div class="right">
-                    <div class="photos">
-                        <div class="photo">
-                            <img class="swipeimage" src="https://przemekmiros.pl/realizacje/img/egp-thumb.jpg">
+            </div>
+            <div class="col-md-6" id="pinSection2">
+                <div class="pb-small" data-scroll data-scroll-sticky data-scroll-target="#pinSection2">
+                    <div class="right">
+                        <div class="photos fadeIn">
+                        {% for post in collections.works.slice(0,12) %}
+                                <div class="photo">
+                                    <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy" class="swipeimage" />
+                                </div>
+                        {% endfor %}
                         </div>
-                        <div class="photo">
-                            <img class="swipeimage" src="https://przemekmiros.pl/realizacje/img/business-thumb.jpg">
-                        </div>
-                        <div class="photo">
-                            <img class="swipeimage" src="https://przemekmiros.pl/realizacje/img/egp-thumb.jpg">
-                        </div>
-                        <div class="photo">
-                            <img class="swipeimage" src="https://przemekmiros.pl/realizacje/img/business-thumb.jpg">
-                        </div>
-
                     </div>
                 </div>
+            </div>
         </div>
-      </div>
-
     </div>
-  </div>
 </section>

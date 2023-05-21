@@ -7,6 +7,11 @@ description: Tworzę strony internetowe które pozyskują klientów. Dbam o uży
 {% include 'sections/hero.njk' %}
 {% include 'sections/about.njk' %}
 {% include 'sections/services.njk' %}
+<div class="d-none d-md-block">
+{% include 'sections/pinned.njk' %}
+</div>
+<div class="d-block d-md-none">
 {% include 'sections/recentworks.njk' %}
+</div>
 {% include 'sections/latestposts.njk' %}
 {% include 'sections/clients.njk' %}
