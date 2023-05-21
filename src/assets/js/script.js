@@ -1,4 +1,5 @@
 function animationMain() {
+ gsap.registerPlugin(ScrollTrigger);
  locoScroll.on("scroll", ScrollTrigger.update);
   // tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
   ScrollTrigger.scrollerProxy(".scrollContainer", {
@@ -16,11 +17,45 @@ function animationMain() {
     // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
     pinType: document.querySelector(".scrollContainer").style.transform ? "transform" : "fixed"
   });
+
   // each time the window updates, we should refresh ScrollTrigger and then update LocomotiveScroll. 
   ScrollTrigger.addEventListener("refresh", () => locoScroll.update());
   // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
   ScrollTrigger.refresh();
   new ResizeObserver(() => locoScroll.update()).observe(document.querySelector(".scrollContainer"));
+  
+if (document.querySelector('.photo')) {
+const details = gsap.utils.toArray(".details:not(:first-child)");
+const photos = gsap.utils.toArray(".photo:not(:first-child)");
+
+gsap.set(photos, {yPercent: 100});
+/*
+gsap.to(".right", {
+  scrollTrigger: {
+    scroller: ".scrollContainer",
+	  trigger:".pin-gallery",
+	  start:"top top",
+	  end:"bottom bottom",
+	  pin:".right"
+  }
+});
+*/
+details.forEach((detail, index)=>{
+	let headline = detail.querySelector(".pin-headline");
+  
+ gsap.to(photos[index], {
+   yPercent: 0,
+   scrollTrigger: {
+    scroller: ".scrollContainer",
+		trigger: headline,
+		start:"top 80%",
+		end:"top 50%",
+		scrub:true
+   }
+ });
+});
+
+};
 
 if (document.querySelector('.split-text-lines')) {
 // Paragraph --------------------------------------------------------------
