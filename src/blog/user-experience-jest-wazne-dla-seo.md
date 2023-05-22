@@ -1,13 +1,14 @@
 ---
-title: User Experience jest ważne dla SEO 
-description: Według badań około 80% osób, które mają telefon komórkowy, używa go do łączenia się z Internetem, a połowa z nich korzysta z internetu przynajmniej raz dziennie. 
-date: 2023-03-19
+title: User Experience jest ważne dla SEO
+description: Według badań około 80% osób, które mają telefon komórkowy, używa go
+  do łączenia się z Internetem, a połowa z nich korzysta z internetu
+  przynajmniej raz dziennie.
 author: Przemek
-tags: 
+date: 2023-03-19
+tags:
   - pozycjonowanie
 thumbnail: /blog/img/blog-ux-seo.jpg
 ---
-
 ## Poznaj fakty na temat SEO
 
 Poznaj liczby - Google aktualizuje swój algorytm ponad 500 razy w roku i wykorzystuje ponad 200 sygnałów rankingowych. Często koncentrujemy się na algorytmie, że zapominamy, że cały ten wysiłek służy jednemu celowi: zadowoleniu użytkownika.
@@ -16,7 +17,7 @@ Istnieje ryzyko, że pozycjonerzy nadmiernie skupią się optymalizacji technicz
 
 Na przykład, znamy mantrę „treść jest królem”, dlatego stwórz mnóstwo wspaniałych treści, a odwiedzający będą przychodzić. Ale niestety jest to raczej przestarzałe stwierdzenie. Dziś świetna treść to za mało - satysfakcja użytkowników jest faktycznym czynnikiem rankingowym i nie pochodzi wyłącznie z odpowiedniej treści, ale także z interfejsu witryny.
 
-Łatwo jest podkreślić słowo kluczowe. O wiele trudniej jest powstrzymać odwiedzających przed klikaniem przycisku Wstecz w Twojej witrynie, gdy nie znajdą tego, czego szukają.
+> Łatwo jest podkreślić słowo kluczowe. O wiele trudniej jest powstrzymać odwiedzających przed klikaniem przycisku Wstecz w Twojej witrynie, gdy nie znajdą tego, czego szukają.
 
 ## Wskaźniki User Experience
 
