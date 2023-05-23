@@ -753,9 +753,7 @@ function realestate_column( $column, $post_id ) {global $post;
  }}
 ```
 
-## Disable WooCommerce Variable product price range
-
-Are you looking to disable the variable product price range which normally looks like $100-$200. With the snippet of code give below you will be able to hide the price range, and replace it with “From: ” in front of the minimum price. All you need is pasting the following code in your child theme’s functions.php
+### Wyłącz zmienny przedział cenowy produktów WooCommerce
 
 ```
 add_filter( 'woocommerce_variable_price_html', 'variation_price_format_min', 9999, 2 );
@@ -768,7 +766,7 @@ function variation_price_format_min( $price, $product ) {
 }
 ```
 
-## Hide a WooCommerce Category from Search Result
+### Ukryj kategorię WooCommerce w wynikach wyszukiwania
 
 ```
 function hide_rentals_from_search_pre_get_posts( $query ) {
@@ -789,7 +787,7 @@ function hide_rentals_from_search_pre_get_posts( $query ) {
 }add_action( ‘pre_get_posts’, ‘hide_rentals_from_search_pre_get_posts’);
 ```
 
-## Remove WooCommerce Checkout fields
+### Usuń pola WooCommerce Checkout
 
 ```
 add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
