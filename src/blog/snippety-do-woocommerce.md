@@ -819,7 +819,17 @@ function custom_override_checkout_fields( $fields ) {
 You can customize the above code, let say you want to remove only the address fields then the code will become:
 
 ```
-
+add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
+  
+function custom_override_checkout_fields( $fields ) { 
+    unset($fields['billing']['billing_address_1']);
+    unset($fields['billing']['billing_address_2']);
+    unset($fields['billing']['billing_city']);
+    unset($fields['billing']['billing_postcode']);
+    unset($fields['billing']['billing_country']);
+    unset($fields['billing']['billing_state']);
+    return $fields;
+}
 ```
 
 ## Make Woocommerce Shopping Cart responsive
@@ -827,55 +837,350 @@ You can customize the above code, let say you want to remove only the address fi
 Use the code below and include this in your stylesheet:
 
 ```
-
+@media screen and (max-width: 766px) and (min-width: 300px) { /* START Make the cart table responsive */@media screen and (max-width: 600px) { / Force table to not be like tables anymore /
+.woocommerce table.shop_table,
+.woocommerce table.shop_table thead,
+.woocommerce table.shop_table tbody,
+.woocommerce table.shop_table th,
+.woocommerce table.shop_table td,
+.woocommerce table.shop_table tr {
+display: block;
+} / Hide table headers (but not display: none;, for accessibility) /
+.woocommerce table.shop_table thead tr {
+position: absolute;
+top: -9999px;
+left: -9999px;
+} .woocommerce table.shop_table tr {
+/border: 1px solid #d2d3d3; /
+} .woocommerce table.shop_table td {
+/ Behave like a “row” /
+border: 1px solid #d2d3d3;
+position: relative;
+padding-left: 50% !important;
+} .woocommerce table.shop_table {
+border: none;
+} .woocommerce table.shop_table td.product-spacer {
+border-color: #FFF;
+height: 10px;
+} .woocommerce table.shop_table td:before {
+/ Now like a table header /
+position: absolute;
+/ Top/left values mimic padding /
+top: 6px;
+left: 6px;
+width: 25%;
+padding-right: 10px;
+white-space: nowrap;
+} /
+Label the data /
+.woocommerce table.shop_table td.product-remove:before {
+content: “DELETE”;
+} .woocommerce table.shop_table td.product-thumbnail:before {
+content: “IMAGE”;
+} .woocommerce table.shop_table td.product-name:before {
+content: “PRODUCT”;
+} .woocommerce table.shop_table td.product-price:before {
+content: “PRICE”;
+} .woocommerce table.shop_table td.product-quantity:before {
+content: “QUANTITY”;
+} .woocommerce table.shop_table td.product-subtotal:before {
+content: “SUBTOTAL”;
+} .woocommerce table.shop_table td.product-total:before {
+content: “TOTAL”;
+} .woocommerce .quantity,
+.woocommerce #content .quantity,
+.woocommerce .quantity,
+.woocommerce #content .quantity {
+margin: 0;
+} .woocommerce table.cart td.actions,
+.woocommerce #content table.cart td.actions {
+text-align: left;
+border:0;
+padding-left: 0 !important;
+} .woocommerce table.cart td.actions .button.alt,
+.woocommerce #content table.cart td.actions .button.alt {
+float: left;
+margin-top: 10px;
+} .woocommerce table.cart td.actions div,
+.woocommerce #content table.cart td.actions div,
+.woocommerce table.cart td.actions input,
+.woocommerce #content table.cart td.actions input {
+margin-bottom: 10px;
+} .woocommerce .cart-collaterals .cart_totals {
+float: left;
+width: 100%;
+text-align: left;
+} .woocommerce .cart-collaterals .cart_totals th,
+.woocommerce .cart-collaterals .cart_totals td {
+border:0 !important;
+} .woocommerce .cart-collaterals .cart_totals table tr.cart-subtotal td,
+.woocommerce .cart-collaterals .cart_totals table tr.shipping td,
+.woocommerce .cart-collaterals .cart_totals table tr.total td {
+padding-left: 6px !important;
+} .woocommerce table.shop_table tr.cart-subtotal td,
+.woocommerce table.shop_table tr.shipping td,
+.woocommerce table.shop_table tr.total td,
+.woocommerce table.shop_table.order_details tfoot th,
+.woocommerce table.shop_table.order_details tfoot td {
+padding-left: 6px !important;
+border:0 !important;
+} .woocommerce table.shop_table tbody {
+padding-top: 10px;
+} .woocommerce .col2-set .col-1,
+.woocommerce .col2-set .col-1,
+.woocommerce .col2-set .col-2,
+.woocommerce .col2-set .col-2,
+.woocommerce form .form-row-first,
+.woocommerce form .form-row-last,
+.woocommerce form .form-row-first,
+.woocommerce form .form-row-last {
+float: none;
+width: 100%;
+} .woocommerce .order_details ul,
+.woocommerce .order_details ul,
+.woocommerce .order_details,
+.woocommerce .order_details {
+padding:0;
+} .woocommerce .order_details li,
+.woocommerce .order_details li {
+clear: left;
+margin-bottom: 10px;
+border:0;
+} / make buttons full width, text wide anyway, improves effectiveness /
+#content table.cart td.actions .button,
+.woocommerce #content table.cart td.actions .input-text,
+.woocommerce #content table.cart td.actions input,
+.woocommerce table.cart td.actions .button,
+.woocommerce table.cart td.actions .input-text,
+.woocommerce table.cart td.actions input,
+.woocommerce #content table.cart td.actions .button,
+.woocommerce #content table.cart td.actions .input-text,
+.woocommerce #content table.cart td.actions input,
+.woocommerce table.cart td.actions .button,
+.woocommerce table.cart td.actions .input-text,
+.woocommerce table.cart td.actions input {
+width: 100%;
+font-size:12px !important;
+} .woocommerce tfoot{
+display:block !important;
+}
+.woocommerce tfoot td{
+width:100% !important;
+display:block !important;
+}
+/ keep coupon at 50% /
+#content table.cart td.actions .coupon .button,
+.woocommerce #content table.cart td.actions .coupon .input-text,
+.woocommerce #content table.cart td.actions .coupon input,
+.woocommerce table.cart td.actions .coupon .button,
+.woocommerce table.cart td.actions .coupon .input-text,
+.woocommerce table.cart td.actions .coupon input,
+.woocommerce #content table.cart td.actions .coupon .button,
+.woocommerce #content table.cart td.actions .coupon .input-text,
+.woocommerce #content table.cart td.actions .coupon input,
+.woocommerce table.cart td.actions .coupon .button,
+.woocommerce table.cart td.actions .coupon .input-text,
+.woocommerce table.cart td.actions .coupon input {
+width: 48%;
+font-size:12px !important;
+} / clean up how coupon inputs display /
+#content table.cart td.actions .coupon,
+.woocommerce table.cart td.actions .coupon,
+.woocommerce #content table.cart td.actions .coupon,
+.woocommerce table.cart td.actions .coupon {
+margin-top: 1.5em;
+} #content table.cart td.actions .coupon .input-text,
+.woocommerce table.cart td.actions .coupon .input-text,
+.woocommerce #content table.cart td.actions .coupon .input-text,
+.woocommerce table.cart td.actions .coupon .input-text {
+margin-bottom: 1em;
+} / remove cross sells, they interfere with flow between cart and cart totals + shipping calculator /
+.woocommerce .cart-collaterals .cross-sells,
+.woocommerce .cart-collaterals .cross-sells {
+display: none;
+} }
+/* END Make the cart table responsive */ }
 ```
 
 ## Check whether user has paid for a product already in WooCommerce
 
 ```
-
+function CheckWhetherUserPaid() {$bought = false; // Set HERE ine the array your specific target product IDs$prod_arr = array( '21', '67' ); // Get all customer orders$customer_orders = get_posts( array(
+ 'numberposts' => -1,
+ 'meta_key' => '_customer_user',
+ 'meta_value' => get_current_user_id(),
+ 'post_type' => 'shop_order', // WC orders post type
+ 'post_status' => 'wc-completed' // Only orders with status “completed”
+));foreach ( $customer_orders as $customer_order ) {// Updated compatibility with WooCommerce 3+
+ $order_id = method_exists( $order, 'get_id' ) ? $order->get_id() : $order->id;
+ $order = wc_get_order( $customer_order ); // Iterating through each current customer products bought in the order
+ foreach ($order->get_items() as $item) {// WC 3+ compatibility
+  if ( version_compare( WC_VERSION, '3.0', '<' ) ) { $product_id = $item['product_id']; } else { $product_id = $item->get_product_id();}// Your condition related to your 2 specific products Ids
+ if ( in_array( $product_id, $prod_arr ) ) {
+  $bought = true;
+ }
+}}// return “true” if one the specifics products have been bought before by customer
+return $bought;}
 ```
 
 ## WooCommerce Holiday/Pause Mode
 
 ```
-
+// Trigger Holiday Mode
+add_action ('init', 'woocommerce_holiday_mode');
+ 
+ 
+// Disable Cart, Checkout, Add Cart
+function woocommerce_holiday_mode() {
+   remove_action( 'woocommerce_after_shop_loop_item', 'woocommerce_template_loop_add_to_cart', 10 );
+   remove_action( 'woocommerce_single_product_summary', 'woocommerce_template_single_add_to_cart', 30 );
+   remove_action( 'woocommerce_proceed_to_checkout', 'woocommerce_button_proceed_to_checkout', 20 );
+   remove_action( 'woocommerce_checkout_order_review', 'woocommerce_checkout_payment', 20 );
+   add_action( 'woocommerce_before_main_content', 'wc_shop_disabled', 5 );
+   add_action( 'woocommerce_before_cart', 'wc_shop_disabled', 5 );
+   add_action( 'woocommerce_before_checkout_form', 'wc_shop_disabled', 5 );
+}
+ 
+ 
+// Show Holiday Notice
+function wc_shop_disabled() {
+        wc_print_notice( 'Our Online Shop is Closed Today :)', 'error');
+}
 ```
 
 ## Deny Checkout if User Has Pending Orders
 
 ```
-
+Deny Checkout if User Has Pending Ordersadd_action('woocommerce_after_checkout_validation', 'deny_checkout_user_pending_orders');
+ 
+function deny_checkout_user_pending_orders( $posted ) {
+ 
+ global $woocommerce;
+ $checkout_email = $posted['billing_email'];
+ $user = get_user_by( 'email', $checkout_email );
+  
+ if ( ! empty( $user ) ) {
+  $customer_orders = get_posts( array(
+    'numberposts' => -1,
+    'meta_key'    => '_customer_user',
+    'meta_value'  => $user->ID,
+    'post_type'   => 'shop_order', // WC orders post type
+    'post_status' => 'wc-pending' // Only orders with status "completed"
+  ) );
+  foreach ( $customer_orders as $customer_order ) {
+    $count++;
+  }
+  if ( $count > 0 ) {
+     wc_add_notice( 'Sorry, please pay your pending orders first by logging into your account', 'error');
+  }
+ }
+ 
+}
 ```
 
 ## Change Autofocus Field at WooCommerce Checkout
 
 ```
-
+add_filter( 'woocommerce_checkout_fields', 'change_autofocus_checkout_field' );
+ 
+function change_autofocus_checkout_field( $fields ) {
+ $fields['billing']['billing_first_name']['autofocus'] = false;
+ $fields['billing']['billing_email']['autofocus'] = true;
+ return $fields;
+}
 ```
 
 ## Show Message After Country Selection @ Checkout
 
 ```
-
+// Part 1
+// Add the message notification and place it over the billing section
+// The "display:none" hides it by default
+  
+add_action( 'woocommerce_before_checkout_billing_form', 'echo_notice_shipping' );
+  
+function echo_notice_shipping() {
+echo '<div class="shipping-notice woocommerce-info" style="display:none">Please allow 5-10 business days for delivery after order processing.</div>';
+}
+  
+// Part 2
+// Show or hide message based on billing country
+// The "display:none" hides it by default
+  
+add_action( 'woocommerce_after_checkout_form', 'show_notice_shipping' );
+  
+function show_notice_shipping(){
+     
+    ?>
+  
+    <script>
+        jQuery(document).ready(function($){
+  
+            // Set the country code (That will display the message)
+            var countryCode = 'FR';
+  
+            $('select#billing_country').change(function(){
+  
+                selectedCountry = $('select#billing_country').val();
+                  
+                if( selectedCountry == countryCode ){
+                    $('.shipping-notice').show();
+                }
+                else {
+                    $('.shipping-notice').hide();
+                }
+            });
+  
+        });
+    </script>
+  
+    <?php
+     
+}
 ```
 
 ## Disable Payment Method for Specific Category
 
 ```
-
+add_filter( 'woocommerce_available_payment_gateways', 'unset_gateway_by_category' );
+  
+function unset_gateway_by_category( $available_gateways ) {
+    if ( is_admin() ) return $available_gateways;
+    if ( ! is_checkout() ) return $available_gateways;
+    $unset = false;
+    $category_ids = array( 8, 37 ); //change category id here 
+    foreach ( WC()->cart->get_cart_contents() as $key => $values ) {
+        $terms = get_the_terms( $values['product_id'], 'product_cat' );    
+        foreach ( $terms as $term ) {        
+            if ( in_array( $term->term_id, $category_ids ) ) {
+                $unset = true;
+                break;
+            }
+        }
+    }
+    if ( $unset == true ) unset( $available_gateways['cheque'] );
+    return $available_gateways;
+}
 ```
 
 ## Restrict WooCommerce order notes field to a number of characters
 
 ```
-
+add_filter( 'woocommerce_checkout_fields', 'filter_checkout_fields' ); 
+function filter_checkout_fields( $fields ) { 
+   $fields['order']['order_comments']['maxlength'] = 180; 
+   return $fields;
+}
 ```
 
 ## Remove Checkout Terms & Conditions conditionally in WooCommerce
 
 ```
-
+add_action('woocommerce_checkout_init', 'disable_checkout_terms_and_conditions', 10 );
+function disable_checkout_terms_and_conditions(){
+        remove_action( 'woocommerce_checkout_terms_and_conditions', 'wc_checkout_privacy_policy_text', 20 );
+        remove_action( 'woocommerce_checkout_terms_and_conditions', 'wc_terms_and_conditions_page_content', 30 );
+}
 ```
 
 And… that’s it! I hope you find will these snippets useful, they were all tested and they all work fine, but if you experience any trouble please let me know the comments section. Have fun!
