@@ -55,7 +55,7 @@ remove_action( ‘woocommerce_single_product_summary’, ‘woocommerce_template
 add_filter( ‘woocommerce_price_trim_zeros’, ‘__return_true’ );
 ```
 
-## Hide quantity on cart page
+## Ukryj ilość na stronie koszyka
 
 ```
 function remove_quantity_column( $return, $product ) {
@@ -64,7 +64,7 @@ function remove_quantity_column( $return, $product ) {
 add_filter( 'woocommerce_is_sold_individually', 'remove_quantity_column', 10, 2 );
 ```
 
-## Limit woocommerce order note length
+## Ogranicz długość notatki zamówienia woocommerce
 
 ```
 add_filter( 'woocommerce_checkout_fields', 'limit_order_note_length' );
