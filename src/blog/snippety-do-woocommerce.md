@@ -403,7 +403,7 @@ function variable_fields_process( $post_id ) {
 }
 ```
 
-### Lista kategorii produktów WooCommerce
+**Lista kategorii produktów WooCommerce**
 
 ```
 $args = array(
@@ -427,7 +427,7 @@ $count = count($product_categories);
  }
 ```
 
-### Zmień nadawcę w email Woocommerce
+**Zmień nadawcę w email Woocommerce**
 
 ```
 function woo_custom_wp_mail_from_name() {
@@ -443,7 +443,7 @@ function woo_custom_wp_mail_from() {
 add_filter( 'wp_mail_from_name', 'woo_custom_wp_mail_from_name', 99 );
 ```
 
-### Zwróć identyfikatory polecanych produktów
+**Zwróć identyfikatory polecanych produktów**
 
 ```
 function woo_get_featured_product_ids() {
@@ -482,7 +482,7 @@ function woo_get_featured_product_ids() {
 }
 ```
 
-### Ustaw minimalną kwotę zamówienia
+**Ustaw minimalną kwotę zamówienia**
 
 ```
 add_action( 'woocommerce_checkout_process', 'wc_minimum_order_amount' );
@@ -495,7 +495,7 @@ function wc_minimum_order_amount() {
 }
 ```
 
-### Zamów według ceny, daty lub tytułu na stronie sklepu
+**Zamów według ceny, daty lub tytułu na stronie sklepu**
 
 ```
 add_filter('woocommerce_default_catalog_orderby', 'custom_default_catalog_orderby');
@@ -505,7 +505,7 @@ function custom_default_catalog_orderby() {
 }
 ```
 
-### Dodaj odbiorcę wiadomości e-mail po zakończeniu zamówienia
+**Dodaj odbiorcę wiadomości e-mail po zakończeniu zamówienia**
 
 ```
 function woo_extra_email_recipient($recipient, $object) {
@@ -515,7 +515,7 @@ function woo_extra_email_recipient($recipient, $object) {
 add_filter( 'woocommerce_email_recipient_customer_completed_order', 'woo_extra_email_recipient', 10, 2);
 ```
 
-### Ustaw numer telefonu jako niewymagany
+**Ustaw numer telefonu jako niewymagany**
 
 ```
 add_filter( 'woocommerce_billing_fields', 'wc_npr_filter_phone', 10, 1 );
@@ -525,7 +525,7 @@ function wc_npr_filter_phone( $address_fields ) {
 }
 ```
 
-### Dodawanie niestandardowych pól do wiadomości e-mail
+**Dodawanie niestandardowych pól do wiadomości e-mail**
 
 Aby użyć tego kodu, wykonaj następujące kroki:
 
@@ -541,7 +541,7 @@ add_filter(‘woocommerce_email_order_meta_keys’, ‘my_custom_order_meta_keys
 }
 ```
 
-### Dodawanie niestandardowego pola do strony kasy
+**Dodawanie niestandardowego pola do strony kasy**
 
 Dodajmy nowe pole do kasy, po uwagach do zamówienia, podłączając się do następujących elementów:
 
@@ -574,7 +574,7 @@ add_action( 'woocommerce_checkout_update_order_meta', 'my_custom_checkout_field_
 }
 ```
 
-### Dodaj treść pod przyciskiem „Złóż zamówienie” w kasie WooCommerce
+**Dodaj treść pod przyciskiem „Złóż zamówienie” w kasie WooCommerce**
 
 ```
 add_action( 'woocommerce_review_order_after_submit', 'bbloomer_privacy_message_below_checkout_button' );
@@ -584,7 +584,7 @@ function bbloomer_privacy_message_below_checkout_button() {
 }
 ```
 
-### Dodaj tekst przed i po Dodaj do koszyka
+**Dodaj tekst przed i po Dodaj do koszyka**
 
 ```
 // Before Add to Cart Button: Can be done easily with woocommerce_before_add_to_cart_button hook, example:add_action( ‘woocommerce_before_add_to_cart_button’, ‘before_add_to_cart_btn’ );
@@ -598,7 +598,7 @@ function after_add_to_cart_btn(){
 }
 ```
 
-### Zmień kolejność pól kasy w WooCommerce
+**Zmień kolejność pól kasy w WooCommerce**
 
 Pierwszą rzeczą, o której musisz pamiętać, jest to, że pola są podzielone na grupy, a właściwie są 4 grupy:
 
@@ -636,7 +636,7 @@ Oto lista numerów priorytetów dla pól rozliczeniowych:
 * billing_phone 100
 * billing_email 110
 
-### Sprawdź, czy produkt należy do kategorii lub tagu produktu
+**Sprawdź, czy produkt należy do kategorii lub tagu produktu**
 
 ```
 if( has_term( 4, ‘product_cat’ ) ) {
@@ -650,7 +650,7 @@ if( has_term( 4, ‘product_cat’ ) ) {
 }
 ```
 
-### Zmień liczbę produktów wyświetlanych na stronie z listą produktów WooCommerce
+**Zmień liczbę produktów wyświetlanych na stronie z listą produktów WooCommerce**
 
 ```
 /**
@@ -666,7 +666,7 @@ function new_loop_shop_per_page( $cols ) {
 }
 ```
 
-## Add custom check boxes fields above the terms and conditions in WooCommerce checkout
+**Add custom check boxes fields above the terms and conditions in WooCommerce checkout**
 
 ```
 add_action('woocommerce_checkout_before_terms_and_conditions', 'checkout_additional_checkboxes');
@@ -693,7 +693,7 @@ function my_custom_checkout_field_process() {
 }
 ```
 
-## Extend admin fields in WooCommerce orders page
+Extend admin fields in WooCommerce orders page
 
 Sometimes you need to further extend the Admin Listing. For instance in the current problem i needed to add the serial numbers to the WooCommerce orders listing.
 
@@ -753,7 +753,7 @@ function realestate_column( $column, $post_id ) {global $post;
  }}
 ```
 
-### Wyłącz zmienny przedział cenowy produktów WooCommerce
+**Wyłącz zmienny przedział cenowy produktów WooCommerce**
 
 ```
 add_filter( 'woocommerce_variable_price_html', 'variation_price_format_min', 9999, 2 );
@@ -766,7 +766,7 @@ function variation_price_format_min( $price, $product ) {
 }
 ```
 
-### Ukryj kategorię WooCommerce w wynikach wyszukiwania
+**Ukryj kategorię WooCommerce w wynikach wyszukiwania**
 
 ```
 function hide_rentals_from_search_pre_get_posts( $query ) {
@@ -787,7 +787,7 @@ function hide_rentals_from_search_pre_get_posts( $query ) {
 }add_action( ‘pre_get_posts’, ‘hide_rentals_from_search_pre_get_posts’);
 ```
 
-### Usuń pola WooCommerce Checkout
+**Usuń pola WooCommerce Checkout**
 
 ```
 add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
@@ -828,7 +828,7 @@ function custom_override_checkout_fields( $fields ) {
 }
 ```
 
-### Spraw, by koszyk zakupów Woocommerce był responsywny
+**Spraw, by koszyk zakupów Woocommerce był responsywny**
 
 Dodaj ten kod do arkusza styli Woocommerce
 
@@ -998,7 +998,7 @@ display: none;
 /* END Make the cart table responsive */ }
 ```
 
-### Sprawdź, czy użytkownik zapłacił już za produkt w WooCommerce
+**Sprawdź, czy użytkownik zapłacił już za produkt w WooCommerce**
 
 ```
 function CheckWhetherUserPaid() {$bought = false; // Set HERE ine the array your specific target product IDs$prod_arr = array( '21', '67' ); // Get all customer orders$customer_orders = get_posts( array(
@@ -1019,7 +1019,7 @@ function CheckWhetherUserPaid() {$bought = false; // Set HERE ine the array your
 return $bought;}
 ```
 
-### Tryb wakacji / wstrzymania WooCommerce
+**Tryb wakacji / wstrzymania WooCommerce**
 
 ```
 // Trigger Holiday Mode
@@ -1044,7 +1044,7 @@ function wc_shop_disabled() {
 }
 ```
 
-### Odmów realizacji transakcji, jeśli użytkownik ma oczekujące zamówienia
+**Odmów realizacji transakcji, jeśli użytkownik ma oczekujące zamówienia**
 
 ```
 Deny Checkout if User Has Pending Ordersadd_action('woocommerce_after_checkout_validation', 'deny_checkout_user_pending_orders');
@@ -1074,7 +1074,7 @@ function deny_checkout_user_pending_orders( $posted ) {
 }
 ```
 
-### Zmień pole autofokusa w kasie WooCommerce
+**Zmień pole autofokusa w kasie WooCommerce**
 
 ```
 add_filter( 'woocommerce_checkout_fields', 'change_autofocus_checkout_field' );
@@ -1086,7 +1086,7 @@ function change_autofocus_checkout_field( $fields ) {
 }
 ```
 
-### Pokaż wiadomość w kasie po wybraniu kraju
+**Pokaż wiadomość w kasie po wybraniu kraju**
 
 ```
 // Part 1
@@ -1135,7 +1135,7 @@ function show_notice_shipping(){
 }
 ```
 
-### Wyłącz metodę płatności dla określonej kategorii
+**Wyłącz metodę płatności dla określonej kategorii**
 
 ```
 add_filter( 'woocommerce_available_payment_gateways', 'unset_gateway_by_category' );
@@ -1159,7 +1159,7 @@ function unset_gateway_by_category( $available_gateways ) {
 }
 ```
 
-### Ogranicz pole uwag do zamówienia WooCommerce do określonej liczby znaków
+**Ogranicz pole uwag do zamówienia WooCommerce do określonej liczby znaków**
 
 ```
 add_filter( 'woocommerce_checkout_fields', 'filter_checkout_fields' ); 
