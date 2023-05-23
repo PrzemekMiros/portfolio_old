@@ -405,6 +405,10 @@ gsap.from(".logo-line-3", {
 gsap.from(".ls-stroke", 3.3, {
   strokeDashoffset: "60%"
 });
+gsap.from(".ls-filled", {
+  strokeWidth: "5px",
+  delay: 3
+});
 gsap.from(".ls-filled", 3.3, {
   strokeDashoffset: "90%"
 });

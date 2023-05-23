@@ -5,7 +5,7 @@
     margin-bottom: 1em;
     background-color: var(--color-light-1);
     border: 2px solid var(--color-dark-1);
-    border-radius: 5px;
+    border-radius: 9px;
     text-align: center;
     cursor: pointer;
     overflow: hidden
@@ -42,7 +42,7 @@
     text-transform: uppercase;
     background-color: var(--color-accent-2);
     color: #fff;
-    border-radius: 3px
+    border-radius: 5px
 }
 
 @media(min-width:767px) {

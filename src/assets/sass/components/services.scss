@@ -32,19 +32,20 @@
     .section-services .service-item::before {
         position: absolute;
         content: "";
-        top: 0;
-        left: 8.32%;
-        right: 8.32%;
+        top: 0px;
+        left: 7.62%;
+        right: 7.62%;
         bottom: 100%;
         background-color: #ffffffd9;
         background-size: cover;
         background-blend-mode: color;
         transition: .6s cubic-bezier(.79,0,.07,.88);
+        border-radius: 9px;
         z-index: 0
     }
     .section-services .service-item:hover::before {
-        top: 0;
-        bottom: 0
+        top: 0px;
+        bottom: 0px
     }
     .section-services .service-number,
     .section-services .service-arrow {

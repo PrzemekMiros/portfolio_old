@@ -20,7 +20,8 @@
 .button span {
     display: inline-block;
     font-weight: 500;
-    transition: .4s cubic-bezier(.79,0,.07,.88)
+    color: var(--color-heading);
+    transition: transform .4s cubic-bezier(.79,0,.07,.88)
 }
 
 .button svg {

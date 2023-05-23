@@ -8,7 +8,7 @@
                         <div class="details">
 
                             <a href="{{ post.url }}" title="{{ post.data.client }}">
-                                <p class="archive-post-client split-text-lines mt-4 mb-2">
+                                <p class="split-text-lines mt-4 mb-2">
                                     <small> {{ post.data.client }}</small>
                                 </p>
                             </a>
@@ -48,7 +48,7 @@
                     <div class="right">
                         <div class="photos fadeIn">
                         {% for post in collections.works.slice(0,7) %}
-                                <div class="photo">
+                                <div class="photo portfolio-item">
                                     <a href="{{ post.url }}" title="{{ post.data.title }}">
                                         <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy" class="swipeimage" />
                                     </a>
