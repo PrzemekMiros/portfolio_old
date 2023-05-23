@@ -636,7 +636,7 @@ Here are the priority number list for billing fields:
 * billing_phone 100
 * billing_email 110
 
-## Check if Product Belongs to a Product Category or Tag
+### Sprawdź, czy produkt należy do kategorii lub tagu produktu
 
 ```
 if( has_term( 4, ‘product_cat’ ) ) {
@@ -650,7 +650,7 @@ if( has_term( 4, ‘product_cat’ ) ) {
 }
 ```
 
-## Change number of products display in WooCommerce product listing page
+### Zmień liczbę produktów wyświetlanych na stronie z listą produktów WooCommerce
 
 ```
 /**
