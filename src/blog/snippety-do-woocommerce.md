@@ -525,14 +525,14 @@ function wc_npr_filter_phone( $address_fields ) {
 }
 ```
 
-## Adding Custom Fields To Emails
+### Dodawanie niestandardowych pól do wiadomości e-mail
 
-To use this code, follow these steps:
+Aby użyć tego kodu, wykonaj następujące kroki:
 
-1. Add this snippet to your theme’s functions.php file
-2. Change the meta key names in the snippet
-3. Create a custom field in the order post — e.g. key = “Tracking Code” value = abcdefg
-4. When next updating the status, or during any other event which emails the user, they will see this field in their email
+1. Dodaj ten fragment kodu do pliku functions.php motywu
+2. Zmień nazwy kluczy meta we fragmencie kodu
+3. Utwórz niestandardowe pole w poście zamówienia — np. klucz = wartość „Kod śledzenia” = abcdefg
+4. Podczas następnej aktualizacji statusu lub podczas innego wydarzenia, które wysyła e-mail do użytkownika, zobaczy to pole w swoim e-mailu
 
 ```
 add_filter(‘woocommerce_email_order_meta_keys’, ‘my_custom_order_meta_keys’);function my_custom_order_meta_keys( $keys ) {
@@ -541,9 +541,9 @@ add_filter(‘woocommerce_email_order_meta_keys’, ‘my_custom_order_meta_keys
 }
 ```
 
-## Adding a Custom Field to Checkout page
+### Dodawanie niestandardowego pola do strony kasy
 
-Let’s add a new field to checkout, after the order notes, by hooking into the following:
+Dodajmy nowe pole do kasy, po uwagach do zamówienia, podłączając się do następujących elementów:
 
 ```
 add_action( 'woocommerce_after_order_notes', 'my_custom_checkout_field' );function my_custom_checkout_field( $checkout ) {echo '<div id="my_custom_checkout_field"><h2>' . __('My Field') . '</h2>';woocommerce_form_field( 'my_field_name', array(
@@ -554,7 +554,7 @@ add_action( 'woocommerce_after_order_notes', 'my_custom_checkout_field' );functi
         ), $checkout->get_value( 'my_field_name' ));echo '</div>';}
 ```
 
-Next we need to validate the field when the checkout form is posted. For this example the field is required and not optional:
+Następnie musimy sprawdzić poprawność pola po wysłaniu formularza kasy. W tym przykładzie pole jest wymagane, a nie opcjonalne:
 
 ```
 add_action('woocommerce_checkout_process', 'my_custom_checkout_field_process');function my_custom_checkout_field_process() {
@@ -564,7 +564,7 @@ add_action('woocommerce_checkout_process', 'my_custom_checkout_field_process');f
 }
 ```
 
-Finally, let’s save the new field to order custom fields using the following code:
+Na koniec zapiszmy nowe pole, aby zmienić niestandardowe pola za pomocą następującego kodu:
 
 ```
 add_action( 'woocommerce_checkout_update_order_meta', 'my_custom_checkout_field_update_order_meta' );function my_custom_checkout_field_update_order_meta( $order_id ) {
@@ -574,7 +574,7 @@ add_action( 'woocommerce_checkout_update_order_meta', 'my_custom_checkout_field_
 }
 ```
 
-## Add Content Under “Place Order” Button at WooCommerce Checkout
+### Dodaj treść pod przyciskiem „Złóż zamówienie” w kasie WooCommerce
 
 ```
 add_action( 'woocommerce_review_order_after_submit', 'bbloomer_privacy_message_below_checkout_button' );
@@ -584,7 +584,7 @@ function bbloomer_privacy_message_below_checkout_button() {
 }
 ```
 
-## Add Text Before and After Add to Cart
+### Dodaj tekst przed i po Dodaj do koszyka
 
 ```
 // Before Add to Cart Button: Can be done easily with woocommerce_before_add_to_cart_button hook, example:add_action( ‘woocommerce_before_add_to_cart_button’, ‘before_add_to_cart_btn’ );
@@ -598,18 +598,18 @@ function after_add_to_cart_btn(){
 }
 ```
 
-## Reorder Checkout Fields in WooCommerce
+### Zmień kolejność pól kasy w WooCommerce
 
-First thing you have to keep in mind, that fields are separated into groups, and actually there are 4 groups:
+Pierwszą rzeczą, o której musisz pamiętać, jest to, że pola są podzielone na grupy, a właściwie są 4 grupy:
 
-* billing — Billing Address
-* shipping — Shipping Address
-* account — Account Login
-* order — Additional information
+* billing — adres rozliczeniowy
+* wysyłka — Adres wysyłki
+* konto — Logowanie do konta
+* zamów — Informacje dodatkowe
 
-Each of these groups contains fields, I think you know which ones. And you can super easily reorder them with a special priority parameter.
+Każda z tych grup zawiera pola, myślę, że wiesz które. I możesz bardzo łatwo zmienić ich kolejność za pomocą specjalnego parametru priorytetu.
 
-Example — I would like to make the email field the first one to display, I can do it with these couple lines of code:
+Przykład — chciałbym, aby pole e-mail wyświetlało się jako pierwsze, mogę to zrobić za pomocą tych kilku linijek kodu:
 
 ```
 add_filter( ‘woocommerce_checkout_fields’, ‘email_first’ );
@@ -620,9 +620,9 @@ function email_first( $checkout_fields ) {
 }
 ```
 
-Just by setting the priority lower in number, as the lowest number is 10, so we made it 4 for email so it becomes the first field.
+Po prostu ustawiając priorytet na niższą liczbę, ponieważ najniższa liczba to 10, więc ustawiliśmy go na 4 dla wiadomości e-mail, aby stał się pierwszym polem.
 
-Here are the priority number list for billing fields:
+Oto lista numerów priorytetów dla pól rozliczeniowych:
 
 * billing billing_first_name 10
 * billing_last_name 20
@@ -1086,7 +1086,7 @@ function change_autofocus_checkout_field( $fields ) {
 }
 ```
 
-### Pokaż wiadomość w kasie po wybraniu kraju 
+### Pokaż wiadomość w kasie po wybraniu kraju
 
 ```
 // Part 1
