@@ -91,11 +91,7 @@ add_action( 'woocommerce_checkout_fields', 'hqhowdotcom_cutom_checkout_field_con
  return $fields;}
 ```
 
-## Hide all shipping method but free shipping
-
-In the user experience, you should automatically apply the free shipping method whenever possible, which helps customers feel more comfortable with your purchase.
-
-The code snippet below will help you do this:
+## Ukryj wszystkie metody wysyłki oprócz bezpłatnej wysyłki
 
 ```
 function only_show_free_shipping_when_available( $rates, $package ) {
@@ -119,7 +115,7 @@ function only_show_free_shipping_when_available( $rates, $package ) {
 }add_filter( 'woocommerce_package_rates', 'only_show_free_shipping_when_available', 10, 2 );
 ```
 
-## Remove product tab on single product page
+## Usuń kartę produktu na stronie pojedynczego produktu
 
 ```
 add_filter( ‘woocommerce_product_tabs’, ‘remove_product_tabs’, 98 );function remove_product_tabs( $tabs ) {
