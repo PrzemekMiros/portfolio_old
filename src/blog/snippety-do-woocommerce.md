@@ -231,7 +231,7 @@ function custom_remove_woo_checkout_fields( $fields ) {// remove billing fields
 }
 ```
 
-## Remove the state field in the WooCommerce Checkout
+### Usuwanie pole województwo w kasie WooCommerce
 
 ```
 function remove_state_field( $fields ) {
@@ -241,7 +241,7 @@ function remove_state_field( $fields ) {
 add_filter( ‘woocommerce_default_address_fields’, ‘remove_state_field’ );
 ```
 
-## Quickly translate any string
+### Szybko przetłumacz dowolny ciąg znaków
 
 ```
 add_filter('gettext',  'translate_text');
@@ -253,7 +253,7 @@ function translate_text($translated) {
 }
 ```
 
-## Exclude a category from the WooCommerce category widget
+### Wyklucz kategorię z widżetu kategorii WooCommerce
 
 ```
 add_filter( 'woocommerce_product_categories_widget_args', 'woo_product_cat_widget_args' );
@@ -266,7 +266,7 @@ function woo_product_cat_widget_args( $cat_args ) {
 }
 ```
 
-## Replace “Out of stock” by “sold”
+### Zamień „Brak w magazynie” na „sprzedane”
 
 ```
 add_filter('woocommerce_get_availability', 'availability_filter_func');
@@ -278,7 +278,7 @@ function availability_filter_func($availability)
 }
 ```
 
-## Display “product already in cart” instead of “add to cart” button
+### Wyświetlaj „produkt już w koszyku” zamiast przycisku „dodaj do koszyka”
 
 ```
 /**
@@ -322,7 +322,7 @@ function woo_archive_custom_cart_button_text() {
 }
 ```
 
-## Hide products count in category view
+### Ukryj liczbę produktów w widoku kategorii
 
 ```
 add_filter( 'woocommerce_subcategory_count_html', 'woo_remove_category_products_count' );
