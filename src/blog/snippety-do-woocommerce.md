@@ -186,7 +186,7 @@ add_action( ‘pre_get_posts’, ‘remove_categories_shop’ );function remove_
 
 ## Usuwanie nazwy firmy z kasy WooCommerce
 
-To remove the company name field from the WooCommerce checkout, all you need is use the hook **woocommerce_checkout_fields** and then apply a filter to unset the \[billing] \[billing_company] field from the array returned.
+Aby usunąć pole nazwy firmy z kasy WooCommerce, wystarczy użyć hook'a **woocommerce_checkout_fields**, a następnie zastosować filtr, aby usunąć ustawienie pola \[billing] \[billing_company] ze zwróconej tablicy.
 
 ```
 add_filter( ‘woocommerce_checkout_fields’ , ‘remove_company_name’ ); function remove_company_name( $fields ) { 
@@ -195,7 +195,7 @@ add_filter( ‘woocommerce_checkout_fields’ , ‘remove_company_name’ ); fun
 }
 ```
 
-Note: You can also unset other fields using the same method. Here is another example:
+Uwaga: Tą samą metodą można również anulować ustawienia innych pól. Oto przykład:
 
 ```
 add_filter( ‘woocommerce_checkout_fields’ , ‘custom_remove_woo_checkout_fields’ );
