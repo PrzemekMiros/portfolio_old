@@ -8,7 +8,7 @@ tags:
   - strony www
 thumbnail: /blog/img/koncepcja-kolazu-html-i-css.jpg
 ---
-## Wsparcie dla Woocommerce w customowym motywie Wp
+### Wsparcie dla Woocommerce w customowym motywie Wp
 
 Bardzo ważny snippet, którego możesz użyć do dodania obsługi WooCommerce do dowolnego motywu WordPress:
 
@@ -22,7 +22,7 @@ function mytheme_add_woocommerce_support() {
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 ```
 
-## Dodawanie niestandardowej waluty do Woocommerce
+### Dodawanie niestandardowej waluty do Woocommerce
 
 Skopiuj i wklej ten kod do pliku functions.php motywu i zamień kod i symbol waluty na własny. Po zapisaniu zmian powinien być dostępny w ustawieniach WooCommerce.
 
@@ -43,19 +43,19 @@ function add_my_currency_symbol( $currency_symbol, $currency )
 }
 ```
 
-## Usuń meta dane produktu na stronie pojedynczego produktu
+### Usuń meta dane produktu na stronie pojedynczego produktu
 
 ```
 remove_action( ‘woocommerce_single_product_summary’, ‘woocommerce_template_single_meta’, 40 );
 ```
 
-## Usuń miejsca dziesiętne zerowe w cenie produktu
+### Usuń miejsca dziesiętne zerowe w cenie produktu
 
 ```
 add_filter( ‘woocommerce_price_trim_zeros’, ‘__return_true’ );
 ```
 
-## Ukryj ilość na stronie koszyka
+### Ukryj ilość na stronie koszyka
 
 ```
 function remove_quantity_column( $return, $product ) {
@@ -64,7 +64,7 @@ function remove_quantity_column( $return, $product ) {
 add_filter( 'woocommerce_is_sold_individually', 'remove_quantity_column', 10, 2 );
 ```
 
-## Ogranicz długość notatki zamówienia woocommerce
+### Ogranicz długość notatki zamówienia woocommerce
 
 ```
 add_filter( 'woocommerce_checkout_fields', 'limit_order_note_length' );
@@ -74,7 +74,7 @@ function limit_order_note_length( $fields ) {
 }
 ```
 
-## Pokaż niestandardowe pola płatności według identyfikatora produktu
+### Pokaż niestandardowe pola płatności według identyfikatora produktu
 
 ```
 add_action( 'woocommerce_checkout_fields', 'hqhowdotcom_cutom_checkout_field_conditional_logic' );function hqhowdotcom_cutom_checkout_field_conditional_logic( $fields ) {foreach( WC()->cart->get_cart() as $cart_item ){
@@ -91,7 +91,7 @@ add_action( 'woocommerce_checkout_fields', 'hqhowdotcom_cutom_checkout_field_con
  return $fields;}
 ```
 
-## Ukryj wszystkie metody wysyłki oprócz bezpłatnej wysyłki
+### Ukryj wszystkie metody wysyłki oprócz bezpłatnej wysyłki
 
 ```
 function only_show_free_shipping_when_available( $rates, $package ) {
@@ -115,7 +115,7 @@ function only_show_free_shipping_when_available( $rates, $package ) {
 }add_filter( 'woocommerce_package_rates', 'only_show_free_shipping_when_available', 10, 2 );
 ```
 
-## Usuń kartę produktu na stronie pojedynczego produktu
+### Usuń kartę produktu na stronie pojedynczego produktu
 
 ```
 add_filter( ‘woocommerce_product_tabs’, ‘remove_product_tabs’, 98 );function remove_product_tabs( $tabs ) {
@@ -125,7 +125,7 @@ add_filter( ‘woocommerce_product_tabs’, ‘remove_product_tabs’, 98 );func
 }
 ```
 
-## Dodaj nowy kraj do listy krajów
+### Dodaj nowy kraj do listy krajów
 
 Żeby dodać nowy kraj do listy krajów, użyj tego fragmentu kodu w pliku function.php folderu motywu:
 
@@ -136,7 +136,7 @@ function woo_add_my_country( $country ) {
 }add_filter( ‘woocommerce_countries’, ‘woo_add_my_country’, 10, 1 );
 ```
 
-## Usuń okruszki
+### Usuń okruszki
 
 Oto snippet, który pomoże Ci usunąć okruszki z Woocommerce:
 
@@ -147,7 +147,7 @@ function remove_wc_breadcrumbs() {
 }
 ```
 
-## Zamień tytuł strony sklepu
+### Zamień tytuł strony sklepu
 
 Za pomocą tego bloku kodu możesz szybko zmienić tytuł swojego sklepu. Po prostu zastąp zwracaną wartość preferowaną nazwą.
 
@@ -161,7 +161,7 @@ function shop_page_title($title ) {
 }
 ```
 
-## Przekieruj do strony kasy po dodaniu produktu do koszyka
+### Przekieruj do strony kasy po dodaniu produktu do koszyka
 
 Aby poprawić konwersje sprzedażowe, możesz automatycznie przekierować do strony kasy po dodaniu produktu do koszyka za pomocą następującego kodu:
 
@@ -174,7 +174,7 @@ function add_to_cart_checkout_redirect() {
 }
 ```
 
-## Usuń kategorie produktów ze strony sklepu
+### Usuń kategorie produktów ze strony sklepu
 
 Jeśli chcesz pozbyć się określonej kategorii produktów ze strony sklepu, ten kod jest bardzo przydatny. Kod ukryje wszystkie produkty z wymienionych kategorii.
 
@@ -184,7 +184,7 @@ add_action( ‘pre_get_posts’, ‘remove_categories_shop’ );function remove_
  }remove_action( ‘pre_get_posts’, ‘remove_categories_shop’ );}
 ```
 
-## Usuwanie nazwy firmy z kasy WooCommerce
+### Usuwanie nazwy firmy z kasy WooCommerce
 
 Aby usunąć pole nazwy firmy z kasy WooCommerce, wystarczy użyć hook'a **woocommerce_checkout_fields**, a następnie zastosować filtr, aby usunąć ustawienie pola \[billing] \[billing_company] ze zwróconej tablicy.
 
