@@ -231,7 +231,7 @@ function custom_remove_woo_checkout_fields( $fields ) {// remove billing fields
 }
 ```
 
-## Remove the state field in the WooCommerce Checkout
+### Usuwanie pole województwo w kasie WooCommerce
 
 ```
 function remove_state_field( $fields ) {
@@ -241,7 +241,7 @@ function remove_state_field( $fields ) {
 add_filter( ‘woocommerce_default_address_fields’, ‘remove_state_field’ );
 ```
 
-## Quickly translate any string
+### Szybko przetłumacz dowolny ciąg znaków
 
 ```
 add_filter('gettext',  'translate_text');
@@ -253,7 +253,7 @@ function translate_text($translated) {
 }
 ```
 
-## Exclude a category from the WooCommerce category widget
+### Wyklucz kategorię z widżetu kategorii WooCommerce
 
 ```
 add_filter( 'woocommerce_product_categories_widget_args', 'woo_product_cat_widget_args' );
@@ -266,7 +266,7 @@ function woo_product_cat_widget_args( $cat_args ) {
 }
 ```
 
-## Replace “Out of stock” by “sold”
+### Zamień „Brak w magazynie” na „sprzedane”
 
 ```
 add_filter('woocommerce_get_availability', 'availability_filter_func');
@@ -278,7 +278,7 @@ function availability_filter_func($availability)
 }
 ```
 
-## Display “product already in cart” instead of “add to cart” button
+### Wyświetlaj „produkt już w koszyku” zamiast przycisku „dodaj do koszyka”
 
 ```
 /**
@@ -322,7 +322,7 @@ function woo_archive_custom_cart_button_text() {
 }
 ```
 
-## Hide products count in category view
+### Ukryj liczbę produktów w widoku kategorii
 
 ```
 add_filter( 'woocommerce_subcategory_count_html', 'woo_remove_category_products_count' );
@@ -332,7 +332,7 @@ function woo_remove_category_products_count() {
 }
 ```
 
-## Make account checkout fields required
+### Ustaw wymagane pola płatności na koncie
 
 ```
 add_filter( 'woocommerce_checkout_fields', 'woo_filter_account_checkout_fields' );
@@ -346,7 +346,7 @@ function woo_filter_account_checkout_fields( $fields ) {
 }
 ```
 
-## Rename a product tab
+### Zmień nazwę karty produktu
 
 ```
 add_filter( 'woocommerce_product_tabs', 'woo_rename_tab', 98);
@@ -358,7 +358,7 @@ function woo_rename_tab($tabs) {
 }
 ```
 
-## Add a custom field to a product variation
+### Dodaj niestandardowe pole do odmiany produktu
 
 ```
 //Display Fields
@@ -403,7 +403,7 @@ function variable_fields_process( $post_id ) {
 }
 ```
 
-## List WooCommerce product Categories
+### Lista kategorii produktów WooCommerce
 
 ```
 $args = array(
@@ -427,7 +427,7 @@ $count = count($product_categories);
  }
 ```
 
-## Change “from” email address
+### Zmień nadawcę w email Woocommerce
 
 ```
 function woo_custom_wp_mail_from_name() {
@@ -443,7 +443,7 @@ function woo_custom_wp_mail_from() {
 add_filter( 'wp_mail_from_name', 'woo_custom_wp_mail_from_name', 99 );
 ```
 
-## Return featured products ids
+### Zwróć identyfikatory polecanych produktów
 
 ```
 function woo_get_featured_product_ids() {
@@ -482,7 +482,7 @@ function woo_get_featured_product_ids() {
 }
 ```
 
-## Set minimum order amount
+### Ustaw minimalną kwotę zamówienia
 
 ```
 add_action( 'woocommerce_checkout_process', 'wc_minimum_order_amount' );
@@ -495,7 +495,7 @@ function wc_minimum_order_amount() {
 }
 ```
 
-## Order by price, date or title on shop page
+### Zamów według ceny, daty lub tytułu na stronie sklepu
 
 ```
 add_filter('woocommerce_default_catalog_orderby', 'custom_default_catalog_orderby');
@@ -505,7 +505,7 @@ function custom_default_catalog_orderby() {
 }
 ```
 
-## Add email recipient when order completed
+### Dodaj odbiorcę wiadomości e-mail po zakończeniu zamówienia
 
 ```
 function woo_extra_email_recipient($recipient, $object) {
@@ -515,7 +515,7 @@ function woo_extra_email_recipient($recipient, $object) {
 add_filter( 'woocommerce_email_recipient_customer_completed_order', 'woo_extra_email_recipient', 10, 2);
 ```
 
-## Make phone number not required
+### Ustaw numer telefonu jako niewymagany
 
 ```
 add_filter( 'woocommerce_billing_fields', 'wc_npr_filter_phone', 10, 1 );
@@ -636,7 +636,7 @@ Here are the priority number list for billing fields:
 * billing_phone 100
 * billing_email 110
 
-## Check if Product Belongs to a Product Category or Tag
+### Sprawdź, czy produkt należy do kategorii lub tagu produktu
 
 ```
 if( has_term( 4, ‘product_cat’ ) ) {
@@ -650,7 +650,7 @@ if( has_term( 4, ‘product_cat’ ) ) {
 }
 ```
 
-## Change number of products display in WooCommerce product listing page
+### Zmień liczbę produktów wyświetlanych na stronie z listą produktów WooCommerce
 
 ```
 /**
@@ -753,9 +753,7 @@ function realestate_column( $column, $post_id ) {global $post;
  }}
 ```
 
-## Disable WooCommerce Variable product price range
-
-Are you looking to disable the variable product price range which normally looks like $100-$200. With the snippet of code give below you will be able to hide the price range, and replace it with “From: ” in front of the minimum price. All you need is pasting the following code in your child theme’s functions.php
+### Wyłącz zmienny przedział cenowy produktów WooCommerce
 
 ```
 add_filter( 'woocommerce_variable_price_html', 'variation_price_format_min', 9999, 2 );
@@ -768,7 +766,7 @@ function variation_price_format_min( $price, $product ) {
 }
 ```
 
-## Hide a WooCommerce Category from Search Result
+### Ukryj kategorię WooCommerce w wynikach wyszukiwania
 
 ```
 function hide_rentals_from_search_pre_get_posts( $query ) {
@@ -789,7 +787,7 @@ function hide_rentals_from_search_pre_get_posts( $query ) {
 }add_action( ‘pre_get_posts’, ‘hide_rentals_from_search_pre_get_posts’);
 ```
 
-## Remove WooCommerce Checkout fields
+### Usuń pola WooCommerce Checkout
 
 ```
 add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
@@ -814,7 +812,7 @@ function custom_override_checkout_fields( $fields ) {
 }
 ```
 
-You can customize the above code, let say you want to remove only the address fields then the code will become:
+Możesz dostosować powyższy kod, powiedzmy, że chcesz usunąć tylko pola adresu, wtedy kod wygląda tak:
 
 ```
 add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
@@ -830,9 +828,9 @@ function custom_override_checkout_fields( $fields ) {
 }
 ```
 
-## Make Woocommerce Shopping Cart responsive
+### Spraw, by koszyk zakupów Woocommerce był responsywny
 
-Use the code below and include this in your stylesheet:
+Dodaj ten kod do arkusza styli Woocommerce
 
 ```
 @media screen and (max-width: 766px) and (min-width: 300px) { /* START Make the cart table responsive */@media screen and (max-width: 600px) { / Force table to not be like tables anymore /
@@ -1000,7 +998,7 @@ display: none;
 /* END Make the cart table responsive */ }
 ```
 
-## Check whether user has paid for a product already in WooCommerce
+### Sprawdź, czy użytkownik zapłacił już za produkt w WooCommerce
 
 ```
 function CheckWhetherUserPaid() {$bought = false; // Set HERE ine the array your specific target product IDs$prod_arr = array( '21', '67' ); // Get all customer orders$customer_orders = get_posts( array(
@@ -1021,7 +1019,7 @@ function CheckWhetherUserPaid() {$bought = false; // Set HERE ine the array your
 return $bought;}
 ```
 
-## WooCommerce Holiday/Pause Mode
+### Tryb wakacji / wstrzymania WooCommerce
 
 ```
 // Trigger Holiday Mode
@@ -1046,7 +1044,7 @@ function wc_shop_disabled() {
 }
 ```
 
-## Deny Checkout if User Has Pending Orders
+### Odmów realizacji transakcji, jeśli użytkownik ma oczekujące zamówienia
 
 ```
 Deny Checkout if User Has Pending Ordersadd_action('woocommerce_after_checkout_validation', 'deny_checkout_user_pending_orders');
@@ -1076,7 +1074,7 @@ function deny_checkout_user_pending_orders( $posted ) {
 }
 ```
 
-## Change Autofocus Field at WooCommerce Checkout
+### Zmień pole autofokusa w kasie WooCommerce
 
 ```
 add_filter( 'woocommerce_checkout_fields', 'change_autofocus_checkout_field' );
@@ -1088,7 +1086,7 @@ function change_autofocus_checkout_field( $fields ) {
 }
 ```
 
-## Show Message After Country Selection @ Checkout
+### Pokaż wiadomość w kasie po wybraniu kraju 
 
 ```
 // Part 1
@@ -1137,7 +1135,7 @@ function show_notice_shipping(){
 }
 ```
 
-## Disable Payment Method for Specific Category
+### Wyłącz metodę płatności dla określonej kategorii
 
 ```
 add_filter( 'woocommerce_available_payment_gateways', 'unset_gateway_by_category' );
@@ -1161,7 +1159,7 @@ function unset_gateway_by_category( $available_gateways ) {
 }
 ```
 
-## Restrict WooCommerce order notes field to a number of characters
+### Ogranicz pole uwag do zamówienia WooCommerce do określonej liczby znaków
 
 ```
 add_filter( 'woocommerce_checkout_fields', 'filter_checkout_fields' ); 
@@ -1170,15 +1168,3 @@ function filter_checkout_fields( $fields ) {
    return $fields;
 }
 ```
-
-## Remove Checkout Terms & Conditions conditionally in WooCommerce
-
-```
-add_action('woocommerce_checkout_init', 'disable_checkout_terms_and_conditions', 10 );
-function disable_checkout_terms_and_conditions(){
-        remove_action( 'woocommerce_checkout_terms_and_conditions', 'wc_checkout_privacy_policy_text', 20 );
-        remove_action( 'woocommerce_checkout_terms_and_conditions', 'wc_terms_and_conditions_page_content', 30 );
-}
-```
-
-And… that’s it! I hope you find will these snippets useful, they were all tested and they all work fine, but if you experience any trouble please let me know the comments section. Have fun!
