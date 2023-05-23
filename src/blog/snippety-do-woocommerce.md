@@ -22,9 +22,9 @@ function mytheme_add_woocommerce_support() {
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 ```
 
-## Adding Custom Currency to WooCommerce
+## Dodawanie niestandardowej waluty do Woocommerce
 
-WooCommerce by default To add a custom currency in WooCommerce 2.0+, copy and paste this code in your theme functions.php file and swap out the currency code and symbol with your own. After saving changes, it should be available from your WooCommerce settings.
+Skopiuj i wklej ten kod do pliku functions.php motywu i zamień kod i symbol waluty na własny. Po zapisaniu zmian powinien być dostępny w ustawieniach WooCommerce.
 
 ```
 add_filter( ‘woocommerce_currencies’, ‘add_my_currency’ ); 
