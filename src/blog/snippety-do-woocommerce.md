@@ -161,9 +161,9 @@ function shop_page_title($title ) {
 }
 ```
 
-## **Redirect to checkout page after add to cart**
+## Przekieruj do strony kasy po dodaniu produktu do koszyka
 
-To improve the sales conversions , you can automatically redirect to checkout page after adding product to cart by using the following code:
+Aby poprawić konwersje sprzedażowe, możesz automatycznie przekierować do strony kasy po dodaniu produktu do koszyka za pomocą następującego kodu:
 
 ```
 add_action( ‘add_to_cart_redirect’, ‘add_to_cart_checkout_redirect’, 16 );
@@ -174,7 +174,7 @@ function add_to_cart_checkout_redirect() {
 }
 ```
 
-## **Remove product categories from shop page**
+Usuń kategorie produktów ze strony sklepu
 
 If you want to get rid of a certain product category from your shop page, this code is very useful. The code will hide all the products from the mentioned categories.
 
