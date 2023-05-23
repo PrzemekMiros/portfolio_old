@@ -1,9 +1,7 @@
 ---
-title: Media społecznościowe a SEO
-description: Wobec coraz większej ilości danych i sposobów łączenia się,
-  specjaliści ds. PR i komunikacji mają nieodpartą pozycję do opanowania nowych
-  zasad odkrywania, wykorzystywania i udostępniania informacji konsumentom
-author: Przemek
+title: Wpływ mediów społecznościowych na SEO
+description: Wobec coraz większej ilości danych i sposobów łączenia się, specjaliści ds. PR i komunikacji mają nieodpartą pozycję do opanowania nowych zasad odkrywania, wykorzystywania i udostępniania informacji konsumentom
+author: Przemek Miros
 date: 2022-11-19T22:33:50.159Z
 tags:
   - pozycjonowanie

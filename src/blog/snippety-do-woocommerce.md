@@ -1,6 +1,6 @@
 ---
 layout: layouts/post.njk
-title: Snippety do Woocommerce
+title: Przydatne snippety do Woocommerce
 description: Opis
 author: Przemek Miros
 date: 2023-05-23T11:53:45.446Z

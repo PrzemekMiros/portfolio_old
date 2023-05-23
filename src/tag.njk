@@ -25,47 +25,46 @@ eleventyComputed:
   </div>
 </div>
 
-<div class="row gx-4 pb-medium">
+<div class="row gx-4 pb-small">
   <div class="offset-md-1 col-md-10">
     <div class="line-x lx-2"></div>
   </div>
 </div>
 
-<div class="row gx-0">
     <div class="offset-md-1 col-md-10">
-      <div class="row gx-4 pb-medium d-none d-md-flex">
+      <div class="row gx-4 pb-small d-none d-md-flex">
         <div class="col-md-3">
-            <a href="/blog/strony-www/" title="Strony www">
-          <div class="category-card fadeIn">
-            <h3 class="h5 my-1"> Strony www </h3>
+          <a href="/blog/strony-www/" title="Strony www">
+          <div class="category-card magnetic fadeIn" data-strength="50">
+            <h3 class="h6 my-1"> Strony www </h3>
           </div>
           </a>
         </div>
         <div class="col-md-3">
             <a href="/blog/pozycjonowanie/" title="Pozycjonowanie">
-          <div class="category-card fadeIn">
-            <h3 class="h5 my-1"> Pozycjonowanie </h3>
+          <div class="category-card magnetic fadeIn" data-strength="50">
+            <h3 class="h6 my-1"> Pozycjonowanie </h3>
           </div>
           </a>
         </div>
         <div class="col-md-3">
             <a href="/blog/marketing/" title="Marketing">
-          <div class="category-card fadeIn">
-            <h3 class="h5 my-1"> Marketing </h3>
+          <div class="category-card magnetic fadeIn" data-strength="50">
+            <h3 class="h6 my-1"> Marketing </h3>
           </div>
           </a>
         </div>
         <div class="col-md-3">
           <a href="/blog/wordpress/" title="Wordpress">
-          <div class="category-card fadeIn">
-            <h3 class="h5 my-1"> Wordpress </h3>
+          <div class="category-card magnetic fadeIn" data-strength="50">
+            <h3 class="h6 my-1"> Wordpress </h3>
           </div>
         </a>
         </div>
       </div>
         <div class="row gx-4"> 
             {% for post in collections[tag] %} 
-            <div class="col-md-6 fadeIn">
+            <div class="col-md-4 fadeIn">
                 <a href="{{ post.url }}" title="{{ post.data.title }}">
                     <div class="archive-post pb-small">
                         <div class="portfolio-item">
@@ -86,4 +85,3 @@ eleventyComputed:
             {% endfor %} 
         </div>
     </div>
-</div>

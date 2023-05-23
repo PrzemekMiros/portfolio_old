@@ -1,6 +1,6 @@
 ---
-title: Kurs Eleventy - Konfiguracja
-description: Mini kurs z generatora stron statycznych
+title: Mini kurs Eleventy.js - Konfiguracja
+description: Mini kurs z generatora stron statycznych Eleventy.js - Konfiguracja
 date: 2022-12-05T22:37:34.733Z
 author: Przemek Miros
 tags: 
