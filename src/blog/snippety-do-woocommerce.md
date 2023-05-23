@@ -5,7 +5,7 @@ description: Opis
 author: Przemek Miros
 date: 2023-05-23T11:53:45.446Z
 tags:
-  - Strony www
+  - strony www
 thumbnail: /blog/img/koncepcja-kolazu-html-i-css.jpg
 ---
 ## Wsparcie dla Woocommerce w customowym motywie Wp
@@ -22,9 +22,9 @@ function mytheme_add_woocommerce_support() {
 add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 ```
 
-## Adding Custom Currency to WooCommerce
+## Dodawanie niestandardowej waluty do Woocommerce
 
-WooCommerce by default To add a custom currency in WooCommerce 2.0+, copy and paste this code in your theme functions.php file and swap out the currency code and symbol with your own. After saving changes, it should be available from your WooCommerce settings.
+Skopiuj i wklej ten kod do pliku functions.php motywu i zamień kod i symbol waluty na własny. Po zapisaniu zmian powinien być dostępny w ustawieniach WooCommerce.
 
 ```
 add_filter( ‘woocommerce_currencies’, ‘add_my_currency’ ); 
@@ -43,19 +43,19 @@ function add_my_currency_symbol( $currency_symbol, $currency )
 }
 ```
 
-## Remove product meta on single product page
+## Usuń meta dane produktu na stronie pojedynczego produktu
 
 ```
 remove_action( ‘woocommerce_single_product_summary’, ‘woocommerce_template_single_meta’, 40 );
 ```
 
-## Remove zero decimals in product price
+## Usuń miejsca dziesiętne zerowe w cenie produktu
 
 ```
 add_filter( ‘woocommerce_price_trim_zeros’, ‘__return_true’ );
 ```
 
-## Hide quantity on cart page
+## Ukryj ilość na stronie koszyka
 
 ```
 function remove_quantity_column( $return, $product ) {
@@ -64,7 +64,7 @@ function remove_quantity_column( $return, $product ) {
 add_filter( 'woocommerce_is_sold_individually', 'remove_quantity_column', 10, 2 );
 ```
 
-## Limit woocommerce order note length
+## Ogranicz długość notatki zamówienia woocommerce
 
 ```
 add_filter( 'woocommerce_checkout_fields', 'limit_order_note_length' );
@@ -74,7 +74,7 @@ function limit_order_note_length( $fields ) {
 }
 ```
 
-## Show custom billing checkout fields by product id
+## Pokaż niestandardowe pola płatności według identyfikatora produktu
 
 ```
 add_action( 'woocommerce_checkout_fields', 'hqhowdotcom_cutom_checkout_field_conditional_logic' );function hqhowdotcom_cutom_checkout_field_conditional_logic( $fields ) {foreach( WC()->cart->get_cart() as $cart_item ){
@@ -91,11 +91,7 @@ add_action( 'woocommerce_checkout_fields', 'hqhowdotcom_cutom_checkout_field_con
  return $fields;}
 ```
 
-## Hide all shipping method but free shipping
-
-In the user experience, you should automatically apply the free shipping method whenever possible, which helps customers feel more comfortable with your purchase.
-
-The code snippet below will help you do this:
+## Ukryj wszystkie metody wysyłki oprócz bezpłatnej wysyłki
 
 ```
 function only_show_free_shipping_when_available( $rates, $package ) {
@@ -119,7 +115,7 @@ function only_show_free_shipping_when_available( $rates, $package ) {
 }add_filter( 'woocommerce_package_rates', 'only_show_free_shipping_when_available', 10, 2 );
 ```
 
-## Remove product tab on single product page
+## Usuń kartę produktu na stronie pojedynczego produktu
 
 ```
 add_filter( ‘woocommerce_product_tabs’, ‘remove_product_tabs’, 98 );function remove_product_tabs( $tabs ) {
@@ -129,7 +125,7 @@ add_filter( ‘woocommerce_product_tabs’, ‘remove_product_tabs’, 98 );func
 }
 ```
 
-## **Add a new country to countries list**
+## Dodaj nowy kraj do listy krajów
 
 To add a new country to the countries list, use this snippet inside the function.php file of your theme folder:
 
