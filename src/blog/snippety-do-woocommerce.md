@@ -43,7 +43,7 @@ function add_my_currency_symbol( $currency_symbol, $currency )
 }
 ```
 
-## Remove product meta on single product page
+## Usuń meta dane produktu na stronie pojedynczego produktu
 
 ```
 remove_action( ‘woocommerce_single_product_summary’, ‘woocommerce_template_single_meta’, 40 );
