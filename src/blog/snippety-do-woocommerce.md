@@ -147,9 +147,9 @@ function remove_wc_breadcrumbs() {
 }
 ```
 
-## **Replace shop page title**
+## Zamień tytuł strony sklepu
 
-Using this block of code you can quickly replace the title of your shop. Just substitute the return value with your preferred name.
+Za pomocą tego bloku kodu możesz szybko zmienić tytuł swojego sklepu. Po prostu zastąp zwracaną wartość preferowaną nazwą.
 
 ```
 add_filter( ‘woocommerce_page_title’, ‘shop_page_title’);
