@@ -482,7 +482,7 @@ function woo_get_featured_product_ids() {
 }
 ```
 
-## Set minimum order amount
+### Ustaw minimalną kwotę zamówienia
 
 ```
 add_action( 'woocommerce_checkout_process', 'wc_minimum_order_amount' );
@@ -495,7 +495,7 @@ function wc_minimum_order_amount() {
 }
 ```
 
-## Order by price, date or title on shop page
+### Zamów według ceny, daty lub tytułu na stronie sklepu
 
 ```
 add_filter('woocommerce_default_catalog_orderby', 'custom_default_catalog_orderby');
@@ -505,7 +505,7 @@ function custom_default_catalog_orderby() {
 }
 ```
 
-## Add email recipient when order completed
+### Dodaj odbiorcę wiadomości e-mail po zakończeniu zamówienia
 
 ```
 function woo_extra_email_recipient($recipient, $object) {
@@ -515,7 +515,7 @@ function woo_extra_email_recipient($recipient, $object) {
 add_filter( 'woocommerce_email_recipient_customer_completed_order', 'woo_extra_email_recipient', 10, 2);
 ```
 
-## Make phone number not required
+### Ustaw numer telefonu jako niewymagany
 
 ```
 add_filter( 'woocommerce_billing_fields', 'wc_npr_filter_phone', 10, 1 );
