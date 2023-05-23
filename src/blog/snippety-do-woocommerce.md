@@ -236,97 +236,295 @@ function custom_remove_woo_checkout_fields( $fields ) {// remove billing fields
 ## Remove the state field in the WooCommerce Checkout
 
 ```
-
+function remove_state_field( $fields ) {
+ unset( $fields[‘state’] );
+ return $fields;
+}
+add_filter( ‘woocommerce_default_address_fields’, ‘remove_state_field’ );
 ```
 
 ## Quickly translate any string
 
 ```
-
+add_filter('gettext',  'translate_text');
+add_filter('ngettext',  'translate_text');
+ 
+function translate_text($translated) {
+     $translated = str_ireplace('Choose and option',  'Select',  $translated);
+     return $translated;
+}
 ```
 
 ## Exclude a category from the WooCommerce category widget
 
 ```
+add_filter( 'woocommerce_product_categories_widget_args', 'woo_product_cat_widget_args' );
 
+function woo_product_cat_widget_args( $cat_args ) {
+	
+	$cat_args['exclude'] = array('16');
+	
+	return $cat_args;
+}
 ```
 
 ## Replace “Out of stock” by “sold”
 
 ```
+add_filter('woocommerce_get_availability', 'availability_filter_func');
 
+function availability_filter_func($availability)
+{
+	$availability['availability'] = str_ireplace('Out of stock', 'Sold', $availability['availability']);
+	return $availability;
+}
 ```
 
 ## Display “product already in cart” instead of “add to cart” button
 
 ```
+/**
+ * Change the add to cart text on single product pages
+ */
+add_filter( 'woocommerce_product_single_add_to_cart_text', 'woo_custom_cart_button_text' );
 
+function woo_custom_cart_button_text() {
+
+	global $woocommerce;
+	
+	foreach($woocommerce->cart->get_cart() as $cart_item_key => $values ) {
+		$_product = $values['data'];
+	
+		if( get_the_ID() == $_product->id ) {
+			return __('Already in cart - Add Again?', 'woocommerce');
+		}
+	}
+	
+	return __('Add to cart', 'woocommerce');
+}
+
+/**
+ * Change the add to cart text on product archives
+ */
+add_filter( 'add_to_cart_text', 'woo_archive_custom_cart_button_text' );
+
+function woo_archive_custom_cart_button_text() {
+
+	global $woocommerce;
+	
+	foreach($woocommerce->cart->get_cart() as $cart_item_key => $values ) {
+		$_product = $values['data'];
+	
+		if( get_the_ID() == $_product->id ) {
+			return __('Already in cart', 'woocommerce');
+		}
+	}
+	
+	return __('Add to cart', 'woocommerce');
+}
 ```
 
 ## Hide products count in category view
 
 ```
+add_filter( 'woocommerce_subcategory_count_html', 'woo_remove_category_products_count' );
 
+function woo_remove_category_products_count() {
+	return;
+}
 ```
 
 ## Make account checkout fields required
 
 ```
+add_filter( 'woocommerce_checkout_fields', 'woo_filter_account_checkout_fields' );
+ 
+function woo_filter_account_checkout_fields( $fields ) {
+	$fields['account']['account_username']['required'] = true;
+	$fields['account']['account_password']['required'] = true;
+	$fields['account']['account_password-2']['required'] = true;
 
+	return $fields;
+}
 ```
 
 ## Rename a product tab
 
 ```
+add_filter( 'woocommerce_product_tabs', 'woo_rename_tab', 98);
+function woo_rename_tab($tabs) {
 
+ $tabs['description']['title'] = 'More info';
+
+ return $tabs;
+}
 ```
 
 ## Add a custom field to a product variation
 
 ```
+//Display Fields
+add_action( 'woocommerce_product_after_variable_attributes', 'variable_fields', 10, 2 );
+//JS to add fields for new variations
+add_action( 'woocommerce_product_after_variable_attributes_js', 'variable_fields_js' );
+//Save variation fields
+add_action( 'woocommerce_process_product_meta_variable', 'variable_fields_process', 10, 1 );
 
+function variable_fields( $loop, $variation_data ) { ?>	
+	<tr>
+		<td>
+			<div>
+					<label></label>
+					<input type="text" size="5" name="my_custom_field[]" value=""/>
+			</div>
+		</td>
+	</tr>
+
+<tr>
+		<td>
+			<div>
+					<label></label>
+					
+			</div>
+		</td>
+	</tr>
+<?php }
+ 
+function variable_fields_process( $post_id ) {
+	if (isset( $_POST['variable_sku'] ) ) :
+		$variable_sku = $_POST['variable_sku'];
+		$variable_post_id = $_POST['variable_post_id'];
+		$variable_custom_field = $_POST['my_custom_field'];
+		for ( $i = 0; $i < sizeof( $variable_sku ); $i++ ) :
+			$variation_id = (int) $variable_post_id[$i];
+			if ( isset( $variable_custom_field[$i] ) ) {
+				update_post_meta( $variation_id, '_my_custom_field', stripslashes( $variable_custom_field[$i] ) );
+			}
+		endfor;
+	endif;
+}
 ```
 
 ## List WooCommerce product Categories
 
 ```
+$args = array(
+    'number'     => $number,
+    'orderby'    => $orderby,
+    'order'      => $order,
+    'hide_empty' => $hide_empty,
+    'include'    => $ids
+);
 
+$product_categories = get_terms( 'product_cat', $args );
+
+$count = count($product_categories);
+ if ( $count > 0 ){
+     echo "<ul>";
+     foreach ( $product_categories as $product_category ) {
+       echo '<li><a href="' . get_term_link( $product_category ) . '">' . $product_category->name . '</li>';
+        
+     }
+     echo "</ul>";
+ }
 ```
 
 ## Change “from” email address
 
 ```
+function woo_custom_wp_mail_from_name() {
+        global $woocommerce;
+        return html_entity_decode( get_option( 'woocommerce_email_from_name' ) );
+}
+add_filter( 'wp_mail_from_name', 'woo_custom_wp_mail_from_name', 99 );
 
+function woo_custom_wp_mail_from() {
+        global $woocommerce;
+        return html_entity_decode( get_option( 'woocommerce_email_from' ) );
+}
+add_filter( 'wp_mail_from_name', 'woo_custom_wp_mail_from_name', 99 );
 ```
 
 ## Return featured products ids
 
 ```
+function woo_get_featured_product_ids() {
+	// Load from cache
+	$featured_product_ids = get_transient( 'wc_featured_products' );
 
+	// Valid cache found
+	if ( false !== $featured_product_ids )
+		return $featured_product_ids;
+
+	$featured = get_posts( array(
+		'post_type'      => array( 'product', 'product_variation' ),
+		'posts_per_page' => -1,
+		'post_status'    => 'publish',
+		'meta_query'     => array(
+			array(
+				'key' 		=> '_visibility',
+				'value' 	=> array('catalog', 'visible'),
+				'compare' 	=> 'IN'
+			),
+			array(
+				'key' 	=> '_featured',
+				'value' => 'yes'
+			)
+		),
+		'fields' => 'id=>parent'
+	) );
+
+	$product_ids = array_keys( $featured );
+	$parent_ids  = array_values( $featured );
+	$featured_product_ids = array_unique( array_merge( $product_ids, $parent_ids ) );
+
+	set_transient( 'wc_featured_products', $featured_product_ids );
+
+	return $featured_product_ids;
+}
 ```
 
 ## Set minimum order amount
 
 ```
-
+add_action( 'woocommerce_checkout_process', 'wc_minimum_order_amount' );
+function wc_minimum_order_amount() {
+	global $woocommerce;
+	$minimum = 50;
+	if ( $woocommerce->cart->get_cart_total(); < $minimum ) {
+           $woocommerce->add_error( sprintf( 'You must have an order with a minimum of %s to place your order.' , $minimum ) );
+	}
+}
 ```
 
 ## Order by price, date or title on shop page
 
 ```
-
+add_filter('woocommerce_default_catalog_orderby', 'custom_default_catalog_orderby');
+ 
+function custom_default_catalog_orderby() {
+     return 'date'; // Can also use title and price
+}
 ```
 
 ## Add email recipient when order completed
 
 ```
-
+function woo_extra_email_recipient($recipient, $object) {
+    $recipient = $recipient . ', your@email.com';
+    return $recipient;
+}
+add_filter( 'woocommerce_email_recipient_customer_completed_order', 'woo_extra_email_recipient', 10, 2);
 ```
 
 ## Make phone number not required
 
 ```
-
+add_filter( 'woocommerce_billing_fields', 'wc_npr_filter_phone', 10, 1 );
+function wc_npr_filter_phone( $address_fields ) {
+ $address_fields['billing_phone']['required'] = false;
+ return $address_fields;
+}
 ```
 
 ## Adding Custom Fields To Emails
@@ -339,7 +537,10 @@ To use this code, follow these steps:
 4. When next updating the status, or during any other event which emails the user, they will see this field in their email
 
 ```
-
+add_filter(‘woocommerce_email_order_meta_keys’, ‘my_custom_order_meta_keys’);function my_custom_order_meta_keys( $keys ) {
+ $keys[] = ‘Tracking Code’; // This will look for a custom field called ‘Tracking Code’ and add it to emails
+ return $keys;
+}
 ```
 
 ## Adding a Custom Field to Checkout page
@@ -347,31 +548,56 @@ To use this code, follow these steps:
 Let’s add a new field to checkout, after the order notes, by hooking into the following:
 
 ```
-
+add_action( 'woocommerce_after_order_notes', 'my_custom_checkout_field' );function my_custom_checkout_field( $checkout ) {echo '<div id="my_custom_checkout_field"><h2>' . __('My Field') . '</h2>';woocommerce_form_field( 'my_field_name', array(
+        'type'          => 'text',
+        'class'         => array('my-field-class form-row-wide'),
+        'label'         => __('Fill in this field'),
+        'placeholder'   => __('Enter something'),
+        ), $checkout->get_value( 'my_field_name' ));echo '</div>';}
 ```
 
 Next we need to validate the field when the checkout form is posted. For this example the field is required and not optional:
 
 ```
-
+add_action('woocommerce_checkout_process', 'my_custom_checkout_field_process');function my_custom_checkout_field_process() {
+    // Check if set, if its not set add an error.
+    if ( ! $_POST['my_field_name'] )
+        wc_add_notice( __( 'Please enter something into this new shiny field.' ), 'error' );
+}
 ```
 
 Finally, let’s save the new field to order custom fields using the following code:
 
 ```
-
+add_action( 'woocommerce_checkout_update_order_meta', 'my_custom_checkout_field_update_order_meta' );function my_custom_checkout_field_update_order_meta( $order_id ) {
+    if ( ! empty( $_POST['my_field_name'] ) ) {
+        update_post_meta( $order_id, 'My Field', sanitize_text_field( $_POST['my_field_name'] ) );
+    }
+}
 ```
 
 ## Add Content Under “Place Order” Button at WooCommerce Checkout
 
 ```
-
+add_action( 'woocommerce_review_order_after_submit', 'bbloomer_privacy_message_below_checkout_button' );
+ 
+function bbloomer_privacy_message_below_checkout_button() {
+   echo '<p><small>Some Text Here</small></p>';
+}
 ```
 
 ## Add Text Before and After Add to Cart
 
 ```
-
+// Before Add to Cart Button: Can be done easily with woocommerce_before_add_to_cart_button hook, example:add_action( ‘woocommerce_before_add_to_cart_button’, ‘before_add_to_cart_btn’ );
+ 
+function before_add_to_cart_btn(){
+   echo ‘Some custom text here’;
+}// After Add to Cart Button: If you are going to add some custom text after “Add to Cart” button, woocommerce_after_add_to_cart_button hook should help you. Example of usage this hookadd_action( ‘woocommerce_after_add_to_cart_button’, ‘after_add_to_cart_btn’ );
+ 
+function after_add_to_cart_btn(){
+    echo ‘Some custom text here’;
+}
 ```
 
 ## Reorder Checkout Fields in WooCommerce
@@ -388,7 +614,12 @@ Each of these groups contains fields, I think you know which ones. And you can s
 Example — I would like to make the email field the first one to display, I can do it with these couple lines of code:
 
 ```
-
+add_filter( ‘woocommerce_checkout_fields’, ‘email_first’ );
+ 
+function email_first( $checkout_fields ) {
+ $checkout_fields[‘billing’][‘billing_email’][‘priority’] = 4;
+ return $checkout_fields;
+}
 ```
 
 Just by setting the priority lower in number, as the lowest number is 10, so we made it 4 for email so it becomes the first field.
@@ -410,19 +641,58 @@ Here are the priority number list for billing fields:
 ## Check if Product Belongs to a Product Category or Tag
 
 ```
-
+if( has_term( 4, ‘product_cat’ ) ) {
+ // do something if current product in the loop is in product category with ID 4
+}if( has_term( array( ‘sneakers’, ‘backpacks’ ), ‘product_cat’, 50 ) {
+ // do something if product with ID 50 is either in category “sneakers” or “backpacks”
+} else {
+ // do something else if it isn’t
+}if( has_term( 5, ‘product_tag’, 971 ) ) {
+ // do something if product with ID = 971 has tag with ID = 5
+}
 ```
 
 ## Change number of products display in WooCommerce product listing page
 
 ```
+/**
+ * Change number of products that are displayed per page (shop page)
+ */
+add_filter( 'loop_shop_per_page', 'new_loop_shop_per_page', 20 );
 
+function new_loop_shop_per_page( $cols ) {
+  // $cols contains the current number of products per page based on the value stored on Options -> Reading
+  // Return the number of products you wanna show per page.
+  $cols = 9;
+  return $cols;
+}
 ```
 
 ## Add custom check boxes fields above the terms and conditions in WooCommerce checkout
 
 ```
-
+add_action('woocommerce_checkout_before_terms_and_conditions', 'checkout_additional_checkboxes');
+function checkout_additional_checkboxes( ){
+    $checkbox1_text = __( "My first checkbox text", "woocommerce" );
+    $checkbox2_text = __( "My Second checkbox text", "woocommerce" );
+    ?>
+    <p class="form-row custom-checkboxes">
+        <label class="woocommerce-form__label checkbox custom-one">
+            <input type="checkbox" class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox" name="custom_one" > <span><?php echo  $checkbox1_text; ?></span> <span class="required">*</span>
+        </label>
+        <label class="woocommerce-form__label checkbox custom-two">
+            <input type="checkbox" class="woocommerce-form__input woocommerce-form__input-checkbox input-checkbox" name="custom_two" > <span><?php echo  $checkbox2_text; ?></span> <span class="required">*</span>
+        </label>
+    </p>
+    <?php
+}add_action('woocommerce_checkout_process', 'my_custom_checkout_field_process');
+function my_custom_checkout_field_process() {
+    // Check if set, if its not set add an error.
+    if ( ! $_POST['custom_one'] )
+        wc_add_notice( __( 'You must accept "My first checkbox".' ), 'error' );
+    if ( ! $_POST['custom_two'] )
+        wc_add_notice( __( 'You must accept "My second checkbox".' ), 'error' );
+}
 ```
 
 ## Extend admin fields in WooCommerce orders page
@@ -433,7 +703,56 @@ Sometimes you need to further extend the Admin Listing. For instance in the curr
 2. `shop_order_column` is the function where i am managing those fields and providing the values respectively.
 
 ```
-
+add_filter( 'manage_edit-shop_order_columns', 'edit_shop_order_columns' ) ;
+function edit_shop_order_columns( $columns ) {
+ $columns = array(
+  'cb' => '&lt;input type="checkbox" />',
+  'order_number' => __( 'Order' ),
+  'order_date' => __( 'Order Date' ),
+  'order_status' => __( 'Status' ),
+  'serial' => __( 'Serial Number' ),
+  'order_total' => __( 'Order Total'),
+ );
+ return $columns;
+}
+add_action( 'manage_shop_order_posts_custom_column', 'shop_order_column', 10, 2);function shop_order_column( $column, $post_id ) {
+ global $post;
+ $arr = "";
+ if ( 'serial' === $column ) {
+  echo get_field('order_serial_number',$post_id);
+ }
+}add_filter( 'manage_edit-serialnumber_columns', 'edit_serialnumber_columns' );function edit_serialnumber_columns( $columns ) {$columns = array(
+ 'cb' => '&lt;input type="checkbox" />',
+ 'title' => __( 'Serial Numner' ),
+ 'products' => __( 'Linked Products' ),
+ 'SKU' => __( 'SKU' ),
+ 'status' => __( 'Status'),
+ 'date' => __( 'Added Date' )
+);return $columns;
+}add_action( 'manage_serialnumber_posts_custom_column', 'realestate_column', 10, 2);
+function realestate_column( $column, $post_id ) {global $post;
+ 
+ $arr = "";
+ if ( 'products' === $column ) {
+  $productlist = get_field('products',$post_id);
+  foreach($productlist as $row) {
+   $arr[] = get_the_title($row);
+  }
+  echo implode(",",$arr);
+ }
+ 
+ $sku = "";
+ if ( 'SKU' === $column ) {
+  $productlist = get_field('products',$post_id);
+  foreach($productlist as $row) {
+   $product = wc_get_product( $row );
+   echo $row;
+   $sku[] = $product->get_sku();
+  }
+  echo implode(",",$sku);
+ }if ( 'status' === $column ) {
+  echo get_field('available',$post_id);
+ }}
 ```
 
 ## Disable WooCommerce Variable product price range
@@ -441,13 +760,35 @@ Sometimes you need to further extend the Admin Listing. For instance in the curr
 Are you looking to disable the variable product price range which normally looks like $100-$200. With the snippet of code give below you will be able to hide the price range, and replace it with “From: ” in front of the minimum price. All you need is pasting the following code in your child theme’s functions.php
 
 ```
-
+add_filter( 'woocommerce_variable_price_html', 'variation_price_format_min', 9999, 2 );
+  
+function variation_price_format_min( $price, $product ) {
+   $prices = $product->get_variation_prices( true );
+   $min_price = current( $prices['price'] );
+   $price = sprintf( __( 'From: %1$s', 'woocommerce' ), wc_price( $min_price ) );
+   return $price;
+}
 ```
 
 ## Hide a WooCommerce Category from Search Result
 
 ```
-
+function hide_rentals_from_search_pre_get_posts( $query ) {
+ 
+ if (!is_admin() && $query->is_main_query() && $query->is_search()) {
+ 
+ $query->set( ‘post_type’, array( ‘product’ ) );//in the current case i want to hide “rental” category, you can easily replace this with some other product category slug
+ $tax_query = array(
+ array(
+ ‘taxonomy’ => ‘product_cat’,
+ ‘field’ => ‘slug’,
+ ‘terms’ => ‘rentals’, 
+ ‘operator’ => ‘NOT IN’,
+ ),
+ );$query->set( ‘tax_query’, $tax_query );
+ }
+ 
+}add_action( ‘pre_get_posts’, ‘hide_rentals_from_search_pre_get_posts’);
 ```
 
 ## Remove WooCommerce Checkout fields
