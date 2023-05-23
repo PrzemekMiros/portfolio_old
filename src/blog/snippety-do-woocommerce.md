@@ -127,7 +127,7 @@ add_filter( ‘woocommerce_product_tabs’, ‘remove_product_tabs’, 98 );func
 
 ## Dodaj nowy kraj do listy krajów
 
-To add a new country to the countries list, use this snippet inside the function.php file of your theme folder:
+Żeby dodać nowy kraj do listy krajów, użyj tego fragmentu kodu w pliku function.php folderu motywu:
 
 ```
 function woo_add_my_country( $country ) {
@@ -136,9 +136,9 @@ function woo_add_my_country( $country ) {
 }add_filter( ‘woocommerce_countries’, ‘woo_add_my_country’, 10, 1 );
 ```
 
-## **Remove the breadcrumbs**
+## Usuń okruszki
 
-If you want to remove the breadcrumbs, here is the quick snippet to help you remove woocommerce breadcrumbs from your pages:
+Oto snippet, który pomoże Ci usunąć okruszki z Woocommerce:
 
 ```
 add_action( ‘init’, ‘remove_wc_breadcrumbs’ );
@@ -147,9 +147,9 @@ function remove_wc_breadcrumbs() {
 }
 ```
 
-## **Replace shop page title**
+## Zamień tytuł strony sklepu
 
-Using this block of code you can quickly replace the title of your shop. Just substitute the return value with your preferred name.
+Za pomocą tego bloku kodu możesz szybko zmienić tytuł swojego sklepu. Po prostu zastąp zwracaną wartość preferowaną nazwą.
 
 ```
 add_filter( ‘woocommerce_page_title’, ‘shop_page_title’);
@@ -161,9 +161,9 @@ function shop_page_title($title ) {
 }
 ```
 
-## **Redirect to checkout page after add to cart**
+## Przekieruj do strony kasy po dodaniu produktu do koszyka
 
-To improve the sales conversions , you can automatically redirect to checkout page after adding product to cart by using the following code:
+Aby poprawić konwersje sprzedażowe, możesz automatycznie przekierować do strony kasy po dodaniu produktu do koszyka za pomocą następującego kodu:
 
 ```
 add_action( ‘add_to_cart_redirect’, ‘add_to_cart_checkout_redirect’, 16 );
@@ -174,9 +174,9 @@ function add_to_cart_checkout_redirect() {
 }
 ```
 
-## **Remove product categories from shop page**
+## Usuń kategorie produktów ze strony sklepu
 
-If you want to get rid of a certain product category from your shop page, this code is very useful. The code will hide all the products from the mentioned categories.
+Jeśli chcesz pozbyć się określonej kategorii produktów ze strony sklepu, ten kod jest bardzo przydatny. Kod ukryje wszystkie produkty z wymienionych kategorii.
 
 ```
 add_action( ‘pre_get_posts’, ‘remove_categories_shop’ );function remove_categories_shop( $q ) {if ( ! $q->is_main_query() ) return;if ( ! $q->is_post_type_archive() ) return;if ( ! is_admin() && is_shop() && ! is_user_logged_in() ) {$q->set( ‘tax_query’, array(array(‘taxonomy’ => ‘product_cat’,‘field’ => ‘slug’,// Don’t display products in these categories on the shop page
@@ -184,9 +184,9 @@ add_action( ‘pre_get_posts’, ‘remove_categories_shop’ );function remove_
  }remove_action( ‘pre_get_posts’, ‘remove_categories_shop’ );}
 ```
 
-## Removing company name from WooCommerce checkout
+## Usuwanie nazwy firmy z kasy WooCommerce
 
-To remove the company name field from the WooCommerce checkout, all you need is use the hook **woocommerce_checkout_fields** and then apply a filter to unset the \[billing] \[billing_company] field from the array returned.
+Aby usunąć pole nazwy firmy z kasy WooCommerce, wystarczy użyć hook'a **woocommerce_checkout_fields**, a następnie zastosować filtr, aby usunąć ustawienie pola \[billing] \[billing_company] ze zwróconej tablicy.
 
 ```
 add_filter( ‘woocommerce_checkout_fields’ , ‘remove_company_name’ ); function remove_company_name( $fields ) { 
@@ -195,7 +195,7 @@ add_filter( ‘woocommerce_checkout_fields’ , ‘remove_company_name’ ); fun
 }
 ```
 
-Note: You can also unset other fields using the same method. Here is another example:
+Uwaga: Tą samą metodą można również anulować ustawienia innych pól. Oto przykład:
 
 ```
 add_filter( ‘woocommerce_checkout_fields’ , ‘custom_remove_woo_checkout_fields’ );
