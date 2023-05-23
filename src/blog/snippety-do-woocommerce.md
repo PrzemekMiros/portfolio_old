@@ -136,9 +136,9 @@ function woo_add_my_country( $country ) {
 }add_filter( ‘woocommerce_countries’, ‘woo_add_my_country’, 10, 1 );
 ```
 
-## **Remove the breadcrumbs**
+## Usuń okruszki
 
-If you want to remove the breadcrumbs, here is the quick snippet to help you remove woocommerce breadcrumbs from your pages:
+Oto snippet, który pomoże Ci usunąć okruszki z Woocommerce:
 
 ```
 add_action( ‘init’, ‘remove_wc_breadcrumbs’ );
