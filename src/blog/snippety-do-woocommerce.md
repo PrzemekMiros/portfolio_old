@@ -174,9 +174,9 @@ function add_to_cart_checkout_redirect() {
 }
 ```
 
-Usuń kategorie produktów ze strony sklepu
+## Usuń kategorie produktów ze strony sklepu
 
-If you want to get rid of a certain product category from your shop page, this code is very useful. The code will hide all the products from the mentioned categories.
+Jeśli chcesz pozbyć się określonej kategorii produktów ze strony sklepu, ten kod jest bardzo przydatny. Kod ukryje wszystkie produkty z wymienionych kategorii.
 
 ```
 add_action( ‘pre_get_posts’, ‘remove_categories_shop’ );function remove_categories_shop( $q ) {if ( ! $q->is_main_query() ) return;if ( ! $q->is_post_type_archive() ) return;if ( ! is_admin() && is_shop() && ! is_user_logged_in() ) {$q->set( ‘tax_query’, array(array(‘taxonomy’ => ‘product_cat’,‘field’ => ‘slug’,// Don’t display products in these categories on the shop page
@@ -184,7 +184,7 @@ add_action( ‘pre_get_posts’, ‘remove_categories_shop’ );function remove_
  }remove_action( ‘pre_get_posts’, ‘remove_categories_shop’ );}
 ```
 
-## Removing company name from WooCommerce checkout
+## Usuwanie nazwy firmy z kasy WooCommerce
 
 To remove the company name field from the WooCommerce checkout, all you need is use the hook **woocommerce_checkout_fields** and then apply a filter to unset the \[billing] \[billing_company] field from the array returned.
 
