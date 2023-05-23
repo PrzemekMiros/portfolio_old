@@ -49,7 +49,7 @@ function add_my_currency_symbol( $currency_symbol, $currency )
 remove_action( ‘woocommerce_single_product_summary’, ‘woocommerce_template_single_meta’, 40 );
 ```
 
-## Remove zero decimals in product price
+## Usuń miejsca dziesiętne zerowe w cenie produktu
 
 ```
 add_filter( ‘woocommerce_price_trim_zeros’, ‘__return_true’ );
