@@ -4,6 +4,8 @@ title: Snippety do Woocommerce
 description: Opis
 author: Przemek Miros
 date: 2023-05-23T11:53:45.446Z
+tags:
+  - Strony www
 thumbnail: /blog/img/koncepcja-kolazu-html-i-css.jpg
 ---
 ## Wsparcie dla Woocommerce w customowym motywie Wp
