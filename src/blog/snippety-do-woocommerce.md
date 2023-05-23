@@ -74,7 +74,7 @@ function limit_order_note_length( $fields ) {
 }
 ```
 
-## Show custom billing checkout fields by product id
+## Pokaż niestandardowe pola płatności według identyfikatora produktu
 
 ```
 add_action( 'woocommerce_checkout_fields', 'hqhowdotcom_cutom_checkout_field_conditional_logic' );function hqhowdotcom_cutom_checkout_field_conditional_logic( $fields ) {foreach( WC()->cart->get_cart() as $cart_item ){
