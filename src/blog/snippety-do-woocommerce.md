@@ -25,37 +25,68 @@ add_action( 'after_setup_theme', 'mytheme_add_woocommerce_support' );
 WooCommerce by default To add a custom currency in WooCommerce 2.0+, copy and paste this code in your theme functions.php file and swap out the currency code and symbol with your own. After saving changes, it should be available from your WooCommerce settings.
 
 ```
-
+add_filter( ‘woocommerce_currencies’, ‘add_my_currency’ ); 
+function add_my_currency( $currencies ) { 
+ $currencies[‘ABC’] = __( ‘Currency name’, ‘woocommerce’ ); 
+ return $currencies;
+}add_filter(‘woocommerce_currency_symbol’, ‘add_my_currency_symbol’, 10, 2); 
+function add_my_currency_symbol( $currency_symbol, $currency ) 
+{ 
+ switch( $currency ) { 
+ case ‘ABC’: 
+ $currency_symbol = ‘$’; 
+ break; 
+ } 
+ return $currency_symbol;
+}
 ```
 
 ## Remove product meta on single product page
 
 ```
-
+remove_action( ‘woocommerce_single_product_summary’, ‘woocommerce_template_single_meta’, 40 );
 ```
 
 ## Remove zero decimals in product price
 
 ```
-
+add_filter( ‘woocommerce_price_trim_zeros’, ‘__return_true’ );
 ```
 
 ## Hide quantity on cart page
 
 ```
-
+function remove_quantity_column( $return, $product ) {
+ if ( is_cart() ) return true;
+}
+add_filter( 'woocommerce_is_sold_individually', 'remove_quantity_column', 10, 2 );
 ```
 
 ## Limit woocommerce order note length
 
 ```
-
+add_filter( 'woocommerce_checkout_fields', 'limit_order_note_length' );
+function limit_order_note_length( $fields ) {
+ $fields['order']['order_comments']['maxlength'] = 200;
+ return $fields;
+}
 ```
 
 ## Show custom billing checkout fields by product id
 
 ```
-
+add_action( 'woocommerce_checkout_fields', 'hqhowdotcom_cutom_checkout_field_conditional_logic' );function hqhowdotcom_cutom_checkout_field_conditional_logic( $fields ) {foreach( WC()->cart->get_cart() as $cart_item ){
+     $product_id = $cart_item['product_id'];//change 2020 to your product id
+   if( $product_id == 2020 ) {
+    $fields['billing']['billing_field_' . $product_id] = array(
+     'label'     => __('Custom Field on Checkout for ' . $product_id, 'woocommerce'),
+     'placeholder'   => _x('Custom Field on Checkout for ' . $product_id, 'placeholder', 'woocommerce'),
+     'required'  => false,
+     'class'     => array('form-row-wide'),
+     'clear'     => true
+    );
+   }}// Return checkout fields.
+ return $fields;}
 ```
 
 ## Hide all shipping method but free shipping
@@ -65,13 +96,35 @@ In the user experience, you should automatically apply the free shipping method 
 The code snippet below will help you do this:
 
 ```
-
+function only_show_free_shipping_when_available( $rates, $package ) {
+ $new_rates = array();
+ foreach ( $rates as $rate_id => $rate ) {
+  // Only modify rates if free_shipping is present.
+  if ( 'free_shipping' === $rate->method_id ) {
+   $new_rates[ $rate_id ] = $rate;
+   break;
+  }
+ }if ( ! empty( $new_rates ) ) {
+  //Save local pickup if it's present.
+  foreach ( $rates as $rate_id => $rate ) {
+   if ('local_pickup' === $rate->method_id ) {
+    $new_rates[ $rate_id ] = $rate;
+    break;
+   }
+  }
+  return $new_rates;
+ }return $rates;
+}add_filter( 'woocommerce_package_rates', 'only_show_free_shipping_when_available', 10, 2 );
 ```
 
 ## Remove product tab on single product page
 
 ```
-
+add_filter( ‘woocommerce_product_tabs’, ‘remove_product_tabs’, 98 );function remove_product_tabs( $tabs ) {
+ // Remove the additional information tab
+ unset( $tabs[‘additional_information’] ); 
+ return $tabs;
+}
 ```
 
 ## **Add a new country to countries list**
@@ -79,7 +132,10 @@ The code snippet below will help you do this:
 To add a new country to the countries list, use this snippet inside the function.php file of your theme folder:
 
 ```
-
+function woo_add_my_country( $country ) {
+ $country[“AEDUB”] = ‘Dubai’;
+ return $country;
+}add_filter( ‘woocommerce_countries’, ‘woo_add_my_country’, 10, 1 );
 ```
 
 ## **Remove the breadcrumbs**
@@ -87,7 +143,10 @@ To add a new country to the countries list, use this snippet inside the function
 If you want to remove the breadcrumbs, here is the quick snippet to help you remove woocommerce breadcrumbs from your pages:
 
 ```
-
+add_action( ‘init’, ‘remove_wc_breadcrumbs’ );
+function remove_wc_breadcrumbs() {
+   remove_action( ‘woocommerce_before_main_content’, ‘woocommerce_breadcrumb’, 20, 0 );
+}
 ```
 
 ## **Replace shop page title**
@@ -95,7 +154,13 @@ If you want to remove the breadcrumbs, here is the quick snippet to help you rem
 Using this block of code you can quickly replace the title of your shop. Just substitute the return value with your preferred name.
 
 ```
-
+add_filter( ‘woocommerce_page_title’, ‘shop_page_title’);
+function shop_page_title($title ) {
+ if(is_shop()) {
+ return “My new title”;
+ }
+ return $title;
+}
 ```
 
 ## **Redirect to checkout page after add to cart**
@@ -103,7 +168,12 @@ Using this block of code you can quickly replace the title of your shop. Just su
 To improve the sales conversions , you can automatically redirect to checkout page after adding product to cart by using the following code:
 
 ```
-
+add_action( ‘add_to_cart_redirect’, ‘add_to_cart_checkout_redirect’, 16 );
+function add_to_cart_checkout_redirect() {
+    global $woocommerce;
+    $checkout_url = $woocommerce->cart->get_checkout_url();
+    return $checkout_url;
+}
 ```
 
 ## **Remove product categories from shop page**
@@ -111,7 +181,9 @@ To improve the sales conversions , you can automatically redirect to checkout pa
 If you want to get rid of a certain product category from your shop page, this code is very useful. The code will hide all the products from the mentioned categories.
 
 ```
-
+add_action( ‘pre_get_posts’, ‘remove_categories_shop’ );function remove_categories_shop( $q ) {if ( ! $q->is_main_query() ) return;if ( ! $q->is_post_type_archive() ) return;if ( ! is_admin() && is_shop() && ! is_user_logged_in() ) {$q->set( ‘tax_query’, array(array(‘taxonomy’ => ‘product_cat’,‘field’ => ‘slug’,// Don’t display products in these categories on the shop page
+ ‘terms’ => array( ‘color’, ‘flavor’, ‘spices’, ‘vanilla’ ),‘operator’ => ‘NOT IN’)));
+ }remove_action( ‘pre_get_posts’, ‘remove_categories_shop’ );}
 ```
 
 ## Removing company name from WooCommerce checkout
@@ -119,13 +191,46 @@ If you want to get rid of a certain product category from your shop page, this c
 To remove the company name field from the WooCommerce checkout, all you need is use the hook **woocommerce_checkout_fields** and then apply a filter to unset the \[billing] \[billing_company] field from the array returned.
 
 ```
-
+add_filter( ‘woocommerce_checkout_fields’ , ‘remove_company_name’ ); function remove_company_name( $fields ) { 
+   unset($fields[‘billing’][‘billing_company’]); 
+   return $fields;
+}
 ```
 
 Note: You can also unset other fields using the same method. Here is another example:
 
 ```
-
+add_filter( ‘woocommerce_checkout_fields’ , ‘custom_remove_woo_checkout_fields’ );
+ 
+function custom_remove_woo_checkout_fields( $fields ) {// remove billing fields
+ unset($fields[‘billing’][‘billing_first_name’]);
+ unset($fields[‘billing’][‘billing_last_name’]);
+ unset($fields[‘billing’][‘billing_company’]);
+ unset($fields[‘billing’][‘billing_address_1’]);
+ unset($fields[‘billing’][‘billing_address_2’]);
+ unset($fields[‘billing’][‘billing_city’]);
+ unset($fields[‘billing’][‘billing_postcode’]);
+ unset($fields[‘billing’][‘billing_country’]);
+ unset($fields[‘billing’][‘billing_state’]);
+ unset($fields[‘billing’][‘billing_phone’]);
+ unset($fields[‘billing’][‘billing_email’]);
+ 
+ // remove shipping fields 
+ unset($fields[‘shipping’][‘shipping_first_name’]); 
+ unset($fields[‘shipping’][‘shipping_last_name’]); 
+ unset($fields[‘shipping’][‘shipping_company’]);
+ unset($fields[‘shipping’][‘shipping_address_1’]);
+ unset($fields[‘shipping’][‘shipping_address_2’]);
+ unset($fields[‘shipping’][‘shipping_city’]);
+ unset($fields[‘shipping’][‘shipping_postcode’]);
+ unset($fields[‘shipping’][‘shipping_country’]);
+ unset($fields[‘shipping’][‘shipping_state’]);
+ 
+ // remove order comment fields
+ unset($fields[‘order’][‘order_comments’]);
+ 
+ return $fields;
+}
 ```
 
 ## Remove the state field in the WooCommerce Checkout
@@ -325,7 +430,6 @@ Here are the priority number list for billing fields:
 Sometimes you need to further extend the Admin Listing. For instance in the current problem i needed to add the serial numbers to the WooCommerce orders listing.
 
 1. `edit_shop_order_columns` is the function where i am rearranging the fields
-
 2. `shop_order_column` is the function where i am managing those fields and providing the values respectively.
 
 ```
