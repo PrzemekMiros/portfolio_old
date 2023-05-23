@@ -332,7 +332,7 @@ function woo_remove_category_products_count() {
 }
 ```
 
-## Make account checkout fields required
+### Ustaw wymagane pola płatności na koncie
 
 ```
 add_filter( 'woocommerce_checkout_fields', 'woo_filter_account_checkout_fields' );
@@ -346,7 +346,7 @@ function woo_filter_account_checkout_fields( $fields ) {
 }
 ```
 
-## Rename a product tab
+### Zmień nazwę karty produktu
 
 ```
 add_filter( 'woocommerce_product_tabs', 'woo_rename_tab', 98);
@@ -358,7 +358,7 @@ function woo_rename_tab($tabs) {
 }
 ```
 
-## Add a custom field to a product variation
+### Dodaj niestandardowe pole do odmiany produktu
 
 ```
 //Display Fields
@@ -403,7 +403,7 @@ function variable_fields_process( $post_id ) {
 }
 ```
 
-## List WooCommerce product Categories
+### Lista kategorii produktów WooCommerce
 
 ```
 $args = array(
@@ -427,7 +427,7 @@ $count = count($product_categories);
  }
 ```
 
-## Change “from” email address
+### Zmień nadawcę w email Woocommerce
 
 ```
 function woo_custom_wp_mail_from_name() {
@@ -443,7 +443,7 @@ function woo_custom_wp_mail_from() {
 add_filter( 'wp_mail_from_name', 'woo_custom_wp_mail_from_name', 99 );
 ```
 
-## Return featured products ids
+### Zwróć identyfikatory polecanych produktów
 
 ```
 function woo_get_featured_product_ids() {
@@ -814,7 +814,7 @@ function custom_override_checkout_fields( $fields ) {
 }
 ```
 
-You can customize the above code, let say you want to remove only the address fields then the code will become:
+Możesz dostosować powyższy kod, powiedzmy, że chcesz usunąć tylko pola adresu, wtedy kod wygląda tak:
 
 ```
 add_filter( 'woocommerce_checkout_fields' , 'custom_override_checkout_fields' );
@@ -830,9 +830,9 @@ function custom_override_checkout_fields( $fields ) {
 }
 ```
 
-## Make Woocommerce Shopping Cart responsive
+### Spraw, by koszyk zakupów Woocommerce był responsywny
 
-Use the code below and include this in your stylesheet:
+Dodaj ten kod do arkusza styli Woocommerce
 
 ```
 @media screen and (max-width: 766px) and (min-width: 300px) { /* START Make the cart table responsive */@media screen and (max-width: 600px) { / Force table to not be like tables anymore /
@@ -1000,7 +1000,7 @@ display: none;
 /* END Make the cart table responsive */ }
 ```
 
-## Check whether user has paid for a product already in WooCommerce
+### Sprawdź, czy użytkownik zapłacił już za produkt w WooCommerce
 
 ```
 function CheckWhetherUserPaid() {$bought = false; // Set HERE ine the array your specific target product IDs$prod_arr = array( '21', '67' ); // Get all customer orders$customer_orders = get_posts( array(
@@ -1021,7 +1021,7 @@ function CheckWhetherUserPaid() {$bought = false; // Set HERE ine the array your
 return $bought;}
 ```
 
-## WooCommerce Holiday/Pause Mode
+### Tryb wakacji / wstrzymania WooCommerce
 
 ```
 // Trigger Holiday Mode
@@ -1046,7 +1046,7 @@ function wc_shop_disabled() {
 }
 ```
 
-## Deny Checkout if User Has Pending Orders
+### Odmów realizacji transakcji, jeśli użytkownik ma oczekujące zamówienia
 
 ```
 Deny Checkout if User Has Pending Ordersadd_action('woocommerce_after_checkout_validation', 'deny_checkout_user_pending_orders');
@@ -1076,7 +1076,7 @@ function deny_checkout_user_pending_orders( $posted ) {
 }
 ```
 
-## Change Autofocus Field at WooCommerce Checkout
+### Zmień pole autofokusa w kasie WooCommerce
 
 ```
 add_filter( 'woocommerce_checkout_fields', 'change_autofocus_checkout_field' );
@@ -1088,7 +1088,7 @@ function change_autofocus_checkout_field( $fields ) {
 }
 ```
 
-## Show Message After Country Selection @ Checkout
+### Pokaż wiadomość w kasie po wybraniu kraju 
 
 ```
 // Part 1
@@ -1137,7 +1137,7 @@ function show_notice_shipping(){
 }
 ```
 
-## Disable Payment Method for Specific Category
+### Wyłącz metodę płatności dla określonej kategorii
 
 ```
 add_filter( 'woocommerce_available_payment_gateways', 'unset_gateway_by_category' );
@@ -1161,7 +1161,7 @@ function unset_gateway_by_category( $available_gateways ) {
 }
 ```
 
-## Restrict WooCommerce order notes field to a number of characters
+### Ogranicz pole uwag do zamówienia WooCommerce do określonej liczby znaków
 
 ```
 add_filter( 'woocommerce_checkout_fields', 'filter_checkout_fields' ); 
@@ -1170,15 +1170,3 @@ function filter_checkout_fields( $fields ) {
    return $fields;
 }
 ```
-
-## Remove Checkout Terms & Conditions conditionally in WooCommerce
-
-```
-add_action('woocommerce_checkout_init', 'disable_checkout_terms_and_conditions', 10 );
-function disable_checkout_terms_and_conditions(){
-        remove_action( 'woocommerce_checkout_terms_and_conditions', 'wc_checkout_privacy_policy_text', 20 );
-        remove_action( 'woocommerce_checkout_terms_and_conditions', 'wc_terms_and_conditions_page_content', 30 );
-}
-```
-
-And… that’s it! I hope you find will these snippets useful, they were all tested and they all work fine, but if you experience any trouble please let me know the comments section. Have fun!
