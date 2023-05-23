@@ -4,7 +4,7 @@ title: Snippety do Woocommerce
 description: Opis
 author: Przemek Miros
 date: 2023-05-23T11:53:45.446Z
-thumbnail: "#"
+thumbnail: /blog/img/koncepcja-kolazu-html-i-css.jpg
 ---
 ## Wsparcie dla Woocommerce w customowym motywie Wp
 
@@ -1184,5 +1184,3 @@ function disable_checkout_terms_and_conditions(){
 ```
 
 And… that’s it! I hope you find will these snippets useful, they were all tested and they all work fine, but if you experience any trouble please let me know the comments section. Have fun!
-
-<!--EndFragment-->
