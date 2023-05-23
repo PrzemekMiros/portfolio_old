@@ -125,7 +125,7 @@ add_filter( ‘woocommerce_product_tabs’, ‘remove_product_tabs’, 98 );func
 }
 ```
 
-## **Add a new country to countries list**
+## Dodaj nowy kraj do listy krajów
 
 To add a new country to the countries list, use this snippet inside the function.php file of your theme folder:
 
