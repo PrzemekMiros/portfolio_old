@@ -4,6 +4,8 @@ title: Bootstrap - co to jest?
 description: Opis
 author: Przemek Miros
 date: 2023-05-22T18:52:42.814Z
+tags:
+  - strony www
 thumbnail: /blog/img/blog-bootstrap.png
 ---
 Bootstrap jest popularnym frameworkiem front-endowym do budowania responsywnych stron internetowych. Framework ten został stworzony przez programistów z Twittera i udostępniony jako projekt open-source.
