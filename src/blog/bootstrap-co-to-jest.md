@@ -8,7 +8,7 @@ author: Przemek Miros
 date: 2023-03-22T19:52:00.000Z
 tags:
   - strony www
-thumbnail: /blog/img/blog-boots.png
+thumbnail: /blog/img/bootstrap.png
 ---
 Bootstrap jest popularnym frameworkiem front-endowym do budowania responsywnych stron internetowych. Został stworzony przez programistów Twittera i udostępniony jako projekt open-source.
 
