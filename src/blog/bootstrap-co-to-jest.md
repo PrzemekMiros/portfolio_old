@@ -1,7 +1,9 @@
 ---
 layout: layouts/post.njk
 title: Bootstrap - co to jest?
-description: Opis
+description: Bootstrap jest popularnym frameworkiem css do budowania
+  responsywnych stron internetowych. Został stworzony przez programistów
+  Twittera i udostępniony jako projekt open-source.
 author: Przemek Miros
 date: 2023-03-22T19:52:00.000Z
 tags:
