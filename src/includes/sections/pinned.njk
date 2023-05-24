@@ -4,7 +4,7 @@
             <div class="offset-md-1 col-md-5">
                 <div class="left">
                     <div class="detailsWrapper">
-                        {% for post in collections.works.slice(0,7) %}
+                        {% for post in collections.works.slice(0,13) %}
                         <div class="details">
 
                             <a href="{{ post.url }}" title="{{ post.data.client }}">
@@ -47,7 +47,7 @@
                 <div data-scroll data-scroll-sticky data-scroll-target="#pinSection2">
                     <div class="right">
                         <div class="photos fadeIn">
-                        {% for post in collections.works.slice(0,7) %}
+                        {% for post in collections.works.slice(0,13) %}
                                 <div class="photo portfolio-item">
                                     <a href="{{ post.url }}" title="{{ post.data.title }}">
                                         <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy" class="swipeimage" />

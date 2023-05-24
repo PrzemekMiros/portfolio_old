@@ -143,6 +143,56 @@ blockquote p {
   color: #ddd
 }
 
+@media(min-width:767px) {
+  .xxxl {
+    font-size: clamp(50px, 6.9vw, 95px)
+  }
+  .xxl {
+    font-size: clamp(45px, 6vw, 76px)
+  }
+  .xl {
+    font-size: clamp(33px, 4.6vw, 62px)
+  }
+  h1, .h1 {
+    font-size: clamp(26px, 4.2vw, 50px)
+  }
+  h2, .h2 {
+    font-size: clamp(21px, 3.3vw, 40px)
+  }
+  h3, .h3 {
+    font-size: clamp(17px, 2.7vw, 32px)
+  }
+  h4, .h4 {
+    font-size: clamp(14px, 2.2vw, 26px)
+  }
+  h5, .h5 {
+    font-size: clamp(12px, 1.9vw, 21px)
+  }
+  p, .paragraph {
+    font-size: clamp(14px , 1.1vw, 17px)
+  }
+  blockquote {
+    padding-left: 1.8em
+  }
+  .text-md-end {
+    text-align: end
+  }
+}
+
+.line-parent { 
+  overflow: hidden
+}
+
+.char-perspective {
+  perspective: 200px;
+  perspective-origin: 80% 50%
+}
+
+.char-parent {
+  will-change: transform;
+  transform-style: preserve-3d
+}
+
 .line-clamp-2,
 .line-clamp-3 {
   display: -webkit-box;
@@ -169,108 +219,4 @@ blockquote p {
   display: none!important
 }
 
-@media(min-width:767px) {
-  .xxxl {
-    font-size: 68px
-  }
-  .xxl {
-    font-size: 57px
-  }
-  .xl {
-    font-size: 47px
-  }
-  h1, .h1 {
-      font-size: 40px
-  }
-  h2, .h2 {
-    font-size: 33px
-  }
-  h3, .h3 {
-    font-size: 27px
-  }
-  h4, .h4 {
-    font-size: 23px
-  }
-  h5, .h5 {
-    font-size: 19px
-  }
-  p, .paragraph {
-    font-size: 17px
-  }
-  blockquote {
-    padding-left: 1.8em
-  }
-  .text-md-end {
-    text-align: end
-  }
-}
-
-@media(min-width:1200px) {
-  .xxxl {
-    font-size: 82px
-  }
-  .xxl {
-    font-size: 72px
-  }
-  .xl {
-    font-size: 64px
-  }
-  h1, .h1 {
-    font-size: 56px
-    }
-  h2, .h2 {
-    font-size: 44px
-  }
-  h3, .h3 {
-    font-size: 37px
-  } 
-  h4, .h4 {
-    font-size: 28px
-  }
-  h5, .h5 {
-    font-size: 22px
-  }
-}
-
-@media(min-width:1400px) {
-  .xxxl {
-    font-size: 108px
-  }
-  .xxl {
-    font-size: 85px
-  }
-  .xl {
-    font-size: 68px
-  }
-  h1, .h1 {
-      font-size: 54px
-    }
-  h2, .h2 {
-    font-size: 42px
-  }
-  h3, .h3 {
-    font-size: 35px
-  } 
-  h4, .h4 {
-  font-size: 28px
-  }
-  h5, .h5 {
-  font-size: 22px
-  }
-}
-
-
-.line-parent { 
-  overflow: hidden
-}
-
-.char-perspective {
-  perspective: 200px;
-  perspective-origin: 80% 50%
-}
-
-.char-parent {
-  will-change: transform;
-  transform-style: preserve-3d
-}
 
