@@ -8,7 +8,7 @@ author: Przemek Miros
 date: 2023-03-22T19:52:00.000Z
 tags:
   - strony www
-thumbnail: /blog/img/blog-bootstrap.png
+thumbnail: /blog/img/bootstrap.png
 ---
 Bootstrap jest popularnym frameworkiem front-endowym do budowania responsywnych stron internetowych. Został stworzony przez programistów Twittera i udostępniony jako projekt open-source.
 
@@ -32,7 +32,7 @@ Przykładowo, jeśli chcemy dodać przycisk, możemy użyć klasy CSS "btn" dost
 
 W tym przypadku przycisk zostanie stylizowany zgodnie z predefiniowanymi stylami przycisków Bootstrapa, takimi jak kolor tła, obramowanie itd.
 
-Bootstrap umożliwia dostosowanie stylów poprzez nadpisywanie zdefiniowanych klas CSS za pomocą własnych stylów. Można również korzystać z dostępnych zmiennych CSS, które można zmieniać, aby łatwo dostosować wygląd komponentów.
+> Bootstrap umożliwia dostosowanie stylów poprzez nadpisywanie zdefiniowanych klas CSS za pomocą własnych stylów. Można również korzystać z dostępnych zmiennych CSS, które można zmieniać, aby łatwo dostosować wygląd komponentów.
 
 Zapewnia również szereg narzędzi i rozwiązań, takich jak siatka (grid system), które pomagają w organizacji układu strony, a także w budowaniu responsywnych układów. Siatka Bootstrapa jest elastyczna i umożliwia tworzenie responsywnych kolumn, które automatycznie dostosowują się do różnych szerokości ekranu.
 
@@ -42,4 +42,4 @@ Zapewnia również szereg narzędzi i rozwiązań, takich jak siatka (grid syste
 * **Skalowalność:** jest skalowalny i może być używany do budowy zarówno małych stron jak i dużych projektów internetowych. Można dostosować i rozbudowywać Bootstrap według własnych potrzeb, dodając lub usuwając komponenty, style i funkcje, co czyni go elastycznym narzędziem.
 * **Zgodność ze standardami:** jest tworzony zgodnie z najlepszymi praktykami i zaleceniami branżowymi. Wsparcie dla semantycznego HTML, zgodność z dostępnością (accessibility) i optymalizacja dla wyszukiwarek internetowych sprawiają, że strony oparte na Bootstrap są dobrze zoptymalizowane i dostępne dla różnych użytkowników.
 
-Bootstrap jest potężnym narzędziem, które ułatwia tworzenie responsywnych stron www, oferując gotowe komponenty i style. Przyspiesza proces kodowania i zapewnia spójność oraz profesjonalny wygląd stron.
+**Bootstrap jest potężnym narzędziem, które ułatwia tworzenie responsywnych stron www, oferując gotowe komponenty i style. Przyspiesza proces kodowania i zapewnia spójność oraz profesjonalny wygląd stron.**
