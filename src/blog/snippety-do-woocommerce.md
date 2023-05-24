@@ -6,7 +6,7 @@ author: Przemek Miros
 date: 2023-05-23T11:53:45.446Z
 tags:
   - strony www
-thumbnail: /blog/img/koncepcja-kolazu-html-i-css.jpg
+thumbnail: /blog/img/blog-woo.png
 ---
 **Wsparcie dla Woocommerce w customowym motywie Wp**
 
