@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: Bootstrap - co to jest?
 description: Opis
 author: Przemek Miros
-date: 2023-05-22T18:52:42.814Z
+date: 2023-03-22T19:52:00.000Z
 tags:
   - strony www
 thumbnail: /blog/img/blog-bootstrap.png
