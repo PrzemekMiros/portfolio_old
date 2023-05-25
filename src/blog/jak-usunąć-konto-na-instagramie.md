@@ -4,11 +4,13 @@ title: Jak usunąć konto na instagramie
 description: Opis
 author: Przemek
 date: 2023-05-22T18:47:03.304Z
-thumbnail: /blog/img/mockuper.png
+tags:
+  - marketing
+thumbnail: /blog/img/blog-instagrfam.jpg
 ---
 Aby usunąć konto na Instagramie, możesz postępować zgodnie z poniższymi krokami:
 
-1. Wejdź na stronę internetową Instagrama lub otwórz aplikację Instagram na swoim urządzeniu mobilnym.
+1. Wejdź na stronę Instagrama lub otwórz aplikację Instagram na smartfonie.
 2. Zaloguj się na swoje konto, jeśli jeszcze nie jesteś zalogowany.
 3. Przejdź do swojego profilu, klikając na ikonę swojego konta, znajdującą się w prawym dolnym rogu ekranu.
 4. Następnie kliknij na ikonę oznaczającą "Ustawienia", która wygląda jak trzy poziome kreski lub trzy punkty. Zazwyczaj znajduje się w prawym górnym rogu ekranu.
