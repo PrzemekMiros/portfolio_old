@@ -1,19 +1,20 @@
 ---
+imageGridOne: /realizacje/img/longscroll-1.jpg
+author: Przemek
+imageGridTwo: /realizacje/img/longscroll-2.jpg
 client: Imprezowe Namioty
 title: Wypożyczalnia namiotów
-description: Strona internetowa dla firmy zajmującej się wynajmem namiotów i obsługą imprez
+description: Strona internetowa dla firmy zajmującej się wynajmem namiotów i
+  obsługą imprez. Indywidualny projekt graficzny i optymalizacja techniczna pod
+  silniki wyszukiwarek.
 date: 2023-01-15
-author: Przemek
+link: https://imprezowe-namioty.pl/
 thumbnail: /realizacje/img/namioty-thumb.jpg
 imageMain: /realizacje/img/namioty-img.jpg
 imageMobile: /realizacje/img/longscroll-mobile.jpg
-imageGridOne: /realizacje/img/longscroll-1.jpg
-imageGridTwo: /realizacje/img/longscroll-2.jpg
-category: ['Strona internetowa']
-link: https://imprezowe-namioty.pl/
+category:
+  - Strona internetowa
 ---
-
 ## Wypożyczalnia namiotów na imprezy
 
-Serwis dla firmy zajmującej się wynajmem namiotów i obsługą imprez. Indywidualny projekt graficzny i CMS Wordpress. Optymalizacja techniczna pod kątem wyszukiwarek.
-
+Strona www dla firmy zajmującej się wynajmem namiotów i obsługą imprez. Indywidualny projekt graficzny i CMS Wordpress. Optymalizacja techniczna pod kątem wyszukiwarek.
