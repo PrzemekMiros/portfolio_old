@@ -12,7 +12,7 @@ function animationMain() {
         left: 0,
         width: window.innerWidth,
         height: window.innerHeight
-      };
+      }; 
     },
     // LocomotiveScroll handles things completely differently on mobile devices - it doesn't even transform the container at all! So to get the correct behavior and avoid jitters, we should pin things with position: fixed on mobile. We sense it by checking to see if there's a transform applied to the container (the LocomotiveScroll-controlled element).
     pinType: document.querySelector(".scrollContainer").style.transform ? "transform" : "fixed"
@@ -72,11 +72,10 @@ splitTextLines.forEach(element =>{
    });
    
     gsap.from(mySplitText.lines, {
-        duration: 0.5,
-        stagger: 0.1,
+        duration: .8,
+        stagger: 0.05,
         yPercent: 100,
-        ease: "sine.out",
-        delay: 0.2,
+        ease: Power2. easeInOut,
         scrollTrigger: { 
           scroller: ".scrollContainer",
           trigger: element,
@@ -93,9 +92,8 @@ splitTextLines.forEach(element =>{
         gsap.from(fadeInItem, { 
           opacity: 0,
           y: 30,
-          duration: 2,
-          delay: 0.3,
-          ease: Expo. easeOut,
+          duration: .8,
+          ease: Power2. easeInOut,
           scrollTrigger: {
             scroller: ".scrollContainer",
             trigger: fadeInItem,
@@ -109,9 +107,8 @@ const lineX = gsap.utils.toArray('.line-x');
 lineX.forEach(lineXItem => {
   gsap.from(lineXItem, { 
     width: "0",
-    duration: 2.5,
-    delay: 0.5,
-    ease: Expo. easeOut,
+    duration: .7,
+    ease: Power2. easeInOut,
     scrollTrigger: {
       scroller: ".scrollContainer",
       trigger: lineXItem,
@@ -201,7 +198,7 @@ gsap.from(".client-item", {
   opacity: 0,
   autoAlpha: 0,
   y: 20,
-  duration: 1.5,
+  duration: 1,
   stagger: 0.12,
   scrollTrigger: {
     trigger: ".clients-wrap",

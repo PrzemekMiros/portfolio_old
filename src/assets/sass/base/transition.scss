@@ -1,18 +1,18 @@
 
-.transition-fade {
+.transition-blur {
   opacity: 1;
-	// transform: translateY(0);
+	filter: blur(0px);
 	transition: .3s ease-in-out
 }
   
-html.is-animating .transition-fade {
-// transform: translateY(-20vh);
-opacity: 0
+html.is-animating .transition-blur {
+  filter: blur(50px);
+  opacity: 0
 }
 
-html.is-rendering .transition-fade {
-transform: translateY(20px);
-opacity: 0
+html.is-rendering .transition-blur {
+  filter: blur(50px);
+  opacity: 0
 }
 
 /*
@@ -39,16 +39,3 @@ html.is-changing .page-overlay-in {
     background-color: var(--color-light-1);
     z-index: 999999
   }
-
-  
-@media(min-width:767px) {
-  .transition-fade {
-    transform: translateY(0)
-  }
-  html.is-animating .transition-fade {
-    transform: translateY(-10vh)
-    }
-  html.is-rendering .transition-fade {
-    transform: translateY(5vh)
-    }
-}

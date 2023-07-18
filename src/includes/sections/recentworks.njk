@@ -1,9 +1,9 @@
-<section class="pt-small" data-scroll-section>
+<section class="pt-medium" data-scroll-section>
     <div class="container">
         <div class="row gx-0">
             <div class="offset-md-1 col-md-10">
                 <h2 class="xl split-text-lines">
-                    Zobacz realizacje<span class="dot">.</span>
+                    Wybrane prace<span class="dot">.</span>
                 </h2>
                 <div class="pt-xsmall">
                     <div class="line-x"></div>
@@ -11,44 +11,57 @@
             </div>
         </div>
 
-
-        <div class="row gx-0 pt-medium pt-md-large pb-small pb-md-large">
-            <div class="offset-md-1 col-md-10">
-                <div class="row gx-md-6 works-grid">
-                    {% for post in collections.works %}
-                    <div class="col-md-6 works-grid-item pb-small pb-md-medium">
-                        <div class="archive-post pb-xsmall">
-                            <a href="{{ post.url }}" title="{{ post.data.title }}">
-                                <div class="portfolio-item fadeIn">
-                                    <div class="parallax-wrap aspect_16-12">
-                                        <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy" />
-                                    </div>
-                                </div>
-                            </a>
-                                <p class="archive-post-date split-text-lines mt-4 mb-2">
-                                    <small>{{ post.data.category }}</small>
-                                </p>
-                            <a href="{{ post.url }}" title="{{ post.data.title }}">
-                                <h2 class="archive-post-title split-text-lines h4 mt-0">
-                                    {{ post.data.client }}
-                                </h2>
-                            </a>
-                            <a href="{{ post.data.link }}" title="{{ post.data.title }}" target="_blank" rel="nofollow" class="button magnetic fadeIn mt-2 mb-2" data-strength="100" data-strength-text="50">
-                            <span> Zobacz online</span>
-                            <svg width="11" height="11" viewBox="0 0 14 14" fill="none"
-                                xmlns="http://www.w3.org/2000/svg">
-                                <path d="M13 1L1 13" stroke="var(--color-accent-1)" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                                <path d="M3 1H13V11" stroke="var(--color-accent-1)" stroke-width="2"
-                                    stroke-linecap="round" stroke-linejoin="round"></path>
-                            </svg>
-                            </a>
-                        </div>
-                        <div class="line-x lx-1 lx-op"></div>
+        <div class="pt-medium">
+            {% for post in collections.works.slice(0,12) %}
+            <div class="works-grid-item">
+              <div class="row gx-0 flex-row-reverse archive-post pb-md-medium">
+                <div class="col-md-1"></div>
+                <div class="col-md-5 fadeIn mb-2 mb-md-0">
+                  <a href="{{ post.url }}" title="{{ post.data.title }}">
+                    <div class="portfolio-item">
+                      <div class="parallax-wrap aspect_16-12">
+                        <img src="{{ post.data.thumbnail }}" alt="Strony www {{ town }} {{ post.data.title }}"
+                          loading="lazy" />
+                      </div>
                     </div>
-                    {% endfor %}
+                  </a>
                 </div>
+                <div class="offset-md-1 col-md-5 fadeIn d-flex align-items-center">
+                  <div class="pr-md-5">
+                    <a href="{{ post.url }}" title="{{ post.data.client }}">
+                      <p class="archive-post-client mb-2 mb-md-3">
+                        {{ post.data.client }}
+                      </p>
+                    </a>
+                    <a href="{{ post.url }}" title="{{ post.data.title }}">
+                      <h3 class="archive-post-title h4 mt-0 mb-1">
+                        {{ post.data.title }}
+                      </h3>
+                    </a>
+                    <div class="d-none d-lg-block">
+                      <p class="line-clamp-3 mt-4 mb-4">
+                        {{ post.data.description}}
+                      </p>
+                    </div>
+                    <a href="{{ post.url }}" title="Zobacz więcej" class="button magnetic mt-4 mb-4" data-strength="100" data-strength-text="50">
+                      <span>Zobacz więcej</span>
+                      <svg width="11" height="11" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M13 1L1 13" stroke="var(--color-accent-1)" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                        <path d="M3 1H13V11" stroke="var(--color-accent-1)" stroke-width="2" stroke-linecap="round"
+                          stroke-linejoin="round"></path>
+                      </svg>
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="row">
+                <div class="offset-md-1 col-md-10 pb-small pb-md-medium">
+                  <div class="line-x lx-1 lx-op"></div>
+                </div>
+              </div>
             </div>
-        </div>
+            {% endfor %}
+          </div>
     </div>
 </section>
