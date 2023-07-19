@@ -97,7 +97,8 @@
 
 .sticky {
   position: sticky;
-  top: 0
+  top: 0;
+  z-index: 999
 }
 
 .hamburger path {
@@ -107,7 +108,7 @@
 }
 
 .fullpage-menu {
-  position: fixed;
+  position: absolute;
   left: 0;
   top: 0;
   width: 100%;

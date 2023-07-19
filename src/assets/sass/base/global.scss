@@ -15,11 +15,7 @@ body::before {
   content: "";
   top: 0;
   left: 0;
-  width: calc(100vw - 14px);
-  height: calc(100vh - 14px);
-  border: 7px solid var(--color-dark-1);
   pointer-events: none;
-  border-radius: 15px;
   z-index: 9999
 }
 
@@ -28,9 +24,6 @@ body::after {
   content: "";
   top: 0;
   left: 0;
-  width: calc(100vw - 14px);
-  height: calc(100vh - 14px);
-  border: 7px solid var(--color-dark-1);
   pointer-events: none;
   z-index: 999
 }
