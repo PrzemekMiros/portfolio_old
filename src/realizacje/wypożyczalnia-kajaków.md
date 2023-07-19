@@ -11,6 +11,6 @@ category:
   - Strona internetowa
 link: https://kajaki24.com.pl/
 thumbnail: /realizacje/img/kajaki-thumb.jpg
-imageMain: /realizacje/img/kajaki-thumb.jpg
+imageMain: /realizacje/img/kajaki-img.jpg
 ---
 Strona dla wypozyczlni kajaków. Technologia Jamstack, Eleventy.js i Netlify CMS. Indywidualny projekt graficzny, animacje, widget pogodowy. Optymalizacja techniczna pod wyszukiwarki.
