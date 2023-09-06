@@ -32,8 +32,8 @@ if (theme === "light") {
     el: document.querySelector(".scrollContainer"),
     smooth: true,
     reloadOnContextChange: !0,
-    multiplier: .75,
-    lerp: .1,
+    multiplier: .65,
+    lerp: .12,
     touchMultiplier: 4,
   });
 
@@ -50,14 +50,16 @@ if (theme === "light") {
     locoScroll.destroy(), locoScroll.init(), scrollTo(top)
   });
   document.addEventListener("swup:animationInDone", () => {
-    animationMain()
+    animationMain(), worksCarousel()
   }), console.clear();
 </script>
 <script>
 window.addEventListener('load', function(){
-  animationMain();
+  animationMain(), worksCarousel()
   });
 </script>
+
+
 <script type="application/ld+json">
   {
     "@context": "https://schema.org/",

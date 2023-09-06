@@ -74,6 +74,14 @@
     margin-bottom: -120px
 }
 
+.trans-up-100 {
+    transform: translateY(-100%)
+}
+
+.trans-down-100 {
+    transform: translateY(100%)
+}
+
 @media(min-width:767px) {
     .h-md-100vh {
         min-height: 100vh

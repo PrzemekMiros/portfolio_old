@@ -113,7 +113,8 @@ body::after {
 
 .dot {
   color: var(--color-accent-1);
-  font-weight: 500
+  font-weight: 500;
+  text-shadow: none
 }
 
 .breacrumbs {
@@ -179,7 +180,15 @@ body::after {
   display: block;
   width: 100%;
   height: 2px;
-  background-color: var(--color-border)
+  background-color: var(--color-border);
+  opacity: .8
+}
+.line-x-static {
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-color: var(--color-border);
+  opacity: .2
 }
 .lx-1 {
   height: 1px

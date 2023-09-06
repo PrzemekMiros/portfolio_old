@@ -1,0 +1,80 @@
+<section class="pt-medium pb-medium" data-scroll-section>
+  <div class="container">
+    <div class="row gx-0">
+      <div class="col-md-6">
+        <h2 class="h1 split-text-lines mt-3">
+          Realizacje<span class="dot">.</span>
+        </h2>
+      </div>
+      <div class="col-md-6 d-flex align-items-center justify-content-end">
+        
+      </div>
+    </div>
+
+    <div class="wrapper pt-small">
+      <button id="left" class="carousel-arrow ca-left fadeIn">
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="1" width="58" height="58" rx="29" fill="white" stroke="#010101" stroke-width="2"/>
+          <path d="M17.6249 29.2929C17.2344 29.6834 17.2344 30.3166 17.6249 30.7071L23.9889 37.0711C24.3794 37.4616 25.0126 37.4616 25.4031 37.0711C25.7936 36.6805 25.7936 36.0474 25.4031 35.6569L19.7462 30L25.4031 24.3431C25.7936 23.9526 25.7936 23.3195 25.4031 22.9289C25.0126 22.5384 24.3794 22.5384 23.9889 22.9289L17.6249 29.2929ZM43.332 29L18.332 29V31L43.332 31V29Z" fill="black"/>
+          </svg>                 
+      </button>
+      <div class="carousel">
+        {% for post in collections.works %}
+        <li class="carousel-item">
+          <img
+            class="carousel-image fadeIn"
+            src="{{ post.data.thumbnail }}"
+            alt="{{ post.data.title }}"
+          />
+          <h3 class="archive-post-title h4 mt-5 mb-1 fadeIn">
+            {{ post.data.title }}
+          </h3>
+          <div class="space-wrap fadeIn">
+            <p class="line-clamp-2 mt-3 mb-2">
+              {{ post.data.description }}
+            </p>
+          </div>
+          <a
+            href="{{ post.data.link }}"
+            title="Zobacz więcej"
+            class="button magnetic mt-4 mb-4 fadeIn"
+            data-strength="100"
+            data-strength-text="50"
+            target="_blank"
+          >
+            <span>Zobacz online</span>
+            <svg
+              width="11"
+              height="11"
+              viewBox="0 0 14 14"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M13 1L1 13"
+                stroke="var(--color-accent-1)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+              <path
+                d="M3 1H13V11"
+                stroke="var(--color-accent-1)"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+              ></path>
+            </svg>
+          </a>
+        </li>
+        {% endfor %}
+      </div>
+      <button id="right" class="carousel-arrow ca-right fadeIn">
+        <svg width="60" height="60" viewBox="0 0 60 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <rect x="1" y="1" width="58" height="58" rx="29" fill="white" stroke="black" stroke-width="2"/>
+          <path d="M44.053 30.7071C44.4435 30.3166 44.4435 29.6834 44.053 29.2929L37.6891 22.9289C37.2985 22.5384 36.6654 22.5384 36.2748 22.9289C35.8843 23.3195 35.8843 23.9526 36.2748 24.3431L41.9317 30L36.2748 35.6569C35.8843 36.0474 35.8843 36.6805 36.2748 37.0711C36.6654 37.4616 37.2985 37.4616 37.6891 37.0711L44.053 30.7071ZM18.332 31H43.3459V29H18.332V31Z" fill="black"/>
+          </svg>                  
+      </button>
+    </div>
+  </div>
+</section>

@@ -10,13 +10,14 @@
 }
 
 .site-footer p,
-.site-footer a {
+.site-footer a:not(.button-big) {
     color: #fff
 }
 
 .footer-top {
+    position: relative;
     padding: 150px 0 20px;
-    pointer-events: none
+    z-index: 9
 }
 
 .footer-top .lets-talk {
@@ -24,8 +25,12 @@
     font-weight: 700
 }
 
+.footer-top .button-big {
+    margin-bottom: -110px
+}
+
 .footer-bottom {
-    padding: 0 0 60px;
+    padding: 0 0 70px;
 }
 
 .footer-arrow {
@@ -57,8 +62,11 @@
     .site-footer {
         z-index: 0
     }
+    .footer-top .button-big {
+        margin-top: 170px
+    }
     .footer-mail {
-        font-size: 46px
+        font-size: 38px
     }
     .footer-arrow {
         width: 28px
@@ -69,6 +77,10 @@
     .footer-arrow {
         width: 46px;
         margin-bottom: 7px
+    }
+    .footer-top .button-big {
+        margin-top: 10em;
+        margin-bottom: -5em
     }
 }
 

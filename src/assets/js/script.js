@@ -1,4 +1,85 @@
+function worksCarousel() {
+if (document.querySelector('.carousel')) {
+const carousel = document.querySelector(".carousel"),
+firstImg = carousel.querySelectorAll(".carousel-item")[0],
+arrowIcons = document.querySelectorAll(".carousel-arrow");
+
+let isDragStart = false, isDragging = false, prevPageX, prevScrollLeft, positionDiff;
+
+const showHideIcons = () => {
+    // showing and hiding prev/next icon according to carousel scroll left value
+    let scrollWidth = carousel.scrollWidth - carousel.clientWidth; // getting max scrollable width
+    arrowIcons[0].style.opacity = carousel.scrollLeft == 0 ? "0.5" : "1";
+    arrowIcons[1].style.opacity = carousel.scrollLeft == scrollWidth ? "0.5" : "1";
+}
+
+arrowIcons.forEach(icon => {
+    icon.addEventListener("click", () => {
+        let firstImgWidth = firstImg.clientWidth + 14; // getting first img width & adding 14 margin value
+        // if clicked icon is left, reduce width value from the carousel scroll left else add to it
+        carousel.scrollLeft += icon.id == "left" ? -firstImgWidth : firstImgWidth;
+        setTimeout(() => showHideIcons(), 60); // calling showHideIcons after 60ms
+    });
+});
+
+const autoSlide = () => {
+    // if there is no image left to scroll then return from here
+    if(carousel.scrollLeft - (carousel.scrollWidth - carousel.clientWidth) > -1 || carousel.scrollLeft <= 0) return;
+
+    positionDiff = Math.abs(positionDiff); // making positionDiff value to positive
+    let firstImgWidth = firstImg.clientWidth + 14;
+    // getting difference value that needs to add or reduce from carousel left to take middle img center
+    let valDifference = firstImgWidth - positionDiff;
+
+    if(carousel.scrollLeft > prevScrollLeft) { // if user is scrolling to the right
+        return carousel.scrollLeft += positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+    }
+    // if user is scrolling to the left
+    carousel.scrollLeft -= positionDiff > firstImgWidth / 3 ? valDifference : -positionDiff;
+}
+
+const dragStart = (e) => {
+    // updatating global variables value on mouse down event
+    isDragStart = true;
+    prevPageX = e.pageX || e.touches[0].pageX;
+    prevScrollLeft = carousel.scrollLeft;
+}
+
+const dragging = (e) => {
+    // scrolling images/carousel to left according to mouse pointer
+    if(!isDragStart) return;
+    e.preventDefault();
+    isDragging = true;
+    carousel.classList.add("dragging");
+    positionDiff = (e.pageX || e.touches[0].pageX) - prevPageX;
+    carousel.scrollLeft = prevScrollLeft - positionDiff;
+    showHideIcons();
+}
+
+const dragStop = () => {
+    isDragStart = false;
+    carousel.classList.remove("dragging");
+
+    if(!isDragging) return;
+    isDragging = false;
+    autoSlide();
+}
+
+carousel.addEventListener("mousedown", dragStart);
+carousel.addEventListener("touchstart", dragStart);
+
+document.addEventListener("mousemove", dragging);
+carousel.addEventListener("touchmove", dragging);
+
+document.addEventListener("mouseup", dragStop);
+carousel.addEventListener("touchend", dragStop);
+  
+}
+};
+
+
 function animationMain() {
+  
  gsap.registerPlugin(ScrollTrigger);
  locoScroll.on("scroll", ScrollTrigger.update);
   // tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
@@ -25,6 +106,15 @@ function animationMain() {
   // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
   ScrollTrigger.refresh();
   new ResizeObserver(() => locoScroll.update()).observe(document.querySelector(".scrollContainer"));
+
+  // Header scrolled
+  locoScroll.on('scroll', (position) => {
+    if ((position.scroll.y) > 50) {
+    document.querySelector('.site-header').classList.add('scrolled');
+  } else {
+    document.querySelector('.site-header').classList.remove('scrolled');
+  }  
+  });
   
 if (document.querySelector('.photo')) {
 const details = gsap.utils.toArray(".details:not(:first-child)");
@@ -59,6 +149,7 @@ details.forEach((detail, index)=>{
 
 };
 
+
 if (document.querySelector('.split-text-lines')) {
 // Paragraph --------------------------------------------------------------
 let splitTextLines = [...document.querySelectorAll('.split-text-lines')];
@@ -74,7 +165,7 @@ splitTextLines.forEach(element =>{
    });
    
     gsap.from(mySplitText.lines, {
-        duration: .8,
+        duration: 1,
         stagger: 0.05,
         yPercent: 100,
         ease: Power2. easeInOut,
@@ -94,8 +185,8 @@ splitTextLines.forEach(element =>{
         gsap.from(fadeInItem, { 
           opacity: 0,
           y: 30,
-          duration: .8,
-          ease: Power2. easeInOut,
+          duration: 1,
+          ease: Power3. easeInOut,
           scrollTrigger: {
             scroller: ".scrollContainer",
             trigger: fadeInItem,
@@ -201,6 +292,7 @@ gsap.from(".client-item", {
   autoAlpha: 0,
   y: 20,
   duration: 1,
+  delay: .3,
   stagger: 0.12,
   scrollTrigger: {
     trigger: ".clients-wrap",

@@ -4,7 +4,7 @@ author: Przemek Miros
 imageGridTwo: /realizacje/img/konsultacje-2.jpg
 client: Twoje Konsultacje
 date: 2022-08-19T22:00:00.000Z
-thumbnail: /realizacje/img/konsultacje-thumb.jpg
+thumbnail: /realizacje/img/konsultacje-thumb-big.jpg
 imageMain: /realizacje/img/konsultacje-img.jpg
 title: Platforma konsultingowa
 description: Platforma konsultingowa. Strona wykonana według projektu

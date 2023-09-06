@@ -2,9 +2,9 @@
 client: MasterMatch
 title: Klub networkingowy
 description: Landing page dla klubu networkingowego. Według dostarczonego projektu graficznego (Figma). System zarządzania treścią Wordpress. 
-date: 2022-05-11
+date: 2023-03-11
 author: Przemek Miros
-thumbnail: /realizacje/img/master-thumb.jpg
+thumbnail: /realizacje/img/master-thumb-big.jpg
 imageMain: /realizacje/img/master-img.jpg
 imageMobile: /realizacje/img/master-mobile.jpg
 imageGridOne: /realizacje/img/master-1.jpg

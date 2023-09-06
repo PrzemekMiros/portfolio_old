@@ -3,8 +3,8 @@ imageGridOne: /realizacje/img/ecotech-1.jpg
 author: Przemek
 imageGridTwo: /realizacje/img/ecotech-2.jpg
 client: Eco Tech Group
-date: 2023-01-19
-thumbnail: /realizacje/img/ecotech-thumb.jpg
+date: 2023-07-19
+thumbnail: /realizacje/img/ecotech-thumb-big.jpg
 imageMain: /realizacje/img/ecotech-img.jpg
 title: Dystrybutor rur stalowych
 description: Wykonana według dostarczonego projektu graficznego. Oparta na

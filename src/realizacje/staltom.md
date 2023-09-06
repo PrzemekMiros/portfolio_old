@@ -4,7 +4,7 @@ title: Producent konstrukcji
 description: Strona internetowa dla producenta konstrukcji stalowych. Indywidualny projekt graficzny. Oparta na systemie zarządzania treścią Wordpress. Bez builderów.
 date: 2022-02-08
 author: Przemek Miros
-thumbnail: /realizacje/img/staltom-thumb.jpg
+thumbnail: /realizacje/img/staltom-thumb-big.jpg
 imageMain: /realizacje/img/staltom-img.jpg
 imageMobile: /realizacje/img/staltom-mobile.jpg
 imageGridOne: /realizacje/img/staltom-1.jpg

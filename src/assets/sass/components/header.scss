@@ -4,11 +4,19 @@
   top: 0;
   padding-top: 50px;
   width: 100vw;
-  opacity: 0;
-  animation: headerFade .1s forwards .2s;
+  // opacity: 0;
+  // animation: headerFade .1s forwards .2s;
+  transform: translateY(0);
+  transition: .4s ease-in-out;
   mix-blend-mode: difference;
   pointer-events: none;
   z-index: 999
+}
+
+.site-header.scrolled {
+  pointer-events: none;
+  transform: translateY(-70%);
+  opacity: 0
 }
 
 @keyframes headerFade {
@@ -80,7 +88,10 @@
 
 .menu-toggle {
   margin-top: 10px;
-  background: transparent;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background: #fff;
   border: none;
   pointer-events: all;
   cursor: pointer
@@ -250,7 +261,7 @@
   }
   }
 
-@media(max-width:767px) {
+@media(max-width:768px) {
   .page-overlay-in {
     left: 7px;
     top: 7px;
@@ -261,7 +272,8 @@
     padding-top: 25px
   }
   .menu-toggle {
-    margin-top: 0
+    width: 48px;
+    height: 48px
   }  
 .logo-text-line-1,
 .logo-text-line-2,
