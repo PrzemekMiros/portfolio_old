@@ -184,9 +184,8 @@ splitTextLines.forEach(element =>{
       fadeIn.forEach(fadeInItem => {
         gsap.from(fadeInItem, { 
           opacity: 0,
-          y: 30,
+          y: 20,
           duration: 1,
-          ease: Power2. easeInOut,
           scrollTrigger: {
             scroller: ".scrollContainer",
             trigger: fadeInItem,

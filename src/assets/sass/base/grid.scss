@@ -1,6 +1,6 @@
 :root {
-    --bs-gutter-x: 25px;
-    --bs-gutter-y: 25px;
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 1.5rem;
 }
 
 .container,
@@ -29,7 +29,7 @@
   .container-md,
   .container-sm,
   .container-xl {
-    width: 90%;
+    width: 80%;
   }
 }
 @media (min-width: 1400px) {
@@ -39,7 +39,7 @@
   .container-sm,
   .container-xl,
   .container-xxl {
-    width: 100%;
+    width: 80%;
     max-width: 1320px;
   }
 }

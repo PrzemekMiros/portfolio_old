@@ -172,13 +172,13 @@ blockquote p {
     font-size: clamp(12px, 1.9vw, 21px)
   }
   p, .paragraph {
-    font-size: clamp(14px , 1.1vw, 17px)
+    font-size: clamp(14px, 1.1vw, 17px)
   }
   blockquote {
     padding-left: 1.8em
   }
   .text-medium {
-    font-size: 21px
+    font-size: clamp(16px, 1.2vw, 21px)
   }
   .text-md-end {
     text-align: end
