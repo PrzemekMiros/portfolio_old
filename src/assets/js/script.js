@@ -186,7 +186,7 @@ splitTextLines.forEach(element =>{
           opacity: 0,
           y: 30,
           duration: 1,
-          ease: Power3. easeInOut,
+          ease: Power2. easeInOut,
           scrollTrigger: {
             scroller: ".scrollContainer",
             trigger: fadeInItem,
