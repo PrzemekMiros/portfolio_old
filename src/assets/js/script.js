@@ -24,6 +24,9 @@ if (document.querySelector('.swiper')) {
       nextEl: '.swiper-button-next',
       prevEl: '.swiper-button-prev',
     },
+    autoplay: {
+      delay: 3000,
+    },
     keyboard: {
       enabled: true
     },
