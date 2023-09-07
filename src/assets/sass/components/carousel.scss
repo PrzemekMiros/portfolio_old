@@ -555,6 +555,7 @@ button.swiper-pagination-bullet {
 .swiper {
   position: relative;
   width: 100%;
+  overflow: hidden;
   z-index: 2;
 }
 
@@ -565,10 +566,6 @@ button.swiper-pagination-bullet {
   position: relative;
   filter: grayscale(99%);
   transition: filter 0.4s ease-in;
-}
-
-.swiper-image-wrap {
-  height: 370px;
 }
 
 .swiper-slide .slide-content {
@@ -599,6 +596,9 @@ button.swiper-pagination-bullet {
 }
 
 @media(min-width:767px) {
+  .swiper {
+    overflow: initial
+  }
   .swiper-image-wrap {
     height: 360px;
   }
