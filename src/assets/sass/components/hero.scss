@@ -12,7 +12,7 @@
   }
   
   .border-right::before {
-    position: absolute;
+    position: absolute; 
     content: "";
     right: -2em;
     width: 2px;
@@ -47,6 +47,11 @@
   .logo-hero {
     margin-top: 8px;
     width: 100%;
+  }
+
+  .hero-arrow {
+    width: 50px;
+    height: auto
   }
 
   @media(min-width:767px) {
@@ -90,6 +95,10 @@
       }
       .hero-intro-footer {
         padding-top: 4em
+      }
+      .hero-arrow {
+        width: 90px;
+        height: auto
       }
   }
 

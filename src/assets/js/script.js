@@ -1,4 +1,59 @@
+function worksCarousel() {
+if (document.querySelector('.swiper')) {
+
+  var swiper = new Swiper(".swiper", {
+    grabCursor: true,
+    spaceBetween: 20,
+    centeredSlides: false,
+    coverflowEffect: {
+      rotate: 0,
+      stretch: 0,
+      depth: 0,
+      modifier: 1,
+      slideShadows: false
+    },
+    loop: true,
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true
+    },
+    scrollbar: {
+      el: '.swiper-scrollbar',
+    },
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+    autoplay: {
+      delay: 3000,
+    },
+    keyboard: {
+      enabled: true
+    },
+    mousewheel: false,
+    breakpoints: {
+      460: {
+        slidesPerView: 1
+      },
+      768: {
+        slidesPerView: 1
+      },
+      1024: {
+        slidesPerView: 2
+      },
+      1600: {
+        slidesPerView: 3
+      }
+    }
+  });
+  
+  
+}
+};
+
+
 function animationMain() {
+  
  gsap.registerPlugin(ScrollTrigger);
  locoScroll.on("scroll", ScrollTrigger.update);
   // tell ScrollTrigger to use these proxy methods for the ".smooth-scroll" element since Locomotive Scroll is hijacking things
@@ -25,6 +80,15 @@ function animationMain() {
   // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
   ScrollTrigger.refresh();
   new ResizeObserver(() => locoScroll.update()).observe(document.querySelector(".scrollContainer"));
+
+  // Header scrolled
+  locoScroll.on('scroll', (position) => {
+    if ((position.scroll.y) > 50) {
+    document.querySelector('.site-header').classList.add('scrolled');
+  } else {
+    document.querySelector('.site-header').classList.remove('scrolled');
+  }  
+  });
   
 if (document.querySelector('.photo')) {
 const details = gsap.utils.toArray(".details:not(:first-child)");
@@ -59,6 +123,7 @@ details.forEach((detail, index)=>{
 
 };
 
+
 if (document.querySelector('.split-text-lines')) {
 // Paragraph --------------------------------------------------------------
 let splitTextLines = [...document.querySelectorAll('.split-text-lines')];
@@ -74,7 +139,7 @@ splitTextLines.forEach(element =>{
    });
    
     gsap.from(mySplitText.lines, {
-        duration: .8,
+        duration: 1,
         stagger: 0.05,
         yPercent: 100,
         ease: Power2. easeInOut,
@@ -93,9 +158,8 @@ splitTextLines.forEach(element =>{
       fadeIn.forEach(fadeInItem => {
         gsap.from(fadeInItem, { 
           opacity: 0,
-          y: 30,
-          duration: .8,
-          ease: Power2. easeInOut,
+          y: 20,
+          duration: 1,
           scrollTrigger: {
             scroller: ".scrollContainer",
             trigger: fadeInItem,
@@ -201,6 +265,7 @@ gsap.from(".client-item", {
   autoAlpha: 0,
   y: 20,
   duration: 1,
+  delay: .3,
   stagger: 0.12,
   scrollTrigger: {
     trigger: ".clients-wrap",

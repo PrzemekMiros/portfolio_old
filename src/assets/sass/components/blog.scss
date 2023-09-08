@@ -8,7 +8,8 @@
     border-radius: 9px;
     text-align: center;
     cursor: pointer;
-    overflow: hidden
+    overflow: hidden;
+    z-index: 1
 }
 
 .category-card::after {

@@ -4,7 +4,7 @@ title: Osiedle dla wymagających
 description: Strona internetowa dla kameralnego osiedla w zabudowie bliźniaczej i szeregowej. 
 date: 2020-11-20
 author: Przemek Miros
-thumbnail: /realizacje/img/gaszyn-thumb.jpg
+thumbnail: /realizacje/img/gaszyn-thumb-big.jpg
 imageMain: /realizacje/img/gaszyn-img.jpg
 imageMobile: /realizacje/img/gaszyn-mobile.jpg
 imageGridOne: /realizacje/img/gaszyn-1.jpg

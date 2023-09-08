@@ -4,7 +4,7 @@
     <div class="container">
 
         <div class="row">
-            <div class="offset-md-2 offset-lg-3 col-md-9 col-lg-7">
+            <div class="offset-md-2 col-md-8">
                 <div class="single-post-title-wrap pb-xsmall pb-md-small">
                     <div class="breacrumbs fadeIn">
                         <a href="/" title="Strona główna">
@@ -23,7 +23,7 @@
                             {{ title }}
                         </span>
                     </div>
-                    <h1 class="single-post-title split-text-lines mt-3 mb-3">
+                    <h1 class="xl single-post-title split-text-lines mt-3 mb-3">
                         {{ title }}
                     </h1>
                     <div class="breacrumbs fadeIn">
@@ -47,27 +47,18 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="offset-lg-1 col-lg-10">
                 <div class="parallax-wrap aspect_16-9 fadeIn mb-3 mb-lg-5">
                     <img src="{{ thumbnail | url }}" alt="{{ title }}" class="single-post-image img-fluid">
                 </div>
-            </div>
-        </div>
 
         <div class="content row gx-5 fadeIn" id="pinShare">
-            <div class="offset-md-1 offset-lg-2 col-md-1 col-lg-1 d-none d-md-block">
-
-            </div>
-            <div class="col-md-8 col-lg-6">
+            <div class="offset-md-2 col-md-8">
                 {{ content | safe}}
             </div>
         </div>
 
-        <div class="row pt-medium fadeIn">
-            <div class="offset-md-1 col-md-10">
-                <div class="line-x"></div>
-            </div>
+        <div class="pt-medium fadeIn">
+            <div class="line-x"></div>
         </div>
 
         <div class="row">
@@ -79,7 +70,7 @@
                     {%- if nextPost or previousPost %}
                     <ul class="d-flex flex-wrap fadeIn">
                         {%- if previousPost %}
-                        <li class="hover-reveal-wrap offset-md-1 col-md-5 prev d-none d-md-block">
+                        <li class="hover-reveal-wrap col-md-6 prev d-none d-md-block">
                             <p class="mb-4">
                                 <small>
                                     Poprzedni:
@@ -93,7 +84,7 @@
                         </li>
                         {% endif %}
                         {%- if nextPost %}
-                        <li class="hover-reveal-wrap offset-md-1 col-md-5 next">
+                        <li class="hover-reveal-wrap col-md-6 next">
                             <p class="mb-4">
                                 <small>
                                     Kolejny:
