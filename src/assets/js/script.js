@@ -1,6 +1,5 @@
 function worksCarousel() {
 if (document.querySelector('.swiper')) {
-
   var swiper = new Swiper(".swiper", {
     grabCursor: true,
     spaceBetween: 20,
@@ -36,18 +35,16 @@ if (document.querySelector('.swiper')) {
         slidesPerView: 1
       },
       768: {
-        slidesPerView: 1
+        slidesPerView: 2
       },
       1024: {
-        slidesPerView: 2
+        slidesPerView: 3
       },
       1600: {
         slidesPerView: 3
       }
     }
   });
-  
-  
 }
 };
 

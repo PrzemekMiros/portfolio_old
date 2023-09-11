@@ -1,0 +1,38 @@
+.hero-parallax  {
+    aspect-ratio: 14/9;
+    padding-top: .5em;
+    padding-bottom: .5em;
+    background: #111416;
+    overflow: hidden;
+  }
+  
+  .hero-parallax-content {
+    transform: rotate(45deg) translateX(-30%) translateY(-32%);
+  }
+  
+  .parallax-item {
+    margin-bottom: 1em
+  }
+
+  .parallax-item img {
+    width: 150%
+  }
+
+@media(min-width:767px) {
+    .hero-parallax  {
+      aspect-ratio: 16/6
+    }
+    .parallax-item {
+      margin-bottom: 2.5em
+    }
+      .parallax-item img {
+        width: 110%
+      }
+      .hero-intro-footer {
+        padding-top: 4em
+      }
+      .hero-arrow {
+        width: 90px;
+        height: auto
+      }
+  }
