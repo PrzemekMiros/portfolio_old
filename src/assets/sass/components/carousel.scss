@@ -549,6 +549,7 @@ button.swiper-pagination-bullet {
 
 .swiper-container {
   position: relative;
+  height: auto;
   width: 100%;
 }
 
@@ -600,6 +601,6 @@ button.swiper-pagination-bullet {
     overflow: initial
   }
   .swiper-image-wrap {
-    height: 350px;
+    // height: 350px;
   }
 }

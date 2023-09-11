@@ -1,53 +1,3 @@
-function worksCarousel() {
-if (document.querySelector('.swiper')) {
-  var swiper = new Swiper(".swiper", {
-    grabCursor: true,
-    spaceBetween: 20,
-    centeredSlides: false,
-    coverflowEffect: {
-      rotate: 0,
-      stretch: 0,
-      depth: 0,
-      modifier: 1,
-      slideShadows: false
-    },
-    loop: true,
-    pagination: {
-      el: ".swiper-pagination",
-      clickable: true
-    },
-    scrollbar: {
-      el: '.swiper-scrollbar',
-    },
-    navigation: {
-      nextEl: '.swiper-button-next',
-      prevEl: '.swiper-button-prev',
-    },
-    autoplay: {
-      delay: 3000,
-    },
-    keyboard: {
-      enabled: true
-    },
-    mousewheel: false,
-    breakpoints: {
-      460: {
-        slidesPerView: 1
-      },
-      768: {
-        slidesPerView: 2
-      },
-      1024: {
-        slidesPerView: 3
-      },
-      1600: {
-        slidesPerView: 3
-      }
-    }
-  });
-}
-};
-
 
 function animationMain() {
   
@@ -77,6 +27,56 @@ function animationMain() {
   // after everything is set up, refresh() ScrollTrigger and update LocomotiveScroll because padding may have been added for pinning, etc.
   ScrollTrigger.refresh();
   new ResizeObserver(() => locoScroll.update()).observe(document.querySelector(".scrollContainer"));
+
+
+    if (document.querySelector('.swiper')) {
+      var swiper = new Swiper(".swiper", {
+        grabCursor: true,
+        spaceBetween: 20,
+        centeredSlides: false,
+        coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 0,
+          modifier: 1,
+          slideShadows: false
+        },
+        loop: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        },
+        scrollbar: {
+          el: '.swiper-scrollbar',
+        },
+        navigation: {
+          nextEl: '.swiper-button-next',
+          prevEl: '.swiper-button-prev',
+        },
+        autoplay: {
+          delay: 3000,
+        },
+        keyboard: {
+          enabled: true
+        },
+        mousewheel: false,
+        breakpoints: {
+          460: {
+            slidesPerView: 1
+          },
+          768: {
+            slidesPerView: 2
+          },
+          1024: {
+            slidesPerView: 3
+          },
+          1600: {
+            slidesPerView: 3
+          }
+        }
+      });
+    }
+
 
   // Header scrolled
   locoScroll.on('scroll', (position) => {
