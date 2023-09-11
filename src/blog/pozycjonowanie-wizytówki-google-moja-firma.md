@@ -3,7 +3,7 @@ layout: layouts/post.njk
 title: Pozycjonowanie wizytówki Google Moja Firma
 description: Wizytówka Google to narzędzie, które pozwala przedsiębiorcom na prezentowanie swojego biznesu w wyszukiwarce Google. Dzięki niej możesz udostępnić informacje o swoim biznesie, takie jak godziny otwarcia, adres, numer telefonu, a także zdjęcia, recenzje i wiele innych.
 author: Przemek Miros
-date: 2023-03-24T18:41:48.902Z
+date: 2023-07-09T18:41:48.902Z
 tags:
   - pozycjonowanie
 thumbnail: /blog/img/mapy.jpg

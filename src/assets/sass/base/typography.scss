@@ -95,24 +95,6 @@ blockquote {
   border-left: 3px solid var(--color-accent-1)
 }
 
-.text-behind {
-  position: relative
-}
-
-.text-behind::before {
-  position: absolute;
-  content: attr(tg-txt-name);
-  top: 43%;
-  left: -5px;
-  transform: translateY(-50%);
-  font-family: "Syne";
-  font-size: 44px;
-  font-weight: 800;
-  letter-spacing: -0.05em;
-  color: var(--color-light-1);
-  -webkit-text-stroke: 2px solid var(--color-light-2);
-}
-
 .text-medium {
   font-size: 18px
 }
@@ -195,8 +177,21 @@ blockquote p {
   blockquote {
     padding-left: 1.8em
   }
+  .text-behind {
+    position: relative
+  }
   .text-behind::before {
-    font-size: 140px
+    position: absolute;
+    content: attr(tg-txt-name);
+    top: 43%;
+    left: -5px;
+    transform: translateY(-50%);
+    font-family: "Syne";
+    font-size: 140px;
+    font-weight: 800;
+    letter-spacing: -0.05em;
+    color: var(--color-light-1);
+    -webkit-text-stroke: 1px #72727236
   }
   .text-medium {
     font-size: clamp(16px, 1.2vw, 21px)

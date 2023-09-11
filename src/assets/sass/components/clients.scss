@@ -14,31 +14,31 @@
 
 .client-item img {
     transition: .3s ease-in-out;
-    filter: grayscale(99%);
-    opacity: .65
+    // filter: grayscale(99%);
+    // opacity: .85
 }
 
 .light .client-item img {
     transition: .3s ease-in-out;
-    filter: grayscale(99%);
-    opacity: .65
+    // filter: grayscale(99%);
+    // opacity: .65
 }
 
 @media (prefers-color-scheme:dark) {
 .client-item img {
     transition: .3s ease-in-out;
-    filter: grayscale(99%) brightness(200%);
-    opacity: .65
+    // filter: grayscale(99%) brightness(200%);
+    // opacity: .85
 }
 }
 
 .dark .client-item img {
         transition: .3s ease-in-out;
-        filter: grayscale(99%) brightness(200%);
-        opacity: .65
+        // filter: grayscale(99%) brightness(200%);
+        // opacity: .85
     }
 
 .client-item:hover img {
-    filter: grayscale(0) brightness(100%);
+    // filter: grayscale(0) brightness(100%);
     opacity: 1
 }

@@ -5,7 +5,7 @@
 }
 .portfolio-item div,
 .photo.portfolio-item img {
-    filter: grayscale(99%);
+    // filter: grayscale(99%);
     transition: all 1.3s cubic-bezier(.79,0,.07,.88)
 }
 .portfolio-item:hover div,
