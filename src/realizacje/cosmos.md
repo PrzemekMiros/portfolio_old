@@ -1,7 +1,7 @@
 ---
 layout: layouts/case.njk
-client: Agencja aktorska
-title: Cosmos
+client: Cosmos
+title: Agencja aktorska
 description: Strona internetowa dla agencji aktorskiej
 author: Przemek
 date: 2023-09-12T06:55:17.673Z
