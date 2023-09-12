@@ -164,7 +164,8 @@ blockquote p {
     font-weight: 800;
     letter-spacing: -0.05em;
     color: var(--color-light-1);
-    -webkit-text-stroke: 1px #72727236
+    text-shadow: 1.5px 1.5px 0 #72727236, -1.5px -1.5px #72727236, 1.5px -1.5px 0 #72727236, -1.5px 1.5px 0 #72727236, 1.5px 1.5px 0 #72727236;
+    opacity: .4
   }
   .text-medium {
     font-size: clamp(16px, 1.2vw, 21px)
