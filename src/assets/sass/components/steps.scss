@@ -1,0 +1,18 @@
+
+.step-card-num {
+    position: relative;
+    font-size: clamp(45px, 5vw, 80px);
+    font-weight: 800;
+    color: var(--color-light-2);
+}
+
+.step-card-border {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    background: var(--color-accent-1);
+    transform: translateX(-50%) translateY(-50%)
+}
