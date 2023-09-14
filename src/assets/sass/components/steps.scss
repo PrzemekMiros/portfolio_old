@@ -1,10 +1,21 @@
 
 .step-card-num {
     position: relative;
-    font-size: clamp(45px, 5vw, 80px);
+    font-size: clamp(45px, 5vw, 90px);
     font-weight: 800;
     color: var(--color-light-2);
 }
+
+.step-card-num:not(:last-child)::before {
+    position: absolute;
+    content: "";
+    top: 50%;
+    left: 50%;
+    width: calc(100% + 20px);
+    height: 2px;
+    background-color: var(--color-light-2)
+}
+
 
 .step-card-border {
     position: absolute;
