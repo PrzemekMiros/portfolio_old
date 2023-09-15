@@ -3,10 +3,7 @@ body {
     margin: 0;
     padding: 0;
     color: var(--color-text);
-    font-family: var(--font-primary);
-    background-image: url("https://www.futurewebstudio.pl/assets/img/home/dark-background.jpg");
-    background-size: cover;
-    background-attachment: fixed;
+    font-family: var(--font-primary)
   }
   
 body::before {
