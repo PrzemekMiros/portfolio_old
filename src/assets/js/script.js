@@ -313,7 +313,7 @@ menuToggle.addEventListener('click', function(){
 if (document.querySelector("#greeting")) {
   const greeting = document.getElementById("greeting");
   const hour = new Date().getHours();
-  const welcomeTypes = ["Dzień dobry", "Dobry wieczór"];
+  const welcomeTypes = ["Dzień dobry !", "Dobry wieczór !"];
   let welcomeText = "";
   if (hour < 20) welcomeText = welcomeTypes[0];
   else welcomeText = welcomeTypes[1];
