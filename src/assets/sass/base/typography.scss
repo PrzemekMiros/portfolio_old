@@ -76,6 +76,7 @@ h6, .h6 {
 }
 
 p, .paragraph, li {
+  position: relative;
   margin-bottom: 2em;
   font-family: var(--font-secondary);
   font-size: clamp(16px, 1.1vw, 17px);
