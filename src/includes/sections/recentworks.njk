@@ -1,99 +1,99 @@
-<section class="pt-medium pt-md-large pb-medium" data-scroll-section>
+<section class="pb-medium" data-scroll-section>
   <div class="container"> 
-    <div class="pb-large">
-      <div class="line-x"></div>
-    </div>
-    <div class="row gx-0">
-      <div class="col-8 col-md-6">
-        <h2 class="h1 split-text-lines mt-2 mt-md-0 mb-0 text-behind" tg-txt-name="Realizacje">
-          <span class="d-none d-md-inline-block">Zobacz realizacje</span>
-          <span class="d-md-none">Realizacje</span>
-          <span class="dot">.</span>
-        </h2>
+    <div class="col-md-10 mx-auto">
+      <div class="pb-large">
+        <div class="line-x"></div>
       </div>
-      <div class="col-4 col-md-6 p-relative">
-        <div class="swiper-button-prev fadeIn">
-          <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="1" y="1.33337" width="42" height="42" rx="21" fill="white" stroke="#010101" stroke-width="2"/>
-            <path d="M12.7369 21.6263C12.3464 22.0168 12.3464 22.65 12.7369 23.0405L19.1009 29.4044C19.4914 29.795 20.1246 29.795 20.5151 29.4044C20.9056 29.0139 20.9056 28.3808 20.5151 27.9902L14.8582 22.3334L20.5151 16.6765C20.9056 16.286 20.9056 15.6528 20.5151 15.2623C20.1246 14.8718 19.4914 14.8718 19.1009 15.2623L12.7369 21.6263ZM31.7773 21.3334L13.444 21.3334V23.3334L31.7773 23.3334V21.3334Z" fill="black"/>
-          </svg>            
+      <div class="row gx-0 pb-medium">
+        <div class="col-8 col-md-6">
+          <h2 class="h1 split-text-lines mt-2 mt-md-0 mb-0 text-behind" tg-txt-name="Realizacje">
+            <span class="d-none d-md-inline-block">Zobacz realizacje</span>
+            <span class="d-md-none">Realizacje</span>
+            <span class="dot">.</span>
+          </h2>
         </div>
-        <div class="swiper-button-next fadeIn">
-          <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <rect x="1.66797" y="1.33337" width="42" height="42" rx="21" fill="white" stroke="black" stroke-width="2"/>
-            <path d="M33.1639 23.0405C33.5544 22.65 33.5544 22.0168 33.1639 21.6263L26.7999 15.2623C26.4094 14.8718 25.7763 14.8718 25.3857 15.2623C24.9952 15.6528 24.9952 16.286 25.3857 16.6765L31.0426 22.3334L25.3857 27.9902C24.9952 28.3808 24.9952 29.0139 25.3857 29.4044C25.7763 29.795 26.4094 29.795 26.7999 29.4044L33.1639 23.0405ZM14.1133 23.3334H32.4568V21.3334H14.1133V23.3334Z" fill="black"/>
-          </svg>            
-        </div>
-      </div>
-    </div>
-
-    <div class="pb-medium"></div>
-
-    <div class="swiper-container fadeIn">
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          {% for post in collections.works %}
-          <div class="swiper-slide">
-            <div class="slide-content">
-              <div class="swiper-image-wrap">
-                <img
-                  class="swiper-image"
-                  src="{{ post.data.thumbnail }}"
-                  alt="{{ post.data.title }}"
-                  width="630px"
-                  height="699px"
-                />
-              </div>
-            <h3 class="archive-post-title h4 mt-5 mb-1">
-              {{ post.data.title }}
-            </h3>
-            <div class="space-wrap">
-              <p class="line-clamp-2 mt-3 mb-2">
-                {{ post.data.description }}
-              </p>
-            </div>
-            <a
-              href="{{ post.data.link }}"
-              title="Zobacz więcej"
-              class="button magnetic mt-4 mb-4"
-              data-strength="100"
-              data-strength-text="50"
-              target="_blank"
-            >
-              <span>Zobacz online</span>
-              <svg
-                width="11"
-                height="11"
-                viewBox="0 0 14 14"
-                fill="none"
-                xmlns="http://www.w3.org/2000/svg"
-              >
-                <path
-                  d="M13 1L1 13"
-                  stroke="var(--color-accent-1)"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-                <path
-                  d="M3 1H13V11"
-                  stroke="var(--color-accent-1)"
-                  stroke-width="2"
-                  stroke-linecap="round"
-                  stroke-linejoin="round"
-                ></path>
-              </svg>
-            </a>
-            </div>
+        <div class="col-4 col-md-6 p-relative">
+          <div class="swiper-button-prev fadeIn">
+            <svg width="44" height="45" viewBox="0 0 44 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1" y="1.33337" width="42" height="42" rx="21" fill="white" stroke="#010101" stroke-width="2"/>
+              <path d="M12.7369 21.6263C12.3464 22.0168 12.3464 22.65 12.7369 23.0405L19.1009 29.4044C19.4914 29.795 20.1246 29.795 20.5151 29.4044C20.9056 29.0139 20.9056 28.3808 20.5151 27.9902L14.8582 22.3334L20.5151 16.6765C20.9056 16.286 20.9056 15.6528 20.5151 15.2623C20.1246 14.8718 19.4914 14.8718 19.1009 15.2623L12.7369 21.6263ZM31.7773 21.3334L13.444 21.3334V23.3334L31.7773 23.3334V21.3334Z" fill="black"/>
+            </svg>            
           </div>
-          {% endfor %}
+          <div class="swiper-button-next fadeIn">
+            <svg width="45" height="45" viewBox="0 0 45 45" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="1.66797" y="1.33337" width="42" height="42" rx="21" fill="white" stroke="black" stroke-width="2"/>
+              <path d="M33.1639 23.0405C33.5544 22.65 33.5544 22.0168 33.1639 21.6263L26.7999 15.2623C26.4094 14.8718 25.7763 14.8718 25.3857 15.2623C24.9952 15.6528 24.9952 16.286 25.3857 16.6765L31.0426 22.3334L25.3857 27.9902C24.9952 28.3808 24.9952 29.0139 25.3857 29.4044C25.7763 29.795 26.4094 29.795 26.7999 29.4044L33.1639 23.0405ZM14.1133 23.3334H32.4568V21.3334H14.1133V23.3334Z" fill="black"/>
+            </svg>            
+          </div>
         </div>
       </div>
-
-      <!--
-        <div class="swiper-scrollbar pt-medium"></div>
-        <div class="swiper-pagination"></div>
-      -->
+  
+      <div class="swiper-container fadeIn">
+        <div class="swiper">
+          <div class="swiper-wrapper">
+            {% for post in collections.works %}
+            <div class="swiper-slide">
+              <div class="slide-content">
+                <div class="swiper-image-wrap">
+                  <img
+                    class="swiper-image"
+                    src="{{ post.data.thumbnail }}"
+                    alt="{{ post.data.title }}"
+                    width="630px"
+                    height="699px"
+                  />
+                </div>
+              <h3 class="archive-post-title h4 mt-5 mb-1">
+                {{ post.data.title }}
+              </h3>
+              <div class="space-wrap">
+                <p class="line-clamp-2 mt-3 mb-2">
+                  {{ post.data.description }}
+                </p>
+              </div>
+              <a
+                href="{{ post.data.link }}"
+                title="Zobacz więcej"
+                class="button magnetic mt-4 mb-4"
+                data-strength="100"
+                data-strength-text="50"
+                target="_blank"
+              >
+                <span>Zobacz online</span>
+                <svg
+                  width="11"
+                  height="11"
+                  viewBox="0 0 14 14"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M13 1L1 13"
+                    stroke="var(--color-accent-1)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                  <path
+                    d="M3 1H13V11"
+                    stroke="var(--color-accent-1)"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                  ></path>
+                </svg>
+              </a>
+              </div>
+            </div>
+            {% endfor %}
+          </div>
+        </div>
+  
+        <!--
+          <div class="swiper-scrollbar pt-medium"></div>
+          <div class="swiper-pagination"></div>
+        -->
+      </div>
     </div>
   </div>
 </section>

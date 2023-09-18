@@ -19,7 +19,7 @@
 .icon {
   position: absolute;
   top: calc(50% - 20px);
-  right: -0.4em;
+  right: 0;
   width: 20px;
   height: 3px;
   background: var(--color-accent-1);
@@ -55,9 +55,6 @@
 }
 
 @media(min-width:767px) {
-  .icon {
-    right: 4em
-  }
   .accordion::after {
     left: -5em;
     font-size: 1vw

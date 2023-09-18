@@ -1,5 +1,6 @@
 <section class="pb-medium" data-scroll-section>
     <div class="container">
+        <div class="col-md-10 mx-auto">
             <div class="pb-medium">
                 <div class="pb-large">
                     <div class="line-x"></div>
@@ -8,8 +9,7 @@
                     Najnowsze wpisy<span class="dot">.</span>
                 </h2>
             </div>
-
-                <div class="row gx-3">
+            <div class="row gx-3">
                     {% for post in collections.posts.slice(0,3) %}
                     <div class="col-md-4 pb-small fadeIn">
                         <a href="{{ post.url }}" title="{{ post.data.title }}">
@@ -42,7 +42,7 @@
                         <div class="line-x lx-1 lx-op"></div>
                     </div>
                     {% endfor %}
-                </div>
-
+            </div>
+        </div>
     </div>
 </section>
