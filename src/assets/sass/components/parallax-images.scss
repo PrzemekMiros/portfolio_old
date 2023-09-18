@@ -7,7 +7,7 @@
   }
   
   .hero-parallax-content {
-    transform: rotate(45deg) translateX(-20%) translateY(-22%);
+    transform: rotate(45deg) translateX(-30%) translateY(-32%);
   }
   
   .parallax-item {
@@ -21,6 +21,9 @@
 @media(min-width:767px) {
     .hero-parallax  {
       aspect-ratio: 16/6
+    }
+    .hero-parallax-content {
+      transform: rotate(45deg) translateX(-20%) translateY(-22%);
     }
     .parallax-item {
       margin-bottom: 2.5em
