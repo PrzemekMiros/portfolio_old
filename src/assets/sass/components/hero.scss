@@ -1,6 +1,20 @@
   .logo-hero {
     mix-blend-mode: difference
   }
+  .decoration {
+    width: 400px;
+    height: 350px;
+    filter: blur(210px);
+    background-color: #5cf7b6;
+    border-radius: 50%;
+    position: absolute;
+    top: -150px;
+    bottom: auto;
+    left: auto;
+    right: -100px;
+    opacity: .4;
+    z-index: -1;
+  }
   @media(min-width:767px) {
   .hero .container {
     position: relative;
@@ -16,6 +30,7 @@
     border-radius: 8px;
     z-index: -1
   }
+
   .hero h1 .line-parent:nth-child(1) {
   text-shadow: 1.5px 1.5px 0 var(--color-heading), -1.5px -1.5px 0 var(--color-heading), 1.5px -1.5px 0 var(--color-heading), -1.5px 1.5px 0 var(--color-heading), 1.5px 1.5px 0 var(--color-heading);
   color: var(--color-light-1);
