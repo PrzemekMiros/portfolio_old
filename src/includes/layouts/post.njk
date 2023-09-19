@@ -1,10 +1,10 @@
 {% include "partials/header.njk" %}
 
-<section class="pt-large pt-md-xlarge pb-small" data-scroll-section>
+<section class="pt-xlarge pb-small" data-scroll-section>
     <div class="container">
 
         <div class="row">
-            <div class="offset-md-2 col-md-8">
+            <div class="offset-md-3 col-md-6">
                 <div class="single-post-title-wrap pb-xsmall pb-md-small">
                     <div class="breacrumbs fadeIn">
                         <a href="/" title="Strona główna">
@@ -23,7 +23,7 @@
                             {{ title }}
                         </span>
                     </div>
-                    <h1 class="xl single-post-title split-text-lines mt-4 mb-4">
+                    <h1 class="single-post-title split-text-lines my-3">
                         {{ title }}
                     </h1>
                     <div class="breacrumbs fadeIn">
@@ -51,8 +51,8 @@
                     <img src="{{ thumbnail | url }}" alt="{{ title }}" class="single-post-image img-fluid">
                 </div>
         </div>
-        <div class="content row gx-5 fadeIn" id="pinShare">
-            <div class="offset-md-2 col-md-8">
+        <div class="content row fadeIn" id="pinShare">
+            <div class="offset-md-3 col-md-6">
                 {{ content | safe}}
             </div>
         </div>

@@ -1,6 +1,6 @@
 ---
 layout: layouts/case.njk
-client: Cosmos
+client: Agencja Cosmos
 title: Agencja aktorska
 description: Strona internetowa dla agencji aktorskiej. Projekt graficzny,
   dedykowany motyw na Wp, własne typy wpisów, niestandardowe pola, zmiany układu
