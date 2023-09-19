@@ -28,11 +28,13 @@
 .site-header.done.scrolled .ls-filled,
 .site-header.done.scrolled .ls-opacity {
   fill: transparent!important;
-  stroke: transparent!important
+  stroke: transparent!important;
+  pointer-events: none
 }
 
 .site-header.scrolled .change-theme {
-  color: transparent
+  color: transparent;
+  pointer-events: none
 }
 
 @keyframes headerFade {
