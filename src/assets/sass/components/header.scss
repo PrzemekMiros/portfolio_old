@@ -13,15 +13,26 @@
   z-index: 999
 }
 
-.site-header.scrolled {
-  pointer-events: none;
-  transform: translateY(-70%);
-  opacity: 0
+.site-header.done .ls-stroke,
+.site-header.done .ls-filled,
+.site-header.done .ls-opacity {
+  transition: fill .3s cubic-bezier(0.645, 0.045, 0.355, 1),
+              stroke .3s cubic-bezier(0.645, 0.045, 0.355, 1)
 }
 
-.site-header.scrolled .menu-toggle,
-.site-header.scrolled .logo-wrap {
-  pointer-events: none;
+.site-header .change-theme {
+  transition: color .3s cubic-bezier(0.645, 0.045, 0.355, 1)
+}
+
+.site-header.done.scrolled .ls-stroke,
+.site-header.done.scrolled .ls-filled,
+.site-header.done.scrolled .ls-opacity {
+  fill: transparent!important;
+  stroke: transparent!important
+}
+
+.site-header.scrolled .change-theme {
+  color: transparent
 }
 
 @keyframes headerFade {
@@ -90,6 +101,104 @@
 .ls-filled {
     fill: "#111"
 }
+
+.info-social {
+  position: absolute;
+  top: calc(100vh - 10em);
+  bottom: auto;
+  left: auto;
+  right: auto;
+  width: 1em;
+  mix-blend-mode: difference;
+  z-index: 99
+}
+
+.info-social a {
+  display: block
+}
+
+.info-social a svg path {
+  transition: .2s ease-in-out
+}
+
+.info-social a:hover svg path {
+  fill: var(--color-accent-1)
+}
+
+.scroll-btn {
+  position: absolute;
+  top: calc(100vh - 10rem);
+  right: 20px;
+  width: 20px;
+  height: 90px;
+  background: none;
+  border: none;
+  transition: transform 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  mix-blend-mode: difference;
+  z-index: 99
+}
+.scroll-btn:after,
+.scroll-btn:before {
+  content: "";
+  position: absolute;
+  left: .975rem;
+  width: 0.1rem;
+  height: 5.5rem;
+  background: #eee;
+  opacity: 0.25;
+}
+.scroll-btn:before {
+  top:0;
+  transform-origin:50% 0;
+  transform:scaleY(0);
+  animation:lineTrailAlt 1.7s cubic-bezier(.645,.045,.355,1) infinite alternate;
+  animation-play-state:var(--animPlayState)
+}
+.scroll-btn:after {
+  bottom:0;
+  transform-origin:50% 100%;
+  animation:lineTrail 1.7s cubic-bezier(.645,.045,.355,1) infinite alternate;
+  animation-play-state:var(--animPlayState)
+}
+.is-loading .scroll-btn:after {
+  transform:scaleY(0)
+}
+.is-intro .scroll-btn:after,
+.is-intro .scroll-btn:before {
+  animation:none;
+  transition:.8s cubic-bezier(.215,.61,.355,1)
+}
+.scroll-btn__dot {
+  position: absolute;
+  top: -5px;
+  left: 10px;
+  z-index: 1;
+  width: 15px;
+  height: 15px;
+  background: #eee;
+  border-radius: 50%;
+  transform: translateZ(0) scale(0.5);
+  animation: dotTrail 1.7s cubic-bezier(0.645, 0.045, 0.355, 1) infinite alternate;
+    animation-play-state: running;
+  animation-play-state: var(--animPlayState)
+}
+.is-loading .scroll-btn__dot {
+  opacity:0
+}
+
+@keyframes dotTrail {
+  10% {
+    transform:translateZ(0) scale(.5)
+  }
+  90% {
+    transform:translate3d(0,5rem,0) scale(1)
+  }
+  to {
+    transform:translate3d(0,5rem,0) scale(1)
+  }
+}
+
+
 
 .menu-toggle {
   margin-top: 10px;

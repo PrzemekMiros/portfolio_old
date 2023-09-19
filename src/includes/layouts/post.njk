@@ -46,23 +46,21 @@
                 </div>
             </div>
         </div>
-
+        <div class="col-md-10 mx-auto">
                 <div class="parallax-wrap aspect_16-9 fadeIn mb-3 mb-lg-5">
                     <img src="{{ thumbnail | url }}" alt="{{ title }}" class="single-post-image img-fluid">
                 </div>
-
+        </div>
         <div class="content row gx-5 fadeIn" id="pinShare">
             <div class="offset-md-2 col-md-8">
                 {{ content | safe}}
             </div>
         </div>
 
-        <div class="pt-medium fadeIn">
-            <div class="line-x"></div>
-        </div>
-
-        <div class="row">
-            <div class="col-md-12">
+        <div class="col-md-10 mx-auto">
+                <div class="pt-medium">
+                    <div class="line-x"></div>
+                </div>
                 <div class="post-navigation pt-small">
                     {%- if collections.posts %}
                     {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
@@ -101,7 +99,6 @@
                     {%- endif %}
                     {%- endif %}
                 </div>
-            </div>
         </div>
 
     </div>

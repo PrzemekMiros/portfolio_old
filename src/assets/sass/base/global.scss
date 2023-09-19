@@ -132,8 +132,8 @@ body::after {
     overflow-y: hidden
   }
   body::before {
-    width: calc(100vw - 20px);
-    height: calc(100vh - 20px);
+    width: calc(100vw - 18px);
+    height: calc(100vh - 18px);
     border: 10px solid var(--color-dark-1)
   }
   

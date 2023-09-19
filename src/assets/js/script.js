@@ -310,13 +310,12 @@ menuToggle.addEventListener('click', function(){
 });
 
 // Greeting
+// Greeting
 if (document.querySelector("#greeting")) {
   const greeting = document.getElementById("greeting");
   const hour = new Date().getHours();
-  const welcomeTypes = ["Dzień dobry !", "Dobry wieczór !"];
-  let welcomeText = "";
-  if (hour < 20) welcomeText = welcomeTypes[0];
-  else welcomeText = welcomeTypes[1];
+  const isMorning = hour >= 3 && hour < 18;
+  let welcomeText = isMorning ? "Dzień dobry !" : "Dobry wieczór !";
   greeting.innerHTML = welcomeText;
 }
 
@@ -412,7 +411,11 @@ gsap.from(".scrollContainer", {
 
 gsap.from(".site-header", {
   delay: 3.5,
-  duration: 1
+  duration: 1,
+  onComplete: function() {
+    // Dodaj klasę "done" po zakończeniu animacji
+    document.querySelector(".site-header").classList.add("done");
+  }
 });
 
 gsap.to(".logo-wrap-inner", {
