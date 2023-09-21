@@ -20,10 +20,6 @@
               stroke .3s cubic-bezier(0.645, 0.045, 0.355, 1)
 }
 
-.site-header .change-theme {
-  transition: color .3s cubic-bezier(0.645, 0.045, 0.355, 1)
-}
-
 .site-header.done.scrolled .ls-stroke,
 .site-header.done.scrolled .ls-filled,
 .site-header.done.scrolled .ls-opacity {
@@ -110,6 +106,7 @@
   bottom: auto;
   right: 2.2em;
   width: 1.6em;
+  transition: 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
   mix-blend-mode: difference;
   z-index: 99
 }
@@ -134,7 +131,7 @@
   height: 90px;
   background: none;
   border: none;
-  transition: transform 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
+  transition: 0.7s cubic-bezier(0.645, 0.045, 0.355, 1);
   mix-blend-mode: difference;
   z-index: 99
 }

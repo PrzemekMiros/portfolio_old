@@ -229,6 +229,13 @@ body::after {
   padding-top: 0
 }
 
+.page-wycena .scroll-btn,
+.page-wycena .info-social,
+.page-wycena .change-theme {
+  opacity: 0;
+  pointer-events: none
+} 
+
 .section-brief {
   height: 100vh;
   margin-bottom: 0
