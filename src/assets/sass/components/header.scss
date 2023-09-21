@@ -172,16 +172,16 @@
 .scroll-btn__dot {
   position: absolute;
   top: -5px;
-  left: 10px;
-  z-index: 1;
-  width: 15px;
-  height: 15px;
+  left: 11px;
+  width: 11px;
+  height: 11px;
   background: #eee;
   border-radius: 50%;
   transform: translateZ(0) scale(0.5);
   animation: dotTrail 1.7s cubic-bezier(0.645, 0.045, 0.355, 1) infinite alternate;
     animation-play-state: running;
-  animation-play-state: var(--animPlayState)
+  animation-play-state: var(--animPlayState);
+  z-index: 1
 }
 .is-loading .scroll-btn__dot {
   opacity:0

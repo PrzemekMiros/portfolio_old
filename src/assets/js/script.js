@@ -174,11 +174,11 @@ lineX.forEach(lineXItem => {
 })
 });
 
-
   gsap.from('.swiper-scrollbar-drag', { 
-    width: "0",
+    width: "0%",
     opacity: 0,
     duration: .7,
+    delay: .7,
     ease: Power2. easeInOut,
     scrollTrigger: {
       scroller: ".scrollContainer",
