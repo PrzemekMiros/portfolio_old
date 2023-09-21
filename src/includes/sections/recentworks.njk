@@ -6,7 +6,7 @@
       </div>
       <div class="row gx-0 pb-medium">
         <div class="col-8 col-md-6">
-          <h2 class="h1 split-text-lines mt-2 mt-md-0 mb-0 text-behind" tg-txt-name="Realizacje">
+          <h2 class="h1 split-text-lines mt-0 mb-0 mb-md-2 text-behind" tg-txt-name="Realizacje">
             <span class="d-none d-md-inline-block">Zobacz realizacje</span>
             <span class="d-md-none">Realizacje</span>
             <span class="dot">.</span>
@@ -39,10 +39,12 @@
             {% for post in collections.works %}
             <div class="swiper-slide">
               <div class="slide-content">
-                <div class="swiper-image-wrap">
-                  <img class="swiper-image" src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" width="630px"
+                <a href="{{ post.url }}" title="{{ post.data.title }}">
+                  <div class="swiper-image-wrap">
+                    <img class="swiper-image" src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" width="630px"
                     height="699px" />
-                </div>
+                  </div>
+                </a>
                 <h3 class="archive-post-title h4 mt-5 mb-1">
                   {{ post.data.title }}
                 </h3>
