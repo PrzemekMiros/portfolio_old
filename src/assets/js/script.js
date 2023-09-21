@@ -174,6 +174,19 @@ lineX.forEach(lineXItem => {
 })
 });
 
+
+  gsap.from('.swiper-scrollbar-drag', { 
+    width: "0",
+    opacity: 0,
+    duration: .7,
+    ease: Power2. easeInOut,
+    scrollTrigger: {
+      scroller: ".scrollContainer",
+      trigger: '.swiper-scrollbar-drag',
+      start: "top 90%",
+    }
+});
+
 // Footer parallax
 if (window.matchMedia("(min-width: 767px)").matches) {
   gsap.from(".footer-parallax", {
