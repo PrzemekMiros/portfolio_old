@@ -16,6 +16,7 @@ description: Zobacz wybrane realizacje stron, sklepów i serwisów internetowych
       height="172"
       viewBox="0 0 127 192"
       fill="none"
+      class="heading-arrow"
       xmlns="http://www.w3.org/2000/svg"
     >
       <path
@@ -40,7 +41,7 @@ description: Zobacz wybrane realizacje stron, sklepów i serwisów internetowych
   </div>
 </div>
 
-<div class="row gx-4 pb-medium pb-md-large">
+<div class="row gx-4 pb-medium">
   <div class="offset-md-1 col-md-10">
     <div class="line-x lx-2"></div>
   </div>
@@ -52,7 +53,7 @@ description: Zobacz wybrane realizacje stron, sklepów i serwisów internetowych
                       <div class="col-md-1"></div>
                       <div class="col-md-5 fadeIn mb-0">
                         <a href="{{ post.url }}" title="{{ post.data.title }}">
-                         <div class="portfolio-item">
+                         <div class="portfolio-item"> 
                           <div class="parallax-wrap aspect_16-12">
                             <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy"/>
                           </div>
@@ -67,9 +68,9 @@ description: Zobacz wybrane realizacje stron, sklepów i serwisów internetowych
                                 </p>
                             </a>
                             <a href="{{ post.url }}" title="{{ post.data.title }}">
-                                <h3 class="archive-post-title split-text-lines h4 my-3">
+                                <h2 class="archive-post-title split-text-lines h3 my-3">
                                     {{ post.data.title }}
-                                </h3>
+                                </h2>
                             </a>
                             <div class="d-none d-lg-block">
                                 <p class="line-clamp-3 split-text-lines mt-4 mb-4">

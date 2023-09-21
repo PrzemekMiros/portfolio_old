@@ -108,9 +108,8 @@
   position: absolute;
   top: calc(100vh - 10em);
   bottom: auto;
-  left: auto;
-  right: auto;
-  width: 1em;
+  right: 2.2em;
+  width: 1.6em;
   mix-blend-mode: difference;
   z-index: 99
 }
@@ -130,7 +129,7 @@
 .scroll-btn {
   position: absolute;
   top: calc(100vh - 10rem);
-  right: 20px;
+  left: 10px;
   width: 20px;
   height: 90px;
   background: none;
