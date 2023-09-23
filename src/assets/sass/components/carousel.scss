@@ -145,6 +145,15 @@
 .swiper-navigation-disabled .swiper-button-prev {
   display: none !important;
 }
+.swiper-button-next svg rect,
+.swiper-button-prev svg rect {
+  transition: .3s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.swiper-button-next:hover svg rect,
+.swiper-button-prev:hover svg rect {
+  fill: var(--color-accent-1);
+  stroke: var(--color-accent-1)
+}
 .swiper-button-prev,
 .swiper-rtl .swiper-button-next {
   right: 3em;
