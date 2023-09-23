@@ -17,12 +17,11 @@
   }
 
   .rotate-text {
-    width: 80%;
-    margin-top: .6em
+    width: 90%;
+    margin-top: .5em
   }
 
   .textcircle {
-    width: 85%;
     transition: transform 1s cubic-bezier(0.65, 0, 0.35, 1);
     transform-origin: 250px 250px;
   }
