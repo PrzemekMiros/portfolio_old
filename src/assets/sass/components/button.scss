@@ -24,6 +24,14 @@
     transition: .4s cubic-bezier(.79,0,.07,.88)
 }
 
+.button.light::before {
+    background: var(--color-light-1)
+}
+
+.button.light span {
+    color: var(--color-light-1)
+}
+
 .button svg {
     margin-left: 25px;
     transform: rotate(45deg);
@@ -53,7 +61,6 @@
     .button:hover::before {
         width: calc(100% + 1em)
     }
-    
     .button:hover span {
         color: var(--color-light-2);
         transform: translateX(20px)
@@ -63,5 +70,11 @@
     }
     .button:hover svg path {
         stroke: var(--color-light-2);
+    }
+    .button.light:hover span {
+        color: var(--color-dark-2);
+    }
+    .button.light:hover svg path {
+        stroke: var(--color-dark-2);
     }
 }
