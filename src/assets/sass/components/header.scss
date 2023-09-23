@@ -240,7 +240,7 @@
   display: block;
   width: 100%;
   height: 1px;
-  background-color: var(--color-light-1);
+  background-color: #111;
   transition: .6s ease-in-out;
 }
 
@@ -415,9 +415,7 @@
     height: 10vw
   } 
   .hamburger {
-    width: auto;
-    height: 1.8vw;
-    padding-top: .3em
+    width: auto
   }
 .logo-text-line-1,
 .logo-text-line-2,

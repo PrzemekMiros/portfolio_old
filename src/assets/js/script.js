@@ -415,7 +415,7 @@ gsap.to(".scrollprogress", {
 }
 
 function addMenuClass() {
-  MenuClass = document.querySelector(".scrollContainer");
+  MenuClass = document.querySelector("body");
   MenuToggle = document.querySelector(".menu-toggle");
 
   MenuToggle.addEventListener('click', () => {
@@ -426,7 +426,7 @@ function addMenuClass() {
 addMenuClass();
 
 function removeMenuClass() {
-  document.querySelector(".scrollContainer").classList.remove("menu-open");
+  document.querySelector("body").classList.remove("menu-open");
 }
 
 // Intro
