@@ -47,7 +47,7 @@ if (theme === "light") {
   });
   // Swup events re-init scripts
   document.addEventListener("swup:animationInStart", () => {
-    locoScroll.destroy(), locoScroll.init(), scrollTo(top)
+    locoScroll.destroy(), locoScroll.init(), scrollTo(top), removeMenuClass()
   });
   document.addEventListener("swup:animationInDone", () => {
     animationMain()

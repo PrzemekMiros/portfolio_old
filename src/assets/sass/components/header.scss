@@ -107,7 +107,12 @@
   right: 2.2em;
   width: 1.6em;
   mix-blend-mode: difference;
+  transition: opacity .3s ease-in-out;
   z-index: 99
+}
+
+.menu-open .info-social {
+  opacity: 0
 }
 
 .info-social a {
@@ -130,8 +135,12 @@
   height: 90px;
   background: none;
   border: none;
+  transition: opacity .3s ease-in-out;
   mix-blend-mode: difference;
   z-index: 99
+}
+.menu-open .scroll-btn {
+  opacity: 0;
 }
 .scroll-btn:after,
 .scroll-btn:before {

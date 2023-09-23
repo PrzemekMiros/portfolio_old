@@ -294,12 +294,6 @@ tl.from('.menu-bg', {
 	ease: 'Expo.easeInOut'
 });
 
-tl.to('.scroll-btn, .info-social, .cc_div', {
-	duration: .5,
-	opacity: 0,
-	ease: 'Expo.easeInOut',
-}, "<");
-
 tl.from('.main-menu li a', {
 	duration: 1.3,
 	y:"110%",
@@ -417,7 +411,20 @@ gsap.to(".scrollprogress", {
   }
 });
 };
+// End animation function
+}
 
+function addMenuClass() {
+  MenuClass = document.querySelector(".scrollContainer");
+  MenuToggle = document.querySelector(".menu-toggle");
+  MenuToggle.addEventListener('click', () => {
+    MenuClass.classList.toggle("menu-open");
+  })
+}
+addMenuClass();
+
+function removeMenuClass() {
+  document.querySelector(".scrollContainer").classList.remove("menu-open");
 }
 
 // Intro
