@@ -119,22 +119,14 @@
 #cc--main {
     z-index: 2147483647;
     z-index: var(--cc-z-index);
-    visibility: hidden;
-    opacity: 0;
-    animation: displayBox .4s ease-in-out both 5s;
+    animation: displayBox .4s both 5s;
 }
 
 @keyframes displayBox {
     0% {
-        visibility: hidden;
-        opacity: 0
-    }
-    10% {
-        visibility: visible;
         opacity: 0
     }
     100% {
-        visibility: visible;
         opacity: 1
     }
 }

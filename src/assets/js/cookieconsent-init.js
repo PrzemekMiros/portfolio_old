@@ -54,7 +54,7 @@ cc.run({
         'en': {
             consent_modal: {
                 title: cookie + ' Ta strona używa pliki cookie ',
-                description: 'Ta strona używa niezbędnych plików cookie, aby zapewnić jej prawidłowe działanie. Ustawienia zostaną aktywowane dopiero po wyrażeniu zgody. <button type="button" data-cc="c-settings" class="cc-link">Pozwól mi wybrać</button>',
+                description: 'Ta strona używa niezbędnych plików cookie, aby zapewnić jej prawidłowe działanie. <button type="button" data-cc="c-settings" class="cc-link">Pozwól mi wybrać</button>',
                 primary_btn: {
                     text: 'Akceptuj',
                     role: 'accept_all'              // 'accept_selected' or 'accept_all'
