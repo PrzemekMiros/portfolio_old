@@ -121,11 +121,7 @@
     z-index: var(--cc-z-index);
     visibility: hidden;
     opacity: 0;
-    transition: .4s;
     animation: displayBox .4s ease-in-out both 5s;
-}
-.menu-open #cc--main {
-    opacity: 0!important
 }
 
 @keyframes displayBox {
@@ -185,7 +181,7 @@
     font-size: var(--cc-font-size);
     font-weight: 400;
     text-rendering: optimizeLegibility;
-    transition: opacity .3s ease-in-out
+    transition: opacity .6s ease-in-out
 }
 
 .menu-open .cc_div {
@@ -1088,7 +1084,6 @@ html.force--consent.show--consent body {
 
 .cc_div .cloud #c-bns {
     display: table-cell;
-    min-width: 170px;
     vertical-align: middle
 }
 
