@@ -5,7 +5,7 @@ description: "Chcąc nauczyć się nowoczesnego programowania w JavaScript może
   mieć niemały problem, tym bardziej jeżeli ograniczamy się do polskojęzycznego
   Internetu. "
 author: Przemek
-date: 2023-09-24T06:43:59.839Z
+date: 2022-09-14T06:43:59.839Z
 tags:
   - strony www
 thumbnail: /blog/img/kurs-javascript-podstawy-1170x720.jpg.webp
