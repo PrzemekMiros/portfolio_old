@@ -855,7 +855,7 @@ element2 = element.cloneNode(true);
 Argument true, powoduje, że kopiowana jest też cała zawartość wewnątrz klonowanego elementu div. Aby sklonowany element pojawił się w DOM, musimy napisać jeszcze jedną instrukcję, która jednocześnie określa gdzie ma się on pojawić.
 
 ```
-
+element.after(element2);
 ```
 
 Spowoduje, że skolonowany element pojawi się po elemencie źródłowym i jak można się domyślić istnieje jeszcze metoda before().
@@ -863,13 +863,14 @@ Spowoduje, że skolonowany element pojawi się po elemencie źródłowym i jak 
 Element DOM można stworzyć całkowicie od podstaw – bez konieczności kopiowania istniejących elementów:
 
 ```
-
+nowyElement = document.createElement('div');
 ```
 
 Po tej instrukcji – podobnie jak wyżej – musimy zdecydować gdzie ma zostać umieszczony nowyElement. Stworzony dynamicznie div jest pusty, aby umieścić w nim jakąś zawartość można użyć poznanej nam już właściwości innerHTML:
 
 ```
-
+element.before(nowyElement);
+nowyElement.innerHTML = '<h3>Hej</h3>';
 ```
 
 ### Wywoływanie i obsługa zdarzeń w JavaScript
@@ -879,43 +880,63 @@ Za pomocą JavaScript możemy nasłuchiwać zdarzeń, wywoływać je i wykonywa
 Aby zaznajomić się ze zdarzeniami stwórzmy przycisk:
 
 ```
-
+<button id="btn">Wciśnij mnie!</button>   
 ```
 
 Teraz możemy stworzyć eventListener. Funkcja addEventListener przyjmuje dwa argumenty. Pierwszym z nich jest samo zdarzenie, które będzie nasłuchiwane a w drugim argumencie znajduje się funkcja lub odwołanie do funkcji ,która ma wykonać kod kiedy zdarzenie będzie miało miejsce:
 
 ```
-
+przycisk = document.querySelector('#btn');
+przycisk.addEventListener('click', function(){
+   console.log("Brawo! Wciśnięto przycisk.");
+});  
 ```
 
 Możemy też obsłużyć inne zdarzenia, takie jak najechanie myszą na dany element jak i moment, w którym kursor opuszcza pole danego elementu. Nic nie stoi na przeszkodzie, aby wiele różnych eventów dotyczyły jednego elementu DOM:
 
 ```
-
+przycisk.addEventListener('mouseover', przyciskMouseOver);
+przycisk.addEventListener('click', przyciskClick);
+przycisk.addEventListener('mouseout', przyciskMouseOut);
 ```
 
 Zauważ, że tutaj nie umieściłem ciała funkcji a tylko jej nazwę. Funkcja, która ma się wykonać po danym zdarzeniu może być w innym miejscu zdefiniowana w dowolnym miejscu jak standardowa funkcja:
 
 ```
+przycisk = document.querySelector('#btn');
 
+function przyciskClick(){
+   przycisk.innerHTML = "Click!";
+}
+function przyciskMouseOver(){
+   przycisk.innerHTML = "Zaraz będzie click...";
+}
+function przyciskMouseOut(){
+   przycisk.innerHTML = "???";
+}
 ```
 
 Do funkcji, która reaguje na dane zdarzenie można przekazać parametr zdarzenia, który umożliwi nam ingerować w standardowe zachowanie elementów. Przykładem może być kliknięcie na link:
 
 ```
-
+<a href="https://google.pl" class="stop">Link</a>
 ```
 
 W JavaScript wybieramy element i będziemy nasłuchiwali kliknięcia:
 
 ```
-
+link = document.querySelector('.stop');
+link.addEventListener('click', function(e){
+   e.preventDefault();
+});
 ```
 
 Za pomocą preventDefault() wyłączamy standardowe działanie linku przez co jego kliknięcie nie spowoduje opuszczenia bieżącej strony. Podobnie można zrobić z formularzami. Podłączając się do zdarzenia submit możemy zapobiec odświeżeniu strony:
 
 ```
-
+formularz.addEventListener("submit", function(e) {
+   e.preventDefault();
+});
 ```
 
 Zabawę z formularzami zostawmy sobie na inną okazję.
@@ -923,7 +944,3 @@ Zabawę z formularzami zostawmy sobie na inną okazję.
 ### Podsumowanie
 
 Mam nadzieję, że ten kurs zachęci do nauki JavaScript i spowoduje, że moje wcześniejsze artykuły z kawałkami kodów JavaScript będą bardziej zrozumiałe. Szczerze mówiąc, rzadko kiedy wychodzę poza ramy tego kursu. Znajomość JavaScript na tym poziomie pozwala tworzyć użyteczny kod i może być punktem wyjściowym do nauki programowania wprost z dokumentacji. Znajomość tego typu podstaw JavaScript ułatwia poznawanie bibliotek, dostosowywania przypadkowych kodów JavaScript znalezionych w Internecie a także nauki popularnych frameworków z darmowych źródeł.
-
-Kurs Vanilla JavaScript będzie stale aktualizowany a sekcję komentarzy pod tym wpisem można traktować jak mini forum. Chętnie pomogę w stawianiu pierwszych kroków w JavaScript każdemu kto tutaj trafił.
-
-<!--EndFragment-->
