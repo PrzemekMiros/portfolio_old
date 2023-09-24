@@ -15,3 +15,9 @@ Chcąc nauczyć się nowoczesnego programowania w JavaScript możemy mieć niema
 Oczywiście najpewniejszym i najpierwotniejszym źródłem wiedzy o języku programowania jest dokumentacja. Polecam dokumentację MDN. Dokumentacja to tekst a serwisy dla programistów typu Stack-Overflow ma formę forum a nie wideo-porad, dlatego nauka programowania poprzez czytanie tekstu jest czymś naturalniejszym. Postanowiłem napisać kurs JavaScript w formie artykułu, który po prostu wprowadzi w JavaScript nowe osoby. Jeżeli ktoś już poznał podstawy JS, kurs ten zweryfikuje lub zaktualizuje wykorzystywane na co dzień techniki programowania JavaScript.
 
 Na koniec wstępu przypomnę, że JavaScript to najpopularniejszy język programowania i warto się go uczyć lub chociaż poznać jego podstawy. Wiedza zdobyta w tym kursie pozwoli świadomiej dokonać wyboru dalszej ścieżki edukacji i tworzyć skrypty w czystym JavaScript jeżeli zajmujesz się tworzeniem stron lub aplikacji internetowych. Niewykluczone, że artykuł ten będzie ulegał częstym aktualizacjom – wszystko zależy od jego odbioru.
+
+## Co jest potrzebne by programować w JavaScript?
+
+Kod JavaScript wykonywany jest w przeglądarce. Nie potrzebujemy niczego innego poza zwykłą przeglądarką np. Google Chrome czy Mozilla Firefox. Google Chrome jest najpopularniejszą przeglądarką i wspiera najnowsze rozwiązania ale dla potrzeb tego kursu można skorzystać z dowolnej ulubionej przeglądarki internetowej.
+
+Kod JavaScript możesz pisać w zwykłym notatniku ale polecam notatnik dla programistów, np. Notepad++ lub Visual Studio Code. Są to darmowe programy, które i tak prędzej czy później będziesz wykorzystywać skoro interesujesz się programowaniem. Programy takie kolorują składnię i powodują, że programowanie jest efektywniejsze z wielu innych powodów.
