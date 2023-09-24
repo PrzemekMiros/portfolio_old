@@ -8,8 +8,6 @@ author: Przemek
 date: 2023-09-24T06:43:59.839Z
 thumbnail: /blog/img/kurs-javascript-podstawy-1170x720.jpg.webp
 ---
-<!--StartFragment-->
-
 Chcąc nauczyć się nowoczesnego programowania w JavaScript możemy mieć niemały problem, tym bardziej jeżeli ograniczamy się do polskojęzycznego Internetu. Istniejące w Internecie, najczęściej przestarzałe kursy JavaScript uczą starego podejścia, według których nie wypada już programować. Platformy e-learningowe są przepełnione kursami JavaScript do którego doklejony jest jakiś Framework i środowisko node.js – taki kurs uczy wszystkiego oprócz JavaScript i przy okazji odstrasza początkujących nawałem narzędzi. W YouTube są sympatyczne filmiki, które jednak marnują cenny czas kursanta, bo wiedzę, którą można zawrzeć w kilku zwięzłych zdaniach tłumaczy się tak aby przychód z prowadzenia kanału był jak największy – czyli rozwleka się stosunkowo mało materiału na wielogodzinne odcinki – które i tak promują jakiś inny płatny kurs…
 
 Oczywiście **najpewniejszym i najpierwotniejszym źródłem wiedzy o języku programowania jest dokumentacja**. Polecam [dokumentację MDN](https://web.archive.org/web/20230129215430/https://developer.mozilla.org/pl/). Dokumentacja to tekst a serwisy dla programistów typu Stack-Overflow ma formę forum a nie wideo-porad, dlatego nauka programowania poprzez czytanie tekstu jest czymś naturalniejszym. Postanowiłem napisać kurs JavaScript w formie artykułu, który po prostu wprowadzi w JavaScript nowe osoby. Jeżeli ktoś już poznał podstawy JS, kurs ten zweryfikuje lub zaktualizuje wykorzystywane na co dzień techniki programowania JavaScript.
@@ -204,13 +202,19 @@ const b = undefined;
 Dla eksperymentu zróbmy jeszcze coś takiego:
 
 ```
-
+let c;
 ```
 
 Sprawdzenie typu zmiennej możemy dokonać za pomocą *typeof*.
 
 ```
-
+console.log(typeof(imie)); // zwróci string
+console.log(typeof(wiek)); // zwróci number
+console.log(typeof(sredniaOcen)); // zwróci number
+console.log(typeof(zaliczonePraktyki)); // zwróci true
+console.log(typeof(a)); // zwróci object!
+console.log(typeof(b)); // zwróci undefined
+console.log(typeof(c)); // zwróci undefined
 ```
 
 ## Operacje i metody na ciągach znaków JavaScript
@@ -811,5 +815,3 @@ Zabawę z formularzami zostawmy sobie na inną okazję.
 Mam nadzieję, że ten kurs zachęci do nauki JavaScript i spowoduje, że moje wcześniejsze artykuły z kawałkami kodów JavaScript będą bardziej zrozumiałe. Szczerze mówiąc, rzadko kiedy wychodzę poza ramy tego kursu. Znajomość JavaScript na tym poziomie pozwala tworzyć użyteczny kod i może być punktem wyjściowym do nauki programowania wprost z dokumentacji. Znajomość tego typu podstaw JavaScript ułatwia poznawanie bibliotek, dostosowywania przypadkowych kodów JavaScript znalezionych w Internecie a także nauki popularnych frameworków z darmowych źródeł.
 
 Kurs Vanilla JavaScript będzie stale aktualizowany a sekcję komentarzy pod tym wpisem można traktować jak mini forum. Chętnie pomogę w stawianiu pierwszych kroków w JavaScript każdemu kto tutaj trafił.
-
-<!--EndFragment-->
