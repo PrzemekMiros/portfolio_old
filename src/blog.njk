@@ -60,7 +60,8 @@ pagination:
         </a>
         </div>
       </div>
-      <div class="row gx-4"> {% for post in blog %} 
+      <div class="row gx-4"> 
+        {% for post in blog %} 
         <div class="col-md-4 pb-medium"> 
         <a href="{{ post.url }}" title="{{ post.data.title }}">
                         <div class="portfolio-item fadeIn">

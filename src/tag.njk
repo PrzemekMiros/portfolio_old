@@ -9,21 +9,21 @@ permalink: /blog/{{tag | slugify}}/
 eleventyComputed:
     title: Kategoria {{tag}}
 ---
-     
-<div class="row gx-4">
-  <div class="offset-md-1 col-md-8">
-    <h1 class="xxl capitalize-f split-text-lines">
-      {{ tag }}<span class="dot">.</span>
-    </h1>
+    
+  <div class="row gx-4 mb-3 mb-md-0">
+    <div class="offset-md-1 col-md-8">
+      <h1 class="xxl split-text-lines">
+        Kategoria: {{ tag }}<span class="dot">.</span>
+      </h1>
+    </div>
+    <div class="col-md-2 d-none d-lg-flex align-items-end pb-small fadeIn">
+      <svg class="heading-arrow" width="87" height="152" viewBox="0 0 127 192" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path d="M63.5 1L63.5 191" stroke="var(--color-dark-1)" stroke-width="3" stroke-linecap="round"/>
+        <path d="M126 128.5L63.5 191" stroke="var(--color-dark-1)" stroke-width="3" stroke-linecap="round"/>
+        <path d="M1 128.5L63.5 191" stroke="var(--color-dark-1)" stroke-width="3" stroke-linecap="round"/>
+        </svg>            
+    </div>
   </div>
-  <div class="col-md-2 d-none d-lg-flex align-items-end pb-small fadeIn">
-    <svg width="87" height="152" viewBox="0 0 127 192" fill="none" xmlns="http://www.w3.org/2000/svg">
-      <path d="M63.5 1L63.5 191" stroke="var(--color-dark-1)" stroke-width="2" stroke-linecap="round"/>
-      <path d="M126 128.5L63.5 191" stroke="var(--color-dark-1)" stroke-width="2" stroke-linecap="round"/>
-      <path d="M1 128.5L63.5 191" stroke="var(--color-dark-1)" stroke-width="2" stroke-linecap="round"/>
-      </svg>            
-  </div>
-</div>
 
 <div class="row gx-4 pb-small">
   <div class="offset-md-1 col-md-10">
@@ -64,24 +64,36 @@ eleventyComputed:
       </div>
         <div class="row gx-4"> 
             {% for post in collections[tag] %} 
-            <div class="col-md-4 fadeIn">
-                <a href="{{ post.url }}" title="{{ post.data.title }}">
-                    <div class="archive-post pb-small">
-                        <div class="portfolio-item">
-                        <div class="parallax-wrap aspect_16-9">
-                            <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy" />
+ <div class="col-md-4 pb-medium"> 
+        <a href="{{ post.url }}" title="{{ post.data.title }}">
+                        <div class="portfolio-item fadeIn">
+                                <div class="parallax-wrap aspect_16-9">
+                                    <img src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" loading="lazy" />
+                                </div>
                         </div>
-                        </div>
-                        <p class="archive-post-date mt-3 mb-1">
-                            <small>{{ post.data.date | dateDisplay}}</small>
-                            <small>{{ post.data.tag }}</small>
+                        </a>
+                        <p class="archive-category fadeIn">
+                            <small>
+                                {{ post.data.tags }}
+                            </small>
                         </p>
-                        <h2 class="archive-post-title h4 mt-0">
-                            {{ post.data.title }}
-                        </h2>
-                    </div>
-                </a>
-            </div> 
+                        <a href="{{ post.url }}" title="{{ post.data.title }}">
+                            <h3 class="split-text-lines line-clamp-2 h5 mt-0 mb-2">
+                                {{ post.data.title }}
+                            </h3>
+                        </a>
+                        <a href="{{ post.url }}" title="Czytaj" class="button magnetic fadeIn mt-3 mb-4" data-strength="100" data-strength-text="50">
+                            <span>Czytaj</span>
+                            <svg width="11" height="11" viewBox="0 0 14 14" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13 1L1 13" stroke="var(--color-accent-1)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M3 1H13V11" stroke="var(--color-accent-1)" stroke-width="2"
+                                    stroke-linecap="round" stroke-linejoin="round"></path>
+                            </svg>
+                        </a>
+                        <div class="line-x lx-1 lx-op"></div>
+      </div> 
             {% endfor %} 
         </div>
     </div>
