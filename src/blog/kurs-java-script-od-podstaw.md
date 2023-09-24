@@ -6,6 +6,8 @@ description: "Chcąc nauczyć się nowoczesnego programowania w JavaScript może
   Internetu. "
 author: Przemek
 date: 2023-09-24T06:43:59.839Z
+tags:
+  - strony www
 thumbnail: /blog/img/kurs-javascript-podstawy-1170x720.jpg.webp
 ---
 Chcąc nauczyć się nowoczesnego programowania w JavaScript możemy mieć niemały problem, tym bardziej jeżeli ograniczamy się do polskojęzycznego Internetu. Istniejące w Internecie, najczęściej przestarzałe kursy JavaScript uczą starego podejścia, według których nie wypada już programować. Platformy e-learningowe są przepełnione kursami JavaScript do którego doklejony jest jakiś Framework i środowisko node.js – taki kurs uczy wszystkiego oprócz JavaScript i przy okazji odstrasza początkujących nawałem narzędzi. W YouTube są sympatyczne filmiki, które jednak marnują cenny czas kursanta, bo wiedzę, którą można zawrzeć w kilku zwięzłych zdaniach tłumaczy się tak aby przychód z prowadzenia kanału był jak największy – czyli rozwleka się stosunkowo mało materiału na wielogodzinne odcinki – które i tak promują jakiś inny płatny kurs…
