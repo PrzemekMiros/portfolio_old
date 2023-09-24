@@ -584,25 +584,30 @@ function napisz(napis){
 To spowoduje, że przy wywoływaniu funkcji możemy w argumencie umieścić tekst do wyświetlenia:
 
 ```
-
+napisz("Cześć!");
 ```
 
 Funkcja może zwracać wartość i powiedzieliśmy, że może być argumentem innej funkcji. Łatwo to pokazać na dodawaniu:
 
 ```
-
+function suma(skladnik1, skladnik2){
+   return skladnik1+skladnik2;
+}
+console.log(suma(2,3));
 ```
 
 Konsola oczywiście zwróci 5.
 
 ```
-
+console.log(suma(2,suma(3,5)));
 ```
 
 Samo wywołanie funkcji suma nie zwróci wartości 0 lecz NaN. Nie jest to zazwyczaj oczekiwane zachowanie tego typu funkcji. Nie podając żadnych argumentów przy wywołaniu funkcji suma() ona „nie wie”, że logiczną wartością do zwrócenia będzie 0. Aby uzyskać taki efekt, wystarczy podać przy deklaracji **domyślne wartości argumentów**, które są zastosowane wtedy, kiedy nie podamy wszystkich argumentów przy wywoływaniu funkcji:
 
 ```
-
+function suma(skladnik1=0, skladnik2=0){
+   return skladnik1+skladnik2;
+}
 ```
 
 Teraz, wywołanie funkcji suma() bez argumentów zwróci 0 bo zostanie zwrócona wartość operacji 0+0.
@@ -612,25 +617,27 @@ Teraz, wywołanie funkcji suma() bez argumentów zwróci 0 bo zostanie zwrócona
 W dokumentacji ES6 wprowadzono funkcje strzałkowe (ang. *arrow functions*), które różnią się zapisem. Powodują, że możemy proste funkcje zapisać w jednej linii czystego kodu. Przykład z sumą można zapisać tak:
 
 ```
-
+let suma = (skladnik1=0, skladnik2=0) => {
+   return skladnik1+skladnik2;
+}
 ```
 
 Jak widać, pozbyliśmy się słowa kluczowego function i doszła nam strzałka przed nawiasem klamrowym. W przypadku tak prostej funkcji możemy pójść jeszcze dalej i usunąć nawiasy klamrowe oraz słowo kluczowe return:
 
 ```
-
+let suma2 = (skladnik1=0, skladnik2=0) => skladnik1+skladnik2;
 ```
 
 W przypadku gdy istnieje tylko jeden argument, można usunąć nawet nawias otaczający argumenty.
 
 ```
-
+let kwadrat = podstawa => Math.pow(podstawa, 2);
 ```
 
 Teraz wystarczy normalnie wywołać funkcję aby otrzymać kwadrat z liczby np. z dwójki:
 
 ```
-
+console.log(kwadrat(2));
 ```
 
 W tym przykładzie bardzo fajnie widać jak funkcja strzałkowa upraszcza zapis. Jest to przykład *cukru syntaktycznego*, czyli elementów w syntaksie języka programowania, który nie dodaje nowych funkcjonalności a jedynie „upiększa” zapis kodu.
@@ -644,37 +651,49 @@ Po opanowaniu funkcji płynnie można przejść do obiektów w JavaScript. W t
 Zobaczmy jak definiujemy funkcję konstruktora (ang. *constructor function*). Nazwy konstruktorów w odróżnieniu od zwykłych funkcji rozpoczynamy wielką literą. Przy funkcjach konstruktora, mówimy że nawiasie mamy właściwości. Obiekt Osoba posiada zatem właściwości: imię, nazwisko i dataUrodzenia.
 
 ```
-
+function Osoba (imie, nazwisko, dataUrodzenia){
+   this.imie = imie;
+   this.nazwisko = nazwisko;
+   this.dataUrodzenia = dataUrodzenia;
+}
 ```
 
 Instancję obiektu tworzymy tak jak w innych językach programowania za pomocą słowa kluczowego *new*:
 
 ```
-
+const osoba1 = new Osoba("Jan", "Kowalski", "12.03.2001");
 ```
 
 Możemy teraz wyświetlić obiekt:
 
 ```
-
+console.log(osoba1);
 ```
 
 Dostęp do poszczególnych właściwości zapewnia poznana wcześniej notacja kropkowa:
 
 ```
-
+console.log(osoba1.imie);
 ```
 
 W naszym obiekcie Osoba zdefiniowaliśmy tylko właściwości. Metody można tworzyć za pomocą słowa kluczowego function:
 
 ```
-
+function Osoba (imie, nazwisko, dataUrodzenia){
+   this.imie = imie;
+   this.nazwisko = nazwisko;
+   this.dataUrodzenia = dataUrodzenia;
+   this.getImieNazwisko = function() {
+      return this.imie + ' ' + this.nazwisko;
+   }
+}
+const osoba1 = new Osoba("Jan", "Kowalski", "12.03.2001");
 ```
 
 Metodę obiektu możemy teraz wywołać tak:
 
 ```
-
+console.log(osoba1.getImieNazwisko());
 ```
 
 ### Metody prototypowe
@@ -682,7 +701,14 @@ Metodę obiektu możemy teraz wywołać tak:
 Możemy też zdefiniować metody prototypowe (ang. *prototype methods*). Takie definiowanie metod jest wydajniejsze. Różnica polega też na tym, że nie będą one widoczne bezpośrednio jako składowa obiektu i nie będą miały dostępu do danych innych niż publiczne:
 
 ```
-
+function Osoba (imie, nazwisko, dataUrodzenia){
+   this.imie = imie;
+   this.nazwisko = nazwisko;
+   this.dataUrodzenia = dataUrodzenia;
+}
+Osoba.prototype.getImieNazwisko = function() {
+   return this.imie + ' ' + this.nazwisko;
+}
 ```
 
 ### Klasy w JavaScript
@@ -690,7 +716,16 @@ Możemy też zdefiniować metody prototypowe (ang. *prototype methods*). Takie d
 W 2015 roku w specyfikacji ES6 (czyli ECMA Script 2015) wprowadzono słowo kluczowe class. Dzięki niemu można tworzyć klasy w podobny sposób jak w innych językach programowania obiektowego. Tutaj znowu nic się nie zmienia w praktyce, a poniższy przykład to tylko przerobienie powyższego kodu na nowocześniejszy zapis:
 
 ```
-
+class Osoba {
+   constructor(imie, nazwisko, dataUrodzenia){
+      this.imie = imie;
+      this.nazwisko = nazwisko;
+      this.dataUrodzenia = dataUrodzenia;
+   }
+   getImieNazwisko() {
+      return this.imie + ' ' + this.nazwisko;
+   }
+}
 ```
 
 Tworzenie instancji obiektu, odwoływanie się do własności i metod wygląda dokładnie tak samo. Metoda getImieNaziwsko jest z automatu dodawana do prototypu. Jest to zatem kolejny przykład cukru syntaktycznego w JavaScript.
@@ -699,14 +734,20 @@ Tworzenie instancji obiektu, odwoływanie się do własności i metod wygląda 
 
 DOM to obiektowy model dokumentu  (ang. *Document Object Model*). Jest to obiektowa reprezentacja strony internetowej w pamięci przeglądarki. Dzięki DOM możemy manipulować elementami strony internetowej i nasłuchiwać zdarzeń za pomocą JavaScriptu. Przeglądarka interpretuje kod HTML i przekształca go w model obiektowy. W narzędziach dla programistów DOM strony internetowej jest zaprezentowany w postaci kodu HTML i w ramach tego kursu można też go tak postrzegać – jako roboczy i żywy kod HTML bieżącej strony internetowej, który możemy modyfikować „w locie”. Czytaj więcej w osobnym artykule: [Co to jest DOM](https://web.archive.org/web/20230129215430/https://mansfeld.pl/webdesign/co-to-jest-dom-shadow-dom-virtual-dom/)?
 
-![HMTL DOM](https://web.archive.org/web/20230129215430im_/https://cdn.mansfeld.pl/wp-content/uploads/2021/10/html-dom-w-przeglarce-chrome-1170x785.png)
-
-Reprezentacja DOM w postaci kodu HTML w przeglądarce Chrome
+![HMTL DOM](https://web.archive.org/web/20230129215430im_/https://cdn.mansfeld.pl/wp-content/uploads/2021/10/html-dom-w-przeglarce-chrome-1170x785.png "Reprezentacja DOM w postaci kodu HTML w przeglądarce Chrome")
 
 Aby móc poznać działanie DOM, dopiszmy do naszego pliku kursjs.html dodatkowe elementy DOM:
 
 ```
-
+<body>
+   <h1>Kurs JavaScript</h1>
+   <div id="witaj">Witaj Świecie!</div>
+   <div class="opis">
+      <p>
+         Napis "Witaj Świecie!" (ang. Hello World)  ma na celu demonstrację języka, środowiska bądź biblioteki, w której został napisany.
+      </p>
+   </div>
+</body>
 ```
 
 *Kod JavaScript możemy wprowadzać do naszego pliku kursjs.js lub do znaczników <script> w pliku kursjs.html*
@@ -714,7 +755,8 @@ Aby móc poznać działanie DOM, dopiszmy do naszego pliku kursjs.html dodatkowe
 Nadrzędnym elementem DOM jest *document*. To za pomocą tego obiektu będziemy odwoływali się do każdego elementu znajdującego się w bieżącej stronie internetowej. Aby zatem „wybrać” istniejący div o identyfikatorze *witaj* użyjmy poniższego kodu:
 
 ```
-
+let element = document.getElementById('witaj');
+console.log(element);
 ```
 
 Element taki możemy przypisać do zmiennej aby wygodniej nim manipulować i nie było konieczności pisania tej linijki przy następnych operacjach. Kiedy zmienną element przekażemy do funkcji console.log() nasz <div> zostanie wyświetlony w konsoli w postaci kodu HTML.
@@ -722,25 +764,25 @@ Element taki możemy przypisać do zmiennej aby wygodniej nim manipulować i ni
 Istnieje też nowszy i znacznie wygodniejszy sposób wybierania elementów z DOM. Wybieranie elementów bardzo przypomina wówczas budowanie selektorów znanych z CSS i jQuery. Mowa o metodach querySelector() i querySelectorAll(). Ta pierwsza wybiera pierwszy element zgadzający się z selektorem umieszczonym w nawiasie a ta druga wybiera wszystkie elementy, przy czym umieszcza je w NodeList, którą można używać podobnie jak tablicę. Poznaliśmy jak działają tablice dlatego nie będzie to stanowiło dla nas żadnego problemu.
 
 ```
-
+let element = document.querySelector('#witaj');
 ```
 
 Chcąc wybrać oba elementy <div> możemy również użyć starszego podejścia:
 
 ```
-
+let divs = document.getElementsByTagName('div');
 ```
 
 lub nowszego:
 
 ```
-
+let divs = document.querySelectorAll('div');
 ```
 
 Dla klas użylibyśmy document.getElementsByClassName ale zaleca się używać już nowszego zapisu:
 
 ```
-
+let klasa = document.querySelectorAll('.nazwa-klasy');
 ```
 
 Używanie metody querySelector poza prostszą składnią zapewnia łatwiejsze iterowanie po elementach wygenerowanych tablic. Tradycyjne metody zwracają HTMLCollection a querySelector zwraca wspomniany NodeList, którymi łatwiej się można posługiwać.
@@ -748,49 +790,58 @@ Używanie metody querySelector poza prostszą składnią zapewnia łatwiejsze it
 Skoro potrafimy wybierać elementy, dokonajmy przykładowych modyfikacji. Za pomocą JavaScript można dynamicznie nadać styl elementom zupełnie tak jak posługiwalibyśmy się atrybutem style:
 
 ```
-
+element.style.backgroundColor = "yellow";
 ```
 
 W taki sposób można nadawać też inne właściwości CSS:
 
 ```
-
+element.style.color = "blue";
 ```
 
 Wykluczając dość rzadkie przypadki (jak np. tworzenie animacji) w praktycznych scenariuszach dość rzadko się z tego korzysta i do dynamicznego stylowania elementów tworzy się klasy CSS.
 
 ```
-
+<style>
+   .naglowek{
+      color:red;
+      border:1px solid black;
+   }
+</style>
 ```
 
 W kodzie JS dodajemy bądź usuwamy klasy odpowiedzialne za poszczególne style:
 
 ```
-
+element.classList.add('naglowek');
+element.classList.remove('naglowek');
 ```
 
 W JavaScript można dodawać i usuwać dowolne atrybuty. Stwórzmy poprawny link do dowolnej strony internetowej:
 
 ```
-
+<a href="https://google.pl" class="link">Link</a>
 ```
 
 Wybierzmy element i skorzystajmy z metody setAttribute:
 
 ```
-
+let link = document.querySelectorAll('.link');
+link.setAttribute('target', '_blank');
 ```
 
 Od tej pory link powinien się otwierać w nowym oknie. Możemy też sprawdzić czy dany element ma konkretny atrybut, pobrać jego wartość a nawet całkowicie je usunąć. Służą do tego odpowiednio:
 
 ```
-
+element.hasAttribute('class');
+element.getAttribute('class');
+element.removeAttribute('class');
 ```
 
 Kolejną modyfikacją w DOM może być zmiana zawartości:
 
 ```
-
+element.innerHTML="<p>JavaScript jest łatwy!</p>";
 ```
 
 Istnieje też podobna właściwość innerText, która traktuje wprowadzoną wartość jako zwykły tekst. W praktyce oznacza, to że przykładowy tag <p> zostanie zakodowany jako: &lt;p&gt;
@@ -798,7 +849,7 @@ Istnieje też podobna właściwość innerText, która traktuje wprowadzoną war
 Elementy, którymi manipulujemy w JavaScript wcale nie muszą być najpierw stworzone w czystym HTML. Możemy jest stworzyć dynamicznie i umieścić w dowolnym miejscu na stronie. Być może zdarzy się sytuacja, że będziemy chcieli sklonować istniejący element DOM:
 
 ```
-
+element2 = element.cloneNode(true);
 ```
 
 Argument true, powoduje, że kopiowana jest też cała zawartość wewnątrz klonowanego elementu div. Aby sklonowany element pojawił się w DOM, musimy napisać jeszcze jedną instrukcję, która jednocześnie określa gdzie ma się on pojawić.
