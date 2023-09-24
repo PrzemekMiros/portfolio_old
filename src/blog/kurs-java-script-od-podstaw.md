@@ -71,8 +71,6 @@ Efekt końcowy wygląda tak:
 
 ![](https://web.archive.org/web/20230129215430im_/https://cdn.mansfeld.pl/wp-content/uploads/2021/12/alert-w-javascript.png "Alert w JavaScript")
 
-
-
 Alert wspominam z ciekawości i nie jest zalecanym rozwiązaniem w nowoczesnym JavaScripcie. Instrukcja alert blokuje ładowanie się strony internetowej i ogranicza interakcję z całą stroną do tego jednego przycisku dlatego stosowanie jej jest problematyczne z powodów technicznych i UX. Słynne *Hello World* lepiej zatem napisać na bazie instrukcji console.log();
 
 Zauważ, że **wpisanie tych instrukcji bezpośrednio w konsoli i zatwierdzenie ich klawiszem ENTER** spowoduje też ponowne wyświetlenie się napisu *Witaj Świecie*. Tak działa JavaScript i można tak zrobić praktycznie z dowolnym kodem jaki stworzymy w ramach tego kursu.
@@ -750,7 +748,7 @@ Aby móc poznać działanie DOM, dopiszmy do naszego pliku kursjs.html dodatkowe
 </body>
 ```
 
-*Kod JavaScript możemy wprowadzać do naszego pliku kursjs.js lub do znaczników <script> w pliku kursjs.html*
+*Kod JavaScript możemy wprowadzać do naszego pliku kursjs.js lub do znaczników <script></script> w pliku kursjs.html*
 
 Nadrzędnym elementem DOM jest *document*. To za pomocą tego obiektu będziemy odwoływali się do każdego elementu znajdującego się w bieżącej stronie internetowej. Aby zatem „wybrać” istniejący div o identyfikatorze *witaj* użyjmy poniższego kodu:
 
