@@ -28,7 +28,7 @@ Kod JavaScript to dodatek do stron i aplikacji internetowych dlatego niezbędna
 
 Debugowanie to wyszukiwanie i eliminacja błędów w kodzie. Błędy syntaktyczne w programowaniu powstają tak samo jak w ortografii – przez niewiedzę lub z przeoczenia. Dla początkujących programistów debugerem (czyli tym czymś co pokazuje błędy w kodzie) będzie konsola w przeglądarce internetowej, którą w Google Chrome uruchamiamy klawiszem F12. Praca ze stroną, na której umieszczamy kod JavaScript wygląda wtedy tak:
 
-![](https://web.archive.org/web/20230129215430im_/https://cdn.mansfeld.pl/wp-content/uploads/2021/12/kurs-js-przegladarka.png)
+![](/blog/img/kurs-js-przegladarka.png)
 
 Praca z przeglądarką i konsolą JavaScript
 
@@ -69,7 +69,7 @@ alert("Witaj Świecie");
 
 Efekt końcowy wygląda tak:
 
-![](https://web.archive.org/web/20230129215430im_/https://cdn.mansfeld.pl/wp-content/uploads/2021/12/alert-w-javascript.png "Alert w JavaScript")
+![](/blog/img/alert-w-javascript.png "Alert w JavaScript")
 
 Alert wspominam z ciekawości i nie jest zalecanym rozwiązaniem w nowoczesnym JavaScripcie. Instrukcja alert blokuje ładowanie się strony internetowej i ogranicza interakcję z całą stroną do tego jednego przycisku dlatego stosowanie jej jest problematyczne z powodów technicznych i UX. Słynne *Hello World* lepiej zatem napisać na bazie instrukcji console.log();
 
@@ -89,7 +89,7 @@ console.warn("To jest otrzeżenie");
 
 która pokaże nam napis wyróżniony na żółto. Obie instrukcje podadzą także numer linii kodu w której zostały wywołane.
 
-![](https://web.archive.org/web/20230129215430im_/https://cdn.mansfeld.pl/wp-content/uploads/2022/08/kurs-javascript-console-log-warn-error.png)
+![](/blog/img/kurs-javascript-console-log-warn-error.png)
 
 Instrukcje console.log(), console.error(), console.warn()
 
@@ -246,7 +246,7 @@ let stringArray = string.split(' ');
 console.log(stringArray);
 ```
 
-![](https://web.archive.org/web/20230129215430im_/https://cdn.mansfeld.pl/wp-content/uploads/2022/08/kurs-javascript-metoda-split.png)
+![](/blog/img/kurs-javascript-metoda-split.png)
 
 ## Tablice w JavaScript
 
@@ -349,7 +349,7 @@ Możemy teraz wszystkie dane:
 console.log(osoba);
 ```
 
-![](https://web.archive.org/web/20230129215430im_/https://cdn.mansfeld.pl/wp-content/uploads/2022/08/kurs-javascript-obiekt-osoby.png "Przykładowy obiekt *osoba* w JavaScript")
+![](/blog/img/kurs-javascript-obiekt-osoby.png "Przykładowy obiekt *osoba* w JavaScript")
 
 lub wyświetlić konkretne wartości, np. nazwisko, kod pocztowy i hobby wymienione na pierwszym miejscu za pomocą notacji kropkowej:
 
@@ -410,7 +410,7 @@ let osobyJSON = JSON.stringify(osoby);
 console.log(osobyJSON);
 ```
 
-![](https://web.archive.org/web/20230129215430im_/https://cdn.mansfeld.pl/wp-content/uploads/2022/08/kurs-javascript-osoby-json.png "Zawartość zmiennej osobyJSON")
+![](/blog/img/kurs-javascript-osoby-json.png "Zawartość zmiennej osobyJSON")
 
 ## Pętle JavaScript
 
