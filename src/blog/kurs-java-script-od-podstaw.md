@@ -21,3 +21,11 @@ Kod JavaScript wykonywany jest w przeglądarce. Nie potrzebujemy niczego innego
 Kod JavaScript możesz pisać w zwykłym notatniku ale polecam notatnik dla programistów, np. Notepad++ lub Visual Studio Code. Są to darmowe programy, które i tak prędzej czy później będziesz wykorzystywać skoro interesujesz się programowaniem. Programy takie kolorują składnię i powodują, że programowanie jest efektywniejsze z wielu innych powodów.
 
 Kod JavaScript to dodatek do stron i aplikacji internetowych dlatego niezbędna jest chociaż minimalna wiedza jak budować proste strony w języku HTML. JavaScript jest dodatkiem do stron internetowych, który umieszczamy w tagach <script> lub w osobnych plikach .js, które dołączamy do strony internetowej za pomocą <script src=”plik.js”></script>. Drugie podejście jest bardziej profesjonalne i zwiększa czytelność kodu ale kod umieszczony w tagach <script> bezpośrednio w pliku .html będzie działał dokładnie tak samo.
+
+### Jak debugować kod w JavaScript?
+
+Debugowanie to wyszukiwanie i eliminacja błędów w kodzie. Błędy syntaktyczne w programowaniu powstają tak samo jak w ortografii – przez niewiedzę lub z przeoczenia. Dla początkujących programistów debugerem (czyli tym czymś co pokazuje błędy w kodzie) będzie konsola w przeglądarce internetowej, którą w Google Chrome uruchamiamy klawiszem F12. Praca ze stroną, na której umieszczamy kod JavaScript wygląda wtedy tak:
+
+![](/blog/img/kurs-js-przegladarka.png.webp)
+
+DAa
