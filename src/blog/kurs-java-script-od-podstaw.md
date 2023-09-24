@@ -8,7 +8,7 @@ author: Przemek
 date: 2022-09-14T06:43:59.839Z
 tags:
   - strony www
-thumbnail: /blog/img/kurs-javascript-podstawy-1170x720.jpg.webp
+thumbnail: /blog/img/kursjs.jpg
 ---
 Chcąc nauczyć się nowoczesnego programowania w JavaScript możemy mieć niemały problem, tym bardziej jeżeli ograniczamy się do polskojęzycznego Internetu. Istniejące w Internecie, najczęściej przestarzałe kursy JavaScript uczą starego podejścia, według których nie wypada już programować. Platformy e-learningowe są przepełnione kursami JavaScript do którego doklejony jest jakiś Framework i środowisko node.js – taki kurs uczy wszystkiego oprócz JavaScript i przy okazji odstrasza początkujących nawałem narzędzi. W YouTube są sympatyczne filmiki, które jednak marnują cenny czas kursanta, bo wiedzę, którą można zawrzeć w kilku zwięzłych zdaniach tłumaczy się tak aby przychód z prowadzenia kanału był jak największy – czyli rozwleka się stosunkowo mało materiału na wielogodzinne odcinki – które i tak promują jakiś inny płatny kurs…
 
@@ -732,7 +732,7 @@ Tworzenie instancji obiektu, odwoływanie się do własności i metod wygląda 
 
 DOM to obiektowy model dokumentu  (ang. *Document Object Model*). Jest to obiektowa reprezentacja strony internetowej w pamięci przeglądarki. Dzięki DOM możemy manipulować elementami strony internetowej i nasłuchiwać zdarzeń za pomocą JavaScriptu. Przeglądarka interpretuje kod HTML i przekształca go w model obiektowy. W narzędziach dla programistów DOM strony internetowej jest zaprezentowany w postaci kodu HTML i w ramach tego kursu można też go tak postrzegać – jako roboczy i żywy kod HTML bieżącej strony internetowej, który możemy modyfikować „w locie”. Czytaj więcej w osobnym artykule: [Co to jest DOM](https://web.archive.org/web/20230129215430/https://mansfeld.pl/webdesign/co-to-jest-dom-shadow-dom-virtual-dom/)?
 
-![HMTL DOM](https://web.archive.org/web/20230129215430im_/https://cdn.mansfeld.pl/wp-content/uploads/2021/10/html-dom-w-przeglarce-chrome-1170x785.png "Reprezentacja DOM w postaci kodu HTML w przeglądarce Chrome")
+![HMTL DOM](/blog/img/jskurs.jpg "Reprezentacja DOM w postaci kodu HTML w przeglądarce Chrome")
 
 Aby móc poznać działanie DOM, dopiszmy do naszego pliku kursjs.html dodatkowe elementy DOM:
 
