@@ -28,7 +28,7 @@ Kod JavaScript to dodatek do stron i aplikacji internetowych dlatego niezbędna
 
 Debugowanie to wyszukiwanie i eliminacja błędów w kodzie. Błędy syntaktyczne w programowaniu powstają tak samo jak w ortografii – przez niewiedzę lub z przeoczenia. Dla początkujących programistów debugerem (czyli tym czymś co pokazuje błędy w kodzie) będzie konsola w przeglądarce internetowej, którą w Google Chrome uruchamiamy klawiszem F12. Praca ze stroną, na której umieszczamy kod JavaScript wygląda wtedy tak:
 
-![](https://web.archive.org/web/20230129215430im_/https://cdn.mansfeld.pl/wp-content/uploads/2021/12/kurs-js-przegladarka.png)
+![](/blog/img/kurs-js-przegladarka.png)
 
 Praca z przeglądarką i konsolą JavaScript
 
