@@ -81,13 +81,13 @@ Poznawanie podstaw jakiegokolwiek języka programowania najlepiej rozpocząć od
 Jak już można się domyślić musimy stworzyć w tym samym folderze plik kursjs.js. Plik ze skryptami dodaliśmy na końcu dokumentu HTML dla celów optymalizacyjnych – w dużym skrócie, strona szybciej się załaduje. Plik **kursjs.js** niech zawiera tylko taką instrukcję w jednej linii:
 
 ```
-
+console.log("Witaj Świecie");
 ```
 
 To nasz pierwszy program, który powinien wyświetlić w konsoli napis „Witaj Świecie”. Jak to powinno działać – widać na pierwszym zrzucie powyżej. Możemy przerobić nasz program tak aby wyświetlał napis w okienku pop-up. Instrukcję należy wtedy podmienić na:
 
 ```
-
+alert("Witaj Świecie");
 ```
 
 Efekt końcowy wygląda tak:
@@ -103,13 +103,13 @@ Zauważ, że **wpisanie tych instrukcji bezpośrednio w konsoli i zatwierdzeni
 Instrukcja console.log() jest bardzo przydatna w debugowaniu. Słowo *console* to obiekt a *log* to metoda tego obiektu. Istnieją jeszcze metody error i warn:
 
 ```
-
+console.error("To jest błąd");
 ```
 
 która pokaże nam napis wyróżniony na czerwono, oraz:
 
 ```
-
+console.warn("To jest otrzeżenie");
 ```
 
 która pokaże nam napis wyróżniony na żółto. Obie instrukcje podadzą także numer linii kodu w której zostały wywołane.
@@ -123,13 +123,14 @@ Jeżeli chcesz na tym etapie drążyć temat obiektu console odsyłam do dokumen
 We wstępie chciałbym jeszcze pokazać jak można korzystać z komentarzy w JavaScript. Podobnie jak w innych językach programowania podwójny kreska ukośna:
 
 ```
-
+// komentarz
 ```
 
 powoduje, że komentarzem staje się cała linia, a chcąc zamienić dany blok na komentarz użyjemy:
 
 ```
-
+/* To jest komentarz
+w wielu liniach */
 ```
 
 Komentarze nie zmieniają niczego w tworzonych skryptach i są czymś w rodzaju notatek. Dodawanie znaków otwierających i zamykających komentarz to przydatny „mechanizm” podczas kursów programowania gdzie będziemy za jego pomocą wyłączać i włączać już napisane linie w edytorze kodu.
@@ -141,19 +142,21 @@ Zmienne w JavaScript można deklarować za pomocą trzech instrukcji: *var*, *l
 Deklaracja zmiennej pozwala na użycie danej zmiennej w kodzie.
 
 ```
-
+let liczba;
 ```
 
 Możemy też zainicjować zmienną podając od razu jej wartość:
 
 ```
-
+let liczba = 100;
 ```
 
 Instrukcja *let* pozwala nam na przypisanie nowej wartości. Słowo c*onst* sprawdzi się tam, gdzie nie spodziewamy się wystąpienia takiej potrzeby w przyszłości. Dzięki rozróżnianiu takich przypadków i używaniu *let* i *const* kod jest bezpieczniejszy, odporny na błędy i bardziej czytelny. Zmienne *const* określa się fachowo jako stałe. Oczywiście stosowanie *let* dla wartości, które nie ulegają zmianie nie jest błędem.
 
 ```
-
+let liczba = 12;
+liczba = 8;
+console.log(liczba);
 ```
 
 Te trzy instrukcje spowodują, że w konsola zwróci 8. Jeżeli w powyższym przykładzie zamiast *let* użyjemy *const*, konsola wyświetli błąd. *Wartości przypisane do stałej const mogą ulegać zmianie ale nie można tego robić za pomocą bezpośredniego przypisania, pokażę to na przykładach w dalszej części kursu.*
@@ -165,37 +168,37 @@ W JavaScript zmienne mogą być różnego typu. Rozróżniamy ciągi znaków (st
 JavaScript jest dynamicznie typowany, co oznacza, że nie musimy deklarować typu zmiennej. Podobnie to wygląda w moim kolejnym ulubionym języku programowania PHP. Przykładowo, chcąc zadeklarować zmienną *imię* z wartością *Jan* piszemy po prostu:
 
 ```
-
+const imie = 'Jan';
 ```
 
 Ciągi znaków mogą mieć podwójny bądź pojedynczy cudzysłów. W JavaScript częściej zaleca się aby stosować jednak pojedyncze, ponieważ wówczas łatwiej pracuje się z szablonami HTML. Wiemy już jak deklarować liczby:
 
 ```
-
+const wiek = 33;
 ```
 
 Wartość dziesiętna może być średnią ocen. Zauważ, że separatorem części dziesiętnej jest kropka – tak jak w innych językach programowania:
 
 ```
-
+const sredniaOcen = 4.8;
 ```
 
 Przyszła pora na wartość boolowską czyli prawda / fałsz:
 
 ```
-
+const zaliczonePraktyki = true;
 ```
 
 Zmienna null to po prostu zmienna pusta.
 
 ```
-
+const a = null;
 ```
 
 Typ undefined możemy zadeklarować tak:
 
 ```
-
+const b = undefined;
 ```
 
 Dla eksperymentu zróbmy jeszcze coś takiego:
