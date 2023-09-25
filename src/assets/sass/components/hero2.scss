@@ -1,0 +1,16 @@
+.hero-2 h1 .line-parent:last-child .line {
+  position: relative;
+  width: max-content;
+  margin: 0 auto
+}
+
+.hero-2 h1 .line-parent:last-child .line::before{
+  position: absolute;
+  content: "";
+  bottom: 5px;
+  left: 0;
+  right: 0;
+  height: .35em;
+  background: var(--color-accent-1);
+  z-index: -1
+}
