@@ -13,7 +13,7 @@
 
 .xxl {
   margin-bottom: .5em;
-  font-size: clamp(44px, 5.0vw, 80px);
+  font-size: clamp(40px, 5.0vw, 80px);
   font-weight: 700;
   line-height: 1.2;
   color: var(--color-heading)
@@ -173,6 +173,9 @@ blockquote p {
   }
   .text-medium {
     font-size: clamp(16px, 1.2vw, 21px)
+  }
+  .text-md-center {
+    text-align: center
   }
   .text-md-end {
     text-align: end
