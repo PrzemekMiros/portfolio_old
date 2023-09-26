@@ -1,19 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
-
 <head>
-  <!-- Hotjar Tracking Code for Portfolio -->
-<script>
-  (function(h,o,t,j,a,r){
-      h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-      h._hjSettings={hjid:3601699,hjsv:6};
-      a=o.getElementsByTagName('head')[0];
-      r=o.createElement('script');r.async=1;
-      r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-      a.appendChild(r);
-  })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-</script>
-
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="generator" content="Eleventy" />
@@ -107,7 +94,25 @@
   src: url('/assets/fonts/hanken-grotesk-v8-latin_latin-ext-700.woff2') format('woff2'); 
 }
 </style>
-<!-- Meta Pixel Code -->
+<script type="text/javascript">
+    (function() {
+        var ams = document.createElement('script');
+        ams.type = 'text/javascript';
+        ams.async = true;
+        ams.src = '//analytics.greensender.pl/scripts/js/am.js';
+        var s = document.getElementsByTagName('script')[0];
+        s.parentNode.insertBefore(ams, s);
+
+        var r = false;
+        ams.onload = ams.onreadystatechange = function() {
+            if (!r && (!this.readyState || this.readyState == 'complete')) {
+                r = true;
+                am.create("DMS6512B0C4814C8");
+                am.send('pageview');
+            }
+        };
+    })();
+</script>
 <script>
   !function(f,b,e,v,n,t,s)
   {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
