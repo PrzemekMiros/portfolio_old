@@ -42,7 +42,7 @@ W przypadku wcięć, stosujemy tabulatory a nie spacje. Mieszając PHP i HTML 
 
 Nawias otwierający powinien być umieszczony po jednej spacji po ostatnim selektorze. Wcięcia w stylach CSS powinny być robione tabulatorami. Pomiędzy sekcjami dodajemy dwie linie przerwy. Każdy selektor powinien być w osobnej linii co oznacza, że zapis wielu selektorów oddzielonych przecinkiem w ramach jednej reguły powinien wyglądać następująco:
 
-```
+```css
 .woocommerce table.shop_table th,
 .woocommerce table.shop_table tbody th, 
 .woocommerce table.shop_table tfoot td,
@@ -54,7 +54,7 @@ Nawias otwierający powinien być umieszczony po jednej spacji po ostatnim selek
 
 Nazwy klas i identyfikatorów powinny mieć naturalne nazwy, które można łatwo skojarzyć. Wszystko zapisujemy małą literą a separatorem jest myślnik. Unikamy podkreśleń, camelcase i nadmiernego zawężania:
 
-```
+```css
 .navbar-mobile .navbar-nav {
    display: flex;
 }
@@ -62,7 +62,7 @@ Nazwy klas i identyfikatorów powinny mieć naturalne nazwy, które można łat
 
 Selektory atrybutów powinny mieć cudzysłowia:
 
-```
+```css
 input[type="text"] {
    border:1px solid #aaa;
 }
@@ -70,7 +70,7 @@ input[type="text"] {
 
 Właściwości też zapisujemy małą literą za wyjątkiem nazw fontów. Gdziekolwiek można, stosujmy stenografię (ang. *shorthand*) czyli skrótowe definicje oraz skrótowy zapis kolorów achromatycznych w hexach:
 
-```
+```css
 .wpcf7-form-control {
    width:100%;
    border:1px solid #aaa;
@@ -88,7 +88,7 @@ W motywach WordPress zaleca się porządkować właściwości według kolejnośc
 
 Lub alfabetycznie, np:
 
-```
+```css
 section {
    margin: 0;
    padding: 4rem 0 4rem;
@@ -97,7 +97,7 @@ section {
 
 Wartości po dwukropku stawiamy po jednej spacji, nawiasów nie uzupełniamy spacjami. Nawet po wartości ostatniej właściwości stawiamy średnik. Używamy podwójnych cudzysłowów. Nazwy fontów otaczamy cudzysłowem tylko wtedy kiedy nazwa zawiera spację. Ciężar fontu font-weight podajemy w liczbach np. 400 a nie normal. Do wartości 0 nie dodajemy jednostki. Zaleca się aby line-height nie posiadało jednostek. Dla niecałkowitych wartości liczbowych np. w rgba dodajemy 0 wiodące.
 
-```
+```css
 .class {
    background-image: url('images/bg.png');
    font-family: "Helvetica Neue", sans-serif;
@@ -123,7 +123,7 @@ Wcięcia wykonujemy tabulatorem. Unikamy białych znaków na końcu linii lub w�
 
 Obiekty i tablice mogą być deklarowane w jednej linii jeżeli są stosunkowo zwięzłe. W przeciwnym wypadku muszą być rozpisane na wiele wierszy. Argumenty w nawiasach posiadają dodatkową spację po obu stronach:
 
-```
+```javascript
 var myPost = { title: 'test', val: 4 };
 var myPost = {
    title: 'test',
@@ -135,7 +135,7 @@ Nie polegamy na ASI, zawsze dodajemy średnik na końcu każdej instrukcji.
 
 Łańcuchowe wywołania zapisujemy w wielu liniach:
 
-```
+```javascript
 element
    .addClass( 'active' )
    .removeClass('unactive');
@@ -155,7 +155,7 @@ Deklarując tablicę używamy nawiasów kwadratwych zamiast new Array();
 
 Wcięcia w kodzie PHP powinny stanowić tabulatory a nie spacje. Wyjątek stanowi seria atrybutów, gdzie wartości są wyrównane w jednej kolumnie:
 
-```
+```php
 $args = array(
    'category'      => $category_id,
    'posts_per_page'=> 64);
