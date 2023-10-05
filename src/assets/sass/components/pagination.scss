@@ -1,4 +1,8 @@
-
+.pagination li,
+.pagination li::before {
+  position: static;
+  padding-left: 0
+}
 .pagination-item a {
   margin-right: .6em;
   padding: .6em 1em;

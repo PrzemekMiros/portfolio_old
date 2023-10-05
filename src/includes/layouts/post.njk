@@ -61,6 +61,7 @@
                 <div class="pt-medium">
                     <div class="line-x"></div>
                 </div>
+
                 <div class="post-navigation pt-small">
                     {%- if collections.posts %}
                     {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
@@ -68,37 +69,38 @@
                     {%- if nextPost or previousPost %}
                     <ul class="d-flex flex-wrap fadeIn">
                         {%- if previousPost %}
-                        <li class="hover-reveal-wrap col-md-6 prev d-none d-md-block">
-                            <p class="mb-4">
-                                <small>
-                                    Poprzedni:
-                                </small>
-                            </p>
-                            <a href="{{ previousPost.url | url }}" title="{{ previousPost.data.client }}"
+                        <div class="swipe-image-wrap col-md-6 prev d-none d-md-block">
+                            <img class="swipe-image" src="{{ previousPost.data.thumbnail }}">
+                            <div class="text">
+                                <p class="mb-4">
+                                    <small>
+                                        Poprzedni:
+                                    </small>
+                                </p>
+                                <a href="{{ previousPost.url | url }}" title="{{ previousPost.data.client }}"
                                 class="h4">{{ previousPost.data.title }}</a>
-                            <div class="hover-reveal">
-                                <img src="{{ previousPost.data.thumbnail }}" class="hidden-img">
                             </div>
-                        </li>
+                        </div>
                         {% endif %}
                         {%- if nextPost %}
-                        <li class="hover-reveal-wrap col-md-6 next">
-                            <p class="mb-4">
-                                <small>
-                                    Kolejny:
-                                </small>
-                            </p>
-                            <a href="{{ nextPost.url | url }}" title="{{ nextPost.data.client }}"
+                        <div class="swipe-image-wrap col-md-6 next">
+                            <img class="swipe-image" src="{{ nextPost.data.thumbnail }}">
+                            <div class="text">
+                                <p class="mb-4">
+                                    <small>
+                                        Kolejny:
+                                    </small>
+                                </p>
+                                <a href="{{ nextPost.url | url }}" title="{{ nextPost.data.client }}"
                                 class="h4">{{ nextPost.data.title }}</a>
-                            <div class="hover-reveal">
-                                <img src="{{ nextPost.data.thumbnail }}" class="hidden-img">
                             </div>
-                        </li>
+                        </div>
                         {% endif %}
                     </ul>
                     {%- endif %}
                     {%- endif %}
                 </div>
+
         </div>
 
     </div>

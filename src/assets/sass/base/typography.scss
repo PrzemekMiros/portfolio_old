@@ -92,6 +92,22 @@ ol li {
   margin-bottom: 1em
 }
 
+.content li {
+  position: relative;
+  padding-left: 1em
+}
+
+.content li::before {
+  position: absolute;
+  content: "";
+  top: 0.72em;
+  left: 0;
+  width: 0.4em;
+  height: 0.4em;
+  background-color: var(--color-accent-1);
+  border-radius: 50%
+}
+
 blockquote {
   margin-left: 0;
   padding-left: 2em;

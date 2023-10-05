@@ -329,7 +329,7 @@ if (document.querySelector("#greeting")) {
   const isMorning = hour >= 3 && hour < 18;
   let welcomeText = isMorning ? "Dzień dobry !" : "Dobry wieczór !";
   greeting.innerHTML = welcomeText;
-}
+};
 
 // parallax 
 if (window.matchMedia("(min-width: 767px)").matches) {
@@ -352,7 +352,7 @@ if (window.matchMedia("(min-width: 767px)").matches) {
           ease: "none",
         }); 
     });
-  }
+  };
 
 
   // Loop text
@@ -370,32 +370,10 @@ if (window.matchMedia("(min-width: 767px)").matches) {
       e.style.maxHeight = e.scrollHeight + "px", this.classList.toggle("open");
     }
   });
-  }
+  };
 
-  // Cursor image
-  if (document.querySelector(".hover-reveal-wrap")) {
-  const link = document.querySelectorAll('.hover-reveal-wrap');
-  const linkHoverReveal = document.querySelectorAll('.hover-reveal');
-  const linkImages = document.querySelectorAll('.hidden-img');
+// Cursor image
   
-  for(let i = 0; i < link.length; i++) {
-    link[i].addEventListener('mousemove', (e) => {
-      linkHoverReveal[i].style.opacity = 1;
-      linkHoverReveal[i].style.transform = `translate(-95%, -45% )`;
-      
-      // linkHoverReveal[i].style.transform = `translate(-50%, -50% ) rotate(5deg)`;
-      
-      linkImages[i].style.transform = 'scale(1, 1)';
-      linkHoverReveal[i].style.left = e.clientX + "px";
-    })
-    
-    link[i].addEventListener('mouseleave', (e) => {
-      linkHoverReveal[i].style.opacity = 0;
-      linkHoverReveal[i].style.transform = `translate(-95%, -45%) rotate(-5deg)`;
-      linkImages[i].style.transform = 'scale(0.8, 0.8)';
-    })
-  }
-}; 
 
 // Scroll progress
 if (document.querySelector(".scrollprogress")) {
