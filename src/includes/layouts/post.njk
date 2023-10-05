@@ -67,7 +67,7 @@
                     {%- set nextPost = collections.posts | getNextCollectionItem(page) %}
                     {%- set previousPost = collections.posts | getPreviousCollectionItem(page) %}
                     {%- if nextPost or previousPost %}
-                    <ul class="d-flex flex-wrap fadeIn">
+                    <ul class="row fadeIn">
                         {%- if previousPost %}
                         <div class="swipe-image-wrap col-md-6 prev d-none d-md-block">
                             <img class="swipe-image" src="{{ previousPost.data.thumbnail }}">

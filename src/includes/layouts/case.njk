@@ -68,45 +68,37 @@
             </div>
         </div>
 
-        <div class="row">
-            <div class="col-md-12">
-                <div class="post-navigation pt-small">
+        <div class="offset-md-1 col-md-10">
+            <div class="post-navigation pt-small">
                     {%- if collections.works %}
                         {%- set nextPost = collections.works | getNextCollectionItem(page) %}
                         {%- set previousPost = collections.works | getPreviousCollectionItem(page) %}
                         {%- if nextPost or previousPost %}
-                            <ul class="d-flex flex-wrap fadeIn">
+                            <ul class="row fadeIn">
                                 {%- if previousPost %}
-                                    <li class="hover-reveal-wrap offset-md-1 col-md-5 prev d-none d-md-block">
+                                    <li class="hover-reveal-wrap col-md-6 prev d-none d-md-block">
                                         <p class="mb-4">
                                             <small>
                                                 Poprzedni:
                                             </small>
                                         </p>
-                                        <a href="{{ previousPost.url | url }}" title="{{ previousPost.data.client }}" class="h4">{{ previousPost.data.title }}</a>
-                                        <div class="hover-reveal">
-                                            <img src="{{ previousPost.data.thumbnail }}" class="hidden-img">                            
-                                        </div>
+                                        <a href="{{ previousPost.url | url }}" title="{{ previousPost.data.client }}" class="h4 mb-4">{{ previousPost.data.title }}</a>
                                     </li>
                                 {% endif %}
                                 {%- if nextPost %}
-                                    <li class="hover-reveal-wrap offset-md-1 col-md-5 next">
+                                    <li class="hover-reveal-wrap col-md-6 next">
                                         <p class="mb-4">
                                             <small>
                                                 Kolejny:
                                             </small>
                                         </p>
-                                        <a href="{{ nextPost.url | url }}" title="{{ nextPost.data.client }}" class="h4">{{ nextPost.data.title }}</a>
-                                        <div class="hover-reveal">
-                                            <img src="{{ nextPost.data.thumbnail }}" class="hidden-img">                            
-                                        </div>
+                                        <a href="{{ nextPost.url | url }}" title="{{ nextPost.data.client }}" class="h4 mb-4">{{ nextPost.data.title }}</a>
                                     </li>
                                 {% endif %}
                             </ul> 
                         {%- endif %}
                     {%- endif %}
                 </div>
-            </div>
         </div>
 
     </div>
