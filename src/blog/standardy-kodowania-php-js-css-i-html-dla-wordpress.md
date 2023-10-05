@@ -7,7 +7,7 @@ description: Standardy kodowania to kosmetyka i raczej ciekawostka. Nie wpływaj
   przestrzega tych umownych reguł. Myślę, że warto je poznać, jeżeli tworzymy
   własne motywy, wtyczki lub wprowadzamy jakiekolwiek inne modyfikacje.
 author: Przemek Miros
-date: 2023-10-05T13:40:40.365Z
+date: 2022-10-09T13:40:00.000Z
 tags:
   - wordpress
 thumbnail: /blog/img/standardy-wp.png
