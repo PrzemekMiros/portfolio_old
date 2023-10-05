@@ -75,9 +75,12 @@ h6, .h6 {
   color: var(--color-heading)
 }
 
+p, .paragraph {
+  margin-bottom: 2em
+}
+
 p, .paragraph, li {
   position: relative;
-  margin-bottom: 2em;
   font-family: var(--font-secondary);
   font-size: clamp(16px, 1.1vw, 17px);
   font-weight: 300;
