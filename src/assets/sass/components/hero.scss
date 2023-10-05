@@ -1,3 +1,17 @@
+  .hero .container {
+    position: relative;
+  }
+
+  .hero .container::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 25%;
+    bottom: 0;
+    right: 0;
+    background-color: var(--color-light-2);
+  }
+  
   .logo-hero {
     mix-blend-mode: difference
   }
