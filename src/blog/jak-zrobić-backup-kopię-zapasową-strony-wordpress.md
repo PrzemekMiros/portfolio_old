@@ -10,11 +10,11 @@ author: Przemek Miros
 date: 2023-10-13T11:57:47.515Z
 tags:
   - wordpress
-thumbnail: https://przemekmiros.pl/blog/img/standardy-wp.png
+thumbnail: /blog/img/standardy-wp.png
 ---
-W jednym z artykułów pisałem, że od robienia kopii zapasowych WordPress jest hosting i w pełni podtrzymuję swoje stanowisko. Automatyczny skrypt, który tworzy kopię zapasową zarówno plików jak i bazy danych w równych odstępach czasu (np. 24 godziny) to standard w przypadku prawdziwego [hostingu WordPress](https://web.archive.org/web/20230330082729/https://mansfeld.pl/webhosting/hosting-wordpress/). Takie kopie przydają się w codziennej pracy ze stroną kiedy aktualizujemy rdzeń CMSa, wtyczki i wprowadzamy różnego rodzaju zmiany, które jak wiadomo mogą doprowadzić do awarii. W przypadku jakichkolwiek problemów przywracamy kopię zmienionych plików, folderów bądź całej bazy danych z wszystkimi plikami, które zostały wykonane ubiegłej nocy.
+W jednym z artykułów pisałem, że od robienia kopii zapasowych WordPress jest hosting i w pełni podtrzymuję swoje stanowisko. Automatyczny skrypt, który tworzy kopię zapasową zarówno plików jak i bazy danych w równych odstępach czasu (np. 24 godziny) to standard w przypadku prawdziwego hostingu WordPress. Takie kopie przydają się w codziennej pracy ze stroną kiedy aktualizujemy rdzeń CMSa, wtyczki i wprowadzamy różnego rodzaju zmiany, które jak wiadomo mogą doprowadzić do awarii. W przypadku jakichkolwiek problemów przywracamy kopię zmienionych plików, folderów bądź całej bazy danych z wszystkimi plikami, które zostały wykonane ubiegłej nocy.
 
-W tym artykule dowiesz się jak wykonywać kopie zapasowe strony WordPress, bo warto dysponować **kopią serwisu internetowego przechowywaną poza hostingiem**. Taki backup strony WordPress może nam się przydać w różnych niestandardowych okolicznościach. Nigdy nie mamy na przykład pewności, że firma której powierzamy hosting naszej strony nagle nie zniknie wraz z wszystkimi backupami. Nawet duże chmury typu AWS czy Google Cloud mogą nas odciąć od całej infrastruktury w wyniku przeoczonych błędów płatności. Często jest tak, że firmy powierzają zaprzyjaźnionemu webmasterowi sprawy hostingowe a taki webmaster może się przecież rozchorować lub… też całkiem zniknąć. Takie odseparowane od hostingu kopie zapasowe, są w takich sytuacjach jedynym ratunkiem, który pozwoli odtworzyć i zreaktywować stronę nawet w najgorszych scenariuszach.
+W tym artykule dowiesz się jak wykonywać kopie zapasowe strony WordPress, bo warto dysponować **kopią serwisu internetowego przechowywaną poza hostingiem**. Taki backup strony WordPress może nam się przydać w różnych niestandardowych okolicznościach. Nigdy nie mamy na przykład pewności, że firma której powierzamy hosting naszej strony nagle nie zniknie wraz z wszystkimi backupami. Nawet duże chmury typu AWS czy Google Cloud mogą nas odciąć od całej infrastruktury w wyniku przeoczonych błędów płatności. Często jest tak, że firmy powierzają zaprzyjaźnionemu webmasterowi sprawy hostingowe a taki webmaster może się przecież rozchorować lub… też całkiem zniknąć. Takie odseparowane od hostingu kopie zapasowe, są w takich sytuacjach jedynym ratunkiem, który pozwoli odtworzyć i z reaktywować stronę nawet w najgorszych scenariuszach.
 
 ## Z czego składa się kopia strony WordPress?
 
@@ -61,7 +61,7 @@ Aby wykonać kopię zapasową bazy danych tworzymy eksport bazy danych. Po zatwi
 Jeżeli nie mamy dostępu do aplikacji phpMyAdmin a mamy dostęp do linii poleceń (i mamy podstawowe pojęcie o zarządzaniu poprzez SSH serwerem SQL) możemy wygenerować zrzut bazy danych za pomocą komendy:
 
 ```
-
+mysqldump -p -u nazwauzytkownika nazwabazydanych > wordpress.sql
 ```
 
 ### Opcja 3: Panel dostawcy hostingu
@@ -93,7 +93,7 @@ Pobieramy pliki i opcjonalnie możemy je spakować dowolną aplikacją do archi
 Metoda SSH jak zwykle ograniczy się do jednej komendy i pobrania paczki ze skompresowanymi plikami. Przechodzimy do głównego folderu strony WordPress i zatwierdzamy taką komendę:
 
 ```
-
+zip -r wordpress.zip * 
 ```
 
 To spowoduje utworzenie pliku wordpress.zip z wszystkimi plikami jakie były wewnątrz bieżącego folderu. Teraz możemy pobrać archiwum nie zapominając o jego usunięciu z serwera.
