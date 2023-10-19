@@ -40,8 +40,7 @@
               <div class="slide-content">
                 <a href="{{ post.url }}" title="{{ post.data.title }}">
                   <div class="swiper-image-wrap">
-                    <img class="swiper-image" src="{{ post.data.thumbnail }}" alt="{{ post.data.title }}" width="630px"
-                    height="699px" />
+                    {% thumbImage "public" + post.data.thumbnail, post.data.title %}
                   </div>
                 </a>
                 <h3 class="archive-post-title h4 mt-5 mb-1">
