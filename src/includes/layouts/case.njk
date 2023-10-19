@@ -47,7 +47,7 @@
         <div class="row"> 
             <div class="offset-lg-1 col-lg-10">
                     <div class="parallax-wrap aspect_16-9 fadeIn mb-3 mb-lg-5">
-                        <img src="{{ imageMain | url }}" alt="{{ title }}" class="single-post-image img-fluid">
+                        {% Image "public" + imageMain, title, "single-post-image img-fluid" %}
                     </div>
             </div>
         </div>
