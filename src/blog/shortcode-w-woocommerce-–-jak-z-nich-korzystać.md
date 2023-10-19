@@ -11,7 +11,7 @@ author: Przemek
 date: 2022-08-09T09:56:16.870Z
 tags:
   - wordpress
-thumbnail: "#"
+thumbnail: /blog/img/blog-woo.png
 ---
 Chęć dołączenia listy produktów WooCommerce do stron czy wpisów to częsta potrzeba, tym bardziej jeżeli sklep posiada blog lub jest to strona firmowa z bogatym [katalogiem produktów](https://web.archive.org/web/20230330091138/https://mansfeld.pl/programowanie/katalog-produktow-wordpress/). Pewnie wiele osób instaluje dodatkowe wtyczki nie wiedząc o tym, że możliwość dodania listy z odnośnikami i przyciskiem „dodaj do koszyka” to natywna i posiadająca mnóstwo możliwości funkcjonalność WooCommerce.
 
