@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="pl">
 <head>
-  <script>
-    (function(h,o,t,j,a,r){
-        h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-        h._hjSettings={hjid:3601699,hjsv:6};
-        a=o.getElementsByTagName('head')[0];
-        r=o.createElement('script');r.async=1;
-        r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-        a.appendChild(r);
-    })(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-  </script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <meta name="generator" content="Eleventy" />
@@ -20,15 +10,11 @@
   <meta name="google-site-verification" content="_uLorccZIpY-NlRb036yMXgs2lvctMD5A_aSlU6HRa4" />
   {% set robots = robots | default('index') %}
   <meta name="robots" content="{{ robots }}">
-
-  <!-- Facebook Meta Tags -->
   <meta property="og:url" content="https://przemekmiros.pl/">
   <meta property="og:type" content="website">
   <meta property="og:title" content="{{ title }}">
   <meta property="og:description" content="{{ description }}">
   <meta property="og:image" content="https://przemekmiros.pl/assets/img/opengraph.png">
-
-  <!-- Twitter Meta Tags -->
   <meta name="twitter:card" content="summary_large_image">
   <meta property="twitter:domain" content="przemekmiros.pl">
   <meta property="twitter:url" content="https://przemekmiros.pl/">
@@ -42,7 +28,6 @@
   <meta name="msapplication-TileColor" content="#da532c">
   <meta name="theme-color" content="#ffffff">
   <link rel="stylesheet" href="{{ '/assets/css/style.css' | url }}">
-    
   <style>
     @font-face {
       font-family: 'Poppins';
@@ -104,45 +89,8 @@
   src: url('/assets/fonts/hanken-grotesk-v8-latin_latin-ext-700.woff2') format('woff2'); 
 }
 </style>
-<script type="text/javascript">
-    (function() {
-        var ams = document.createElement('script');
-        ams.type = 'text/javascript';
-        ams.async = true;
-        ams.src = '//analytics.greensender.pl/scripts/js/am.js';
-        var s = document.getElementsByTagName('script')[0];
-        s.parentNode.insertBefore(ams, s);
-
-        var r = false;
-        ams.onload = ams.onreadystatechange = function() {
-            if (!r && (!this.readyState || this.readyState == 'complete')) {
-                r = true;
-                am.create("DMS6512B0C4814C8");
-                am.send('pageview');
-            }
-        };
-    })();
-</script>
-<script>
-  !function(f,b,e,v,n,t,s)
-  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-  n.queue=[];t=b.createElement(e);t.async=!0;
-  t.src=v;s=b.getElementsByTagName(e)[0];
-  s.parentNode.insertBefore(t,s)}(window, document,'script',
-  'https://connect.facebook.net/en_US/fbevents.js');
-  fbq('init', '233894461181107');
-  fbq('track', 'PageView');
-  </script>
-  <noscript><img height="1" width="1" style="display:none"
-  src="https://www.facebook.com/tr?id=233894461181107&ev=PageView&noscript=1"
-  /></noscript>
-  <!-- End Meta Pixel Code -->
 </head>
-
 <body class="page-{% if page.fileSlug %}{{ page.fileSlug }}{% else %}home{% endif %}">
-
   <div class="scrollContainer" id="pinSection">
     <div class="logo-wrap-inner"></div>
     <header class="site-header">
@@ -373,6 +321,7 @@
         </div>
       </div>
     </header>
+
     <div class="container p-relative d-none d-md-block">
         <div class="info-social">
               <a href="https://www.facebook.com/przemekstronyinternetowe" title="Facebook" target="_blank"
@@ -493,4 +442,5 @@
           </div>
         </section>
       </div>
+
       <main class="main pt-md-xsmall">

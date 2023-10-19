@@ -264,23 +264,21 @@ body::after {
 .scrollprogress-wrap {
   position: fixed;
   top: 0;
-  left: 0;
   height: calc(100vh + 60px);
-  width: 4px;
+  width: 2px;
   z-index: 99
 }
 
 .scrollprogress {
   position: fixed;
-  top: -5px;
-  left: 0;
+  top: 0;
   -webkit-appearance: none;
   appearance: none;
-  width: 4px;
+  width: 2px;
   height: 0;
   border: none;
-  background: var(--color-dark-1);
-  opacity: .9
+  background: var(--color-accent-1);
+  opacity: .3
 }
 .scrollprogress::-webkit-progress-bar {
   background: transparent;
