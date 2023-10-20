@@ -130,14 +130,15 @@ splitTextLines.forEach(element =>{
    });
    
     gsap.from(mySplitText.lines, {
-        delay: .3,
-        yPercent: 100,
-        duration: 0.8,
+        delay: .2,
+        duration: 1,
         stagger: 0.05,
+        yPercent: 100,
+        ease: Power2. easeInOut,
         scrollTrigger: { 
           scroller: ".scrollContainer",
           trigger: element,
-          start: "top 90%",
+          start: "top 95%",
           //toggleActions: 'restart pause reverse pause',
         },
     })
@@ -148,14 +149,14 @@ splitTextLines.forEach(element =>{
     const fadeIn = gsap.utils.toArray('.fadeIn');
       fadeIn.forEach(fadeInItem => {
         gsap.from(fadeInItem, { 
-          delay: .3,
           opacity: 0,
-          y: 30,
-          duration: 1,
+          y: 20,
+          delay: .7,
+          duration: .8,
           scrollTrigger: {
             scroller: ".scrollContainer",
             trigger: fadeInItem,
-            start: "top 90%",
+            start: "top 95%",
           }
     })
 });
@@ -164,14 +165,14 @@ splitTextLines.forEach(element =>{
 const lineX = gsap.utils.toArray('.line-x');
 lineX.forEach(lineXItem => {
   gsap.from(lineXItem, { 
-    delay: .3,
     width: "0",
-    duration: 0.8,
-    ease: Power2. easeIn,
+    duration: .7,
+    delay: .3,
+    ease: Power2. easeInOut,
     scrollTrigger: {
       scroller: ".scrollContainer",
       trigger: lineXItem,
-      start: "top 90%",
+      start: "top 95%",
     }
 })
 });
@@ -185,7 +186,7 @@ lineX.forEach(lineXItem => {
     scrollTrigger: {
       scroller: ".scrollContainer",
       trigger: '.swiper-scrollbar-drag',
-      start: "top 90%",
+      start: "top 95%",
     }
 });
 
