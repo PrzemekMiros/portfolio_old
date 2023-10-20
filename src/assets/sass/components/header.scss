@@ -8,6 +8,7 @@
   // animation: headerFade .1s forwards .2s;
   transform: translateY(0);
   transition: .4s ease-in-out;
+  animation: headerFadeIn .2s linear forwards;
   mix-blend-mode: difference;
   pointer-events: none;
   z-index: 999
@@ -59,14 +60,13 @@
 }
 
 .page-overlay-in {
-  display: none;
+  display: block;
   position: fixed;
   left: 10px;
   top: 10px;
   width: calc(100vw - 20px);
   height: calc(100vh - 20px);
   z-index: 99;
-  display: none;
   background-color: var(--color-dark-1)
 }
 
