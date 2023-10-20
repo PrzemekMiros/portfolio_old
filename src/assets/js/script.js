@@ -130,8 +130,9 @@ splitTextLines.forEach(element =>{
    });
    
     gsap.from(mySplitText.lines, {
+        delay: .3,
         yPercent: 100,
-        duration: 1,
+        duration: 0.8,
         stagger: 0.05,
         scrollTrigger: { 
           scroller: ".scrollContainer",
@@ -147,9 +148,10 @@ splitTextLines.forEach(element =>{
     const fadeIn = gsap.utils.toArray('.fadeIn');
       fadeIn.forEach(fadeInItem => {
         gsap.from(fadeInItem, { 
+          delay: .3,
           opacity: 0,
           y: 30,
-          duration: 1.5,
+          duration: 1,
           scrollTrigger: {
             scroller: ".scrollContainer",
             trigger: fadeInItem,
@@ -162,8 +164,9 @@ splitTextLines.forEach(element =>{
 const lineX = gsap.utils.toArray('.line-x');
 lineX.forEach(lineXItem => {
   gsap.from(lineXItem, { 
+    delay: .3,
     width: "0",
-    duration: 1,
+    duration: 0.8,
     ease: Power2. easeIn,
     scrollTrigger: {
       scroller: ".scrollContainer",
