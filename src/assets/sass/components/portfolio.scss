@@ -4,13 +4,13 @@
     overflow: hidden;
     border-radius: 9px
 }
-.portfolio-item div,
+.portfolio-item source,
 .swiper-image-wrap img,
 .photo.portfolio-item img {
     // filter: grayscale(99%);
     transition: all 1.3s cubic-bezier(.79,0,.07,.88)
 }
-.portfolio-item:hover div,
+.portfolio-item:hover source,
 .swiper-image-wrap:hover img,
 .photo.portfolio-item:hover img {
     transform: scale(1.07);

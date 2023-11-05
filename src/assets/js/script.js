@@ -130,6 +130,7 @@ splitTextLines.forEach(element =>{
    });
    
     gsap.from(mySplitText.lines, {
+        delay: .2,
         duration: 1,
         stagger: 0.05,
         yPercent: 100,
@@ -137,7 +138,7 @@ splitTextLines.forEach(element =>{
         scrollTrigger: { 
           scroller: ".scrollContainer",
           trigger: element,
-          start: "top 90%",
+          start: "top 95%",
           //toggleActions: 'restart pause reverse pause',
         },
     })
@@ -150,11 +151,12 @@ splitTextLines.forEach(element =>{
         gsap.from(fadeInItem, { 
           opacity: 0,
           y: 20,
-          duration: 1,
+          delay: .7,
+          duration: .8,
           scrollTrigger: {
             scroller: ".scrollContainer",
             trigger: fadeInItem,
-            start: "top 90%",
+            start: "top 95%",
           }
     })
 });
@@ -165,11 +167,12 @@ lineX.forEach(lineXItem => {
   gsap.from(lineXItem, { 
     width: "0",
     duration: .7,
+    delay: .3,
     ease: Power2. easeInOut,
     scrollTrigger: {
       scroller: ".scrollContainer",
       trigger: lineXItem,
-      start: "top 90%",
+      start: "top 95%",
     }
 })
 });
@@ -183,7 +186,7 @@ lineX.forEach(lineXItem => {
     scrollTrigger: {
       scroller: ".scrollContainer",
       trigger: '.swiper-scrollbar-drag',
-      start: "top 90%",
+      start: "top 95%",
     }
 });
 
