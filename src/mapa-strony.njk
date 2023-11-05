@@ -11,42 +11,47 @@ description: Mapa witryny
       <h2 class="split-text-lines">Artykuły</h2>
       <div class="line-x"></div>
 
-      <ul class="pt-xsmall">
+      <ul class="pt-xsmall pb-small">
         {% for page in collections.posts %}
-        <li class="fadeIn mb-2">
-          <a href="{{ page.url | url }}" title="{{ page.data.title }}">{{ page.data.title }}</a>
+        <li class="fadeIn my-4">
+          <a href="{{ page.url | url }}" class="hover-color" title="{{ page.data.title }}">{{ page.data.title }}</a>
         </li>
+        <div class="line-x lx-op"></div>
         {% endfor %}
       </ul>
       <h2 class="split-text-lines">Uslugi</h2>
       <div class="line-x"></div>
 
-      <ul class="pt-xsmall">
+      <ul class="pt-xsmall pb-small">
       {% for page in collections.services %}
-        <li class="fadeIn mb-2">
-          <a href="{{ page.url | url }}" title="{{ page.data.title }}">{{ page.data.title }}</a>
+        <li class="fadeIn my-4">
+          <a href="{{ page.url | url }}" class="hover-color" title="{{ page.data.title }}">{{ page.data.title }}</a>
         </li>
+        <div class="line-x lx-op"></div>
       {% endfor %}
       </ul>
       <h2 class="split-text-lines">Pozycjonowanie</h2>
       <div class="line-x"></div>
 
-      <ul class="pt-xsmall">
+      <ul class="pt-xsmall pb-small">
       {% for page in collections.towns %}
-        <li class="fadeIn mb-2">
-          <a href="{{ page.url | url }}" title="{{ page.data.title }}">{{ page.data.title }}</a>
+        <li class="fadeIn my-4">
+          <a href="{{ page.url | url }}" class="hover-color" title="{{ page.data.title }}">{{ page.data.title }}</a>
         </li>
+        <div class="line-x lx-op"></div>
       {% endfor %}
       </ul>
       <h2 class="split-text-lines">Strony</h2>
       <div class="line-x"></div>
       <ul class="pt-xsmall">
-          <li class="fadeIn mb-2">
-            <a href="/realizacje" title="Realizacje">Realizacje</a>
+          <li class="fadeIn my-4">
+            <a href="/realizacje" class="hover-color" title="Realizacje">Realizacje</a>
           </li>
-          <li class="fadeIn mb-2">
+          <div class="line-x lx-op"></div>
+          <li class="fadeIn my-4">
               <a href="/blog" title="Artykuły">Artykuły</a>
           </li>
+          <div class="line-x lx-op"></div>
         </ul>
     </div>
   </div>

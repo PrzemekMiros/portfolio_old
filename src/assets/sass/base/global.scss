@@ -70,6 +70,14 @@ body::after {
     background-color: #fff
   }
 
+  .hover-color {
+    transition: .3s ease-in-out
+  }
+
+  .hover-color:hover {
+    color: var(--color-accent-1)
+  }
+
   .post-navigation a {
     position: relative;
     display: inline-block;
