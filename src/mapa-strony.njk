@@ -1,0 +1,53 @@
+---
+layout: layouts/base.njk
+title: Mapa strony
+description: Mapa witryny
+---
+
+<section class="pt-xlarge pb-xlarge" data-scroll-section>
+  <div class="container">
+    <div class="col-md-6 mx-auto">
+    
+      <h2 class="split-text-lines">Artykuły</h2>
+      <div class="line-x"></div>
+
+      <ul class="pt-xsmall">
+        {% for page in collections.posts %}
+        <li class="fadeIn mb-2">
+          <a href="{{ page.url | url }}" title="{{ page.data.title }}">{{ page.data.title }}</a>
+        </li>
+        {% endfor %}
+      </ul>
+      <h2 class="split-text-lines">Uslugi</h2>
+      <div class="line-x"></div>
+
+      <ul class="pt-xsmall">
+      {% for page in collections.services %}
+        <li class="fadeIn mb-2">
+          <a href="{{ page.url | url }}" title="{{ page.data.title }}">{{ page.data.title }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+      <h2 class="split-text-lines">Pozycjonowanie</h2>
+      <div class="line-x"></div>
+
+      <ul class="pt-xsmall">
+      {% for page in collections.towns %}
+        <li class="fadeIn mb-2">
+          <a href="{{ page.url | url }}" title="{{ page.data.title }}">{{ page.data.title }}</a>
+        </li>
+      {% endfor %}
+      </ul>
+      <h2 class="split-text-lines">Strony</h2>
+      <div class="line-x"></div>
+      <ul class="pt-xsmall">
+          <li class="fadeIn mb-2">
+            <a href="/realizacje" title="Realizacje">Realizacje</a>
+          </li>
+          <li class="fadeIn mb-2">
+              <a href="/blog" title="Artykuły">Artykuły</a>
+          </li>
+        </ul>
+    </div>
+  </div>
+</section>
