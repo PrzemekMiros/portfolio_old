@@ -52,5 +52,5 @@ collections:
     folder: "src/faq"
     create: true
     fields:
-      - {label: "Pytanie", name: "question", widget: "string"}
+      - {label: "Pytanie", name: "title", widget: "string"}
       - {label: "Odpowiedź", name: "answer", widget: "markdown"}
