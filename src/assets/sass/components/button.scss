@@ -1,7 +1,8 @@
 .button {
     display: inline-block;
     position: relative;
-    padding: 1em 0 0.9em
+    padding: 1em 0 0.9em;
+    border-radius: 45px
 }
 
 .button::before {

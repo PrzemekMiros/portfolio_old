@@ -5,6 +5,8 @@
   position: relative;
   margin-bottom: .5em;
   padding-left: 0;
+  background-color: transparent;
+  border: none;
   list-style: none;
   cursor: pointer;
   transition: all 1.3s cubic-bezier(.79,0,.07,.88);
@@ -12,7 +14,9 @@
 }
 
 .accordion .title {
+  margin-top: 0;
   padding-right: 3.2em;
+  text-align: left;
   transition: 1.3s cubic-bezier(.79,0,.07,.88);
 }
 

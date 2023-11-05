@@ -57,12 +57,12 @@
 
           {% for post in collections.faq %}
           <div class="mt-4 pt-xsmall pb-xsmall">
-            <div class="accordion">
-              <div class="h4 title color-heading split-text-lines">
+            <button class="accordion">
+              <p class="h4 title color-heading split-text-lines">
                 {{ post.data.title }}
-              </div>
+              </p>
               <div class="icon fadeIn"></div>
-            </div>
+            </button>
             <div class="panel col-md-11">
               <p class="color-text">
                 {{ post.data.answer }}
