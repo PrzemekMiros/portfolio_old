@@ -33,7 +33,6 @@ function animationMain() {
       var swiper = new Swiper(".swiper", {
         grabCursor: true,
         spaceBetween: 20,
-        lazy: true,
         centeredSlides: false,
         loop: true,
         pagination: {
