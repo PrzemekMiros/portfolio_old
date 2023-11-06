@@ -191,7 +191,7 @@ lineX.forEach(lineXItem => {
 // Footer parallax
 if (window.matchMedia("(min-width: 767px)").matches) {
   gsap.from(".footer-parallax", {
-    y: "-25%",
+    y: "-15%",
     opacity: 0,
     scrollTrigger: {
       scroller: ".scrollContainer",
@@ -214,6 +214,26 @@ if (window.matchMedia("(min-width: 767px)").matches) {
       }
     });
   };
+  
+  const paths = [...document.querySelectorAll('path.path-anim')];
+
+  paths.forEach(el => {
+  const svgEl = el.closest('.separator--up');
+  const pathTo = el.dataset.pathTo;
+
+  gsap.timeline({
+      scrollTrigger: {
+          trigger: svgEl,
+          start: "top bottom",
+          end: "bottom 30%",
+          scrub: true
+      }
+  })
+  .to(el, {
+      ease: 'none',
+      attr: { d: pathTo }
+  });
+  });
 
 // Magnetic
 if(document.querySelector('.magnetic')) {
@@ -355,7 +375,6 @@ if (window.matchMedia("(min-width: 767px)").matches) {
     });
   };
 
-
   // Loop text
   if (document.querySelector(".loop-text")) {
   gsap.to(".loop-text", { xPercent: -50, ease: 'none', duration: 13, repeat: -1 })
@@ -372,8 +391,6 @@ if (window.matchMedia("(min-width: 767px)").matches) {
     }
   });
   };
-
-// Cursor image
   
 
 // Scroll progress
