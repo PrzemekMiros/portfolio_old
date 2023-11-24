@@ -300,15 +300,14 @@
 }
 .main-menu li a {
   position: relative;
-  font-size: 48px;
+  font-size: 46px;
   color: #fff;
   text-decoration: none;
   font-family: var(--font-primary);
-  font-weight: 700;
   display: inline-block;
   line-height: 1.2;
   transition: opacity .2s ease-in-out;
-  opacity: .85;
+  opacity: .9;
 }
 .main-menu ul li a::before {
   content: "0" counter(li);

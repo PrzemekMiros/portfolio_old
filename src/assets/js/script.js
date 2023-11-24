@@ -63,8 +63,11 @@ function animationMain() {
           1024: {
             slidesPerView: 2
           },
-          1600: {
+          1200: {
             slidesPerView: 3
+          },
+          1600: {
+            slidesPerView: 4
           }
         }
       });

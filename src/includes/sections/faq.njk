@@ -1,7 +1,7 @@
 <section class="pb-large bg-dark" data-scroll-section>
   <div class="container">
-    <div class="row">
-      <div class="offset-md-1 col-md-4 pt-large" id="faq">
+    <div class="row gx-5">
+      <div class="offset-md-1 col-md-5 pt-large" id="faq">
         <div
           class="pb-medium"
           data-scroll
@@ -51,14 +51,14 @@
         </div>
       </div>
 
-      <div class="offset-md-1 col-md-5 pt-md-medium">
+      <div class="col-md-6 pt-md-medium">
         <div class="accordion-wrap">
           <div class="line-x lx-op lx-light d-md-none"></div>
 
           {% for post in collections.faq %}
           <div class="mt-4 pt-xsmall pb-xsmall">
             <button class="accordion">
-              <span class="h4 title color-heading split-text-lines">
+              <span class="h5 title color-heading split-text-lines">
                 {{ post.data.title }}
               </span>
               <span class="icon fadeIn"></span>
