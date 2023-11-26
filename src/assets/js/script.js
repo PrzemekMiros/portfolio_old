@@ -151,7 +151,8 @@ splitTextLines.forEach(element =>{
       fadeIn.forEach(fadeInItem => {
         gsap.from(fadeInItem, { 
           opacity: 0,
-          y: 20,
+          autoAlpha: 0,
+          y: 40,
           delay: .3,
           duration: .8,
           scrollTrigger: {
